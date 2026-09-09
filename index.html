@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Before and after AI · GitHub Geography Explorer</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tiles.openfreemap.org">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.7.0/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to map explorer</a>
+  <main class="experience" id="main" aria-label="GitHub geography explorer">
+    <div id="map" aria-label="Interactive world map"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <header class="glass story" aria-label="Story and controls">
+      <h1>Before and after AI</h1>
+      <p class="dek">How much public GitHub activity grew, country by country.</p>
+
+      <div class="search">
+        <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"></circle><path d="M10.5 10.5 14 14"></path></svg>
+        <label class="sr-only" for="country-search">Find a country</label>
+        <input id="country-search" list="country-options" type="search" placeholder="Find a country" autocomplete="off" spellcheck="false">
+        <datalist id="country-options"></datalist>
+        <button id="clear-search" type="button" aria-label="Clear search" hidden>
+          <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 3l6 6M9 3l-6 6"></path></svg>
+        </button>
+      </div>
+
+      <label class="field metric-field">
+        <span>Measure</span>
+        <span class="select">
+          <select id="metric-select" aria-label="GitHub measure"></select>
+          <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"></path></svg>
+        </span>
+      </label>
+
+      <div class="controls">
+        <label class="field">
+          <span>Baseline</span>
+          <span class="select">
+            <select id="baseline-period">
+              <option value="2020_q4">2020 Q4</option>
+              <option value="2022_q2">2022 Q2</option>
+              <option value="2023_q1">2023 Q1</option>
+              <option value="2024_q4">2024 Q4</option>
+            </select>
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"></path></svg>
+          </span>
+        </label>
+        <div class="field">
+          <span id="scale-label">Scale</span>
+          <div class="segmented" role="radiogroup" aria-labelledby="scale-label">
+            <button type="button" role="radio" aria-checked="true" data-mode="absolute">Total</button>
+            <button type="button" role="radio" aria-checked="false" data-mode="population" aria-label="Per 1M people">
+              <span class="scale-label-full">Per 1M people</span>
+              <span class="scale-label-short" aria-hidden="true">Per 1M</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="note" id="denominator-note" hidden></p>
+    </header>
+
+    <div class="crosshair" id="crosshair" aria-hidden="true">
+      <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="17"></circle><path d="M22 0v9M22 35v9M0 22h9M35 22h9"></path><circle class="dot" cx="22" cy="22" r="1.75"></circle></svg>
+      <span class="leader"></span>
+    </div>
+
+    <aside class="glass lens is-empty" id="lens" aria-live="polite" aria-atomic="true" aria-label="Country under the crosshair">
+      <div class="lens-head">
+        <h2 id="place-name">Open water</h2>
+        <p id="place-context">Drag the map until a country sits under the crosshair.</p>
+      </div>
+      <div class="bars" id="metric-bars"></div>
+      <div class="stats">
+        <div><strong id="push-count">—</strong><span id="push-summary-label">public pushes</span></div>
+        <div><strong id="developer-count">—</strong><span id="developer-summary-label">developer accounts</span></div>
+        <div><strong id="global-share">—</strong><span id="share-kind">of reported global pushes</span></div>
+        <div><strong id="reported-rank">—</strong><span id="rank-kind">by pushes, worldwide</span></div>
+      </div>
+      <p class="caveat" id="summary-warning"></p>
+    </aside>
+
+    <div class="glass legend" aria-label="Map colour scale">
+      <div class="legend-head">
+        <span class="legend-title"><span id="legend-metric">Push growth</span> since <b id="legend-baseline">2020 Q4</b></span>
+        <button id="play-change" class="play-change" type="button" aria-label="Play quarterly change from the selected baseline">Play</button>
+      </div>
+      <div class="ramp" aria-hidden="true"></div>
+      <div class="ramp-labels" aria-hidden="true"><span>Decline</span><span>0</span><span>+150%</span><span>+300%</span><span>+600%</span><span>+1200%</span></div>
+    </div>
+
+    <div class="glass zoom" aria-label="Zoom">
+      <button id="zoom-in" type="button" aria-label="Zoom in"><svg viewBox="0 0 14 14"><path d="M7 2v10M2 7h10"></path></svg></button>
+      <button id="zoom-out" type="button" aria-label="Zoom out"><svg viewBox="0 0 14 14"><path d="M2 7h10"></path></svg></button>
+    </div>
+
+    <button class="glass info-button" id="info-button" type="button" aria-label="About the data" aria-expanded="false" aria-controls="info-panel">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.25"></circle><path d="M10 9v5"></path><circle class="dot" cx="10" cy="6.2" r="0.9"></circle></svg>
+    </button>
+    <div class="glass info-panel" id="info-panel" role="dialog" aria-label="Sources" hidden>
+      <h3>Sources</h3>
+      <dl>
+        <dt>Activity</dt>
+        <dd><a href="https://innovationgraph.github.com/" rel="noopener">GitHub Innovation Graph</a>. Public git pushes and developer accounts per quarter. GitHub assigns a country from each account's most common IP location, so remote work and VPNs can move activity between countries.</dd>
+        <dt>Growth</dt>
+        <dd>Change from the chosen baseline quarter to <span id="info-period">the latest complete quarter</span>. <span id="info-rank-kind">Ranks use the selected measure in that quarter.</span></dd>
+        <dt>Selected measure</dt>
+        <dd><span id="info-metric-definition"></span> <span id="info-metric-caveat"></span></dd>
+        <dt>Population</dt>
+        <dd>World Bank annual population is used only when the scale is set to per 1M people. Population-normalized comparisons stop at 2025 Q4; the 2026 Q1 GitHub release remains available in the total view.</dd>
+        <dt>India boundary</dt>
+        <dd>Survey of India political map, digitised by the <a href="https://github.com/datameet/maps" rel="noopener">DataMeet community</a> (CC BY 4.0). Neighbouring countries are clipped to it.</dd>
+        <dt>Basemap</dt>
+        <dd><a href="https://openfreemap.org" rel="noopener">OpenFreeMap</a> tiles built with <a href="https://www.openmaptiles.org/" rel="noopener">OpenMapTiles</a> from © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors. Its own borders are hidden.</dd>
+      </dl>
+      <p class="info-foot">A Commenda Media graphic.</p>
+    </div>
+  </main>
+
+  <script type="module" src="app-multimetric.js"></script>
+</body>
+</html>
