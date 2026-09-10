@@ -51,7 +51,7 @@
           <span>Baseline</span>
           <span class="select">
             <select id="baseline-period">
-              <option value="2020_q4">2020 Q4</option>
+              <option value="2020_q1">2020 Q1</option>
               <option value="2022_q2">2022 Q2</option>
               <option value="2023_q1">2023 Q1</option>
               <option value="2024_q4">2024 Q4</option>
@@ -95,7 +95,7 @@
 
     <div class="paper-panel legend" aria-label="Map colour scale">
       <div class="legend-head">
-        <span class="legend-title"><span id="legend-metric">Push growth</span> since <b id="legend-baseline">2020 Q4</b></span>
+        <span class="legend-title"><span id="legend-metric">Push growth</span> since <b id="legend-baseline">2020 Q1</b></span>
         <button id="play-change" class="play-change" type="button" aria-label="Play quarterly change from the selected baseline">Play</button>
       </div>
       <div class="ramp-zones" aria-hidden="true"><span>Decline</span><span>Near zero</span><span>Growth</span></div>
@@ -118,7 +118,7 @@
         <dt>Activity</dt>
         <dd><a href="https://innovationgraph.github.com/" rel="noopener">GitHub Innovation Graph</a>. Public git pushes and developer accounts per quarter. GitHub assigns a country from each account's most common IP location, so remote work and VPNs can move activity between countries.</dd>
         <dt>Growth</dt>
-        <dd>Change from the chosen baseline quarter to <span id="info-period">the latest complete quarter</span>. <span id="info-rank-kind">Ranks use the selected measure in that quarter.</span></dd>
+        <dd>Change from the chosen baseline quarter to <span id="info-period">the latest complete quarter</span>. Countries without both endpoints are hatched; a later baseline is never substituted automatically. <span id="info-rank-kind">Ranks use the selected measure in that quarter.</span></dd>
         <dt>Colour</dt>
         <dd>A fixed signed-log transformation keeps both declines and unusually large increases visible. Values above +1,200% share the final colour. Hatched countries lack a comparable baseline. Exact changes appear in the country card.</dd>
         <dt>Selected measure</dt>
@@ -140,6 +140,6 @@
     </div>
   </main>
 
-  <script type="module" src="app-multimetric.js?v=2026-09-10-r4"></script>
+  <script type="module" src="app-multimetric.js?v=2026-09-10-r5"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ const LABEL_SOURCE_ID = "github-country-labels";
 const HIT_LAYERS = ["country-fill-in", "country-fill"];
 const NO_VALUE = -9999;
 const DEFAULT_METRIC = "git_pushes";
-const DEFAULT_BASELINE = "2020_q4";
+const DEFAULT_BASELINE = "2020_q1";
 const FRAME_DURATION = 560;
 
 // One signed-log percentage-change scale is deliberately shared across measures and quarters.
