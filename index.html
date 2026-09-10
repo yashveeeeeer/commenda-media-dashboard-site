@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.7.0/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="styles.css?v=2026-09-10-r3">
+  <link rel="stylesheet" href="styles.css?v=2026-09-10-r4">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to map explorer</a>
@@ -155,15 +155,15 @@
           </div>
           <div>
             <dt>Growth</dt>
-            <dd><code>(current ÷ baseline − 1) × 100</code>. Both quarters must be published and the baseline must be above zero.</dd>
+            <dd><code class="method-formula">(current ÷ baseline − 1) × 100</code><span class="method-explanation">Both quarters must be published and the baseline must be above zero.</span></dd>
           </div>
           <div>
             <dt>Per 1M people</dt>
-            <dd><code>reported value ÷ same-year population × 1,000,000</code>. Population is not carried forward, so this view ends at 2025 Q4.</dd>
+            <dd><code class="method-formula">reported value ÷ same-year population × 1,000,000</code><span class="method-explanation">Population is not carried forward, so this view ends at 2025 Q4.</span></dd>
           </div>
           <div>
             <dt>Global share</dt>
-            <dd><code>country value ÷ published global total × 100</code>. The EU aggregate is excluded to avoid double counting.</dd>
+            <dd><code class="method-formula">country value ÷ published global total × 100</code><span class="method-explanation">The EU aggregate is excluded to avoid double counting.</span></dd>
           </div>
           <div>
             <dt>Rank</dt>
@@ -171,7 +171,7 @@
           </div>
           <div>
             <dt>Colour</dt>
-            <dd><code>sign(growth) × ln(1 + |growth| ÷ 50)</code>. The fixed display range runs from −100% to +1,200%.</dd>
+            <dd><code class="method-formula">sign(growth) × ln(1 + |growth| ÷ 50)</code><span class="method-explanation">The fixed display range runs from −100% to +1,200%.</span></dd>
           </div>
           <div>
             <dt>Country bars</dt>
