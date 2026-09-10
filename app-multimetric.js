@@ -1,7 +1,8 @@
 import * as maplibregl from "https://unpkg.com/maplibre-gl@6.7.0/dist/maplibre-gl.mjs";
+import { numeric, changePercent, competitionRank, supportedPeriods, coverageFor, observationStatus, validatePayload } from './data-model.mjs';
 
-const GEOMETRY_URL = "data/country-geometry.geojson";
-const METRICS_URL = "data/country-metrics.json";
+const GEOMETRY_URL = "data/country-geometry-complete.geojson";
+const METRICS_URL = "data/country-metrics.json?v=2026-09-10-r1";
 const BASEMAP_STYLE = "https://tiles.openfreemap.org/styles/fiord";
 const SOURCE_ID = "github-countries";
 const HIT_LAYERS = ["country-fill-in", "country-fill"];
@@ -47,6 +48,7 @@ const elements = {
   infoRankKind: $("#info-rank-kind"),
   infoMetricDefinition: $("#info-metric-definition"),
   infoMetricCaveat: $("#info-metric-caveat"),
+  infoCoverage: $("#info-coverage"),
 };
 
 let geography;
@@ -68,7 +70,7 @@ let playbackTimer = 0;
 
 const mobile = window.matchMedia("(max-width: 580px)");
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-const asNumber = value => value === null || value === undefined || value === "" ? Number.NaN : Number(value);
+const asNumber = numeric;
 
 const map = new maplibregl.Map({
   container: "map",
@@ -128,8 +130,7 @@ function displayValue(metric, index, iso2) {
 }
 
 function growth(currentValue, baselineValue) {
-  if (!Number.isFinite(currentValue) || !Number.isFinite(baselineValue) || baselineValue <= 0) return Number.NaN;
-  return 100 * (currentValue / baselineValue - 1);
+  return changePercent(currentValue, baselineValue);
 }
 
 function metricsFor(iso2) {
@@ -154,12 +155,7 @@ function metricsFor(iso2) {
 
 function currentRank(metric, iso2) {
   if (valueMode === "absolute") return metricValue(metric, "rank", currentIndex, iso2);
-  const ranked = payload.codes
-    .map(code => ({ code, value: displayValue(metric, currentIndex, code) }))
-    .filter(item => Number.isFinite(item.value))
-    .sort((a, b) => b.value - a.value);
-  const index = ranked.findIndex(item => item.code === iso2);
-  return index < 0 ? Number.NaN : index + 1;
+  return competitionRank(metric.perMillionPeople[currentIndex], codeIndex.get(iso2));
 }
 
 function metricQuantityLabel(metric, periodLabel) {
@@ -176,9 +172,9 @@ function modeLabels() {
     primaryCount: metricQuantityLabel(primary, currentPeriod().label),
     comparatorCount: metricQuantityLabel(comparator, currentPeriod().label),
     rank: valueMode === "population"
-      ? `global ${primary.shortLabel.toLowerCase()}-rate rank`
-      : `global ${primary.shortLabel.toLowerCase()} rank`,
-    share: `global ${primary.shortLabel.toLowerCase()} share`,
+      ? "per-person rank"
+      : "reported rank",
+    share: "reported share",
   };
 }
 
@@ -252,8 +248,10 @@ function updateModeLabels() {
   elements.infoRankKind.textContent = valueMode === "population"
     ? "The displayed rank uses the per-person rate; global share still uses the reported total."
     : "Ranks use the selected reported measure in that quarter.";
-  elements.note.hidden = valueMode !== "population";
-  elements.note.textContent = `Population data through ${currentPeriod().label}.`;
+  const coverage = coverageFor(metric, currentIndex, baselineIndex, valueMode === "population");
+  elements.note.hidden = false;
+  elements.note.textContent = `${currentPeriod().label}: ${coverage.available} ${valueMode === "population" ? "rates" : "published"}; ${coverage.comparable} comparable.`;
+  elements.infoCoverage.textContent = `${coverage.reported} economies have published ${metric.shortLabel.toLowerCase()} values in ${currentPeriod().label}. ${coverage.comparable} have both endpoints needed for the selected growth comparison. Missing values are not zero.`;
   elements.play.textContent = reducedMotion.matches
     ? currentIndex >= finalIndex ? "Start" : "End"
     : playing ? "Pause" : currentIndex < finalIndex ? "Resume" : "Play";
@@ -280,9 +278,16 @@ function selectFeature(feature, force = false) {
   const text = modeLabels();
 
   elements.place.textContent = properties.economy_name;
-  elements.context.textContent = Number.isFinite(metrics.primaryGrowth)
-    ? `${metrics.primary.shortLabel} change from ${baselinePeriod().label} to ${currentPeriod().label}`
-    : `No comparable ${baselinePeriod().label} value for ${metrics.primary.shortLabel.toLowerCase()}`;
+  const status = observationStatus(payload, metrics.primary, currentIndex, baselineIndex, codeIndex.get(iso2), valueMode === "population");
+  const context = {
+    current_not_published: `No published ${metrics.primary.shortLabel.toLowerCase()} value for ${currentPeriod().label}`,
+    current_population_missing: `No ${currentPeriod().label.slice(0,4)} population denominator`,
+    baseline_not_published: `No published ${baselinePeriod().label} baseline for ${metrics.primary.shortLabel.toLowerCase()}`,
+    baseline_population_missing: `No ${baselinePeriod().label.slice(0,4)} population denominator for the baseline`,
+    zero_baseline: `Zero baseline in ${baselinePeriod().label}; percentage growth is undefined`,
+    comparable: `${metrics.primary.shortLabel} change from ${baselinePeriod().label} to ${currentPeriod().label}`,
+  };
+  elements.context.textContent = context[status];
   elements.primaryCount.textContent = valueMode === "population" ? rate(metrics.primaryCurrent) : compactNumber(metrics.primaryCurrent);
   elements.comparatorCount.textContent = valueMode === "population" ? rate(metrics.comparatorCurrent) : compactNumber(metrics.comparatorCurrent);
   elements.share.textContent = share(metrics.primaryShare);
@@ -293,7 +298,13 @@ function selectFeature(feature, force = false) {
   elements.shareKind.textContent = text.share;
 
   const warnings = [];
-  if (!Number.isFinite(metrics.primaryCurrent)) warnings.push("GitHub did not publish this country-measure observation.");
+  if (status === "current_not_published") warnings.push("An unpublished observation is not zero. GitHub withholds some small counts.");
+  if (status === "baseline_not_published") {
+    const comparable = supportedPeriods(metrics.primary, valueMode === "population").filter(i => i < currentIndex && displayValue(metrics.primary,i,iso2) > 0);
+    if (comparable.length) warnings.push(`First available baseline: ${payload.periods[comparable[0]].label}.`);
+    else warnings.push("No earlier published value supports a growth comparison.");
+  }
+  if (status.includes("population_missing")) warnings.push("The GitHub count is published. Select Total to view it without a population denominator.");
   if (iso2 === "CN") warnings.push("China: the main series assigns location by IP; the separate profile-weighted snapshot produces a very different rank.");
   if (valueMode === "population") {
     const baselineYear = Number.isFinite(metrics.populationBaselineYear) ? metrics.populationBaselineYear : "unavailable";
@@ -437,7 +448,7 @@ function setupMetricOptions() {
 }
 
 function firstReportedIndex(metric) {
-  const index = metric.value.findIndex(row => row.some(value => value !== null));
+  const index = supportedPeriods(metric, valueMode === "population")[0] ?? -1;
   return index < 0 ? 0 : index;
 }
 
@@ -446,7 +457,7 @@ function populateBaselineOptions(preferredIndex = baselineIndex) {
   const first = firstReportedIndex(metric);
   elements.baseline.replaceChildren();
   for (let index = first; index < finalIndex; index += 1) {
-    if (!metric.value[index].some(value => value !== null)) continue;
+    if (!supportedPeriods(metric, valueMode === "population").includes(index)) continue;
     const option = document.createElement("option");
     option.value = payload.periods[index].key;
     option.textContent = payload.periods[index].label;
@@ -460,11 +471,18 @@ function populateBaselineOptions(preferredIndex = baselineIndex) {
     : available.includes(defaultIndex)
       ? defaultIndex
       : available[0];
+  if (!available.length) {
+    baselineIndex = finalIndex;
+    const option = new Option(payload.periods[finalIndex].label, payload.periods[finalIndex].key);
+    elements.baseline.append(option);
+  }
+  elements.baseline.disabled = available.length === 0;
+  elements.play.disabled = available.length === 0;
   elements.baseline.value = payload.periods[baselineIndex].key;
 }
 
 function setEndpointForMode() {
-  finalIndex = valueMode === "population" ? populationFinalIndex : releaseFinalIndex;
+  finalIndex = supportedPeriods(activeMetric(), valueMode === "population").at(-1);
 }
 
 function stopPlayback() {
@@ -509,6 +527,7 @@ function setupControls() {
   elements.metric.addEventListener("change", () => {
     stopPlayback();
     activeMetricId = elements.metric.value;
+    setEndpointForMode();
     currentIndex = finalIndex;
     populateBaselineOptions(baselineIndex);
     refreshSelection();
@@ -623,6 +642,7 @@ async function initialise() {
   if (!metricsResponse.ok) throw new Error(`Metric data failed to load: ${metricsResponse.status}`);
   geography = await geometryResponse.json();
   payload = await metricsResponse.json();
+  validatePayload(payload, geography);
   metricsById = new Map(payload.metrics.map(metric => [metric.id, metric]));
   codeIndex = new Map(payload.codes.map((code, index) => [code, index]));
   periodIndex = new Map(payload.periods.map((period, index) => [period.key, index]));
@@ -691,8 +711,19 @@ async function initialise() {
   });
 }
 
-if (map.isStyleLoaded()) initialise();
-else map.once("style.load", initialise);
+function showLoadError(error) {
+  console.error(error);
+  document.body.dataset.storyReady = "error";
+  elements.lens.classList.remove("is-empty");
+  elements.place.textContent = "Data could not load";
+  elements.context.textContent = "Reload the page. If this continues, check the published data files.";
+  elements.warning.textContent = error.message;
+  elements.metric.disabled = true;
+  elements.baseline.disabled = true;
+  elements.play.disabled = true;
+}
+if (map.isStyleLoaded()) initialise().catch(showLoadError);
+else map.once("style.load", () => initialise().catch(showLoadError));
 
 map.on("error", event => {
   console.error(event.error || event);
