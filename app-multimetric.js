@@ -1,5 +1,5 @@
 import * as maplibregl from "https://unpkg.com/maplibre-gl@6.7.0/dist/maplibre-gl.mjs";
-import { numeric, changePercent, competitionRank, supportedPeriods, coverageFor, observationStatus, validatePayload } from "./data-model.mjs";
+import { numeric, changePercent, competitionRank, supportedPeriods, observationStatus, validatePayload } from "./data-model.mjs";
 
 const DATA_VERSION = "2026-09-10-r1";
 const GEOMETRY_URL = `data/country-geometry-complete.geojson?v=${DATA_VERSION}`;
@@ -71,7 +71,6 @@ const elements = {
   metric: $("#metric-select"),
   baseline: $("#baseline-period"),
   segmented: document.querySelectorAll(".segmented button"),
-  note: $("#denominator-note"),
   legendMetric: $("#legend-metric"),
   legendBaseline: $("#legend-baseline"),
   primarySummaryLabel: $("#push-summary-label"),
@@ -81,11 +80,10 @@ const elements = {
   zoomOut: $("#zoom-out"),
   infoButton: $("#info-button"),
   infoPanel: $("#info-panel"),
-  infoPeriod: $("#info-period"),
-  infoRankKind: $("#info-rank-kind"),
-  infoMetricDefinition: $("#info-metric-definition"),
-  infoMetricCaveat: $("#info-metric-caveat"),
-  infoCoverage: $("#info-coverage"),
+  infoClose: $("#info-close"),
+  infoTabs: document.querySelectorAll("[data-info-tab]"),
+  infoSections: document.querySelectorAll(".info-section"),
+  variableList: $("#variable-list"),
 };
 
 let geography;
@@ -274,20 +272,10 @@ function updateModeLabels() {
   const text = modeLabels();
   elements.legendMetric.textContent = `${metric.shortLabel} growth`;
   elements.legendBaseline.textContent = baselinePeriod().label;
-  elements.infoPeriod.textContent = `${currentPeriod().label}, the selected comparison quarter`;
-  elements.infoMetricDefinition.textContent = `${metric.definition}.`;
-  elements.infoMetricCaveat.textContent = metric.caveat;
   elements.primarySummaryLabel.textContent = text.primaryCount;
   elements.comparatorSummaryLabel.textContent = text.comparatorCount;
   elements.rankKind.textContent = text.rank;
   elements.shareKind.textContent = text.share;
-  elements.infoRankKind.textContent = valueMode === "population"
-    ? "The displayed rank uses the per-person rate; global share still uses the reported total."
-    : "Ranks use the selected reported measure in that quarter.";
-  const coverage = coverageFor(metric, currentIndex, baselineIndex, valueMode === "population");
-  elements.note.hidden = false;
-  elements.note.textContent = `${currentPeriod().label}: ${coverage.available} ${valueMode === "population" ? "rates" : "published"}; ${coverage.comparable} comparable.`;
-  elements.infoCoverage.textContent = `${coverage.reported} economies have published ${metric.shortLabel.toLowerCase()} values in ${currentPeriod().label}. ${coverage.comparable} have both endpoints needed for the selected growth comparison. Missing values are not zero.`;
   elements.play.textContent = reducedMotion.matches
     ? currentIndex >= finalIndex ? "Start" : "End"
     : playing ? "Pause" : currentIndex < finalIndex ? "Resume" : "Play";
@@ -796,16 +784,83 @@ function addDataLayers() {
 function setInfoOpen(open) {
   elements.infoPanel.hidden = !open;
   elements.infoButton.setAttribute("aria-expanded", String(open));
+  if (open) elements.infoClose.focus({ preventScroll: true });
+}
+
+function setInfoTab(name, focus = false) {
+  for (const tab of elements.infoTabs) {
+    const active = tab.dataset.infoTab === name;
+    tab.setAttribute("aria-selected", String(active));
+    tab.tabIndex = active ? 0 : -1;
+    if (active && focus) tab.focus();
+  }
+  for (const section of elements.infoSections) {
+    section.hidden = section.id !== `info-${name}`;
+  }
+}
+
+function renderVariableDefinitions() {
+  const groups = new Map();
+  for (const metric of payload.metrics) {
+    const group = groups.get(metric.group) || [];
+    group.push(metric);
+    groups.set(metric.group, group);
+  }
+
+  elements.variableList.replaceChildren();
+  for (const [groupName, metrics] of groups) {
+    const group = document.createElement("section");
+    group.className = "variable-group";
+    const heading = document.createElement("h4");
+    heading.textContent = groupName;
+    group.append(heading);
+
+    for (const metric of metrics) {
+      const item = document.createElement("details");
+      item.className = "variable-item";
+      const summary = document.createElement("summary");
+      const name = document.createElement("span");
+      name.textContent = metric.label;
+      const period = document.createElement("span");
+      period.textContent = `${metric.startPeriod.replace("-", " ")}–${metric.endPeriod.replace("-", " ")}`;
+      summary.append(name, period);
+      const definition = document.createElement("p");
+      definition.textContent = metric.definition;
+      item.append(summary, definition);
+      group.append(item);
+    }
+    elements.variableList.append(group);
+  }
 }
 
 elements.infoButton.addEventListener("click", () => setInfoOpen(elements.infoPanel.hidden));
+elements.infoClose.addEventListener("click", () => {
+  setInfoOpen(false);
+  elements.infoButton.focus();
+});
+for (const tab of elements.infoTabs) {
+  tab.addEventListener("click", () => setInfoTab(tab.dataset.infoTab));
+  tab.addEventListener("keydown", event => {
+    if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+    event.preventDefault();
+    const tabs = [...elements.infoTabs];
+    const index = tabs.indexOf(tab);
+    const next = event.key === "Home" ? 0
+      : event.key === "End" ? tabs.length - 1
+      : (index + (event.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+    setInfoTab(tabs[next].dataset.infoTab, true);
+  });
+}
 document.addEventListener("click", event => {
   if (elements.infoPanel.hidden) return;
   if (elements.infoPanel.contains(event.target) || elements.infoButton.contains(event.target)) return;
   setInfoOpen(false);
 });
 document.addEventListener("keydown", event => {
-  if (event.key === "Escape" && !elements.infoPanel.hidden) setInfoOpen(false);
+  if (event.key === "Escape" && !elements.infoPanel.hidden) {
+    setInfoOpen(false);
+    elements.infoButton.focus();
+  }
 });
 elements.zoomIn.addEventListener("click", () => map.zoomIn({ duration: reducedMotion.matches ? 0 : 300 }));
 elements.zoomOut.addEventListener("click", () => map.zoomOut({ duration: reducedMotion.matches ? 0 : 300 }));
@@ -856,6 +911,7 @@ async function initialise() {
   });
 
   setupControls();
+  renderVariableDefinitions();
   updateModeLabels();
   addDataLayers();
   refreshFeatureStates();

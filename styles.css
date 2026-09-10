@@ -406,18 +406,6 @@ a:focus-visible {
   box-shadow: none;
 }
 
-.note[hidden] {
-  display: none;
-}
-
-.note {
-  margin: 7px 0 0;
-  font-family: var(--mono);
-  font-size: 9.5px;
-  line-height: 1.35;
-  color: var(--ink-2);
-}
-
 /* Crosshair and lens */
 .crosshair {
   position: absolute;
@@ -774,7 +762,7 @@ a:focus-visible {
   stroke-linecap: round;
 }
 
-/* Sources: one round button top right, one panel beneath it */
+/* Data notes: one round button top right, one compact reference panel */
 .info-button {
   top: calc(var(--masthead-height) + var(--edge));
   right: var(--edge);
@@ -812,7 +800,7 @@ a:focus-visible {
   top: calc(var(--masthead-height) + var(--edge) + 43px);
   right: var(--edge);
   z-index: 5;
-  width: var(--lens-width);
+  width: clamp(342px, 25vw, 410px);
   max-height: calc(100% - var(--masthead-height) - var(--edge) * 2 - 43px);
   padding: var(--panel-pad-y) var(--panel-pad-x);
   overflow: auto;
@@ -824,36 +812,123 @@ a:focus-visible {
   display: none;
 }
 
+.info-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.info-kicker {
+  margin: 0 0 3px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--coral);
+}
+
 .info-panel h3 {
-  margin: 0 0 9px;
-  font-family: var(--mono);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.1;
-  text-transform: uppercase;
-}
-
-.info-panel dl {
-  display: grid;
-  gap: 9px;
   margin: 0;
+  font-family: var(--numbers);
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1;
+  letter-spacing: -0.025em;
 }
 
-.info-panel dt {
+.info-close {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin: -3px -5px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.info-close:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.info-close svg {
+  width: 13px;
+  height: 13px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+}
+
+.info-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 14px 0 12px;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.info-tabs button {
+  min-height: 34px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--ink);
+  background: transparent;
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 10.5px;
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-3);
+  letter-spacing: 0.02em;
 }
 
-.info-panel dd {
-  margin: 3px 0 0;
-  font-family: var(--serif);
-  font-size: 13px;
-  line-height: 1.38;
-  color: var(--ink-2);
+.info-tabs button:last-child {
+  border-right: 0;
+}
+
+.info-tabs button[aria-selected="true"] {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.info-section[hidden] {
+  display: none;
+}
+
+.source-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.source-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 14px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.source-list a {
+  overflow: hidden;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.source-list span {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--ink-3);
+  white-space: nowrap;
 }
 
 .info-panel a {
@@ -866,6 +941,144 @@ a:focus-visible {
 .info-panel a:hover {
   color: var(--coral);
   text-decoration-color: currentColor;
+}
+
+.info-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 11px;
+}
+
+.info-actions a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 37px;
+  padding: 0 10px;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.info-actions a:hover {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.variable-list {
+  display: grid;
+  gap: 15px;
+}
+
+.variable-group h4 {
+  margin: 0 0 5px;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--coral);
+}
+
+.variable-item {
+  border-top: 1px solid var(--line);
+}
+
+.variable-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.variable-item summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 10px;
+  padding: 8px 18px 8px 0;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+}
+
+.variable-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.variable-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.variable-item summary {
+  position: relative;
+}
+
+.variable-item[open] summary::after {
+  content: "−";
+}
+
+.variable-item summary span:last-child {
+  font-family: var(--numbers);
+  font-size: 10.5px;
+  font-weight: 400;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+
+.variable-item p {
+  margin: -1px 18px 9px 0;
+  font-family: var(--serif);
+  font-size: 13px;
+  line-height: 1.34;
+  color: var(--ink-2);
+}
+
+.method-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+
+.method-list > div {
+  padding: 9px 0;
+  border-top: 1px solid var(--line);
+}
+
+.method-list > div:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.method-list dt {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--coral);
+}
+
+.method-list dd {
+  margin: 3px 0 0;
+  font-family: var(--serif);
+  font-size: 12.5px;
+  line-height: 1.34;
+  color: var(--ink-2);
+}
+
+.method-list code {
+  font-family: var(--mono);
+  font-size: 0.84em;
+  color: var(--ink);
+  background: rgba(248, 104, 77, 0.09);
 }
 
 .info-foot {
@@ -925,8 +1138,7 @@ a:focus-visible {
     font-size: 21px;
   }
 
-  .dek,
-  .note {
+  .dek {
     display: none;
   }
 
@@ -1060,7 +1272,6 @@ a:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .note,
   .zoom {
     display: none;
   }
