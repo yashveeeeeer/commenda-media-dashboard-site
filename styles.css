@@ -221,7 +221,7 @@ a:focus-visible {
   line-height: 1.04;
   letter-spacing: -0.045em;
   text-transform: uppercase;
-  white-space: nowrap;
+  text-wrap: balance;
 }
 
 .dek {

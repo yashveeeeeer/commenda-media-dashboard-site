@@ -13,7 +13,7 @@ const LABEL_SOURCE_ID = "github-country-labels";
 const HIT_LAYERS = ["country-fill-in", "country-fill"];
 const NO_VALUE = -9999;
 const DEFAULT_METRIC = "git_pushes";
-const DEFAULT_BASELINE = "2020_q1";
+const DEFAULT_BASELINE = "2024_q4";
 const FRAME_DURATION = 560;
 
 // One signed-log percentage-change scale is deliberately shared across measures and quarters.
@@ -50,6 +50,7 @@ const MAP_LABEL_ALIASES = new Map([
   ["Venezuela, RB", "Venezuela"],
   ["Yemen, Rep.", "Yemen"],
 ]);
+const UNDERLAY_CODE_ALIASES = new Map([["CN-TW", "TW"]]);
 
 const $ = selector => document.querySelector(selector);
 const elements = {
@@ -624,7 +625,7 @@ function addNoDataPattern() {
 function appendUnavailableCountries() {
   const mappedCodes = new Set(geography.features.map(feature => feature.properties.economy_iso2));
   for (const feature of underlay.features) {
-    const iso2 = feature.properties.ISO_A2;
+    const iso2 = UNDERLAY_CODE_ALIASES.get(feature.properties.ISO_A2) || feature.properties.ISO_A2;
     if (!iso2 || iso2 === "-99" || mappedCodes.has(iso2) || !feature.geometry) continue;
     geography.features.push({
       type: "Feature",
@@ -654,7 +655,7 @@ function addDataLayers() {
   const unavailableGeography = {
     type: "FeatureCollection",
     features: underlay.features.filter(feature => {
-      const iso2 = feature.properties.ISO_A2;
+      const iso2 = UNDERLAY_CODE_ALIASES.get(feature.properties.ISO_A2) || feature.properties.ISO_A2;
       return iso2 && iso2 !== "-99" && !metricCodes.has(iso2);
     }),
   };
@@ -739,12 +740,15 @@ function addDataLayers() {
       geometry: { type: "Point", coordinates: [feature.properties.label_lng, feature.properties.label_lat] },
     }));
   const uncoveredLabels = underlay.features
-    .filter(feature => feature.properties.ISO_A2 && feature.properties.ISO_A2 !== "-99" && !geographyCodes.has(feature.properties.ISO_A2))
+    .filter(feature => {
+      const iso2 = UNDERLAY_CODE_ALIASES.get(feature.properties.ISO_A2) || feature.properties.ISO_A2;
+      return iso2 && iso2 !== "-99" && !geographyCodes.has(iso2);
+    })
     .filter(feature => Number.isFinite(feature.properties.LABEL_X) && Number.isFinite(feature.properties.LABEL_Y))
     .map(feature => ({
       type: "Feature",
       properties: {
-        economy_iso2: `underlay-${feature.properties.ISO_A2}`,
+        economy_iso2: `underlay-${UNDERLAY_CODE_ALIASES.get(feature.properties.ISO_A2) || feature.properties.ISO_A2}`,
         economy_name: feature.properties.NAME_EN || feature.properties.NAME,
         zoom_hint: feature.properties.MIN_ZOOM || 3,
       },

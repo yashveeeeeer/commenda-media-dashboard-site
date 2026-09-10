@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Before and after AI · GitHub Geography Explorer</title>
+  <title>Did AI change where software is built? · GitHub Geography Explorer</title>
   <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="preconnect" href="https://tiles.openfreemap.org">
@@ -26,8 +26,8 @@
     <div class="vignette" aria-hidden="true"></div>
 
     <header class="paper-panel story" aria-label="Story and controls">
-      <h1>Before and after AI</h1>
-      <p class="dek">How much public GitHub activity grew, country by country.</p>
+      <h1>Did AI change where software is built?</h1>
+      <p class="dek">Growth in public GitHub activity since late 2024, country by country.</p>
 
       <div class="search">
         <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"></circle><path d="M10.5 10.5 14 14"></path></svg>
@@ -55,7 +55,7 @@
               <option value="2020_q1">2020 Q1</option>
               <option value="2022_q2">2022 Q2</option>
               <option value="2023_q1">2023 Q1</option>
-              <option value="2024_q4">2024 Q4</option>
+              <option value="2024_q4" selected>2024 Q4</option>
             </select>
             <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"></path></svg>
           </span>
@@ -95,7 +95,7 @@
 
     <div class="paper-panel legend" aria-label="Map colour scale">
       <div class="legend-head">
-        <span class="legend-title"><span id="legend-metric">Push growth</span> since <b id="legend-baseline">2020 Q1</b></span>
+        <span class="legend-title"><span id="legend-metric">Push growth</span> since <b id="legend-baseline">2024 Q4</b></span>
         <button id="play-change" class="play-change" type="button" aria-label="Play quarterly change from the selected baseline">Play</button>
       </div>
       <div class="ramp-zones" aria-hidden="true"><span>Decline</span><span>Near zero</span><span>Growth</span></div>
@@ -155,7 +155,7 @@
           </div>
           <div>
             <dt>Growth</dt>
-            <dd><code class="method-formula">(current ÷ baseline − 1) × 100</code><span class="method-explanation">The map shows growth only when both quarters have published values and the baseline is above zero.</span></dd>
+            <dd><code class="method-formula">(current ÷ baseline − 1) × 100</code><span class="method-explanation">The default baseline is 2024 Q4, used as one shared late-2024 comparison point. It does not measure when AI adoption began or show that AI caused the change. Growth appears only when both quarters have published values and the baseline is above zero.</span></dd>
           </div>
           <div>
             <dt>Per 1M people</dt>
@@ -187,6 +187,6 @@
     </div>
   </main>
 
-  <script type="module" src="app-multimetric.js?v=2026-09-10-r6"></script>
+  <script type="module" src="app-multimetric.js?v=2026-09-10-r7"></script>
 </body>
 </html>
