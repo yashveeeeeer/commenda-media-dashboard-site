@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.7.0/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="styles.css?v=2026-09-10-r4">
+  <link rel="stylesheet" href="styles.css?v=2026-09-10-r5">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to map explorer</a>
@@ -151,35 +151,35 @@
         <dl class="method-list">
           <div>
             <dt>Country</dt>
-            <dd>GitHub assigns an account to the economy linked to its most common IP location during the quarter.</dd>
+            <dd>GitHub places an account in the country linked to the IP address it used most often that quarter. Remote work and VPNs can affect the country shown.</dd>
           </div>
           <div>
             <dt>Growth</dt>
-            <dd><code class="method-formula">(current ÷ baseline − 1) × 100</code><span class="method-explanation">Both quarters must be published and the baseline must be above zero.</span></dd>
+            <dd><code class="method-formula">(current ÷ baseline − 1) × 100</code><span class="method-explanation">The map shows growth only when both quarters have published values and the baseline is above zero.</span></dd>
           </div>
           <div>
             <dt>Per 1M people</dt>
-            <dd><code class="method-formula">reported value ÷ same-year population × 1,000,000</code><span class="method-explanation">Population is not carried forward, so this view ends at 2025 Q4.</span></dd>
+            <dd><code class="method-formula">reported value ÷ same-year population × 1,000,000</code><span class="method-explanation">The reported value is divided by that year's World Bank population. Population data ends in 2025, so this view stops at 2025 Q4.</span></dd>
           </div>
           <div>
             <dt>Global share</dt>
-            <dd><code class="method-formula">country value ÷ published global total × 100</code><span class="method-explanation">The EU aggregate is excluded to avoid double counting.</span></dd>
+            <dd><code class="method-formula">country value ÷ published global total × 100</code><span class="method-explanation">Each country is compared with the total of all published country values. The EU total is left out so member countries are not counted twice.</span></dd>
           </div>
           <div>
             <dt>Rank</dt>
-            <dd>One plus the number of published economy values above the selected country. Equal values share a rank.</dd>
+            <dd>A country ranks behind every country with a higher published value. Countries with the same value get the same rank.</dd>
           </div>
           <div>
             <dt>Colour</dt>
-            <dd><code class="method-formula">sign(growth) × ln(1 + |growth| ÷ 50)</code><span class="method-explanation">The fixed display range runs from −100% to +1,200%.</span></dd>
+            <dd><code class="method-formula">sign(growth) × ln(1 + |growth| ÷ 50)</code><span class="method-explanation">This scale squeezes very large changes so smaller rises and falls stay visible. The colours stop changing below −100% and above +1,200%.</span></dd>
           </div>
           <div>
             <dt>Country bars</dt>
-            <dd>Each bar uses the absolute growth value divided by the larger absolute growth value shown. The number beside it is the calculated change.</dd>
+            <dd>The change farther from zero fills the bar. The other bar is sized against it. The labels show the actual percentage changes.</dd>
           </div>
           <div>
             <dt>Missing data</dt>
-            <dd>Missing values are never treated as zero. Countries without a valid current and baseline pair are hatched.</dd>
+            <dd>Hatching means that either the current value or the selected baseline is missing or cannot be used. A missing value never counts as zero.</dd>
           </div>
         </dl>
       </section>
