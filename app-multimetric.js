@@ -1,18 +1,55 @@
 import * as maplibregl from "https://unpkg.com/maplibre-gl@6.7.0/dist/maplibre-gl.mjs";
-import { numeric, changePercent, competitionRank, supportedPeriods, coverageFor, observationStatus, validatePayload } from './data-model.mjs';
+import { numeric, changePercent, competitionRank, supportedPeriods, coverageFor, observationStatus, validatePayload } from "./data-model.mjs";
 
-const GEOMETRY_URL = "data/country-geometry-complete.geojson";
-const METRICS_URL = "data/country-metrics.json?v=2026-09-10-r1";
+const DATA_VERSION = "2026-09-10-r1";
+const GEOMETRY_URL = `data/country-geometry-complete.geojson?v=${DATA_VERSION}`;
+const METRICS_URL = `data/country-metrics.json?v=${DATA_VERSION}`;
+const UNDERLAY_URL = `data/world-country-underlay.geojson?v=${DATA_VERSION}`;
 const BASEMAP_STYLE = "https://tiles.openfreemap.org/styles/fiord";
 const SOURCE_ID = "github-countries";
+const UNDERLAY_SOURCE_ID = "world-country-underlay";
+const UNAVAILABLE_SOURCE_ID = "unavailable-countries";
+const LABEL_SOURCE_ID = "github-country-labels";
 const HIT_LAYERS = ["country-fill-in", "country-fill"];
 const NO_VALUE = -9999;
 const DEFAULT_METRIC = "git_pushes";
 const DEFAULT_BASELINE = "2020_q4";
 const FRAME_DURATION = 560;
 
-// One percentage-change scale is deliberately shared across measures and quarters.
-const RAMP = [0, "#514a4d", 50, "#7a5320", 150, "#a67420", 300, "#cf9535", 600, "#f0b65a", 1200, "#ffd99b"];
+// One signed-log percentage-change scale is deliberately shared across measures and quarters.
+const colourValue = value => Math.sign(value) * Math.log1p(Math.abs(value) / 50);
+const RAMP = [
+  colourValue(-100), "#003b73",
+  colourValue(-25), "#3981f1",
+  colourValue(0), "#f5f2e7",
+  colourValue(50), "#fcebc5",
+  colourValue(150), "#edc89b",
+  colourValue(300), "#f19254",
+  colourValue(600), "#f8684d",
+  colourValue(1200), "#ca6780",
+];
+
+const MAP_LABEL_ALIASES = new Map([
+  ["Bahamas, The", "Bahamas"],
+  ["Congo, Dem. Rep.", "DR Congo"],
+  ["Congo, Rep.", "Congo"],
+  ["Egypt, Arab Rep.", "Egypt"],
+  ["Gambia, The", "Gambia"],
+  ["Hong Kong SAR, China", "Hong Kong"],
+  ["Iran, Islamic Rep.", "Iran"],
+  ["Korea, Rep.", "South Korea"],
+  ["Kyrgyz Republic", "Kyrgyzstan"],
+  ["Lao PDR", "Laos"],
+  ["Macao SAR, China", "Macao"],
+  ["Micronesia, Fed. Sts.", "Micronesia"],
+  ["Russian Federation", "Russia"],
+  ["Slovak Republic", "Slovakia"],
+  ["Somalia, Fed. Rep.", "Somalia"],
+  ["Syrian Arab Republic", "Syria"],
+  ["United Arab Emirates", "UAE"],
+  ["Venezuela, RB", "Venezuela"],
+  ["Yemen, Rep.", "Yemen"],
+]);
 
 const $ = selector => document.querySelector(selector);
 const elements = {
@@ -52,6 +89,7 @@ const elements = {
 };
 
 let geography;
+let underlay;
 let payload;
 let metricsById;
 let codeIndex;
@@ -171,9 +209,7 @@ function modeLabels() {
     comparatorBar: valueMode === "population" ? `${comparator.shortLabel} rate` : comparator.label,
     primaryCount: metricQuantityLabel(primary, currentPeriod().label),
     comparatorCount: metricQuantityLabel(comparator, currentPeriod().label),
-    rank: valueMode === "population"
-      ? "per-person rank"
-      : "reported rank",
+    rank: valueMode === "population" ? "per-person rank" : "reported rank",
     share: "reported share",
   };
 }
@@ -281,9 +317,9 @@ function selectFeature(feature, force = false) {
   const status = observationStatus(payload, metrics.primary, currentIndex, baselineIndex, codeIndex.get(iso2), valueMode === "population");
   const context = {
     current_not_published: `No published ${metrics.primary.shortLabel.toLowerCase()} value for ${currentPeriod().label}`,
-    current_population_missing: `No ${currentPeriod().label.slice(0,4)} population denominator`,
+    current_population_missing: `No ${currentPeriod().label.slice(0, 4)} population denominator`,
     baseline_not_published: `No published ${baselinePeriod().label} baseline for ${metrics.primary.shortLabel.toLowerCase()}`,
-    baseline_population_missing: `No ${baselinePeriod().label.slice(0,4)} population denominator for the baseline`,
+    baseline_population_missing: `No ${baselinePeriod().label.slice(0, 4)} population denominator for the baseline`,
     zero_baseline: `Zero baseline in ${baselinePeriod().label}; percentage growth is undefined`,
     comparable: `${metrics.primary.shortLabel} change from ${baselinePeriod().label} to ${currentPeriod().label}`,
   };
@@ -300,7 +336,7 @@ function selectFeature(feature, force = false) {
   const warnings = [];
   if (status === "current_not_published") warnings.push("An unpublished observation is not zero. GitHub withholds some small counts.");
   if (status === "baseline_not_published") {
-    const comparable = supportedPeriods(metrics.primary, valueMode === "population").filter(i => i < currentIndex && displayValue(metrics.primary,i,iso2) > 0);
+    const comparable = supportedPeriods(metrics.primary, valueMode === "population").filter(index => index < currentIndex && displayValue(metrics.primary, index, iso2) > 0);
     if (comparable.length) warnings.push(`First available baseline: ${payload.periods[comparable[0]].label}.`);
     else warnings.push("No earlier published value supports a growth comparison.");
   }
@@ -321,17 +357,20 @@ function refreshFeatureStates() {
   for (const feature of geography.features) {
     const iso2 = feature.properties.economy_iso2;
     const change = growth(displayValue(metric, currentIndex, iso2), displayValue(metric, baselineIndex, iso2));
-    map.setFeatureState(
-      { source: SOURCE_ID, id: iso2 },
-      { growth: Number.isFinite(change) ? change : NO_VALUE },
-    );
+    const state = {
+      growth: Number.isFinite(change) ? change : NO_VALUE,
+      colour: Number.isFinite(change) ? colourValue(change) : NO_VALUE,
+    };
+    map.setFeatureState({ source: SOURCE_ID, id: iso2 }, state);
+    if (map.getSource(LABEL_SOURCE_ID)) map.setFeatureState({ source: LABEL_SOURCE_ID, id: iso2 }, state);
   }
 }
 
 function placeCrosshair(point) {
   if (mobile.matches) {
-    elements.crosshair.style.left = `${point.x}px`;
-    elements.crosshair.style.top = `${point.y}px`;
+    const mapBounds = map.getContainer().getBoundingClientRect();
+    elements.crosshair.style.left = `${mapBounds.left + point.x}px`;
+    elements.crosshair.style.top = `${mapBounds.top + point.y}px`;
   } else {
     elements.crosshair.style.removeProperty("left");
     elements.crosshair.style.removeProperty("top");
@@ -559,29 +598,90 @@ function quietBasemap() {
       continue;
     }
     if (layer.type === "symbol") {
-      if (layer.id.startsWith("place_country") || layer.id === "water_name") {
+      if (layer.id.startsWith("place_country")) {
+        map.setLayoutProperty(layer.id, "visibility", "none");
+      } else if (layer.id === "water_name") {
         map.setLayoutProperty(layer.id, "text-field", ["coalesce", ["get", "name:en"], ["get", "name:latin"], ["get", "name"]]);
-        map.setPaintProperty(layer.id, "text-color", "rgba(245, 242, 234, 0.62)");
-        map.setPaintProperty(layer.id, "text-halo-color", "rgba(24, 30, 46, 0.85)");
-        map.setPaintProperty(layer.id, "text-halo-width", 1.2);
+        map.setLayoutProperty(layer.id, "text-transform", "none");
+        map.setLayoutProperty(layer.id, "text-letter-spacing", 0.04);
+        map.setPaintProperty(layer.id, "text-color", "rgba(231, 230, 221, 0.66)");
+        map.setPaintProperty(layer.id, "text-halo-color", "rgba(46, 41, 39, 0.84)");
+        map.setPaintProperty(layer.id, "text-halo-width", 0.9);
+        map.setPaintProperty(layer.id, "text-halo-blur", 0.25);
       } else {
         map.setLayoutProperty(layer.id, "visibility", "none");
       }
     }
   }
-  if (map.getLayer("background")) map.setPaintProperty("background", "background-color", "#2f3a4f");
-  if (map.getLayer("water")) map.setPaintProperty("water", "fill-color", "#2a3447");
+  if (map.getLayer("background")) map.setPaintProperty("background", "background-color", "#57524d");
+  if (map.getLayer("water")) map.setPaintProperty("water", "fill-color", "#2e2927");
+}
+
+function addNoDataPattern() {
+  const size = 8;
+  const data = new Uint8Array(size * size * 4);
+  for (let y = 0; y < size; y += 1) {
+    for (let x = 0; x < size; x += 1) {
+      if ((x + y) % size > 0) continue;
+      const offset = (y * size + x) * 4;
+      data[offset] = 245;
+      data[offset + 1] = 242;
+      data[offset + 2] = 231;
+      data[offset + 3] = 184;
+    }
+  }
+  map.addImage("no-data-hatch", { width: size, height: size, data });
+}
+
+function appendUnavailableCountries() {
+  const mappedCodes = new Set(geography.features.map(feature => feature.properties.economy_iso2));
+  for (const feature of underlay.features) {
+    const iso2 = feature.properties.ISO_A2;
+    if (!iso2 || iso2 === "-99" || mappedCodes.has(iso2) || !feature.geometry) continue;
+    geography.features.push({
+      type: "Feature",
+      id: iso2,
+      properties: {
+        economy_iso2: iso2,
+        economy_iso3: feature.properties.ISO_A3,
+        economy_name: feature.properties.NAME_EN || feature.properties.NAME,
+        region: feature.properties.SUBREGION || feature.properties.CONTINENT,
+        income_level: null,
+        boundary_source: "Natural Earth 1:110m map units v5.1.2 (public domain)",
+        label_lng: feature.properties.LABEL_X,
+        label_lat: feature.properties.LABEL_Y,
+        zoom_hint: feature.properties.MIN_ZOOM || 3,
+        data_status: "No comparable GitHub baseline",
+      },
+      geometry: feature.geometry,
+    });
+    mappedCodes.add(iso2);
+  }
 }
 
 function addDataLayers() {
-  map.addSource(SOURCE_ID, { type: "geojson", data: geography, promoteId: "economy_iso2" });
+  addNoDataPattern();
   const firstSymbol = map.getStyle().layers.find(layer => layer.type === "symbol")?.id;
+  const metricCodes = new Set(payload.codes);
+  const unavailableGeography = {
+    type: "FeatureCollection",
+    features: underlay.features.filter(feature => {
+      const iso2 = feature.properties.ISO_A2;
+      return iso2 && iso2 !== "-99" && !metricCodes.has(iso2);
+    }),
+  };
+  map.addSource(UNDERLAY_SOURCE_ID, { type: "geojson", data: underlay });
+  map.addLayer({ id: "country-underlay-fill", type: "fill", source: UNDERLAY_SOURCE_ID, paint: { "fill-color": "#958b85", "fill-opacity": 1 } }, firstSymbol);
+  map.addLayer({ id: "country-underlay-hatch", type: "fill", source: UNDERLAY_SOURCE_ID, paint: { "fill-pattern": "no-data-hatch", "fill-opacity": 0.82 } }, firstSymbol);
+  map.addLayer({ id: "country-underlay-line", type: "line", source: UNDERLAY_SOURCE_ID, paint: { "line-color": "rgba(245, 242, 231, 0.24)", "line-width": 0.45 } }, firstSymbol);
+
+  map.addSource(SOURCE_ID, { type: "geojson", data: geography, promoteId: "economy_iso2" });
   const change = ["coalesce", ["feature-state", "growth"], NO_VALUE];
+  const colour = ["coalesce", ["feature-state", "colour"], NO_VALUE];
   const fillColor = [
     "case",
-    ["==", change, NO_VALUE], "rgba(255, 255, 255, 0.06)",
-    ["<", change, 0], "#3f4757",
-    ["interpolate", ["linear"], change, ...RAMP],
+    ["==", change, NO_VALUE], "#958b85",
+    ["interpolate", ["linear"], colour, ...RAMP],
   ];
   const isIndia = ["==", ["get", "economy_iso2"], "IN"];
   const notIndia = ["!=", ["get", "economy_iso2"], "IN"];
@@ -593,22 +693,103 @@ function addDataLayers() {
   };
 
   map.addLayer({ id: "country-fill", type: "fill", source: SOURCE_ID, filter: notIndia, paint: fillPaint }, firstSymbol);
-  map.addLayer({ id: "country-line", type: "line", source: SOURCE_ID, filter: notIndia, paint: { "line-color": "rgba(255, 255, 255, 0.24)", "line-width": lineWidth } }, firstSymbol);
+  map.addLayer({ id: "country-line", type: "line", source: SOURCE_ID, filter: notIndia, paint: { "line-color": "rgba(245, 242, 231, 0.3)", "line-width": lineWidth } }, firstSymbol);
   map.addLayer({ id: "country-fill-in", type: "fill", source: SOURCE_ID, filter: isIndia, paint: fillPaint }, firstSymbol);
-  map.addLayer({ id: "country-line-in", type: "line", source: SOURCE_ID, filter: isIndia, paint: { "line-color": "rgba(255, 255, 255, 0.24)", "line-width": lineWidth } }, firstSymbol);
+  map.addLayer({ id: "country-line-in", type: "line", source: SOURCE_ID, filter: isIndia, paint: { "line-color": "rgba(245, 242, 231, 0.3)", "line-width": lineWidth } }, firstSymbol);
+  map.addLayer({
+    id: "country-no-data-hatch",
+    type: "fill",
+    source: SOURCE_ID,
+    paint: {
+      "fill-pattern": "no-data-hatch",
+      "fill-opacity": ["case", ["==", change, NO_VALUE], 0.74, 0],
+    },
+  }, firstSymbol);
+  map.addSource(UNAVAILABLE_SOURCE_ID, { type: "geojson", data: unavailableGeography });
+  map.addLayer({
+    id: "country-unavailable-fill",
+    type: "fill",
+    source: UNAVAILABLE_SOURCE_ID,
+    paint: { "fill-color": "#958b85", "fill-opacity": 1 },
+  }, firstSymbol);
+  map.addLayer({
+    id: "country-unavailable-hatch",
+    type: "fill",
+    source: UNAVAILABLE_SOURCE_ID,
+    paint: { "fill-pattern": "no-data-hatch", "fill-opacity": 0.82 },
+  }, firstSymbol);
+  map.addLayer({
+    id: "country-unavailable-line",
+    type: "line",
+    source: UNAVAILABLE_SOURCE_ID,
+    paint: { "line-color": "rgba(245, 242, 231, 0.48)", "line-width": lineWidth },
+  }, firstSymbol);
   map.addLayer({
     id: "country-selected-glow",
     type: "line",
     source: SOURCE_ID,
     filter: ["==", ["get", "economy_iso2"], ""],
-    paint: { "line-color": "rgba(255, 255, 255, 0.28)", "line-width": 9, "line-blur": 4 },
+    paint: { "line-color": "rgba(248, 104, 77, 0.22)", "line-width": 4, "line-blur": 1 },
   }, firstSymbol);
   map.addLayer({
     id: "country-selected-line",
     type: "line",
     source: SOURCE_ID,
     filter: ["==", ["get", "economy_iso2"], ""],
-    paint: { "line-color": "#f5f2ea", "line-width": ["interpolate", ["linear"], ["zoom"], 1, 1.4, 6, 2.4] },
+    paint: { "line-color": "#f5f2e7", "line-width": ["interpolate", ["linear"], ["zoom"], 1, 1.2, 6, 1.75] },
+  }, firstSymbol);
+
+  const geographyCodes = new Set(geography.features.map(feature => feature.properties.economy_iso2));
+  const metricLabels = geography.features
+    .filter(feature => Number.isFinite(feature.properties.label_lng) && Number.isFinite(feature.properties.label_lat))
+    .map(feature => ({
+      type: "Feature",
+      properties: {
+        ...feature.properties,
+        economy_name: MAP_LABEL_ALIASES.get(feature.properties.economy_name) || feature.properties.economy_name,
+      },
+      geometry: { type: "Point", coordinates: [feature.properties.label_lng, feature.properties.label_lat] },
+    }));
+  const uncoveredLabels = underlay.features
+    .filter(feature => feature.properties.ISO_A2 && feature.properties.ISO_A2 !== "-99" && !geographyCodes.has(feature.properties.ISO_A2))
+    .filter(feature => Number.isFinite(feature.properties.LABEL_X) && Number.isFinite(feature.properties.LABEL_Y))
+    .map(feature => ({
+      type: "Feature",
+      properties: {
+        economy_iso2: `underlay-${feature.properties.ISO_A2}`,
+        economy_name: feature.properties.NAME_EN || feature.properties.NAME,
+        zoom_hint: feature.properties.MIN_ZOOM || 3,
+      },
+      geometry: { type: "Point", coordinates: [feature.properties.LABEL_X, feature.properties.LABEL_Y] },
+    }));
+  map.addSource(LABEL_SOURCE_ID, {
+    type: "geojson",
+    data: { type: "FeatureCollection", features: [...metricLabels, ...uncoveredLabels] },
+    promoteId: "economy_iso2",
+  });
+  const labelGrowth = ["coalesce", ["feature-state", "growth"], NO_VALUE];
+  const lightLabel = ["any", ["==", labelGrowth, NO_VALUE], ["<=", labelGrowth, -35]];
+  map.addLayer({
+    id: "country-data-labels",
+    type: "symbol",
+    source: LABEL_SOURCE_ID,
+    layout: {
+      "text-field": ["get", "economy_name"],
+      "text-font": ["Noto Sans Regular"],
+      "text-size": ["interpolate", ["linear"], ["zoom"], 1.25, 9.5, 4, 12.5, 7, 15],
+      "text-letter-spacing": 0.01,
+      "text-line-height": 1.05,
+      "text-max-width": 8,
+      "text-padding": 6,
+      "text-allow-overlap": false,
+      "symbol-sort-key": ["coalesce", ["get", "zoom_hint"], 4],
+    },
+    paint: {
+      "text-color": ["case", lightLabel, "rgba(248, 246, 242, 0.96)", "rgba(0, 0, 0, 0.88)"],
+      "text-halo-color": ["case", lightLabel, "rgba(46, 41, 39, 0.76)", "rgba(245, 242, 231, 0.78)"],
+      "text-halo-width": 0.9,
+      "text-halo-blur": 0.25,
+    },
   }, firstSymbol);
 }
 
@@ -637,11 +818,13 @@ async function initialise() {
     console.error("Basemap tweaks failed", error);
   }
 
-  const [geometryResponse, metricsResponse] = await Promise.all([fetch(GEOMETRY_URL), fetch(METRICS_URL)]);
+  const [geometryResponse, metricsResponse, underlayResponse] = await Promise.all([fetch(GEOMETRY_URL), fetch(METRICS_URL), fetch(UNDERLAY_URL)]);
   if (!geometryResponse.ok) throw new Error(`Country geometry failed to load: ${geometryResponse.status}`);
   if (!metricsResponse.ok) throw new Error(`Metric data failed to load: ${metricsResponse.status}`);
+  if (!underlayResponse.ok) throw new Error(`Country underlay failed to load: ${underlayResponse.status}`);
   geography = await geometryResponse.json();
   payload = await metricsResponse.json();
+  underlay = await underlayResponse.json();
   validatePayload(payload, geography);
   metricsById = new Map(payload.metrics.map(metric => [metric.id, metric]));
   codeIndex = new Map(payload.codes.map((code, index) => [code, index]));
@@ -659,6 +842,7 @@ async function initialise() {
       throw new Error(`Metric matrix is incomplete for ${metric.id}`);
     }
   }
+  appendUnavailableCountries();
 
   window.__storyDataset = geography;
   window.__storyMetricData = payload;
@@ -722,6 +906,7 @@ function showLoadError(error) {
   elements.baseline.disabled = true;
   elements.play.disabled = true;
 }
+
 if (map.isStyleLoaded()) initialise().catch(showLoadError);
 else map.once("style.load", () => initialise().catch(showLoadError));
 

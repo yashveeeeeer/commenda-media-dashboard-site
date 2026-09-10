@@ -11,15 +11,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.7.0/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2026-09-10-r2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to map explorer</a>
   <main class="experience" id="main" aria-label="GitHub geography explorer">
+    <nav class="masthead" aria-label="Commenda Media">
+      <a class="brand-lockup" href="https://media.commenda.io/" aria-label="Commenda Media home">Commenda Media</a>
+      <span class="section-mark"><span aria-hidden="true">✦</span> /Data /GitHub geography</span>
+      <a class="journal-link" href="https://media.commenda.io/">Back to journal <span aria-hidden="true">↗</span></a>
+    </nav>
     <div id="map" aria-label="Interactive world map"></div>
     <div class="vignette" aria-hidden="true"></div>
 
-    <header class="glass story" aria-label="Story and controls">
+    <header class="paper-panel story" aria-label="Story and controls">
       <h1>Before and after AI</h1>
       <p class="dek">How much public GitHub activity grew, country by country.</p>
 
@@ -73,7 +78,7 @@
       <span class="leader"></span>
     </div>
 
-    <aside class="glass lens is-empty" id="lens" aria-live="polite" aria-atomic="true" aria-label="Country under the crosshair">
+    <aside class="paper-panel lens is-empty" id="lens" aria-live="polite" aria-atomic="true" aria-label="Country under the crosshair">
       <div class="lens-head">
         <h2 id="place-name">Open water</h2>
         <p id="place-context">Drag the map until a country sits under the crosshair.</p>
@@ -88,30 +93,34 @@
       <p class="caveat" id="summary-warning"></p>
     </aside>
 
-    <div class="glass legend" aria-label="Map colour scale">
+    <div class="paper-panel legend" aria-label="Map colour scale">
       <div class="legend-head">
         <span class="legend-title"><span id="legend-metric">Push growth</span> since <b id="legend-baseline">2020 Q4</b></span>
         <button id="play-change" class="play-change" type="button" aria-label="Play quarterly change from the selected baseline">Play</button>
       </div>
+      <div class="ramp-zones" aria-hidden="true"><span>Decline</span><span>Near zero</span><span>Growth</span></div>
       <div class="ramp" aria-hidden="true"></div>
-      <div class="ramp-labels" aria-hidden="true"><span>Decline</span><span>0</span><span>+150%</span><span>+300%</span><span>+600%</span><span>+1200%</span></div>
+      <div class="ramp-labels" aria-hidden="true"><span>−100%</span><span>0</span><span>+150%</span><span>≥ +1,200%</span></div>
+      <div class="legend-foot"><span class="no-data-key"><i aria-hidden="true"></i>No comparable baseline</span><span>Compressed scale</span></div>
     </div>
 
-    <div class="glass zoom" aria-label="Zoom">
+    <div class="paper-panel zoom" aria-label="Zoom">
       <button id="zoom-in" type="button" aria-label="Zoom in"><svg viewBox="0 0 14 14"><path d="M7 2v10M2 7h10"></path></svg></button>
       <button id="zoom-out" type="button" aria-label="Zoom out"><svg viewBox="0 0 14 14"><path d="M2 7h10"></path></svg></button>
     </div>
 
-    <button class="glass info-button" id="info-button" type="button" aria-label="About the data" aria-expanded="false" aria-controls="info-panel">
+    <button class="paper-panel info-button" id="info-button" type="button" aria-label="About the data" aria-expanded="false" aria-controls="info-panel">
       <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.25"></circle><path d="M10 9v5"></path><circle class="dot" cx="10" cy="6.2" r="0.9"></circle></svg>
     </button>
-    <div class="glass info-panel" id="info-panel" role="dialog" aria-label="Sources" hidden>
+    <div class="paper-panel info-panel" id="info-panel" role="dialog" aria-label="Sources" hidden>
       <h3>Sources</h3>
       <dl>
         <dt>Activity</dt>
         <dd><a href="https://innovationgraph.github.com/" rel="noopener">GitHub Innovation Graph</a>. Public git pushes and developer accounts per quarter. GitHub assigns a country from each account's most common IP location, so remote work and VPNs can move activity between countries.</dd>
         <dt>Growth</dt>
         <dd>Change from the chosen baseline quarter to <span id="info-period">the latest complete quarter</span>. <span id="info-rank-kind">Ranks use the selected measure in that quarter.</span></dd>
+        <dt>Colour</dt>
+        <dd>A fixed signed-log transformation keeps both declines and unusually large increases visible. Values above +1,200% share the final colour. Hatched countries lack a comparable baseline. Exact changes appear in the country card.</dd>
         <dt>Selected measure</dt>
         <dd><span id="info-metric-definition"></span> <span id="info-metric-caveat"></span></dd>
         <dt>Coverage</dt>
@@ -122,13 +131,15 @@
         <dd><a href="data/country-quarter-metrics.csv" download>Country-quarter data (CSV)</a>. GitHub data: CC0. Population: World Bank, CC BY 4.0. <a href="data/source-manifest.json">Source details</a>.</dd>
         <dt>India boundary</dt>
         <dd>Survey of India political map, digitised by the <a href="https://github.com/datameet/maps" rel="noopener">DataMeet community</a> (CC BY 4.0). Neighbouring countries are clipped to it.</dd>
+        <dt>Country underlay</dt>
+        <dd>Natural Earth 1:110m sovereign boundaries, public domain. It distinguishes countries outside the GitHub data universe from open water.</dd>
         <dt>Basemap</dt>
         <dd><a href="https://openfreemap.org" rel="noopener">OpenFreeMap</a> tiles built with <a href="https://www.openmaptiles.org/" rel="noopener">OpenMapTiles</a> from © <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap</a> contributors. Its own borders are hidden.</dd>
       </dl>
-      <p class="info-foot">A Commenda Media graphic.</p>
+      <p class="info-foot">/Data /A Commenda Media graphic.</p>
     </div>
   </main>
 
-  <script type="module" src="app-multimetric.js?v=2026-09-10-r1"></script>
+  <script type="module" src="app-multimetric.js?v=2026-09-10-r4"></script>
 </body>
 </html>
