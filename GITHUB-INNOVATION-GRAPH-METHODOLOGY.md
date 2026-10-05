@@ -1,0 +1,52 @@
+# How we measured the geography of public GitHub activity
+
+**Methodology note for “The World Is Coding More. What’s Changing Geographically?”**  
+Data source: GitHub Innovation Graph · Coverage: 2020 Q1–2026 Q1 · Analysis version: 6 October 2026
+
+## Source and scope
+
+We downloaded GitHub Innovation Graph’s quarterly CSV files from [GitHub’s repository at commit `078fb62ee4395d321bec9f4f06694cca68f6b6cb`](https://github.com/github/innovationgraph/tree/078fb62ee4395d321bec9f4f06694cca68f6b6cb/data). Pinning the commit fixes the input version even if GitHub later revises its data. Reproducing the figures also requires the filters and calculations described below. We use GitHub’s [datasheet at the same commit](https://github.com/github/innovationgraph/blob/078fb62ee4395d321bec9f4f06694cca68f6b6cb/docs/datasheet.md) for the definitions and limitations.
+
+The unit of time is a calendar quarter. Our principal series ends in 2026 Q1. It measures activity GitHub reports for *public* repositories, not all software development. The note covers the GitHub-derived measures in the story: pushes, developer accounts, repository and organisation counts, language participation, and directed cross-border contributions. It does not describe the population-adjusted figure, which also needs a population source, or treat tool-launch dates and external research as GitHub data.
+
+## The comparable push panel
+
+For the main longitudinal comparison, we kept economy codes that are two letters long, excluded GitHub’s `EU` aggregate, and required a reported `git_pushes` value in **every one of the 25 quarters** from 2020 Q1 through 2026 Q1. This yields 149 economies. We use this same panel when comparing the world total, country shares, regional shares, and country growth rates. Holding membership fixed prevents an economy entering or leaving the reporting set from being mistaken for a change in activity.
+
+We sum the published push counts across those economies for each quarter. The total rises from **80,814,468 pushes in 2020 Q1** to **319,243,451 in 2026 Q1**. A country’s share is its reported pushes divided by the 149-economy sum for the same quarter; the six regions’ shares are sums of their member economies on that denominator. “World” in these charts therefore means the fixed comparison panel, not every push made on GitHub. At the two endpoints, the panel covers approximately 99.995% and 99.813%, respectively, of the pushes reported for individual two-letter economies outside `EU`.
+
+A push is an upload of changes to a repository. It is not a count of lines written, accepted pull requests, releases, or finished products. These data do not label whether a person used a coding assistant or agent. GitHub excludes accounts it identifies as automated or inauthentic; that does not turn the remaining push count into a direct measure of human-written code.
+
+## Growth, ranks and regional summaries
+
+Quarterly year-on-year growth compares a quarter with the same quarter one year earlier: `(pushes_t / pushes_t−4 − 1) × 100`. Thus the first year-on-year point is 2021 Q1. The “growth sped up” comparison annualises each two-year window as `(end / start)^(1/2) − 1`, then multiplies by 100. It compares 2020 Q1–2022 Q1 with 2024 Q1–2026 Q1 separately for each of the 149 economies. **110** have a higher rate in the later window and **39** a lower one. A lower *growth rate* does not by itself mean a lower push count.
+
+The latest-year comparison is 2025 Q1 versus 2026 Q1. For the quintile view, we sort the 149 economies by their **2025 Q1** push counts, split that order into groups of **30, 30, 29, 30 and 30**, and compare each group’s summed pushes across the two quarters. The groups are defined once, before measuring growth. For within-region concentration, we sum squared country shares *within that region* (a Herfindahl-type index), then set each region’s 2023 Q1 value to 100. A higher index means the region’s pushes are more concentrated among its member economies; it is not that region’s share of the world.
+
+GitHub supplies economy codes, not the six editorial region labels used in our charts. Commenda assigned codes to regions for aggregation; this includes classifying `MV` with Asia and `RE` with Africa. Africa therefore has 34 reporting economies in the regional calculation, including Réunion. The full code-to-region assignment appears alongside the plotted country-quarter values in our [`figure-03-quarterly.csv`](https://github.com/yashveeeeeer/commenda-media-dashboard-site/blob/main/articles/geography-of-code/figure-03-quarterly.csv). These editorial groupings should not be represented as GitHub-provided geography.
+
+## Other GitHub measures
+
+The account, repository and organisation comparison sums the corresponding GitHub series over the same 149 economies and quarters. A developer-account total is not a count of currently active coders, and its growth should not be read as productivity per person.
+
+The TypeScript–Java comparison uses GitHub’s `num_pushers` language measure: developers who pushed to repositories containing each language. We keep two-letter economy codes, exclude `EU`, and include an economy if GitHub reports **both** language counts in **2020 Q1 and 2026 Q1**, producing 93 comparable economies. Reporting in every intervening quarter is *not* required. The measure is participation in repositories containing a language; it is neither a count of pushes nor proof that a particular developer wrote that language.
+
+## Cross-border contributions: a separate denominator
+
+GitHub’s `economy_collaborators.csv` reports directed links from a contributor economy to a repository economy. Its *contribution weight* combines public pushes and pull requests opened to another owner’s repository, under GitHub’s definitions. The direction is meaningful: India → US means activity by contributors assigned to India on repositories assigned to the US. It does not measure code transferred, work accepted, or trade value.
+
+For the article’s **US destination share**, we take every *published* directed link at each endpoint, retaining two-letter contributor and repository codes, excluding `EU` and same-economy links. We divide the weight of links whose repository economy is `US` by all retained cross-border weight for that quarter. That gives **2,145,025 / 4,516,494 = 47.5% in 2020 Q1** and **5,972,820 / 12,715,023 = 47.0% in 2026 Q1**. These are shares of eligible *published links*, **not** shares of the 149-economy push panel. The set of eligible published links changes between endpoints (2,138 to 3,934), so the comparison is sensitive to which links appear. The data alone cannot separate new activity from changes in reporting. On the 1,352 links reported in **all 25 quarters**, the corresponding shares are 49.7% and 51.1%. We report the full published-link result in the article and disclose the balanced-link check here so the small endpoint difference is not overstated.
+
+The ribbon figure is a focused view, not the denominator above. We rank origins by their **2026 Q1 total outbound weight across eligible published links** and take the six largest: US, Germany, United Kingdom, Canada, India and France. Among their destinations, we show the seven with the largest combined incoming weight—US, India, Germany, United Kingdom, Canada, France and Hong Kong—and group the rest as “Other.” The figure can reveal which of the largest recorded senders supplied the shown destinations, but it cannot represent the whole international collaboration network. Directional ratios such as India → US versus US → India compare two published links, not national deficits or ownership of code.
+
+## Reporting limits and interpretation
+
+GitHub publishes geographic economy metrics only when at least 100 relevant developers meet its threshold. A missing economy or quarter is therefore not evidence of zero activity. Nor should a missing directed link be read as proof of no collaboration; the exact reason a particular link is absent is not established by this extract. The fixed push panel, endpoint language panel and published-link universe each answer a different question; we do not quietly substitute one denominator for another.
+
+According to [GitHub’s datasheet](https://github.com/github/innovationgraph/blob/078fb62ee4395d321bec9f4f06694cca68f6b6cb/docs/datasheet.md), a user’s economy is derived from the modal location of their daily IP observations, with their last known location carried through days without activity. Repository geography is assigned from the modal locations of members with triage access or higher. VPN use and multinational teams can make either assignment an imperfect proxy for where work physically occurred. GitHub’s exclusion of identified automated accounts also means this series cannot count all agent output. It does not distinguish creation of a change from acceptance, release or impact.
+
+These boundaries are central to the story’s interpretation. The push charts show **where reported public uploads came from**. The directed-link charts show **where reported cross-border contributions were sent**, under GitHub’s repository assignments. Neither reveals the amount of code written, whether an AI tool caused the growth, or where all software work in a country took place.
+
+## Source files
+
+All quantitative source files for this note are GitHub Innovation Graph files at the pinned commit: [`git_pushes.csv`](https://github.com/github/innovationgraph/blob/078fb62ee4395d321bec9f4f06694cca68f6b6cb/data/git_pushes.csv), [`developers.csv`](https://github.com/github/innovationgraph/blob/078fb62ee4395d321bec9f4f06694cca68f6b6cb/data/developers.csv), [`repositories.csv`](https://github.com/github/innovationgraph/blob/078fb62ee4395d321bec9f4f06694cca68f6b6cb/data/repositories.csv), [`organizations.csv`](https://github.com/github/innovationgraph/blob/078fb62ee4395d321bec9f4f06694cca68f6b6cb/data/organizations.csv), [`languages.csv`](https://github.com/github/innovationgraph/blob/078fb62ee4395d321bec9f4f06694cca68f6b6cb/data/languages.csv) and [`economy_collaborators.csv`](https://github.com/github/innovationgraph/blob/078fb62ee4395d321bec9f4f06694cca68f6b6cb/data/economy_collaborators.csv). The [repository README](https://github.com/github/innovationgraph/blob/078fb62ee4395d321bec9f4f06694cca68f6b6cb/README.md) and [datasheet](https://github.com/github/innovationgraph/blob/078fb62ee4395d321bec9f4f06694cca68f6b6cb/docs/datasheet.md) provide GitHub’s definitions and collection caveats.

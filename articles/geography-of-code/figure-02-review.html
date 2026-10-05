@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Figure 2 studies · Commenda Media</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f2e7; color: #171412; font-family: Georgia, serif; }
+    main { max-width: 1096px; padding: 32px 24px 80px; margin: auto; }
+    header { padding: 12px 0 36px; border-bottom: 1px solid #d8d2c8; }
+    .eyebrow, h1, h2, figcaption strong, a { font-family: ui-monospace, Consolas, monospace; }
+    .eyebrow { color: #d02131; font-size: 14px; }
+    h1 { font-size: clamp(26px, 4vw, 42px); font-weight: 500; line-height: 1.13; margin: 16px 0; }
+    header p, figcaption { max-width: 72ch; line-height: 1.5; font-size: 16px; }
+    a { color: #a32030; text-underline-offset: .2em; }
+    figure { margin: 52px 0 72px; }
+    picture, img { display: block; width: 100%; height: auto; }
+    img { background: #f5f2e7; }
+    figcaption { margin: 14px 0 0; color: #474240; }
+    figcaption strong { color: #171412; font-size: 13px; }
+    footer { border-top: 1px solid #d8d2c8; padding-top: 18px; font-size: 13px; line-height: 1.5; color: #625c56; }
+    @media (max-width: 600px) { main { padding: 22px 16px 56px; } figure { margin: 35px 0 55px; } header p, figcaption { font-size: 14px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">/Data Story · Figure 2 studies</div>
+      <h1>How countries moved</h1>
+      <p>Both charts now appear together as <a href="/data-story/the-changing-geography-of-code#figure-2">Figure 2 in the article</a>. They show the 12 countries appearing in the top ten at either endpoint.</p>
+    </header>
+
+    <figure id="rank-and-volume">
+      <picture>
+        <source media="(max-width: 600px)" srcset="country-change-volume-mobile.svg" width="390" height="830">
+        <img src="country-change-volume-desktop.svg" width="960" height="760" alt="Twelve countries ordered by public-push rank in 2020 and 2026, connected by bands whose widths at each endpoint represent each country's quarterly public pushes.">
+      </picture>
+      <figcaption>The bands show how each country's volume of public pushes changed from early 2020 to early 2026. Their widths represent quarterly pushes on the same scale; the labels give counts and shares. The chart includes countries in either quarter's top ten. The bands do not represent pushes moving between countries.</figcaption>
+    </figure>
+
+    <figure id="rank-and-share">
+      <picture>
+        <source media="(max-width: 600px)" srcset="country-change-rank-mobile.svg" width="390" height="830">
+        <img src="country-change-rank-desktop.svg" width="960" height="760" alt="Twelve countries ordered by public-push rank in 2020 and 2026. Tapered bands widen or narrow according to each country's share of the 149-economy total.">
+      </picture>
+      <figcaption>The bands widen as a country gains share of public pushes and narrow as it loses share. Width represents its portion of the 149-economy total in each quarter, using one scale at both ends. The chart includes countries in either quarter's top ten; vertical gaps do not measure the size of rank changes.</figcaption>
+    </figure>
+
+    <footer>Data: <a href="https://github.com/github/innovationgraph/tree/078fb62ee4395d321bec9f4f06694cca68f6b6cb/data">GitHub Innovation Graph</a>. <a href="country-change-prototypes.csv">Download the plotted values</a>. A push records an upload of changes, not a fixed amount of code.</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,6 @@
+:HL["/commenda-media-dashboard-site/_next/static/css/9ed39ed21464192b.css","style"]
+:HL["/about/halftone.png","image"]
+:HL["/about/dithering.png","image"]
+:HL["/about/sparkle.png","image"]
+:HL["/about/signature.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"about","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"39c77Zn4cSvPP5GzF6uTV"}
