@@ -50,7 +50,7 @@ The intervals are **2020 Q1–2022 Q1** and **2024 Q1–2026 Q1**, calculated se
 
 The latest-year comparison covers **2025 Q1 to 2026 Q1**. For the quintile analysis, economies are ranked once by their 2025 Q1 push counts and divided into groups of **30, 30, 29, 30 and 30**. Each group’s total is then compared across the two quarters. Holding group membership at its 2025 Q1 ranking avoids reclassifying economies after their growth has been measured.
 
-Within-region concentration is the sum of squared economy shares of regional pushes, a Herfindahl-type measure. Each region’s series is indexed so that its **2023 Q1 value equals 100**. An increase means that a larger share of that region’s pushes is concentrated in fewer member economies. It does not indicate an increase in the region’s share of the world panel.
+Within-region concentration is the sum of squared economy shares of regional pushes, a Herfindahl-type measure. Each region’s series is indexed so that its **2023 Q1 value equals 100**. An increase means that regional pushes became more concentrated among member economies. It does not indicate an increase in the region’s share of the world panel.
 
 ### Regional assignment
 
@@ -68,7 +68,7 @@ The article’s US destination share takes all **published directed links** at e
 
 This produces **2,145,025 / 4,516,494 = 47.5% in 2020 Q1** and **5,972,820 / 12,715,023 = 47.0% in 2026 Q1**. These percentages describe the eligible *published-link universe*. They do not share the denominator of the 149-economy push panel.
 
-The number of eligible published links rises from **2,138** to **3,934** between the endpoints. A change in the reported destination share can therefore reflect both underlying activity and changes in which links appear in the published data. As a sensitivity check, the same calculation on the **1,352 links reported in all 25 quarters** gives US shares of **49.7%** and **51.1%**. The article reports the full published-link comparison; the balanced-link result is disclosed because the small difference between its endpoints does not support a precise claim that the US destination share declined.
+The number of eligible published links rises from **2,138** to **3,934** between the endpoints. A change in the reported destination share can therefore reflect both underlying activity and changes in which links appear in the published data. As a sensitivity check, the same calculation on the **1,352 links reported in all 25 quarters** gives US shares of **49.7%** and **51.1%**. The article reports the full published-link comparison, but the balanced-link check moves in the opposite direction. The slight decline in the full published-link share is therefore not robust to holding link membership fixed.
 
 ### Selection for the ribbon figure
 
@@ -82,7 +82,7 @@ GitHub assigns a user’s economy from the most frequent location in daily IP ob
 
 A Git push is an upload of changes and may contain multiple commits. It is not a measure of lines of code, accepted pull requests, releases or economic output. GitHub excludes activity from accounts it identifies as automated or inauthentic, including activity above a threshold it regards as implausible for a human. The published series therefore cannot enumerate all agent output. It also does not identify whether an assistant helped a person produce a given push.
 
-The figures describe reported public activity and its assigned geography. They do not establish the effect of AI tools, measure the amount of code written, or capture all development within an economy. No causal effect or sampling uncertainty interval is estimated in this descriptive analysis.
+The figures describe reported public activity and its assigned geography. They do not establish the effect of AI tools, measure the amount of code written, or capture all development within an economy. The analysis reports no causal estimates or statistical confidence intervals; uncertainty from reporting thresholds, account filtering and geographic assignment remains.
 
 ## 6. Source files and replication
 
