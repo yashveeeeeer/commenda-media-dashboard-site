@@ -1068,24 +1068,37 @@ Managing product database at Commenda</p></div></div></div></aside><div class="c
   }
   function clamp(v) { return v < 0 ? 0 : v > 1 ? 1 : v; }
 
-  /* One figure's clock, as in the published story: nothing moves until the figure comes into view, then it plays
-     once on its own (t 0→1 over dur seconds) and stays finished. track = the element watched for visibility. */
+  /* One figure's clock: when the figure comes into view it plays from the start (t 0→1 over dur seconds); once it
+     has left the screen completely it resets, so it plays again every time the reader comes back to it. */
   function track(el, onT, dur) {
-    var tr = { el: el, t: reduced ? 1 : 0, subs: [], started: false, dur: (dur || 2.6) * 1000 };
+    var tr = { el: el, t: reduced ? 1 : 0, subs: [], playing: false, done: false, raf: 0, dur: (dur || 2.6) * 1000 };
     tr.on = function (fn) { tr.subs.push(fn); fn(tr.t); return tr; };
     tr.update = function () {};
     function emit() { tr.subs.forEach(function (fn) { fn(tr.t); }); }
     function play() {
-      if (tr.started || reduced) return; tr.started = true;
+      if (tr.playing || tr.done || reduced) return; tr.playing = true;
       var t0 = performance.now();
-      (function step(now) { tr.t = clamp((now - t0) / tr.dur); emit(); if (tr.t < 1) requestAnimationFrame(step); })(t0);
+      (function step(now) {
+        if (!tr.playing) return;
+        tr.t = clamp((now - t0) / tr.dur); emit();
+        if (tr.t < 1) tr.raf = requestAnimationFrame(step); else { tr.playing = false; tr.done = true; }
+      })(t0);
+    }
+    function reset() {
+      if (reduced) return;
+      cancelAnimationFrame(tr.raf); tr.playing = false; tr.done = false;
+      if (tr.t !== 0) { tr.t = 0; emit(); }
     }
     if (onT) tr.on(onT);
     if (root.IntersectionObserver) {
-      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { play(); io.disconnect(); } }); },
-        { threshold: Math.min(0.35, root.innerHeight / Math.max(1, el.offsetHeight) * 0.35) });
-      io.observe(el);
-    } else play();
+      var thr = Math.min(0.3, root.innerHeight / Math.max(1, el.offsetHeight) * 0.3);
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (!e.isIntersecting) reset();                 /* fully off screen */
+          else if (e.intersectionRatio >= thr - 0.001) play();
+        });
+      }, { threshold: [0, thr] }).observe(el);
+    } else { tr.t = 1; }
     tracks.push(tr);
     return tr;
   }
