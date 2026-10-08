@@ -1387,3 +1387,69 @@ a:focus-visible {
     transition: none;
   }
 }
+
+/* Smaller overlays only inside an article embed; the full-screen dashboard
+   retains its original panel sizes and labels. */
+html.is-embedded {
+  --masthead-height: 0px;
+}
+
+html.is-embedded .masthead {
+  display: none;
+}
+
+html.is-article-embed {
+  --story-width: 244px;
+  --legend-width: 252px;
+  --panel-pad-x: 10px;
+  --panel-pad-y: 10px;
+}
+
+.legend-baseline-compact {
+  display: none;
+}
+
+html.is-article-embed .legend-baseline-full {
+  display: none;
+}
+
+html.is-article-embed .legend-baseline-compact {
+  display: inline;
+}
+
+html.is-article-embed .dek {
+  margin-bottom: 8px;
+}
+
+html.is-article-embed .story-link {
+  margin-bottom: 8px;
+}
+
+html.is-article-embed .legend {
+  padding: 7px 9px 6px;
+}
+
+html.is-article-embed .legend-foot {
+  gap: 4px;
+}
+
+html.is-article-embed .controls {
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: 6px;
+}
+
+html.is-article-embed .segmented {
+  grid-template-columns: 36px minmax(0, 1fr);
+}
+
+html.is-article-embed .segmented button {
+  font-size: 10px;
+}
+
+html.is-article-embed .scale-label-full {
+  display: inline;
+}
+
+html.is-article-embed .scale-label-short {
+  display: none;
+}
