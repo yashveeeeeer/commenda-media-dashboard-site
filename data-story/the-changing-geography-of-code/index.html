@@ -1068,18 +1068,25 @@ Managing product database at Commenda</p></div></div></div></aside><div class="c
   }
   function clamp(v) { return v < 0 ? 0 : v > 1 ? 1 : v; }
 
-  /* One figure's clock: every chart and readout in it shares t. track = the figure's wrapper element. */
-  function track(el, onT) {
-    var tr = { el: el, t: reduced ? 1 : -1, subs: [], last: -1 };
-    tr.on = function (fn) { tr.subs.push(fn); if (tr.t >= 0) fn(tr.t); return tr; };
-    tr.update = function (force) {
-      var nt = reduced ? 1 : progressOf(el);
-      if (!force && Math.abs(nt - tr.t) < 0.002) return;
-      tr.t = nt; tr.subs.forEach(function (fn) { fn(nt); });
-    };
+  /* One figure's clock, as in the published story: nothing moves until the figure comes into view, then it plays
+     once on its own (t 0→1 over dur seconds) and stays finished. track = the element watched for visibility. */
+  function track(el, onT, dur) {
+    var tr = { el: el, t: reduced ? 1 : 0, subs: [], started: false, dur: (dur || 2.6) * 1000 };
+    tr.on = function (fn) { tr.subs.push(fn); fn(tr.t); return tr; };
+    tr.update = function () {};
+    function emit() { tr.subs.forEach(function (fn) { fn(tr.t); }); }
+    function play() {
+      if (tr.started || reduced) return; tr.started = true;
+      var t0 = performance.now();
+      (function step(now) { tr.t = clamp((now - t0) / tr.dur); emit(); if (tr.t < 1) requestAnimationFrame(step); })(t0);
+    }
     if (onT) tr.on(onT);
+    if (root.IntersectionObserver) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { play(); io.disconnect(); } }); },
+        { threshold: Math.min(0.35, root.innerHeight / Math.max(1, el.offsetHeight) * 0.35) });
+      io.observe(el);
+    } else play();
     tracks.push(tr);
-    requestAnimationFrame(function () { tr.update(true); });
     return tr;
   }
 
@@ -1575,7 +1582,7 @@ window.DSFigs['figure-2'] = {
         var xL = ribbons.length ? ribbons[0].x0 : 320, xR = ribbons.length ? ribbons[0].x1 : 640;
 
         var box = DS.overlay(wrap);
-        var panelTrack = DS.track(panel);
+        var panelTrack = DS.track(panel, null, 3.7);   /* their unfurl: 2.15 s of stagger + 1.45 s */
         DS.create({
           host: box, track: panelTrack, group: ctx.track,
           /* The ASCII box: the ribbon band only (end caps to end caps), not the country labels either side. */
@@ -3423,20 +3430,9 @@ window.DSFigs['figure-14'] = {
   Object.keys(window.DSFigs).forEach(function (id) {
     var mod = window.DSFigs[id], fig = document.getElementById(id);
     if (!fig) return;
-    var trackEl = fig;
-    if (mod.pin) {
-      var wrap = document.createElement('div');
-      wrap.className = 'ds-pin'; wrap.setAttribute('data-pin', '');
-      fig.parentNode.insertBefore(wrap, fig); wrap.appendChild(fig);
-      var size = function () {
-        var h = fig.offsetHeight;
-        wrap.style.height = (h + vh() * mod.pin * DS.PIN_SCALE) + 'px';
-        fig.style.top = Math.min(80, Math.max(0, (vh() - h) / 2)) + 'px';
-      };
-      size(); window.addEventListener('resize', size);
-      trackEl = wrap;
-    }
-    try { mod.mount(fig, { DATA: window.DS_DATA, DS: window.DS, track: DS.track(trackEl) }); }
+    /* Plays once when the figure comes into view; the longer sequences (formerly scroll-scrubbed) get more time. */
+    var dur = mod.duration || (mod.pin ? 4.5 : 2.6), trackEl = fig;
+    try { mod.mount(fig, { DATA: window.DS_DATA, DS: window.DS, track: DS.track(trackEl, null, dur) }); }
     catch (e) { console.error('figure ' + id, e); }
   });
 })();
