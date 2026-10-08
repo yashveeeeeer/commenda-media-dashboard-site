@@ -1430,7 +1430,7 @@ html.is-article-embed .legend {
 }
 
 html.is-article-embed .legend-foot {
-  gap: 4px;
+  gap: 12px;
 }
 
 html.is-article-embed .controls {
