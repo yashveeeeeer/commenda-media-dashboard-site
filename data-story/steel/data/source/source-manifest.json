@@ -1,0 +1,72 @@
+{
+  "title": "India steel project source package",
+  "retrieved_on": "2026-11-25",
+  "publisher": "Global Energy Monitor",
+  "recommended_citation": "Global Iron and Steel Tracker, Global Energy Monitor, September 2026 (V1) release.",
+  "fixed_map_source": {
+    "tracker_page": "https://globalenergymonitor.org/projects/global-iron-steel-tracker",
+    "official_map": "https://globalenergymonitor.github.io/interim-maps/trackers/gist/",
+    "map_configuration": "https://globalenergymonitor.github.io/interim-maps/trackers/gist/config.js",
+    "geojson_url": "https://publicgemdata.nyc3.cdn.digitaloceanspaces.com/Current_maps/gist/gist_map_2026-09.geojson",
+    "full_geojson_sha256": "82ea95367771e02b3df89e0cbfb4f7de791ffa2c106b5ad06a0683268161e8bc",
+    "full_geojson_plant_count": 1293,
+    "local_scoped_file": "../gem-india.json",
+    "local_scoped_file_sha256": "779be9fd48e3c19d31de21bd26388bfd5e196bd6ec138baae4de9fa5aafe214f",
+    "scoped_plant_count": 83,
+    "scope": "India plants with announced or construction crude steelmaking capacity in the September map. The JSON keeps plant IDs, coordinates, coordinate accuracy, owner and parent strings and GEM IDs, wiki URL, and all capacity-by-status entries for these plants."
+  },
+  "live_api_cross_check": {
+    "api_docs": "https://api.globalenergymonitor.org/redoc",
+    "assets_query": "https://api.globalenergymonitor.org/assets?country=India&operating_sub_status=construction&asset_type=iron-steel-plant&limit=500",
+    "asset_detail_template": "https://api.globalenergymonitor.org/assets/{asset_id}",
+    "entity_detail_template": "https://api.globalenergymonitor.org/entities/{entity_id}",
+    "local_steel_units_file": "gem-current-api-india-construction-steel-units.csv",
+    "local_entity_hq_file": "gem-entity-hq.json",
+    "unit_count": 42,
+    "parent_entity_count": 65,
+    "caveat": "The public API is live, not a versioned September 2026 unit release. Its construction steel units matched the frozen map by GEM plant ID and furnace method on 2026-11-25; subsequent API changes will not update these cached files."
+  },
+  "data_contract": {
+    "unit": "thousand tonnes of nominal crude steelmaking capacity per annum (ttpa)",
+    "measure": "capacity stock by GEM unit operating status, not production or a time series",
+    "country_rule": "plant is located in India; parent country uses GEM entity headquarters country",
+    "steel_methods": [
+      "BOF",
+      "EAF",
+      "IF",
+      "OHF",
+      "Other/unspecified steel"
+    ],
+    "excluded_methods": [
+      "BF",
+      "DRI",
+      "Other/unspecified iron"
+    ],
+    "construction_rule": "GEM defines construction as physical furnace structure building begun; status in the September map is used for the primary count",
+    "ownership_rule": "Allocate each quantified GEM map parent stake to its entity HQ country. For incomplete sums below 100%, keep the residual grey; missing shares and unknown HQs stay grey. For any overfull sum, including the 200% JSW-POSCO proposed joint venture, keep the entire plant grey rather than normalizing.",
+    "non_numeric_capacity_rule": "Entries such as >0 are retained in the scoped map but excluded from numeric totals.",
+    "limit": "Gross planned furnace capacity can include replacement capacity. A net-new claim and industrial sponsor classification need separate project and ownership-chain corroboration."
+  },
+  "industrial_sponsor_screen": {
+    "rule": "The check totals are GEM parent-entity HQ locations only. Investment advisers, fund managers, holding companies and small shareholder pools are never labeled plant operators or independently verified industrial sponsors here.",
+    "identified_financial_parent_example": {
+      "plant": "Evonith Metallics Wardha steel plant",
+      "status": "announced",
+      "capacity_ttpa": 3400,
+      "gem_parent_entity_ids": [
+        "E100001016196",
+        "E100001016198"
+      ],
+      "reported_parents": "Nithia Capital Resources Advisors LLP [55.7%]; AB CarVal Investors LP [44.3%]",
+      "issuer_role_source": "https://nithiacapital.com/introduction.php",
+      "fund_manager_role_source": "https://www.abcarval.com/",
+      "later_ownership_counterevidence": "https://www.crisilratings.com/mnt/winshare/Ratings/RatingList/RatingDocs/EvonithValueSteelLimited_November%2003_%202025_RR_381145.html",
+      "treatment": "Exclude from any industrial-sponsor headline and do not treat either listed financial parent as the plant operator. CRISIL reports CarVal exited by November 2025."
+    }
+  },
+  "license": "GEM data are made available under Creative Commons Attribution 4.0 International; attribute GEM and its release in published use.",
+  "reproduce": "python data/source/check.py",
+  "refresh_public_feeds": "python data/source/refresh.py --output-dir path/to/new-snapshot",
+  "refresh_note": "The optional refresh uses the official map config and live GEM API and writes a separate comparison snapshot. It does not access GEM's form-gated bulk workbook or overwrite the frozen analysis files.",
+  "checks_output": "checks.json"
+}

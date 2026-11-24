@@ -1,0 +1,457 @@
+{
+  "E100000000652": {
+    "entity_id": "E100000000652",
+    "name": "Nippon Steel",
+    "entity_type": "legal entity",
+    "headquarters_country": "Japan",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000000652"
+  },
+  "E100000000657": {
+    "entity_id": "E100000000657",
+    "name": "Sumitomo",
+    "entity_type": "legal entity",
+    "headquarters_country": "Japan",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000000657"
+  },
+  "E100000000687": {
+    "entity_id": "E100000000687",
+    "name": "ArcelorMittal",
+    "entity_type": "legal entity",
+    "headquarters_country": "Luxembourg",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000000687"
+  },
+  "E100000000953": {
+    "entity_id": "E100000000953",
+    "name": "POSCO Holdings",
+    "entity_type": "legal entity",
+    "headquarters_country": "South Korea",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000000953"
+  },
+  "E100000120672": {
+    "entity_id": "E100000120672",
+    "name": "Jayaswal Neco Industries",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000120672"
+  },
+  "E100000120686": {
+    "entity_id": "E100000120686",
+    "name": "Jindal Stainless",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000120686"
+  },
+  "E100000120868": {
+    "entity_id": "E100000120868",
+    "name": "JSW Ispat Special Products",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000120868"
+  },
+  "E100000121408": {
+    "entity_id": "E100000121408",
+    "name": "Tata Steel Long Products",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000121408"
+  },
+  "E100000123261": {
+    "entity_id": "E100000123261",
+    "name": "natural person(s)",
+    "entity_type": "person",
+    "headquarters_country": null,
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000123261"
+  },
+  "E100000130699": {
+    "entity_id": "E100000130699",
+    "name": "Orissa Sponge Iron and Steel",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000130699"
+  },
+  "E100000130701": {
+    "entity_id": "E100000130701",
+    "name": "Kalyani Steels",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000130701"
+  },
+  "E100000130702": {
+    "entity_id": "E100000130702",
+    "name": "MSP Steel & Power",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000130702"
+  },
+  "E100000130703": {
+    "entity_id": "E100000130703",
+    "name": "Jai Balaji Industries",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000130703"
+  },
+  "E100000130859": {
+    "entity_id": "E100000130859",
+    "name": "Shyam Steel Industries",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000130859"
+  },
+  "E100000130890": {
+    "entity_id": "E100000130890",
+    "name": "Rashmi Metaliks",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000130890"
+  },
+  "E100000130898": {
+    "entity_id": "E100000130898",
+    "name": "Rungta Mines",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000130898"
+  },
+  "E100000134289": {
+    "entity_id": "E100000134289",
+    "name": "Atha Group",
+    "entity_type": "legal entity",
+    "headquarters_country": null,
+    "api_url": "https://api.globalenergymonitor.org/entities/E100000134289"
+  },
+  "E100001000439": {
+    "entity_id": "E100001000439",
+    "name": "Jindal Steel",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001000439"
+  },
+  "E100001000479": {
+    "entity_id": "E100001000479",
+    "name": "Vedanta",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001000479"
+  },
+  "E100001000516": {
+    "entity_id": "E100001000516",
+    "name": "JSW Steel",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001000516"
+  },
+  "E100001000589": {
+    "entity_id": "E100001000589",
+    "name": "Sunflag Iron and Steel",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001000589"
+  },
+  "E100001000665": {
+    "entity_id": "E100001000665",
+    "name": "Godawari Power and Ispat",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001000665"
+  },
+  "E100001000703": {
+    "entity_id": "E100001000703",
+    "name": "Steel Authority of India",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001000703"
+  },
+  "E100001010018": {
+    "entity_id": "E100001010018",
+    "name": "Tata Steel",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001010018"
+  },
+  "E100001012047": {
+    "entity_id": "E100001012047",
+    "name": "Prakash Sponge Iron and Power",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012047"
+  },
+  "E100001012071": {
+    "entity_id": "E100001012071",
+    "name": "Swadesh Metallics",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012071"
+  },
+  "E100001012079": {
+    "entity_id": "E100001012079",
+    "name": "Rashmi Cement",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012079"
+  },
+  "E100001012081": {
+    "entity_id": "E100001012081",
+    "name": "Uttam Galva Ferous",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012081"
+  },
+  "E100001012115": {
+    "entity_id": "E100001012115",
+    "name": "Nilachal Iron & Power",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012115"
+  },
+  "E100001012152": {
+    "entity_id": "E100001012152",
+    "name": "Shyam Metalics and Energy",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012152"
+  },
+  "E100001012163": {
+    "entity_id": "E100001012163",
+    "name": "Cimmco Vinimay",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012163"
+  },
+  "E100001012164": {
+    "entity_id": "E100001012164",
+    "name": "Bholebaba Consultants",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012164"
+  },
+  "E100001012165": {
+    "entity_id": "E100001012165",
+    "name": "Daffodil Plaza",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012165"
+  },
+  "E100001012166": {
+    "entity_id": "E100001012166",
+    "name": "Rashidhan Sales",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012166"
+  },
+  "E100001012168": {
+    "entity_id": "E100001012168",
+    "name": "Optimist Commosale",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012168"
+  },
+  "E100001012169": {
+    "entity_id": "E100001012169",
+    "name": "Newera Commotrade",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012169"
+  },
+  "E100001012170": {
+    "entity_id": "E100001012170",
+    "name": "Rashmi Infrastructure",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012170"
+  },
+  "E100001012171": {
+    "entity_id": "E100001012171",
+    "name": "Rashmi Iron Industries",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012171"
+  },
+  "E100001012204": {
+    "entity_id": "E100001012204",
+    "name": "Lloyds Metals and Energy",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012204"
+  },
+  "E100001012215": {
+    "entity_id": "E100001012215",
+    "name": "Banka Finance & Securities",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012215"
+  },
+  "E100001012216": {
+    "entity_id": "E100001012216",
+    "name": "Atlanta Securities",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012216"
+  },
+  "E100001012218": {
+    "entity_id": "E100001012218",
+    "name": "Sukanya Merchandise",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012218"
+  },
+  "E100001012219": {
+    "entity_id": "E100001012219",
+    "name": "Bonus Dealcom",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012219"
+  },
+  "E100001012391": {
+    "entity_id": "E100001012391",
+    "name": "Electrosteel Castings",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001012391"
+  },
+  "E100001015587": {
+    "entity_id": "E100001015587",
+    "name": "small shareholder(s)",
+    "entity_type": "unknown entity",
+    "headquarters_country": null,
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001015587"
+  },
+  "E100001016196": {
+    "entity_id": "E100001016196",
+    "name": "Nithia Capital Resources Advisors",
+    "entity_type": "legal entity",
+    "headquarters_country": "United Kingdom",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001016196"
+  },
+  "E100001016198": {
+    "entity_id": "E100001016198",
+    "name": "AB CarVal Investors",
+    "entity_type": "legal entity",
+    "headquarters_country": "United States",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001016198"
+  },
+  "E100001016270": {
+    "entity_id": "E100001016270",
+    "name": "Serajuddin &",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001016270"
+  },
+  "E100001016293": {
+    "entity_id": "E100001016293",
+    "name": "Sribir Group of Companies",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100001016293"
+  },
+  "E100002000372": {
+    "entity_id": "E100002000372",
+    "name": "Ghanashyam Misra & Sons",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002000372"
+  },
+  "E100002004552": {
+    "entity_id": "E100002004552",
+    "name": "Captain Steel India",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002004552"
+  },
+  "E100002004559": {
+    "entity_id": "E100002004559",
+    "name": "Baldota Steel and Power",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002004559"
+  },
+  "E100002004790": {
+    "entity_id": "E100002004790",
+    "name": "Surjagad Ispat",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002004790"
+  },
+  "E100002004792": {
+    "entity_id": "E100002004792",
+    "name": "NR Ispat and Power",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002004792"
+  },
+  "E100002005355": {
+    "entity_id": "E100002005355",
+    "name": "Rashmi Green Hydrogen Steel",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002005355"
+  },
+  "E100002007557": {
+    "entity_id": "E100002007557",
+    "name": "Mukand",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002007557"
+  },
+  "E100002007558": {
+    "entity_id": "E100002007558",
+    "name": "Jamnalal Sons",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002007558"
+  },
+  "E100002007597": {
+    "entity_id": "E100002007597",
+    "name": "Welspun Corp",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002007597"
+  },
+  "E100002007981": {
+    "entity_id": "E100002007981",
+    "name": "KIC Metaliks",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002007981"
+  },
+  "E100002007999": {
+    "entity_id": "E100002007999",
+    "name": "Action Ispat and Power",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002007999"
+  },
+  "E100002008017": {
+    "entity_id": "E100002008017",
+    "name": "Gallantt Ispat",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002008017"
+  },
+  "E100002017833": {
+    "entity_id": "E100002017833",
+    "name": "Vardhman Special Steels Limited",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002017833"
+  },
+  "E100002019418": {
+    "entity_id": "E100002019418",
+    "name": "BPA Metallics",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002019418"
+  },
+  "E100002019745": {
+    "entity_id": "E100002019745",
+    "name": "Bhagyalaxmi Metals",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002019745"
+  },
+  "E100002019750": {
+    "entity_id": "E100002019750",
+    "name": "Kapila Metals",
+    "entity_type": "legal entity",
+    "headquarters_country": "India",
+    "api_url": "https://api.globalenergymonitor.org/entities/E100002019750"
+  }
+}

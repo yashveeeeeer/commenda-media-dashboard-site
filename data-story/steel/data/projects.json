@@ -1,0 +1,219 @@
+{
+  "scopeLabel": "Four corroborated projects",
+  "coverageNote": "Four of 13 GEM sites. See the audit for the other nine and the Utkal phase adjustment.",
+  "asOf": "September 2026",
+  "projects": [
+    {
+      "id": "P100000120513",
+      "name": "Hazira",
+      "state": "Gujarat",
+      "lat": 21.112377,
+      "lon": 72.647304,
+      "coordinateAccuracy": "exact",
+      "operator": "ArcelorMittal Nippon Steel India Ltd",
+      "operatorId": "E100000002455",
+      "gemConstructionKt": 6000,
+      "unitIds": [
+        "U100000143807",
+        "U100000143808",
+        "U100000143809"
+      ],
+      "netMt": 6.0,
+      "owners": [
+        {
+          "name": "ArcelorMittal",
+          "entityId": "E100000000687",
+          "country": "LUX",
+          "stake": 0.6,
+          "chain": [
+            "AM/NS India",
+            "AMNS Luxembourg Holding",
+            "ArcelorMittal"
+          ]
+        },
+        {
+          "name": "Nippon Steel",
+          "entityId": "E100000000652",
+          "country": "JPN",
+          "stake": 0.4,
+          "chain": [
+            "AM/NS India",
+            "AMNS Luxembourg Holding",
+            "Nippon Steel"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Nippon Steel, August 2026, slide 27",
+          "url": "https://www.nipponsteel.com/en/ir/library/settlement/pdf/20260804_200.pdf"
+        },
+        {
+          "label": "ArcelorMittal, 2025 financial statements, joint ventures",
+          "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342926000020/R12.htm"
+        },
+        {
+          "label": "AM/NS India, equipment reconciliation",
+          "url": "https://www.amns.in/storage/statutory-documents/January2023/qnfxv43cHwc5zTCb8V1n.pdf"
+        },
+        {
+          "label": "Hazira expansion clearance",
+          "url": "https://www.amns.in/storage/statutory-documents/October2022/6GnmFvhzMscsSdpEev87.pdf"
+        },
+        {
+          "label": "GEM plant record",
+          "url": "https://www.gem.wiki/ArcelorMittal_Nippon_Steel_Hazira_plant"
+        }
+      ]
+    },
+    {
+      "id": "P100000120517",
+      "name": "Dolvi",
+      "state": "Maharashtra",
+      "lat": 18.690312,
+      "lon": 73.035902,
+      "coordinateAccuracy": "exact",
+      "operator": "JSW Steel Ltd",
+      "operatorId": "E100001000516",
+      "gemConstructionKt": 5000,
+      "unitIds": [
+        "U100001028180"
+      ],
+      "netMt": 5.0,
+      "owners": [
+        {
+          "name": "JSW Steel",
+          "entityId": "E100001000516",
+          "country": "IND",
+          "stake": 1,
+          "chain": [
+            "Dolvi Works",
+            "JSW Steel"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "JSW Steel, FY2025–26 expansion programme",
+          "url": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/grow.html"
+        },
+        {
+          "label": "JSW, May 2026 construction photographs",
+          "url": "https://nsearchives.nseindia.com/corporate/jessydenny_14052026164431_JSW_Steel_Q4_FY26_vF.pdf"
+        },
+        {
+          "label": "JSW Steel, Dolvi expansion clearance",
+          "url": "https://www.jswsteel.in/sites/default/files/assets/downloads/steel/IR/Environmental%20Clearances/Environment-Clearance-of-JSW-Steel-Dolvi-Works-10-to-15-MTPA.pdf"
+        },
+        {
+          "label": "GEM plant record",
+          "url": "https://www.gem.wiki/JSW_Steel_Dolvi_steel_plant"
+        }
+      ]
+    },
+    {
+      "id": "P100000120539",
+      "name": "Utkal",
+      "state": "Odisha",
+      "lat": 20.216667,
+      "lon": 86.55,
+      "coordinateAccuracy": "approximate",
+      "operator": "JSW Utkal Steel Ltd",
+      "operatorId": "E100001000528",
+      "gemConstructionKt": 7000,
+      "unitIds": [
+        "U100000143637",
+        "U100000144117"
+      ],
+      "netMt": 5.0,
+      "owners": [
+        {
+          "name": "JSW Steel",
+          "entityId": "E100001000516",
+          "country": "IND",
+          "stake": 1,
+          "chain": [
+            "JSW Utkal Steel",
+            "JSW Steel"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "JSW Steel, FY2025–26 expansion programme",
+          "url": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/grow.html"
+        },
+        {
+          "label": "JSW, phase-one plans and site, June 2026",
+          "url": "https://jsw-steel-s3.s3.ap-south-1.amazonaws.com/jsw-steel-images/uploads/2025/12/JSWSteel_Investor-Presentation_June26_vF.pdf"
+        },
+        {
+          "label": "JSW, July site update, slide 42",
+          "url": "https://jsw-steel-s3.s3.ap-south-1.amazonaws.com/jsw-steel-images/uploads/2026/07/Q1_FY27_ppt-vf.pdf#page=42"
+        },
+        {
+          "label": "L&T, melt-shop piling contract",
+          "url": "https://www.larsentoubro.com/pressreleases/2026/2026-05-26-lt-wins-orders-significant-for-geostructure-business"
+        },
+        {
+          "label": "JSW, September-quarter earnings call",
+          "url": "https://jsw-steel-s3.s3.ap-south-1.amazonaws.com/jsw-steel-images/uploads/2026/10/JSWSL-Q2FY27-Earnings-Oct23-2026.pdf"
+        },
+        {
+          "label": "JSW, wholly owned Utkal subsidiary",
+          "url": "https://www.jswsteel.in/sites/default/files/assets/industry/steel/IR/stock-exchange-releases/Regulation_30_05_01_2024.pdf"
+        },
+        {
+          "label": "GEM plant record",
+          "url": "https://www.gem.wiki/JSW_Utkal_Steel_Rajnagar_plant"
+        }
+      ]
+    },
+    {
+      "id": "P100000120522",
+      "name": "Ghugus",
+      "state": "Maharashtra",
+      "lat": 19.929837,
+      "lon": 79.119344,
+      "coordinateAccuracy": "exact",
+      "operator": "Lloyds Metals and Energy Ltd",
+      "operatorId": "E100001012204",
+      "gemConstructionKt": 1050,
+      "unitIds": [
+        "U100000144781",
+        "U100000144782"
+      ],
+      "netMt": 1.05,
+      "owners": [
+        {
+          "name": "Lloyds Metals and Energy",
+          "entityId": "E100001012204",
+          "country": "IND",
+          "stake": 1,
+          "chain": [
+            "Ghugus works",
+            "Lloyds Metals and Energy"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "label": "Lloyds, FY2025–26 annual report, pp. 70–71",
+          "url": "https://lloyds.in/wp-content/uploads/2026/05/Annual-Report-for-Financial-Year-2025-26.pdf"
+        },
+        {
+          "label": "Ghugus clearance, steel melting shop and rolling mill",
+          "url": "https://lloyds.in/wp-content/uploads/2025/03/Phase-III-Lloyds-EC-issued-Dated.20.03.2025.pdf"
+        },
+        {
+          "label": "Lloyds, September-quarter project update",
+          "url": "https://lloyds.in/wp-content/uploads/2026/11/20261103_Intimation_regarding_Earnings_Presentation.pdf"
+        },
+        {
+          "label": "GEM plant record",
+          "url": "https://www.gem.wiki/Lloyds_Metals_and_Energy_Ltd_Ghugus_steel_plant"
+        }
+      ]
+    }
+  ]
+}

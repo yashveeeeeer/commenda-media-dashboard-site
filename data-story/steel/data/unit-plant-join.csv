@@ -1,0 +1,43 @@
+unit_id,plant_id,plant,furnace,steelmaking_method,unit_status,unit_kt_per_year,september_map_lat,september_map_lon,coordinate_accuracy,gem_asset_url
+U100000143807,P100000120513,ArcelorMittal Nippon Steel Hazira plant,unknown BOF (1),bof,construction,2000.0,21.112377,72.647304,exact,https://api.globalenergymonitor.org/assets/P100000120513_U100000143807
+U100000143808,P100000120513,ArcelorMittal Nippon Steel Hazira plant,unknown BOF (2),bof,construction,2000.0,21.112377,72.647304,exact,https://api.globalenergymonitor.org/assets/P100000120513_U100000143808
+U100000143809,P100000120513,ArcelorMittal Nippon Steel Hazira plant,unknown BOF (3),bof,construction,2000.0,21.112377,72.647304,exact,https://api.globalenergymonitor.org/assets/P100000120513_U100000143809
+U100001028180,P100000120517,JSW Steel Dolvi steel plant,unknown BOF (3),bof,construction,5000.0,18.690312,73.035902,exact,https://api.globalenergymonitor.org/assets/P100000120517_U100001028180
+U100000144781,P100000120522,Lloyds Metals and Energy Ltd Ghugus steel plant,unknown EAF (1),eaf,construction,525.0,19.929837,79.119344,exact,https://api.globalenergymonitor.org/assets/P100000120522_U100000144781
+U100000144782,P100000120522,Lloyds Metals and Energy Ltd Ghugus steel plant,unknown EAF (2),eaf,construction,525.0,19.929837,79.119344,exact,https://api.globalenergymonitor.org/assets/P100000120522_U100000144782
+U100000141915,P100000120536,JSW Steel Raigarh steel plant,unknown EAF (2),eaf,construction,250.0,21.983709,83.238133,exact,https://api.globalenergymonitor.org/assets/P100000120536_U100000141915
+U100000143637,P100000120539,JSW Utkal Steel Rajnagar plant,unknown BOF (1),bof,construction,3500.0,20.216667,86.55,approximate,https://api.globalenergymonitor.org/assets/P100000120539_U100000143637
+U100000144117,P100000120539,JSW Utkal Steel Rajnagar plant,unknown BOF (2),bof,construction,3500.0,20.216667,86.55,approximate,https://api.globalenergymonitor.org/assets/P100000120539_U100000144117
+U100000145063,P100000120540,Neelachal Ispat Nigam steel plant,unknown BOF (2),bof,construction,1038.0,20.998641,86.019102,exact,https://api.globalenergymonitor.org/assets/P100000120540_U100000145063
+U100000145446,P100000120540,Neelachal Ispat Nigam steel plant,unknown BOF (3),bof,construction,2454.0,20.998641,86.019102,exact,https://api.globalenergymonitor.org/assets/P100000120540_U100000145446
+U100000144454,P100000120553,Ramsarup Industries Kharagpur steel plant,unknown EAF (1),eaf,construction,690.0,22.977477,88.457443,exact,https://api.globalenergymonitor.org/assets/P100000120553_U100000144454
+U100000144963,P100000120556,Rashmi Metaliks Jamuria steel plant,unknown EAF (1),eaf,construction,1000.0,23.706343,87.07774,approximate,https://api.globalenergymonitor.org/assets/P100000120556_U100000144963
+U100000145064,P100000120556,Rashmi Metaliks Jamuria steel plant,unknown BOF (1),bof,construction,1500.0,23.706343,87.07774,approximate,https://api.globalenergymonitor.org/assets/P100000120556_U100000145064
+U100000145284,P100000120569,Rungta Mines Dhenkanal steel plant,unknown IF (3),induction,construction,103.0,20.764524,85.299318,exact,https://api.globalenergymonitor.org/assets/P100000120569_U100000145284
+U100000145285,P100000120569,Rungta Mines Dhenkanal steel plant,unknown IF (4),induction,construction,103.0,20.764524,85.299318,exact,https://api.globalenergymonitor.org/assets/P100000120569_U100000145285
+U100000145286,P100000120569,Rungta Mines Dhenkanal steel plant,unknown IF (5),induction,construction,103.0,20.764524,85.299318,exact,https://api.globalenergymonitor.org/assets/P100000120569_U100000145286
+U100000145287,P100000120569,Rungta Mines Dhenkanal steel plant,unknown IF (6),induction,construction,102.0,20.764524,85.299318,exact,https://api.globalenergymonitor.org/assets/P100000120569_U100000145287
+U100000145288,P100000120569,Rungta Mines Dhenkanal steel plant,unknown IF (7),induction,construction,102.0,20.764524,85.299318,exact,https://api.globalenergymonitor.org/assets/P100000120569_U100000145288
+U100000145289,P100000120569,Rungta Mines Dhenkanal steel plant,unknown IF (8),induction,construction,103.0,20.764524,85.299318,exact,https://api.globalenergymonitor.org/assets/P100000120569_U100000145289
+U100000145290,P100000120569,Rungta Mines Dhenkanal steel plant,unknown IF (9),induction,construction,102.0,20.764524,85.299318,exact,https://api.globalenergymonitor.org/assets/P100000120569_U100000145290
+U100000145291,P100000120569,Rungta Mines Dhenkanal steel plant,unknown IF (10),induction,construction,103.0,20.764524,85.299318,exact,https://api.globalenergymonitor.org/assets/P100000120569_U100000145291
+U100000144737,P100000120576,Tata Steel Ludhiana steel plant,unknown EAF (1),eaf,construction,750.0,30.946888,75.987521,exact,https://api.globalenergymonitor.org/assets/P100000120576_U100000144737
+U100000144601,P100000121185,Rungta Mines Karakhendra steel plant,unknown EAF (1),eaf,construction,554.0,22.140174,85.414616,exact,https://api.globalenergymonitor.org/assets/P100000121185_U100000144601
+U100000145345,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (11),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145345
+U100000145346,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (12),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145346
+U100000145347,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (13),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145347
+U100000145348,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (14),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145348
+U100000145349,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (15),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145349
+U100000145350,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (16),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145350
+U100000145351,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (17),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145351
+U100000145352,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (18),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145352
+U100000145353,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (19),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145353
+U100000145354,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (20),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145354
+U100000145355,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (21),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145355
+U100000145356,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (22),induction,construction,69.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145356
+U100000145357,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (23),induction,construction,83.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145357
+U100000145358,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (24),induction,construction,83.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145358
+U100000145359,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (25),induction,construction,83.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145359
+U100000145360,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (26),induction,construction,83.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145360
+U100000145361,P100000121188,Orissa Alloy Steel Kharagpur Plant,unknown IF (27),induction,construction,83.0,22.364258,87.309047,exact,https://api.globalenergymonitor.org/assets/P100000121188_U100000145361
+U100001030474,P100001025671,ArcelorMittal Nippon Steel Anakapalle steel plant,unknown BOF (1),bof,construction,8200.0,17.407103,82.723183,approximate,https://api.globalenergymonitor.org/assets/P100001025671_U100001030474

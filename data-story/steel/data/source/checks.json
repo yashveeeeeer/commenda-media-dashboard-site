@@ -1,0 +1,204 @@
+{
+  "snapshot": "GEM September 2026 (V1) public map",
+  "measure": "gross crude steelmaking furnace capacity in India, ttpa",
+  "methods": [
+    "BOF",
+    "EAF",
+    "IF",
+    "OHF",
+    "Other/unspecified steel"
+  ],
+  "status": {
+    "construction": {
+      "plants": 13,
+      "total_ttpa": 37550.0,
+      "Indian_HQ_ttpa": 22228.684,
+      "overseas_HQ_ttpa": 14200.0,
+      "unknown_ttpa": 1121.316
+    },
+    "announced": {
+      "plants": 75,
+      "total_ttpa": 315506.0,
+      "Indian_HQ_ttpa": 226715.602,
+      "overseas_HQ_ttpa": 66222.5,
+      "unknown_ttpa": 22567.898
+    }
+  },
+  "current_api_construction_steel_unit_count": 42,
+  "current_api_construction_steel_ttpa": 37550.0,
+  "plant_method_api_map_differences": [],
+  "unknown_projects": [
+    {
+      "status": "construction",
+      "plant_id": "P100000120540",
+      "plant": "Neelachal Ispat Nigam steel plant",
+      "capacity_ttpa": 73.332,
+      "reason": "no HQ country for E100001015587",
+      "parent": "Tata Steel Long Products Ltd [92.7%]; Tata Steel Ltd [5.2%]; small shareholder(s) [2.1%]"
+    },
+    {
+      "status": "construction",
+      "plant_id": "P100000121188",
+      "plant": "Orissa Alloy Steel Kharagpur Plant",
+      "capacity_ttpa": 356.741,
+      "reason": "no HQ country for E100001015587",
+      "parent": "small shareholder(s) [28.7%]; Cimmco Vinimay Pvt Ltd [16.6%]; Rashmi Iron Industries Pvt Ltd [9.1%]; Newera Commotrade Pvt Ltd [6.6%]; Rashmi Infrastructure Pvt Ltd [6.0%]; Bholebaba Consultants LLP [5.8%]; Rashmi Cement Ltd [5.7%]; Daffodil Plaza Pvt Ltd [5.7%]; Optimist Commosale Pvt Ltd [5.5%]; Rashidhan Sales Pvt Ltd [5.2%]; Rashmi Metaliks Ltd [5.0%]; natural person(s) [0.1%]"
+    },
+    {
+      "status": "construction",
+      "plant_id": "P100000121188",
+      "plant": "Orissa Alloy Steel Kharagpur Plant",
+      "capacity_ttpa": 1.243,
+      "reason": "no HQ country for E100000123261",
+      "parent": "small shareholder(s) [28.7%]; Cimmco Vinimay Pvt Ltd [16.6%]; Rashmi Iron Industries Pvt Ltd [9.1%]; Newera Commotrade Pvt Ltd [6.6%]; Rashmi Infrastructure Pvt Ltd [6.0%]; Bholebaba Consultants LLP [5.8%]; Rashmi Cement Ltd [5.7%]; Daffodil Plaza Pvt Ltd [5.7%]; Optimist Commosale Pvt Ltd [5.5%]; Rashidhan Sales Pvt Ltd [5.2%]; Rashmi Metaliks Ltd [5.0%]; natural person(s) [0.1%]"
+    },
+    {
+      "status": "construction",
+      "plant_id": "P100000120553",
+      "plant": "Ramsarup Industries Kharagpur steel plant",
+      "capacity_ttpa": 690.0,
+      "reason": "unquantified stake",
+      "parent": "Shyam Metalics and Energy Ltd"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100001023560",
+      "plant": "JSW POSCO Keonjhar steel plant",
+      "capacity_ttpa": 18000.0,
+      "reason": "overfull parent shares (200%)",
+      "parent": "JSW Steel Ltd [100.0%]; POSCO Holdings Inc [100.0%]"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100000120540",
+      "plant": "Neelachal Ispat Nigam steel plant",
+      "capacity_ttpa": 103.068,
+      "reason": "no HQ country for E100001015587",
+      "parent": "Tata Steel Long Products Ltd [92.7%]; Tata Steel Ltd [5.2%]; small shareholder(s) [2.1%]"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100000120534",
+      "plant": "Electrosteel Bokaro steel plant",
+      "capacity_ttpa": 247.5,
+      "reason": "no HQ country for E100001015587",
+      "parent": "Vedanta Ltd [95.5%]; small shareholder(s) [4.5%]"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100000120566",
+      "plant": "Orissa Metaliks Markuta steel plant",
+      "capacity_ttpa": 533.82,
+      "reason": "no HQ country for E100001015587",
+      "parent": "small shareholder(s) [28.7%]; Cimmco Vinimay Pvt Ltd [16.6%]; Rashmi Iron Industries Pvt Ltd [9.1%]; Newera Commotrade Pvt Ltd [6.6%]; Rashmi Infrastructure Pvt Ltd [6.0%]; Bholebaba Consultants LLP [5.8%]; Rashmi Cement Ltd [5.7%]; Daffodil Plaza Pvt Ltd [5.7%]; Optimist Commosale Pvt Ltd [5.5%]; Rashidhan Sales Pvt Ltd [5.2%]; Rashmi Metaliks Ltd [5.0%]; natural person(s) [0.1%]"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100000120566",
+      "plant": "Orissa Metaliks Markuta steel plant",
+      "capacity_ttpa": 1.86,
+      "reason": "no HQ country for E100000123261",
+      "parent": "small shareholder(s) [28.7%]; Cimmco Vinimay Pvt Ltd [16.6%]; Rashmi Iron Industries Pvt Ltd [9.1%]; Newera Commotrade Pvt Ltd [6.6%]; Rashmi Infrastructure Pvt Ltd [6.0%]; Bholebaba Consultants LLP [5.8%]; Rashmi Cement Ltd [5.7%]; Daffodil Plaza Pvt Ltd [5.7%]; Optimist Commosale Pvt Ltd [5.5%]; Rashidhan Sales Pvt Ltd [5.2%]; Rashmi Metaliks Ltd [5.0%]; natural person(s) [0.1%]"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100000121192",
+      "plant": "Shri Bajrang Power & Ispat Tilda steel plant",
+      "capacity_ttpa": 69.3,
+      "reason": "no HQ country for E100000123261",
+      "parent": "Banka Finance & Securities Pvt Ltd [15.9%]; Atlanta Securities Pvt Ltd [15.6%]; natural person(s) [6.3%]; Sukanya Merchandise Pvt Ltd [5.5%]; Bonus Dealcom Pvt Ltd [5.5%]"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100000121192",
+      "plant": "Shri Bajrang Power & Ispat Tilda steel plant",
+      "capacity_ttpa": 563.2,
+      "reason": "unreported residual stake (51.2%)",
+      "parent": "Banka Finance & Securities Pvt Ltd [15.9%]; Atlanta Securities Pvt Ltd [15.6%]; natural person(s) [6.3%]; Sukanya Merchandise Pvt Ltd [5.5%]; Bonus Dealcom Pvt Ltd [5.5%]"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100001045282",
+      "plant": "Crest Steel and Power Mangatta steel plant",
+      "capacity_ttpa": 496.85,
+      "reason": "no HQ country for E100000134289",
+      "parent": "Atha Group [47.5%]; Ghanashyam Misra & Sons Pvt Ltd [47.5%]"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100001045282",
+      "plant": "Crest Steel and Power Mangatta steel plant",
+      "capacity_ttpa": 52.3,
+      "reason": "unreported residual stake (5%)",
+      "parent": "Atha Group [47.5%]; Ghanashyam Misra & Sons Pvt Ltd [47.5%]"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100000121032",
+      "plant": "Yazdani Steel and Power Kalinganagar steel plant",
+      "capacity_ttpa": 1080.0,
+      "reason": "unquantified stake",
+      "parent": "Serajuddin & Co"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100000121182",
+      "plant": "Shyam Steel Mejia steel plant",
+      "capacity_ttpa": 490.0,
+      "reason": "unquantified stake",
+      "parent": "Shyam Steel Industries Ltd"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100000120564",
+      "plant": "Atibir Industries Bhorandiha steel plant",
+      "capacity_ttpa": 600.0,
+      "reason": "unquantified stake",
+      "parent": "Sribir Group of Companies"
+    },
+    {
+      "status": "announced",
+      "plant_id": "P100000120562",
+      "plant": "Jai Balaji Jyoti Steels Sundargarh plant",
+      "capacity_ttpa": 330.0,
+      "reason": "unquantified stake",
+      "parent": "Jai Balaji Industries Ltd"
+    }
+  ],
+  "sensitivity": {
+    "construction_only_disclosed_stakes": {
+      "Indian_HQ_percent_of_all": 59.2,
+      "overseas_HQ_percent_of_all": 37.82,
+      "unknown_percent_of_all": 2.99
+    },
+    "construction_if_sole_shyam_parent_imputed_at_100_percent": {
+      "Indian_HQ_ttpa": 22918.684,
+      "overseas_HQ_ttpa": 14200.0,
+      "unknown_ttpa": 431.316
+    },
+    "construction_if_all_unknown_allocated_overseas": {
+      "Indian_HQ_ttpa": 22228.684,
+      "overseas_HQ_max_ttpa": 15321.316,
+      "overseas_HQ_max_percent": 40.8
+    },
+    "construction_plus_announced_gross_map_entries": {
+      "total_ttpa": 353056.0,
+      "Indian_HQ_ttpa": 248944.286,
+      "overseas_HQ_ttpa": 80422.5,
+      "unknown_ttpa": 23689.214,
+      "warning": "Announced entries are plans, include uncertain timing, a 200% proposed JV parent record and financial investment managers; do not interpret as under-construction capacity or industrial-sponsor ownership."
+    }
+  },
+  "input_sha256": {
+    "gem-india.json": "779be9fd48e3c19d31de21bd26388bfd5e196bd6ec138baae4de9fa5aafe214f",
+    "gem-entity-hq.json": "4c98f1b981e68e4685470a6712f6db04ca04cb79cdcd179b96d55ed625ad6ef9",
+    "gem-current-api-india-construction-steel-units.csv": "75002057a598ca79838a30c2d1c8ad31aa680705af8831e34cc4c5fdc34778f1"
+  },
+  "limitations": [
+    "Map capacity is gross furnace capacity; replacement and current construction status require project checks.",
+    "Map parent percentages are GEM-reported, not each issuer's independently corroborated disclosure.",
+    "Live GEM API unit and entity records are a cross-check and may be updated after the frozen map.",
+    "Entity HQ totals describe GEM's listed parent entities; they are not a certified industrial-sponsor breakdown.",
+    "Investment managers such as AB CarVal are present among announced-project parent entities and are not plant operators."
+  ]
+}
