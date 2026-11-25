@@ -1,7 +1,6 @@
-import {ALL, UNKNOWN} from "./capacity.mjs";
+import {ALL, UNKNOWN, formatCapacity} from "./capacity.mjs";
 
 const NS = "http://www.w3.org/2000/svg";
-const number = new Intl.NumberFormat("en",{maximumFractionDigits:3});
 const radians = Math.PI/180;
 
 function svg(tag, attrs = {}, content) {
@@ -48,7 +47,7 @@ function hitsCircle(box, point) {
 
 function selectedLabel(labels, item, points, width, height) {
   const place=item.id==="P100000120513" ? "Hazira" : item.name.replace(/ (?:steel plant|steelworks|plant)$/i,"");
-  const caption=place+" · "+number.format(item.mt)+" Mt/yr";
+  const caption=place+" · "+formatCapacity(item.mt)+" Mt/yr";
   const group=svg("g",{"aria-hidden":"true","pointer-events":"none"});
   const text=svg("text",{class:"selection-label",fill:"#fff9ed"});
   labels.append(group);group.append(text);
@@ -246,21 +245,23 @@ export function createMap(geography, selectMark) {
       values.forEach((value,index)=>{
         const span=document.createElement("span"),disc=document.createElement("i");
         span.className="scale-example";disc.style.width=disc.style.height=(2*radius(value))+"px";
-        span.append(disc,number.format(value)+(index===1?" Mt/yr":""));key.append(span);
+        span.append(disc,formatCapacity(value)+(index===1?" Mt/yr":""));key.append(span);
       });
     }
     const unknown=model.destinations.find(g=>g.id===UNKNOWN).mt;
     const unmapped=document.getElementById("unmapped");
     unmapped.hidden=plants || !unknown;
-    unmapped.textContent="Unassigned · "+number.format(unknown)+" Mt/yr";
+    unmapped.textContent="Unassigned · "+formatCapacity(unknown)+" Mt/yr";
     const noCoordinates=model.projects.filter(p=>p.mt>0&&!locate(p)).reduce((sum,p)=>sum+p.mt,0);
     const note=document.getElementById("map-message");
     note.hidden=items.length>0 && (!plants || !noCoordinates);
     if (plants && noCoordinates) {
-      note.textContent=number.format(noCoordinates)+" Mt/yr has no plant coordinates.";
+      note.textContent=formatCapacity(noCoordinates)+" Mt/yr has no plant coordinates.";
     } else {
-      note.textContent=model.total>0?"All tonnes in this selection are unassigned to an owner country.":
-        model.measure==="net"?"No verified net additions in this selection.":"Construction capacity is unreported in this selection.";
+      if (model.total>0) note.textContent="All tonnes in this selection are unassigned to an owner country.";
+      else if (model.projects.every(row=>row.amount==null)) {
+        note.textContent=model.measure==="net"?"Net additions are unresolved at every site in this selection.":"Capacity is unreported in this selection.";
+      } else note.textContent="No positive capacity to map under this measure.";
     }
     marks.replaceChildren();labels.replaceChildren();
     function settle() {
@@ -271,7 +272,7 @@ export function createMap(geography, selectMark) {
       const focusId=items.some(item=>item.id===selected)?selected:ordered[0]?.id;
       for (const item of ordered) {
         const r=radius(item.mt);
-        const text=item.name+", "+number.format(item.mt)+" Mt/yr";
+        const text=item.name+", "+formatCapacity(item.mt)+" Mt/yr";
         const group=svg("g",{class:"mark"+(item.id===selected?" selected":""),
           role:"button",tabindex:item.id===focusId?"0":"-1","aria-pressed":String(item.id===selected),"aria-label":"Inspect "+text,"data-id":item.id});
         group.append(svg("title",{},text),svg("circle",{class:"target",r:Math.max(r+3,6),fill:"transparent"}));

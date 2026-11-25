@@ -33,8 +33,9 @@
   "industrialRoleReview": "owner-role-review.json",
   "issuerOverrides": "issuer-overrides.json",
   "issuerOverrideProjectCount": 10,
+  "officialEntityMatchReviewCount": 1,
   "reviewedParentEntityCount": 157,
-  "industrialRoleAllowlistCount": 70,
+  "industrialRoleAllowlistCount": 68,
   "reproduceOffline": "python data-story/steel/data/global/build.py",
   "refreshPublicFeeds": "python data-story/steel/data/global/fetch.py --map --entities --graphs --units",
   "localFileSha256": {
@@ -45,10 +46,10 @@
     "api-owner-graphs.json": "50e5d77a4ebfaa590e315b4dae008c0c5a50672ebc4fb498073eb6a126eb2a2a",
     "api-construction-steel-units.json": "87284456cb1cb6e611412d6fd17b415beb721308c532c707940a93b8b5e99751",
     "country-crosswalk.json": "bc6e002e1cdd0475867b1e363e1dd551211b14445396f46b95506c28114ee630",
-    "industry-owner-allowlist.json": "d364c83c2a12f48b94c6371155b0b93e4f4e2a4f6f9bca6ff2eac6389cb237bb",
-    "owner-role-review.json": "f92f668085b0734280330c6c90b086faf40c9baa210729206933b434ddb77e93",
-    "issuer-overrides.json": "ea2fcc244e9a0c0c4032585b10344daaaba9f3a5b7af78a09fd95440c1c746e3",
-    "projects.json": "8dcc934a19a9047dc58b20736d68cd14be34d7fec3d88788fcb7bd07c147c44f",
-    "audit.json": "ecb170f4b9fb34380659e76f87cc4593b26422ebab46d6688f15326db82087e1"
+    "industry-owner-allowlist.json": "72b4ffcdbe7e925367f87d218ed8863459fb2b6981669ba338ab390351a76926",
+    "owner-role-review.json": "d07aa35e4565d02162df0c070807c1b041ec933f35c089234174fbb362a652db",
+    "issuer-overrides.json": "dee39148c5ebb7bfa71f043e7e0a8ba078e064d71847ad37833ccf9df119a5bf",
+    "projects.json": "13b2362c821f3bf6c225481f0e086c3f1cc842cff8af3bfe724365f2a8627a4a",
+    "audit.json": "5bcb8d42f4b98cf7876ec75e45a4a61cfd594ee24a027867ff0ae8d47558b9e0"
   }
 }

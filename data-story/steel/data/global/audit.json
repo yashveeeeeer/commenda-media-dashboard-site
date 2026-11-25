@@ -22,9 +22,9 @@
   },
   "reviewedIndustryRoleParentHQ": {
     "globalMt": {
-      "domestic": 88.318876,
-      "cross-border": 26.5454,
-      "unknown": 56.523724
+      "domestic": 87.668876,
+      "cross-border": 25.5454,
+      "unknown": 58.173724
     },
     "byHostMt": {
       "AUT": {
@@ -78,9 +78,9 @@
         "unknown": 1.757737
       },
       "IRN": {
-        "domestic": 4.03,
+        "domestic": 4.58,
         "cross-border": 0.0,
-        "unknown": 11.783
+        "unknown": 11.233
       },
       "ITA": {
         "domestic": 0.75,
@@ -88,9 +88,9 @@
         "unknown": 0.0
       },
       "KAZ": {
-        "domestic": 1.2,
+        "domestic": 0.0,
         "cross-border": 0.0,
-        "unknown": 0.0
+        "unknown": 1.2
       },
       "KOR": {
         "domestic": 2.5,
@@ -109,8 +109,8 @@
       },
       "MOZ": {
         "domestic": 0.0,
-        "cross-border": 0.5,
-        "unknown": 0.0
+        "cross-border": 0.0,
+        "unknown": 0.5
       },
       "NAM": {
         "domestic": 3.0,
@@ -129,8 +129,8 @@
       },
       "PAK": {
         "domestic": 0.5,
-        "cross-border": 0.5,
-        "unknown": 0.0
+        "cross-border": 0.0,
+        "unknown": 0.5
       },
       "PHL": {
         "domestic": 4.8,
@@ -623,9 +623,9 @@
       {
         "id": "P100001080915",
         "host": "KAZ",
-        "domestic": 1.2,
+        "domestic": 0.0,
         "cross-border": 0.0,
-        "unknown": 0.0
+        "unknown": 1.2
       },
       {
         "id": "P100000120079",
@@ -833,9 +833,9 @@
       {
         "id": "P100001063425",
         "host": "IRN",
-        "domestic": 0.0,
+        "domestic": 0.55,
         "cross-border": 0.0,
-        "unknown": 0.55
+        "unknown": 0.0
       },
       {
         "id": "P100000121247",
@@ -855,8 +855,8 @@
         "id": "P100000120752",
         "host": "MOZ",
         "domestic": 0.0,
-        "cross-border": 0.5,
-        "unknown": 0.0
+        "cross-border": 0.0,
+        "unknown": 0.5
       },
       {
         "id": "P100000120783",
@@ -869,8 +869,8 @@
         "id": "P100000120784",
         "host": "PAK",
         "domestic": 0.0,
-        "cross-border": 0.5,
-        "unknown": 0.0
+        "cross-border": 0.0,
+        "unknown": 0.5
       },
       {
         "id": "P100000121025",
@@ -925,9 +925,9 @@
   },
   "reportedParentHQAfterIssuerOverridesIncludingFinancialEntities": {
     "globalMt": {
-      "domestic": 108.214926,
-      "cross-border": 30.1307,
-      "unknown": 33.042374
+      "domestic": 108.764926,
+      "cross-border": 29.6307,
+      "unknown": 32.992374
     },
     "byHostMt": {
       "AUT": {
@@ -981,9 +981,9 @@
         "unknown": 1.047984
       },
       "IRN": {
-        "domestic": 7.278,
+        "domestic": 7.828,
         "cross-border": 0.0,
-        "unknown": 8.535
+        "unknown": 7.985
       },
       "ITA": {
         "domestic": 0.75,
@@ -1032,8 +1032,8 @@
       },
       "PAK": {
         "domestic": 0.5,
-        "cross-border": 0.5,
-        "unknown": 0.0
+        "cross-border": 0.0,
+        "unknown": 0.5
       },
       "PHL": {
         "domestic": 4.8,
@@ -1736,9 +1736,9 @@
       {
         "id": "P100001063425",
         "host": "IRN",
-        "domestic": 0.0,
+        "domestic": 0.55,
         "cross-border": 0.0,
-        "unknown": 0.55
+        "unknown": 0.0
       },
       {
         "id": "P100000121247",
@@ -1772,8 +1772,8 @@
         "id": "P100000120784",
         "host": "PAK",
         "domestic": 0.0,
-        "cross-border": 0.5,
-        "unknown": 0.0
+        "cross-border": 0.0,
+        "unknown": 0.5
       },
       {
         "id": "P100000121025",
@@ -1845,10 +1845,10 @@
     "api-parent-entities.json": "885f6e3ad017f6c9d865752c7e8f8c1f9a111c2caf98aeb79f5e40e0a0ed1823",
     "api-owner-graphs.json": "50e5d77a4ebfaa590e315b4dae008c0c5a50672ebc4fb498073eb6a126eb2a2a",
     "api-construction-steel-units.json": "87284456cb1cb6e611412d6fd17b415beb721308c532c707940a93b8b5e99751",
-    "issuer-overrides.json": "ea2fcc244e9a0c0c4032585b10344daaaba9f3a5b7af78a09fd95440c1c746e3",
+    "issuer-overrides.json": "dee39148c5ebb7bfa71f043e7e0a8ba078e064d71847ad37833ccf9df119a5bf",
     "country-crosswalk.json": "bc6e002e1cdd0475867b1e363e1dd551211b14445396f46b95506c28114ee630",
-    "industry-owner-allowlist.json": "d364c83c2a12f48b94c6371155b0b93e4f4e2a4f6f9bca6ff2eac6389cb237bb",
-    "owner-role-review.json": "f92f668085b0734280330c6c90b086faf40c9baa210729206933b434ddb77e93"
+    "industry-owner-allowlist.json": "72b4ffcdbe7e925367f87d218ed8863459fb2b6981669ba338ab390351a76926",
+    "owner-role-review.json": "d07aa35e4565d02162df0c070807c1b041ec933f35c089234174fbb362a652db"
   },
   "notes": [
     "Capacity is nominal crude steelmaking, not ironmaking, output or net new capacity after replacements.",

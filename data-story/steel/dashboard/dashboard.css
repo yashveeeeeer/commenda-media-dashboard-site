@@ -66,7 +66,7 @@ h1 { margin: 5px 0 4px; font: 500 clamp(27px,2.8vw,46px)/1.12 var(--mono); lette
 .filters { display: flex; gap: clamp(10px,1.3vw,20px); }
 .filters label { display: grid; gap: 6px; color: var(--muted); font-family: var(--sans); font-size: 12px; }
 .filters select { padding: 8px 28px 8px 10px; width: clamp(140px,12vw,190px); border: 1px solid #aaa397; font: 500 13px var(--sans); color: var(--ink); }
-.filters label:last-child select { width: clamp(164px,13vw,208px); }
+.filters label:last-child select { width: clamp(185px,13vw,208px); }
 .workspace {
   display: grid; grid-template-columns: minmax(0, 1fr) clamp(344px, 29.7%, 485px);
   border: 1px solid #aaa397; height: clamp(550px, calc(100svh - 243px), 860px);
@@ -172,6 +172,7 @@ footer a { text-decoration: none; } footer .sep { padding: 0 4px; }
 .sources { margin-top: 8px; }
 .sources summary { font-weight: 550; color: var(--ink); }
 .sources ul { padding-left: 18px; }
+.ledger-link { display: inline-block; margin-top: 14px; font: 13px/1.5 var(--sans); }
 @media (min-width: 901px) and (max-height: 790px) {
   .masthead { height: 46px; }
   .heading { padding: 14px 0; }
@@ -190,7 +191,7 @@ footer a { text-decoration: none; } footer .sep { padding: 0 4px; }
 @media (max-width: 1100px) {
   :root { --edge: 20px; }
   .filters select { width: 133px; }
-  .filters label:last-child select { width: 158px; }
+  .filters label:last-child select { width: 185px; }
 }
 @media (max-width: 900px) {
   .workspace { height: auto; grid-template-columns: repeat(2,minmax(0,1fr)); background: var(--paper-2); }
@@ -235,6 +236,17 @@ footer a { text-decoration: none; } footer .sep { padding: 0 4px; }
   .ranking { order: 3; padding: 15px 12px; }
   .dialog-head h2 { font-size: 19px; }
   .owner-row { font-size: 13px; }
+}
+@media (max-width: 374px) {
+  .masthead img { width: 108px; }
+  .masthead nav { gap: 9px; }
+  .filters { grid-template-columns: minmax(0,1fr) 174px; gap: 7px; }
+  .filters select { padding-left: 7px; padding-right: 21px; background-position: right 7px center; font-size: 12px; }
+  .map-tools { padding-inline: 6px; gap: 3px; }
+  .switch { gap: 6px; }
+  .camera-controls { gap: 0; }
+  .camera-controls button { min-width: 25px; }
+  .camera-controls button:last-child { padding-inline: 2px; margin-left: 0; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 /* Set after the font shorthands so the lining/tabular choices also reach SVG text and native controls. */

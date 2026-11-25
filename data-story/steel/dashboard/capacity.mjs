@@ -1,6 +1,13 @@
 const EPSILON = 1e-8;
 export const UNKNOWN = "unknown";
 export const ALL = "all";
+const compactAmount = new Intl.NumberFormat("en",{maximumFractionDigits:3});
+const fixedAmount = new Intl.NumberFormat("en",{minimumFractionDigits:3,maximumFractionDigits:3});
+export function formatCapacity(value, fixed=false) {
+  // Remove floating-point noise from sums and equity products before rounding to 0.001 Mt.
+  const clean = Math.round(value * 1e9) / 1e9;
+  return (fixed ? fixedAmount : compactAmount).format(clean);
+}
 export const categories = [
   {id:"domestic", name:"Domestic owners", color:"var(--coral)"},
   {id:"overseas", name:"Overseas owners", color:"var(--blue)"},
@@ -25,7 +32,8 @@ export function buildModel(projects, countries, measure = "gross", host = ALL) {
   const rows = [];
   let total = 0;
   for (const project of scope) {
-    const amount = measure === "gross" ? project.grossMt : project.netMt;
+    const amount = measure === "adjusted" ? project.netMt ?? project.grossMt :
+      measure === "net" ? project.netMt : project.grossMt;
     if (amount != null && (!Number.isFinite(amount) || amount < 0)) throw new Error("Invalid project capacity.");
     const mt = amount ?? 0;
     const parts = [];
@@ -36,7 +44,7 @@ export function buildModel(projects, countries, measure = "gross", host = ALL) {
       if (!allocations.has(id)) allocations.set(id, {
         id, name:destination.name, label:destination.label, color:"var(--blue)", mt:0, localMt:0, parts:[]
       });
-      const part = {id, sponsor, stake, local, mt:mt*stake, project};
+      const part = {id, sponsor, stake, local, mt:mt*stake, plantMt:amount, project};
       const group = allocations.get(id);
       group.mt += part.mt;
       if (local) group.localMt += part.mt;

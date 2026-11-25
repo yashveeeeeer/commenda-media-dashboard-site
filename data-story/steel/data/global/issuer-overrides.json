@@ -1,4 +1,33 @@
 {
+  "P100000120784": {
+    "flag": "official-entity-match-review",
+    "reason": "Pakistan describes the Rashakai venture as Chinese-backed. The OECD names Fuzhou Julitaihe International Company as owner. Neither source gives its stake or connects the Singapore company named by GEM to the industrial sponsor. The full rating remains unassigned.",
+    "operator": "Century Steel (Pvt) Ltd",
+    "operatorStatus": "Project company named by Pakistan's CPEC Secretariat",
+    "operatorEntityIds": [],
+    "owners": [
+      {
+        "name": "Fuzhou Julitaihe International Company",
+        "entityId": null,
+        "country": null,
+        "reportedCountry": "CHN",
+        "stake": null,
+        "role": "reported parent, stake unquantified",
+        "chain": [],
+        "chainStatus": "GEM entity match disputed; attributable percentages unavailable"
+      }
+    ],
+    "sources": [
+      {
+        "label": "OECD steel capacity project table, Pakistan, page 34",
+        "url": "https://one.oecd.org/document/DSTI/SC(2023)3/FINAL/en/pdf#page=34"
+      },
+      {
+        "label": "Pakistan Press Information Department, Rashakai steel project and sponsor",
+        "url": "https://pid.gov.pk/site/press_detail/16265"
+      }
+    ]
+  },
   "P100000120513": {
     "reason": "Issuer-verified AM/NS India chain through AMNS Luxembourg Holding and disclosed 60/40 industrial sponsors; same chain is used in the net-capacity India core.",
     "operator": "ArcelorMittal Nippon Steel India Ltd",

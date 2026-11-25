@@ -1,0 +1,473 @@
+{
+  "P100000120617": {
+    "decision": "Status disputed",
+    "netMt": null,
+    "reason": "Daric’s 2018 catalogue identifies the 1.5 Mt/yr billet furnace and a separate 1.5 Mt/yr sponge-iron unit. GEM’s subsequent dossier says the expansion disappeared from the company website in 2026 and interprets that as a cancellation. Neither source dates a formal cancellation or establishes furnace construction in September.",
+    "sources": [
+      {
+        "label": "Daric Group, original catalogue, PDF page 9",
+        "url": "https://daricgroup.com/api/files/company/image/8076b7076925063de0df89c7f3bf2b85.pdf#page=9"
+      },
+      {
+        "label": "GEM, later Bonab project history",
+        "url": "https://www.gem.wiki/Bonab_Steel_Complex"
+      }
+    ]
+  },
+  "P100000120726": {
+    "decision": "Replacement increment uncertain",
+    "netMt": null,
+    "reason": "Danieli identifies the new Celaya furnace as a replacement for EAF No. 2 and expects faster production. Its scope gives no comparable before-and-after annual steelmaking capacities. The 1.5 Mt/yr in GEM cannot all be counted as added capacity.",
+    "sources": [
+      {
+        "label": "Danieli, Celaya melt-shop modernization",
+        "url": "https://www.danieli.com/en/news-media/news/major-technology-upgrade-deacero-celaya-minimill_37_753.htm"
+      }
+    ]
+  },
+  "P100000120778": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "The Philippine Information Agency reported the industrial park inauguration in 2022. Two years later the mines bureau still listed Mount Zynai’s iron-processing permit application for the 14.83-hectare Diplahan site as under review. Neither record verifies work on a 1.5 Mt/yr steel furnace by September 2026.",
+    "sources": [
+      {
+        "label": "Philippine Information Agency, 2022 inauguration",
+        "url": "https://mirror.pia.gov.ph/news/2022/06/24/unang-industrial-laboratory-sa-nasod-gi-inagurahan-gumikan-niini-gilauman-na-biente-mil-ang-maka-trabaho"
+      },
+      {
+        "label": "Mines and Geosciences Bureau, Region IX, August 2024, annex F",
+        "url": "https://mgb.gov.ph/attachments/article/51/R9_MTSR_AUG_2024.pdf"
+      }
+    ]
+  },
+  "P100000120817": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "Danieli’s order specified a new electric furnace and 1.46 Mt/yr of billets, blooms and beam blanks. Its original 2024 start date passed. The owner’s later project description tracks the rail and beam rolling mill, without establishing the stage of the new furnace in September.",
+    "sources": [
+      {
+        "label": "Danieli, Balakovo melt-shop and rolling-mill order",
+        "url": "https://www.danieli.com/en/news-media/news/ao-steel-works-balakovo-orders-danieli-minimill-rails-beams-and-sections_37_695.htm"
+      },
+      {
+        "label": "Novostal-M, Balakovo works and current project scope",
+        "url": "https://www.novostal-m.ru/company/mz-balakovo/"
+      }
+    ]
+  },
+  "P100000121244": {
+    "decision": "September stage unverified",
+    "netMt": null,
+    "reason": "Daric’s 2018 catalogue describes a new 1.5 Mt/yr steel shop at Ajabshir and a separate ironmaking unit of equal size. Its website still carried that description in 2024. Those records establish the design but leave an eight-year gap between the catalogue and the snapshot.",
+    "sources": [
+      {
+        "label": "Daric Group, Shams project, PDF page 19",
+        "url": "https://daricgroup.com/api/files/company/image/8076b7076925063de0df89c7f3bf2b85.pdf#page=19"
+      },
+      {
+        "label": "Daric Group, Shams project page archived in October 2024",
+        "url": "https://web.archive.org/web/20241007161524/https://www.daricgroup.com/en/ShamsIron.aspx"
+      }
+    ]
+  },
+  "P100001042845": {
+    "decision": "Built before cutoff",
+    "netMt": 0,
+    "reason": "IFC identifies a new 1.4 Mt/yr melt shop and 0.9 Mt/yr rolling mill. A June 2026 site visit and interviews with Meghna officials found the steel factory built and waiting for a gas connection. Its 1.4 Mt/yr stays in the September tracker total. It contributes zero to the checked total for construction still active that month.",
+    "sources": [
+      {
+        "label": "IFC, project scope and September 2026 investment disclosure",
+        "url": "https://disclosures.ifc.org/project-detail/SII/48468/meghna-rerolling-steel-mills-limited"
+      },
+      {
+        "label": "Prothom Alo, June site inspection and interviews with MGI and the economic-zone authority",
+        "url": "https://en.prothomalo.com/business/local/l4kbv7jgyx"
+      }
+    ]
+  },
+  "P100000120756": {
+    "decision": "Revival stage uncertain",
+    "netMt": null,
+    "reason": "Nigeria’s steel ministry describes a technical and financial audit to decide how to revive the existing Ajaokuta works. That assessment supplies neither evidence of active converter construction in September nor a quantified increase over the original plant design.",
+    "sources": [
+      {
+        "label": "Federal Ministry of Steel Development, Ajaokuta public announcement",
+        "url": "https://steel.gov.ng/home/Home/1"
+      }
+    ]
+  },
+  "P100000120019": {
+    "decision": "Construction interrupted",
+    "netMt": null,
+    "reason": "Danieli’s order documents the Mirsarai minimill. In September the sponsor’s chief operating officer said work had reached roughly halfway before loan disbursements stopped and equipment was held at port. The available disclosure does not establish how far the steelmaking furnace itself had advanced or whether work on it continued at the cutoff.",
+    "sources": [
+      {
+        "label": "Danieli, Bashundhara Mirsarai minimill order",
+        "url": "https://www.danieli.com/en/news-media/news/bashundhara-group-orders-danieli-mida-green-steel-minimill-plant_37_608.htm"
+      },
+      {
+        "label": "The Business Standard, September interview with the project sponsor’s chief operating officer",
+        "url": "https://www.tbsnews.net/economy/industry/bashundhara-multi-steel-limbo-eligibility-dispute-stalls-tk1765cr-financing-1529916"
+      }
+    ]
+  },
+  "P100000120770": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "The environmental hearing notice describes 1.2 Mt/yr of rebar and wire rod and a scrap-recycling minimill. SteelAsia describes its Concepcion investment as forthcoming. These disclosures do not identify 1.2 Mt/yr of independently verified melting capacity under construction in September.",
+    "sources": [
+      {
+        "label": "Philippine Environmental Management Bureau, Concepcion project hearing notice",
+        "url": "https://eia.emb.gov.ph/wp-content/uploads/2018/09/Notice-Public-Hearing_SAMC-Tarlac.pdf"
+      },
+      {
+        "label": "SteelAsia, investment plans for its Philippine plants",
+        "url": "https://www.steelasia.com/news/31"
+      }
+    ]
+  },
+  "P100001080915": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "Almaty’s regional government announced a November 2025 foundation ceremony for a new plant with melting furnaces and 1.2 Mt/yr of steel capacity. In July 2026 the regional investment council still described construction as starting that year and gave capacities for rolled products. September progress on the melting unit remains unresolved.",
+    "sources": [
+      {
+        "label": "Almaty regional government, design and foundation ceremony",
+        "url": "https://www.gov.kz/org/almobl-kasipkerlik/press/news/details/1112604?lang=ru"
+      },
+      {
+        "label": "Kazakh Invest, regional investment council, July 2026",
+        "url": "https://almaty-region.invest.gov.kz/en/media-center/press-releases/v-almatinskoy-oblasti-sostoyalos-zasedanie-regionalnogo-investitsionnogo-shtaba/"
+      }
+    ]
+  },
+  "P100000120757": {
+    "decision": "Ironmaking phase documented",
+    "netMt": null,
+    "reason": "The operator identifies the Gujeni plant’s product as direct-reduced iron for use in steelmaking. The group also sells rebar. Neither activity identifies an on-site crude-steel furnace with 1 Mt/yr of additional capacity under construction in September.",
+    "sources": [
+      {
+        "label": "African Natural Resources and Mines, Gujeni facilities and products",
+        "url": "https://anrml.com/about-us/"
+      }
+    ]
+  },
+  "P100000120051": {
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "Grupo Simec reports 0.52 Mt/yr of existing billet capacity at Pindamonhangaba at the end of 2025. Its filing also describes construction of a steel shop and a rolling mill and gives a 0.50 Mt/yr production objective. It does not reconcile the new steel rating with the existing billet capacity or with GEM’s 0.70 Mt/yr record.",
+    "sources": [
+      {
+        "label": "Grupo Simec, 2025 Form 20-F, Brazilian plants and capital expenditure",
+        "url": "https://www.sec.gov/Archives/edgar/data/887153/000121390026083889/ea0299895-20f_grupo.htm"
+      }
+    ]
+  },
+  "P100000120839": {
+    "decision": "September stage unverified",
+    "netMt": null,
+    "reason": "Gulf Tubing specifies 0.63 Mt/yr of steel billets for the proposed Ras Al-Khair tube works. Its project schedule refers to construction design starting in 2018. A dated September 2026 furnace construction milestone is missing.",
+    "sources": [
+      {
+        "label": "Gulf Tubing, billet capacity and project site",
+        "url": "https://gulf-tubing-company.com/ras-al-khair-gtc/"
+      },
+      {
+        "label": "Gulf Tubing, original project schedule",
+        "url": "https://gulf-tubing-company.com/projects/"
+      }
+    ]
+  },
+  "P100000121243": {
+    "decision": "September stage unverified",
+    "netMt": null,
+    "reason": "Daric’s 2018 catalogue identifies 0.55 Mt/yr of billets and blooms from an electric furnace at Saeb, alongside a separate ironmaking plant. The design matches GEM’s rating. The catalogue supplies no September 2026 construction milestone.",
+    "sources": [
+      {
+        "label": "Daric Group, Saeb project, PDF page 13",
+        "url": "https://daricgroup.com/api/files/company/image/8076b7076925063de0df89c7f3bf2b85.pdf#page=13"
+      }
+    ]
+  },
+  "P100000121025": {
+    "decision": "Construction suspended",
+    "netMt": 0,
+    "reason": "TISCO reports that work on its Phase II expansion stopped in 2013. Its board sought termination of the engineering and construction contract, and on 6 October 2026 the operator and provincial authorities were still reviewing obstacles to the project. The suspended 0.5 Mt/yr falls outside active September construction.",
+    "sources": [
+      {
+        "label": "TISCO, annual report, Phase II suspension",
+        "url": "https://tisco.com.vn/sites/default/files/Nam2025/QHCD/en_annalreport_2024.pdf"
+      },
+      {
+        "label": "TISCO, shareholder resolutions on the EPC contract",
+        "url": "https://tisco.com.vn/sites/default/files/Nam2025/QHCD/en_annualgeneralmeetingresolutions_2025.pdf"
+      },
+      {
+        "label": "TISCO, October 2026 meeting with provincial authorities",
+        "url": "https://tisco.com.vn/en/node/2051"
+      }
+    ]
+  },
+  "P100000121245": {
+    "decision": "September stage unverified",
+    "netMt": null,
+    "reason": "Daric’s 2018 catalogue lists 0.5 Mt/yr of steel billets from an electric furnace separately from 0.5 Mt/yr of rolling capacity at Sabalan. The figures describe one chain of production, and the historical catalogue does not verify construction eight years later.",
+    "sources": [
+      {
+        "label": "Daric Group, Sabalan project, PDF page 20",
+        "url": "https://daricgroup.com/api/files/company/image/8076b7076925063de0df89c7f3bf2b85.pdf#page=20"
+      }
+    ]
+  },
+  "P100000121209": {
+    "decision": "Furnace stage and capacity uncertain",
+    "netMt": null,
+    "reason": "Thanh Hóa’s investment approval assigns 0.98 Mt/yr to a scrap-to-hot-coil line and 0.33 Mt/yr to downstream products. Their sum matches the tracker’s 1.31 Mt/yr. In August 2026 the province was still arranging resettlement for eight households. Neither document establishes a separate furnace rating and physical furnace construction by September.",
+    "sources": [
+      {
+        "label": "DST Group, Thanh Hóa’s investment approval and product capacities",
+        "url": "https://dst.com.vn/tin-tuc/tin-tuc-tin-tuc-bao-chi-thanh-hoa-co-them-nha-may-luyen-can-thep-5-500-ty-tai-khu-kinh-te-nghi-son"
+      },
+      {
+        "label": "Thanh Hóa People’s Committee, August 2026 resettlement instruction reported by Báo Thanh Hóa",
+        "url": "https://baothanhhoa.vn/phuong-an-dau-tu-cac-khu-tai-dinh-cu-dap-ung-yeu-cau-phat-trien-khu-kinh-te-nghi-son-296931.htm"
+      }
+    ]
+  },
+  "P100000120589": {
+    "decision": "Furnace stage and capacity uncertain",
+    "netMt": null,
+    "reason": "Jahan Foolad identifies its first electric furnace as a 1 Mt/yr billet plant opened in 2019. Its project catalogue lists a second steelmaking plant with a different rating from the tracker’s 1.3 Mt/yr. The catalogue gives no dated construction milestone that would establish which capacity was being installed in September.",
+    "sources": [
+      {
+        "label": "Jahan Foolad Sirjan, operating furnace No. 1",
+        "url": "https://www.sjsco.ir/fa/development-fa/factories-in-operation/karkhanh-fwlad-sazy-1-srdar-shhyd-zndy-nya"
+      },
+      {
+        "label": "Jahan Foolad Sirjan, Iran Metafo catalogue, operating plants and projects",
+        "url": "https://static1.donya-e-eqtesad.com/servev2/fAHaqdrrR8Tl/aztreVakjSU%2C/Iran%2Bmetafo%2BALL%2BPDF.pdf"
+      }
+    ]
+  },
+  "P100000120605": {
+    "decision": "Process boundary uncertain",
+    "netMt": null,
+    "reason": "During a July 2026 site visit, the head of Iran’s mining development agency reported that about 80% of the equipment was installed and identified 1.2 Mt/yr as the capacity for steel sheet. The report gives no separate rating or installation milestone for the electric steelmaking furnace.",
+    "sources": [
+      {
+        "label": "IMIDRO chairman, July 2026 Azna site inspection, reported by Mamlekat Online",
+        "url": "https://www.mamlekatonline.ir/%D8%A8%D8%AE%D8%B4-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%DB%8C-27/195588-%D9%88%D8%B9%D8%AF%D9%87-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%B1%D8%A7%D9%87-%D8%A7%D9%86%D8%AF%D8%A7%D8%B2%DB%8C-%D8%AE%D8%B7-%D8%AA%D9%88%D9%84%DB%8C%D8%AF-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A7%D8%B2%D9%86%D8%A7-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%B3%D8%A7%D9%84"
+      }
+    ]
+  },
+  "P100000120588": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "A project-control engineer working for MIDHCO’s engineering arm describes a 2022 expansion plan for a 1 Mt/yr electric steel plant and a separate 1.5 Mt/yr iron-reduction unit. The account gives no date for installing the electric furnace or any change to the existing steelworks’ capacity by September 2026.",
+    "sources": [
+      {
+        "label": "Hossein Felehgari, project-control engineer, account of the Zarand expansion scope",
+        "url": "https://www.linkedin.com/posts/hossein-felehgari-88085275_%D8%B3%D9%88%D9%85%DB%8C%D9%86-%D8%AA%D8%AC%D8%B1%D8%A8%D9%87-%D8%AD%D8%B1%D9%81%D9%87-%D8%A7%DB%8C-%D8%B3%D8%A7%D9%84-%DB%B1%DB%B4%DB%B0%DB%B1-%D9%BE%D8%B1%D9%88%DA%98%D9%87-%D8%B7%D8%B1%D8%AD-activity-7362536627761537025-hLN0"
+      }
+    ]
+  },
+  "P100000120598": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "Sirjan Iranian Steel identifies an existing 1 Mt/yr billet plant at Bardsir. A company manager described direct reduction as the expansion then under construction and steelmaking as a later step. These records do not confirm a second 1 Mt/yr steelmaking furnace under construction in September 2026.",
+    "sources": [
+      {
+        "label": "Sirjan Iranian Steel, Bardsir billet capacity in the company profile",
+        "url": "https://static2.smtnews.ir/servev2/MwxUdkTgtn9u/5Uwvb7W7Zm0%2C/file.pdf"
+      },
+      {
+        "label": "Sirjan Iranian Steel, manager’s description of the expansion phases in Ahan Online",
+        "url": "https://ahanonline.com/210457/%D8%B2%D9%86%D8%AC%DB%8C%D8%B1%D9%87-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%B3%DB%8C%D8%B1%D8%AC%D8%A7%D9%86/"
+      }
+    ]
+  },
+  "P100001062603": {
+    "decision": "Crude-steel capacity uncertain",
+    "netMt": null,
+    "reason": "The project’s investment group documented excavation, reinforcing steel and concrete for a new melt shop at Qorveh before the cutoff. It assigns 1 Mt/yr to hot-rolled sheet from the integrated mill. Its description gives no separate annual capacity for the furnace, so the exact crude-steel addition remains open.",
+    "sources": [
+      {
+        "label": "Mines and Metals Development Investment Company, Qorveh plant scope, republished by Hamrah",
+        "url": "https://hamrahcompany.com/kurdistan-steel-industries/"
+      },
+      {
+        "label": "Investment group’s November 2025 construction report, reproduced by Tejarat Gardan",
+        "url": "https://tejaratgardan.ir/%D9%BE%DB%8C%D8%B4%D8%B1%D9%81%D8%AA-%DB%B2%DB%B0-%D8%AF%D8%B1%D8%B5%D8%AF%DB%8C-%D8%A7%D8%AD%D8%AF%D8%A7%D8%AB-%D8%B3%D8%A7%D9%84%D9%86-%D8%B0%D9%88%D8%A8-%D9%88-%DB%B5%DB%B0-%D8%AF%D8%B1%D8%B5%D8%AF/"
+      }
+    ]
+  },
+  "P100000120601": {
+    "decision": "New steelmaking capacity",
+    "netMt": 0.8,
+    "reason": "Mianeh is building its first electric melt shop alongside its iron-reduction plant. The project engineer specifies 0.8 Mt/yr of billets, and SMS Concast identifies the melt shop as new. The operator tested the ladle furnace in February 2026 and was still preparing the steelmaking line for startup in October. The new shop adds 0.8 Mt/yr.",
+    "sources": [
+      {
+        "label": "SMS Concast, new Mianeh billet shop, reproduced by SEAISI",
+        "url": "https://www.seaisi.org/details/1413?type=technology-steel-applications"
+      },
+      {
+        "label": "Mianeh Steel, February 2026 ladle-furnace arc test",
+        "url": "https://t.me/foulad_miyaneh/687"
+      },
+      {
+        "label": "Azerbaijan Steel and Mianeh Steel, October 2026 commissioning update via Mehrsaba",
+        "url": "https://khabarfarsi.com/u/262542313"
+      },
+      {
+        "label": "Poolad Consulting Engineers, Mianeh project scope and annual billet capacity",
+        "url": "https://www.pooladce.com/english/405.htm"
+      }
+    ]
+  },
+  "P100000120602": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "At the April 2026 annual meeting, the chief executive reported an operating direct-reduction plant rated at 0.8 Mt/yr and a cold-briquetting plant rated at 0.072 Mt/yr. An earlier OECD inventory separately listed a 0.8 Mt/yr electric steelmaking furnace as under way. The two figures for iron and steel describe different units. The meeting report gives no construction milestone for the furnace.",
+    "sources": [
+      {
+        "label": "Pars Foolad Sabzevar, CEO’s April 2026 annual-meeting report via Chilan",
+        "url": "https://chilanonline.com/2026/04/18/73661/"
+      },
+      {
+        "label": "OECD Steel Committee, 2024 capacity inventory, Iran EAF projects, p. 39",
+        "url": "https://ustr.gov/sites/default/files/files/Issue_Areas/Industry/DSTI-SC%282024%2915.pdf#page=39"
+      }
+    ]
+  },
+  "P100000120832": {
+    "decision": "Replacement increment uncertain",
+    "netMt": null,
+    "reason": "Shakhty’s industrial history records a 0.73 Mt/yr steelworks on this site before the Donelektrostal investment. The regional investment agency described plans for an electric melt shop and rolling equipment. The project records do not show which existing furnaces would remain, or what crude-steel capacity the site would gain over its former rating.",
+    "sources": [
+      {
+        "label": "Shakhty city history, Rostov Electrometallurgical Plant",
+        "url": "https://kultura-shakhty.ru/book.pdf"
+      },
+      {
+        "label": "Rostov Region Investment Promotion Agency, August 2021 project visit",
+        "url": "https://www.ipa-don.ru/news/2021/08/1023/"
+      },
+      {
+        "label": "Regional investment agency on reuse of the former works, reported by Vedomosti",
+        "url": "https://south.vedomosti.ru/south/news/2025/10/07/1145032-vladelets"
+      }
+    ]
+  },
+  "P100000120615": {
+    "decision": "New steelmaking capacity",
+    "netMt": 0.6,
+    "reason": "Sarmad describes construction of a new electric melt shop and billet caster to supply its existing rolling mill. The operator rates the addition at 0.6 Mt/yr and records equipment installation. On 7 September 2026 it invited bids for the steelmaking project's water-supply system. The separate direct-reduction and rolling projects add no crude-steel tonnes to this figure.",
+    "sources": [
+      {
+        "label": "Sarmad, electric furnace and billet-caster project",
+        "url": "https://www.sarmadsteel.com/portfolio/فولادسازی/"
+      },
+      {
+        "label": "Sarmad, steelmaking water-system tender, 7 September 2026",
+        "url": "https://www.sarmadsteel.com/2026/09/مناقصه-پیمانکار-جهت-خدمات-طراحی،-مهند/"
+      }
+    ]
+  },
+  "P100000120713": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "Sri Lanka’s Board of Investment records a land allocation and a foundation ceremony at Mirijjawila in 2022. Its report distinguishes the earlier cement plant on that stretch of land. It gives no date for furnace installation or verified steelmaking capacity under construction in September 2026.",
+    "sources": [
+      {
+        "label": "Board of Investment of Sri Lanka, 2022 annual report, Mirijjawila land allocation",
+        "url": "https://www.parliament.lk/uploads/documents/paperspresented/1710843674061371.pdf"
+      }
+    ]
+  },
+  "P100001063425": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "The OECD listed a proposed 0.55 Mt/yr electric furnace at Arian Steel in 2024, with no start year. The company identifies its sections and rebar business at the Eshtehard–Bouin Zahra site. Those records establish the proposed furnace size and the existing products but leave construction progress and retirements unresolved in September 2026.",
+    "sources": [
+      {
+        "label": "OECD, capacity outlook, 2024, project table on page 43",
+        "url": "https://one.oecd.org/document/DSTI/SC(2024)3/FINAL/en/pdf#page=43"
+      },
+      {
+        "label": "Arian Steel, company profile and plant address",
+        "url": "https://www.linkedin.com/company/arian-steel-company/"
+      }
+    ]
+  },
+  "P100000121247": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "Amir Kabir Khazar describes an ingot shop and three direct-reduction units in its design for Arak. On the same page it reports construction of a separate billet plant in Rasht. The Rasht progress cannot establish the stage of the Arak steel furnace in September 2026.",
+    "sources": [
+      {
+        "label": "Amir Kabir Khazar, Arak design and separate Rasht billet plant",
+        "url": "https://aks-co.ir/en/amir-kabir-arak-steel-company/"
+      }
+    ]
+  },
+  "P100000120752": {
+    "decision": "Financing and furnace stage uncertain",
+    "netMt": null,
+    "reason": "Baobab's directors signed accounts on 11 August 2026 that describe an ongoing search for investors to develop Tete. The company's feasibility study sized a proposed mill at 0.5 Mt/yr. The financing record and the study establish the plan but leave the start of furnace construction unresolved.",
+    "sources": [
+      {
+        "label": "Baobab Steel, directors’ report signed 11 August 2026, page 4",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/05590467/filing-history/MzUzOTcyMjkzMmFkaXF6a2N4/document"
+      },
+      {
+        "label": "Baobab Steel, Tete project scope and feasibility study",
+        "url": "https://baobab-steel.com/tete-steel-and-vanadium"
+      }
+    ]
+  },
+  "P100000120783": {
+    "decision": "Steelmaking increment unverified",
+    "netMt": null,
+    "reason": "Ittehad reports 0.5 Mt/yr across its Faisalabad and Islamabad plants combined. It describes the planned increase to 1 Mt/yr as an expansion of bar finishing. Neither figure identifies a new 0.5 Mt/yr induction furnace at Faisalabad or a net increase in crude-steel capacity there.",
+    "sources": [
+      {
+        "label": "Ittehad Steel, two-plant capacity and finishing-mill expansion plan",
+        "url": "https://ittehad.com.pk/about-us/"
+      }
+    ]
+  },
+  "P100000120784": {
+    "decision": "September stage unverified",
+    "netMt": null,
+    "reason": "Pakistan’s CPEC Secretariat documented construction at Rashakai in 2021. In December 2024 the planning ministry was still trying to resolve land prices and electricity tariffs with the company. The records identify the investment and early construction but leave the first 0.5 Mt/yr phase’s furnace status unresolved in September 2026.",
+    "sources": [
+      {
+        "label": "Pakistan CPEC Secretariat, visit to Century Steel's construction site",
+        "url": "https://www.cpec.gov.pk/news/210"
+      },
+      {
+        "label": "Pakistan CPEC Secretariat, ministerial meeting, 23 December 2024",
+        "url": "https://cpec.gov.pk/news/294"
+      },
+      {
+        "label": "OECD, Rashakai project and reported Chinese parent, 2023, page 34",
+        "url": "https://one.oecd.org/document/DSTI/SC(2023)3/FINAL/en/pdf#page=34"
+      }
+    ]
+  },
+  "P100000120690": {
+    "decision": "Capacity unreported",
+    "netMt": null,
+    "reason": "North Korea's state news agency reported installation work on a new electric furnace in August 2024. Its 3 September 2026 report on Chollima gives no annual steel capacity for that unit. The report’s tonnage refers to an electrode production base. Gross and net furnace capacity remain unknown.",
+    "sources": [
+      {
+        "label": "KCNA via OANA, new electric furnace at Chollima, 26 August 2024",
+        "url": "https://oananews.org/node/687112"
+      },
+      {
+        "label": "KCNA via OANA, 3 September 2026 production update",
+        "url": "https://oananews.org/node/712460"
+      }
+    ]
+  }
+}

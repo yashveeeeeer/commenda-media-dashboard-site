@@ -35,13 +35,13 @@
       "ROU": 0.3
     },
     "headquarters": {
-      "Unassigned": 56.523724,
+      "Unassigned": 58.173724,
       "CHN": 28.001613,
       "IND": 24.792263,
       "LUX": 12.4598,
       "JPN": 5.68,
       "PHL": 4.8,
-      "IRN": 4.03,
+      "IRN": 4.58,
       "SWE": 4.0,
       "MEX": 3.7,
       "USA": 3.59,
@@ -52,52 +52,51 @@
       "TUR": 2.0,
       "VNM": 1.81,
       "NGA": 1.3,
-      "KAZ": 1.2,
       "UZB": 1.04,
       "ITA": 1.0083,
       "BGD": 1.0,
       "RUS": 0.73,
       "LKA": 0.6,
-      "GBR": 0.5,
       "PAK": 0.5,
-      "SGP": 0.5,
       "SAU": 0.425,
       "BRA": 0.1473
     },
     "equity": {
-      "Domestic": 88.318876,
-      "Unassigned": 56.523724,
-      "Overseas": 26.5454
+      "Domestic": 87.668876,
+      "Unassigned": 58.173724,
+      "Overseas": 25.5454
     }
   },
   "net": {
-    "mt": 25.3,
-    "plants": 10,
+    "mt": 26.7,
+    "plants": 12,
     "hosts": {
       "IND": 17.05,
       "MEX": 3.6,
       "SWE": 2.7,
       "RUS": 1.8,
+      "IRN": 1.4,
       "USA": 0.15
     },
     "headquarters": {
       "IND": 11.05,
       "LUX": 5.9205,
-      "Unassigned": 4.5822,
+      "Unassigned": 5.6702,
       "JPN": 2.4,
       "MEX": 1.0,
+      "IRN": 0.312,
       "SWE": 0.2,
       "BRA": 0.1473
     },
     "equity": {
-      "Domestic": 12.25,
+      "Domestic": 12.562,
       "Overseas": 8.4678,
-      "Unassigned": 4.5822
+      "Unassigned": 5.6702
     }
   },
   "reviewedCorrectionsOnly": {
-    "mt": 123.775,
-    "plants": 78,
+    "mt": 121.875,
+    "plants": 76,
     "hosts": {
       "IND": 34.8,
       "IRN": 15.813,
@@ -107,15 +106,15 @@
       "PHL": 4.8,
       "NAM": 4.5,
       "RUS": 4.03,
-      "VNM": 3.81,
-      "BGD": 3.65,
       "CZE": 3.5,
+      "VNM": 3.31,
       "AUT": 3.3,
       "USA": 3.15,
       "ITA": 3.0,
       "SWE": 2.7,
       "SAU": 2.33,
       "NGA": 2.3,
+      "BGD": 2.25,
       "TUR": 2.0,
       "CAN": 1.85,
       "KAZ": 1.2,
@@ -127,41 +126,38 @@
       "ROU": 0.3
     },
     "headquarters": {
-      "Unassigned": 43.371387,
+      "Unassigned": 43.621387,
       "IND": 18.842263,
       "LUX": 11.9383,
       "CHN": 8.44245,
       "JPN": 5.68,
       "PHL": 4.8,
-      "IRN": 4.03,
+      "IRN": 4.58,
       "AUT": 3.3,
       "MEX": 3.2,
       "NAM": 3.0,
       "USA": 3.0,
       "NLD": 2.25,
       "TUR": 2.0,
-      "VNM": 1.81,
+      "VNM": 1.31,
       "NGA": 1.3,
-      "KAZ": 1.2,
       "ITA": 1.0083,
       "BGD": 1.0,
       "RUS": 0.73,
       "LKA": 0.6,
-      "GBR": 0.5,
       "PAK": 0.5,
-      "SGP": 0.5,
       "SAU": 0.425,
       "SWE": 0.2,
       "BRA": 0.1473
     },
     "equity": {
-      "Domestic": 57.579713,
-      "Unassigned": 43.371387,
-      "Overseas": 22.8239
+      "Domestic": 56.429713,
+      "Unassigned": 43.621387,
+      "Overseas": 21.8239
     }
   },
-  "checks": 74,
-  "checkedGrossMt": 140.755,
-  "zeroSites": 28,
-  "pendingSites": 69
+  "checks": 107,
+  "checkedGrossMt": 171.388,
+  "zeroSites": 30,
+  "pendingSites": 65
 }

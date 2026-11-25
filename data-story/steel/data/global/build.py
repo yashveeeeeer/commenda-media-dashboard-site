@@ -248,7 +248,12 @@ def main():
     graphs = load("api-owner-graphs.json")
     units_data = load("api-construction-steel-units.json")
     overrides = load("issuer-overrides.json")
-    industrial_allow = set(load("industry-owner-allowlist.json")["allow"])
+    role_review = load("industry-owner-allowlist.json")
+    industrial_allow = set(role_review["allow"])
+    unresolved_parents = role_review["unresolvedParents"]
+    headquarters = role_review["headquartersDisclosures"]
+    assert industrial_allow.isdisjoint(unresolved_parents)
+    assert headquarters.keys() <= industrial_allow
     map_source = load("map-source.json")
     iso3 = country_crosswalk(plants, entities)
 
@@ -269,9 +274,23 @@ def main():
             {"label": "GEM plant dossier", "url": plant["url"]},
         ]
         override = overrides.get(plant_id)
+        basis = "GEM September 2026 map parent stakes and current GEM entity HQ"
+        for owner in owners:
+            disclosure = headquarters.get(owner["entityId"])
+            if disclosure:
+                assert not owner["reportedCountry"] and owner["stake"] is not None
+                owner["country"] = disclosure["country"]
+                owner["basis"] = basis = disclosure["reason"]
+                sources.append({"label": disclosure["label"], "url": disclosure["url"]})
+            ruling = unresolved_parents.get(owner["entityId"])
+            if ruling:
+                assert owner["country"] is None
+                owner["role"] = ruling["role"]
+                owner["basis"] = basis = ruling["reason"]
+                sources.append({"label": ruling["label"], "url": ruling["url"]})
         operator = plant.get("owner")
         operator_status = "GEM map first owner/operator; role not independently verified"
-        basis = "GEM September 2026 map parent stakes and current GEM entity HQ"
+        operator_ids = re.findall(r"E\d+", plant.get("owner-gem-id") or "")
         if operator and FINANCIAL_RE.search(operator):
             operator = None
             operator_status = "GEM owner field names an investment or financial entity; plant operator not independently verified"
@@ -280,8 +299,9 @@ def main():
             owners = override["owners"]
             operator = override["operator"]
             operator_status = override["operatorStatus"]
+            operator_ids = override.get("operatorEntityIds", operator_ids)
             sources.extend(override["sources"])
-            flags.append("issuer-owner-override")
+            flags.append(override.get("flag", "issuer-owner-override"))
             basis = override["reason"]
         project = {
             "id": plant_id,
@@ -295,7 +315,7 @@ def main():
             "grossMt": round(gross, 6) if gross is not None else None,
             "owners": owners,
             "sources": sources,
-            "operatorEntityIds": re.findall(r"E\d+", plant.get("owner-gem-id") or ""),
+            "operatorEntityIds": operator_ids,
             "operatorStatus": operator_status,
             "capacityByMethodTtpa": method_cap,
             "nonnumericConstructionSteel": nonnumeric,
@@ -326,6 +346,9 @@ def main():
         if entity_id in industrial_allow:
             decision = "reviewed industrial parent"
             reason = "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden."
+        elif entity_id in unresolved_parents:
+            decision = "grey"
+            reason = unresolved_parents[entity_id]["reason"]
         elif entity.get("entity_type") in ("unknown entity", "person"):
             decision = "grey"
             reason = "Unidentified shareholder pool or natural persons; no country assigned."
@@ -350,7 +373,7 @@ def main():
             "projectIds": sorted(usage["projectIds"]),
             "grossMapStakeMt": round(usage["grossMapStakeMt"], 6),
             "GEMEntitySource": entity.get("url"),
-            "additionalRoleSource": ROLE_SOURCES.get(entity_id),
+            "additionalRoleSource": (unresolved_parents.get(entity_id) or headquarters.get(entity_id) or {}).get("url", ROLE_SOURCES.get(entity_id)),
         })
     write("owner-role-review.json", {
         "method": "Manual allowlist of named industrial groups, default grey for every other source-listed parent. Role decisions are distinct from issuer-verified equity overrides.",
@@ -450,7 +473,8 @@ def main():
         "rolePolicy": "Only manually allowlisted industrial parents and explicit issuer overrides have owner.country assigned. Unquantified shares, unknown HQs, financial managers, custody, unions, opaque trading/consultancy/holding entities remain grey with country=null; reportedCountry preserves GEM HQ evidence.",
         "industrialRoleReview": "owner-role-review.json",
         "issuerOverrides": "issuer-overrides.json",
-        "issuerOverrideProjectCount": len(overrides),
+        "issuerOverrideProjectCount": sum(not record.get("flag") for record in overrides.values()),
+        "officialEntityMatchReviewCount": sum(record.get("flag") == "official-entity-match-review" for record in overrides.values()),
         "reviewedParentEntityCount": len(decisions),
         "industrialRoleAllowlistCount": len(industrial_allow),
         "reproduceOffline": "python data-story/steel/data/global/build.py",

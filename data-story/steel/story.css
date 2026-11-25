@@ -1,9 +1,10 @@
 @font-face{font-family:Baskervville;src:url("assets/baskervville-latin.woff2") format("woff2");font-display:swap}
 @font-face{font-family:"Geist Mono";src:url("assets/geist-mono-latin.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:Inter;src:url("../../_next/static/media/e4af272ccee01ff0-s.p.woff2") format("woff2");font-weight:100 900;font-display:swap}
 :root{
   --paper:#f5f2e7;--light:#f8f6f2;--ink:#171615;--secondary:#474240;--line:#bcb7aa;
   --crimson:#a7252d;--coral:#f8684d;--blue:#3981f1;--navy:#003b73;--land:#57524d;
-  --mono:"Geist Mono",ui-monospace,monospace;--serif:Baskervville,Georgia,serif;
+  --mono:"Geist Mono",ui-monospace,monospace;--serif:Baskervville,Georgia,serif;--sans:Inter,Arial,sans-serif;
   --edge:clamp(20px,4.3vw,82px)
 }
 *{box-sizing:border-box}
@@ -57,7 +58,7 @@ h1{font:550 clamp(3.1rem,5.8vw,7.3rem)/.99 var(--mono);letter-spacing:-.085em;te
 .figure-heading{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:1.25rem;padding-top:1rem}
 .figure-heading>span{font:500 .75rem var(--mono);color:var(--crimson)}
 .figure h2{font:550 clamp(1.22rem,2vw,1.9rem)/1.2 var(--mono);letter-spacing:-.055em;text-wrap:balance}
-.figure figcaption{margin-top:1.3rem;padding-top:.85rem;border-top:1px solid var(--line);font:400 .81rem/1.5 var(--mono);color:var(--secondary)}
+.figure figcaption{margin-top:1.15rem;padding-top:.85rem;border-top:1px solid var(--line);font:400 .9rem/1.5 var(--sans);color:var(--secondary)}
 .split-figure,.comparison .key{margin-top:1.5rem}
 .split-total,.compare-row>div:first-child{display:flex;justify-content:space-between;gap:12px;line-height:1.4}
 .split-total{font:500 1.05rem/1.4 var(--mono);padding-bottom:10px}
@@ -129,11 +130,68 @@ th{font-weight:600}
   .numbers{overflow-x:auto}table{font-size:.72rem}th,td{padding:.55em .3em}
 }
 @media print{.mast nav,.cover-links,.rail,.endlinks,footer,.skip{display:none}.opening,.story-grid{display:block}.scene{max-width:400px}.cover{padding:16px 0}.cover h1{font-size:38pt;max-width:none}.story-grid{padding:24px 0}.prose>p{font-size:11pt}.figure{break-inside:avoid}.mast{padding:0}.methods{padding:0}}
-/* Match the previous story's lining figures in text and its tabular figures in data displays. */
+/* The shared typefaces use level, equal-width figures in prose and comparisons. */
 body,.dek,.prose>p,.method-lead,.methods section>p,.methods dd,.methods li,.ledger details p{
-  font-variant-numeric:lining-nums proportional-nums
+  font-variant-numeric:lining-nums tabular-nums
 }
 .figure,.figure *,.rail,.rail *,.methods table,.methods table *,.ledger summary,.ledger summary *,
 .sat,.sat *,.scene figcaption,.kicker{
   font-variant-numeric:lining-nums tabular-nums
 }
+
+/* Two equal scales let the reader compare a country's sites with its industrial owners. */
+.geo-table {
+  table-layout: fixed;
+  margin: 1.1rem 0 0;
+  font: 400 .86rem/1.35 var(--mono);
+}
+.geo-table caption {
+  padding: 0 0 .85rem;
+  text-align: left;
+  color: var(--secondary);
+  font-size: .76rem;
+}
+.geo-table thead th {
+  padding: .3rem 0 .6rem;
+  vertical-align: bottom;
+  color: var(--secondary);
+  font: 550 .85rem/1.3 var(--sans);
+  font-weight: 500;
+}
+.geo-table th:first-child { width: 27%; }
+.geo-table td, .geo-table thead th:not(:first-child) { padding-left: 1.1rem; }
+.geo-table tbody th { padding: .75rem 0; vertical-align: middle; font: 550 .92rem/1.35 var(--sans); }
+.geo-table td { padding-block: .45rem; padding-right: 0; }
+.geo-table td span { display: block; }
+.geo-track { height: .32rem; margin-top: .25rem; background: #e3dfd2; }
+.geo-track i { display: block; height: 100%; background: var(--land); }
+.geo-table td:last-child .geo-track i { background: var(--navy); }
+.geo-table tr:last-child > * { border-bottom: 0; }
+.figure figcaption a { color: var(--ink); }
+.scope-row { padding: 1.05rem 0; border-bottom: 1px solid var(--line); }
+.scope-row:first-of-type { padding-top: 1.4rem; }
+.scope-row:last-of-type { border-bottom: 0; padding-bottom: 0; }
+.scope-title { display: flex; justify-content: space-between; align-items: baseline; gap: .6rem; }
+.scope-title h3, .scope-title > b { font: 550 .94rem/1.35 var(--mono); }
+.scope-title h3 a { text-decoration-thickness: 1px; }
+.scope-title > b { white-space: nowrap; }
+.scope-row p { margin: .28rem 0 .65rem; color: var(--secondary); font: .9rem/1.4 var(--sans); }
+.scope-bar { position: relative; display: flex; height: 1.05rem; }
+.scope-bar::after { content: ""; position: absolute; left: 50%; inset-block: -2px; border-left: 1px solid var(--ink); }
+.scope-bar span:nth-child(1), .scope-key span:nth-child(1) i { background: var(--coral); }
+.scope-bar span:nth-child(2), .scope-key span:nth-child(2) i { background: var(--blue); }
+.scope-bar span:nth-child(3), .scope-key span:nth-child(3) i { background: #958b85; }
+.scope-key { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .35rem; margin-top: .55rem; font: .79rem/1.55 var(--mono); }
+.scope-key i { display: inline-block; width: .62em; height: .62em; margin-right: .4em; }
+.scope-key b { white-space: nowrap; }
+@media(max-width:540px) {
+  .geo-table th:first-child { width: 31%; }
+  .geo-table td, .geo-table thead th:not(:first-child) { padding-left: .55rem; }
+  .geo-table thead th { font-size: .69rem; }
+  .geo-table tbody th, .geo-table td { font-size: .76rem; }
+  .scope-title h3, .scope-title > b { font-size: .81rem; }
+  .scope-row p { font-size: .73rem; }
+  .scope-key { font-size: .7rem; }
+  .scope-key b { display: block; }
+}
+.geo-table *, .scope-row * { font-variant-numeric: lining-nums tabular-nums; }

@@ -1,7 +1,7 @@
 {
   "method": "Manual allowlist of named industrial groups, default grey for every other source-listed parent. Role decisions are distinct from issuer-verified equity overrides.",
   "reviewedEntityCount": 157,
-  "industrialAllowlistCount": 70,
+  "industrialAllowlistCount": 68,
   "decisions": [
     {
       "entityId": "E100000000031",
@@ -1070,14 +1070,14 @@
       "name": "Baobab Steel Ltd",
       "GEMHeadquartersCountry": "United Kingdom",
       "iso3": "GBR",
-      "decision": "reviewed industrial parent",
-      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "decision": "grey",
+      "reason": "Baobab is developing the proposed Tete project and seeks an equity and operating partner. Its filed accounts identify an investment fund as its ultimate controlling shareholder. The development company's UK headquarters cannot establish the industrial owner's headquarters.",
       "projectIds": [
         "P100000120752"
       ],
       "grossMapStakeMt": 0.5,
       "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130753",
-      "additionalRoleSource": null
+      "additionalRoleSource": "https://find-and-update.company-information.service.gov.uk/company/05590467/filing-history/MzUzOTcyMjkzMmFkaXF6a2N4/document"
     },
     {
       "entityId": "E100000130754",
@@ -1312,14 +1312,14 @@
       "name": "Century Steel Pte Ltd",
       "GEMHeadquartersCountry": "Singapore",
       "iso3": "SGP",
-      "decision": "reviewed industrial parent",
-      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "decision": "grey",
+      "reason": "GEM maps the Pakistani plant to a Singapore company. Pakistan's project authorities describe a Chinese-backed venture and provide no matching equity chain or percentages.",
       "projectIds": [
         "P100000120784"
       ],
       "grossMapStakeMt": 0.5,
       "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000131188",
-      "additionalRoleSource": null
+      "additionalRoleSource": "https://cpec.gov.pk/news/294"
     },
     {
       "entityId": "E100000132388",
@@ -2210,28 +2210,28 @@
       "name": "Asia United Steel ",
       "GEMHeadquartersCountry": "Kazakhstan",
       "iso3": "KAZ",
-      "decision": "reviewed industrial parent",
-      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "decision": "grey",
+      "reason": "GEM identifies Asia United Steel as both the local operator and its own parent. The regional authority identifies foreign financing but gives no industrial parent or equity percentages behind the local project company.",
       "projectIds": [
         "P100001080915"
       ],
       "grossMapStakeMt": 1.2,
       "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002021414",
-      "additionalRoleSource": null
+      "additionalRoleSource": "https://www.gov.kz/memleket/entities/almobl-kasipkerlik/press/news/details/1112604?lang=ru"
     },
     {
       "entityId": "E100002021989",
       "name": "Arian Steel Co ",
       "GEMHeadquartersCountry": null,
       "iso3": null,
-      "decision": "grey",
-      "reason": "Industrial sponsor role not established by this review.",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
       "projectIds": [
         "P100001063425"
       ],
       "grossMapStakeMt": 0.55,
       "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002021989",
-      "additionalRoleSource": null
+      "additionalRoleSource": "https://www.ariansteel.com/ContactUs"
     },
     {
       "entityId": "E100002022007",

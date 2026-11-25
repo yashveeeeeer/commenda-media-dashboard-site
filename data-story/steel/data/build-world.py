@@ -63,6 +63,10 @@ def summary(projects, field):
 def site_card(p, countries):
     gross = "Undisclosed" if p["grossMt"] is None else f'{p["grossMt"]:g} Mt/yr'
     net = "Unresolved" if p["netMt"] is None else f'{p["netMt"]:g} Mt/yr'
+    outcome = "unresolved" if p["netMt"] is None else "positive" if p["netMt"] > 0 else "zero"
+    review = "reviewed" if p["reviewed"] else "unreviewed"
+    search = escape(" ".join([p["name"], p["hostName"], p["country"], p["id"], p["operator"] or "",
+                              *(owner["name"] for owner in p["owners"])]), quote=True)
     refs = " · ".join(f'<a href="{escape(s["url"],quote=True)}">{escape(s["label"])}</a>' for s in p["sources"])
     stakes = []
     for owner, fraction in shares(p):
@@ -73,19 +77,24 @@ def site_card(p, countries):
         stakes.append(f"{name} ({fraction*100:.4f}".rstrip("0").rstrip(".") + f"%, {place})")
     unstaked = [escape(o["name"]) for o in p["owners"] if o["stake"] is None]
     named = f'<p>Listed without a percentage: {", ".join(unstaked)}.</p>' if unstaked else ''
-    return (f'<details id="site-{p["id"]}"><summary><strong>{escape(p["name"])}</strong>'
+    basis = p["ownershipBasis"]
+    ownership_note = "" if basis.startswith("GEM September 2026 map parent stakes") else f'<p>{escape(basis)}</p>'
+    return (f'<details id="site-{p["id"]}" data-outcome="{outcome}" data-review="{review}" data-search="{search}">'
+            f'<summary><strong>{escape(p["name"])}</strong>'
             f'<span>{gross}</span><small>{escape(p["decision"])}</small></summary><div>'
             f'<p><b>Checked addition: {net}.</b> {escape(p["reviewNote"])}</p>'
-            f'<p>Equity allocation: {" · ".join(stakes)}.</p>{named}'
-            f'<p class="links">{p["id"]} · {refs}</p></div></details>')
+            f'<p>Equity allocation: {" · ".join(stakes)}.</p>{named}{ownership_note}'
+            f'<p class="links"><a href="../dashboard/?plant={p["id"]}&amp;detail=1">View this plant on the map</a>'
+            f' · {p["id"]} · {refs}</p></div></details>')
 
 
 def build():
     plants = read("global/projects.json")["projects"]
     checks = read("global-review/review.json")
-    extra = read("extra-project-checks.json")
-    assert not (checks.keys() & extra.keys())
-    checks.update(extra)
+    for file in ("extra-project-checks.json", "additional-project-review.json"):
+        extra = read(file)
+        assert checks.keys().isdisjoint(extra), f"Duplicate plant ruling in {file}"
+        checks.update(extra)
     assert checks.keys() <= {p["id"] for p in plants}
     world, plant_csv, equity_csv = [], [], []
     fallback = dict(decision="Net addition unverified", netMt=None,
@@ -95,17 +104,18 @@ def build():
         r = checks.get(p["id"], fallback)
         net = r["netMt"]
         assert net is None or (net >= 0 and p["grossMt"] is not None and net <= p["grossMt"] + 1e-8)
+        adjusted = p["grossMt"] if net is None else net
         unique = {s["url"]:s for s in [*p["sources"], *r["sources"]]}
         row = dict(p, netMt=net, decision=r["decision"], reviewNote=r["reason"], sources=list(unique.values()),
                    reviewed=p["id"] in checks)
         assert p["country"] in countries and all(not o["country"] or o["country"] in countries for o in p["owners"])
         world.append(row)
         plant_csv.append([p["id"], p["name"], p["country"], p["lat"], p["lon"], p["operator"], p["grossMt"], net,
-                          row["reviewed"], r["decision"], r["reason"], " | ".join(unique)])
+                          row["reviewed"], r["decision"], r["reason"], " | ".join(unique), adjusted])
         for o, fraction in shares(p):
             allocate = lambda n: None if n is None else round(fraction*n, 9)
             equity_csv.append([p["id"], p["name"], p["country"], o.get("entityId"), o["name"], o["country"],
-                               classify(p,o["country"]), round(fraction,9), allocate(p["grossMt"]), allocate(net)])
+                               classify(p,o["country"]), round(fraction,9), allocate(p["grossMt"]), allocate(net), allocate(adjusted)])
     world.sort(key=lambda p:(p["grossMt"] is None,-(p["grossMt"] or 0),p["id"]))
     gross, net = summary(world,"grossMt"), summary(world,"netMt")
     # Stress test: apply measured corrections, then retain full GEM ratings at every unresolved site.
@@ -116,9 +126,9 @@ def build():
                  zeroSites=sum(p["netMt"] == 0 for p in world),pendingSites=sum(p["netMt"] is None for p in world))
     emit_json("world-summary.json",stats)
     emit_csv("world-projects.csv",["gem_plant_id","plant","host_iso3","latitude","longitude","operator","gem_gross_mt_per_year",
-             "checked_net_mt_per_year","project_reviewed","decision","evidence_note","source_urls"],plant_csv)
+             "checked_net_mt_per_year","project_reviewed","decision","evidence_note","source_urls","adjusted_mt_per_year"],plant_csv)
     emit_csv("world-equity.csv",["gem_plant_id","plant","host_iso3","gem_entity_id","owner_or_residual","hq_iso3",
-             "allocation","share","gross_mt_per_year","checked_net_mt_per_year"],equity_csv)
+             "allocation","share","gross_mt_per_year","checked_net_mt_per_year","adjusted_mt_per_year"],equity_csv)
     by_id = {p["id"]:p for p in world}
     unit_rows = []
     for unit in read("global/api-construction-steel-units.json")["units"].values():
@@ -135,8 +145,10 @@ def build():
     groups, links = [], []
     for host in sorted({p["hostName"] for p in world}):
         sites = [p for p in world if p["hostName"] == host]
-        links.append(f'<a href="#host-{sites[0]["country"]}">{escape(host)}</a>')
-        groups.append(f'<h3 id="host-{sites[0]["country"]}">{escape(host)}</h3>\n' + "\n".join(site_card(p,countries) for p in sites))
+        anchor = f'host-{sites[0]["country"]}'
+        links.append(f'<a href="#{anchor}">{escape(host)}</a>')
+        cards = "\n".join(site_card(p, countries) for p in sites)
+        groups.append(f'<div class="ledger-country"><h3 id="{anchor}" tabindex="-1">{escape(host)}</h3>\n{cards}\n</div>')
     jump = '<details class="host-nav"><summary>Jump to a country</summary><nav aria-label="Jump to host country">' + " ".join(links) + '</nav></details>'
     method.write_text(before+start+"\n"+jump+"\n"+"\n".join(groups)+"\n"+end+after, encoding="utf-8", newline="\n")
     return stats

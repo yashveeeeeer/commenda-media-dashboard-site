@@ -1,6 +1,7 @@
 {
   "review_rule": "These GEM-listed parents have been manually reviewed as named steelmakers, steel manufacturing groups, or industrial mineral/metal producers behind the mapped plant. The list is an editorial industry-role screen, not issuer certification of each equity path. Every other GEM parent stays grey until separately established. Financial managers, unions, traders, consultancy and opaque holding/project vehicles are excluded.",
   "allow": [
+    "E100002021989",
     "E100001000516",
     "E100000000687",
     "E100000000652",
@@ -34,7 +35,6 @@
     "E100000002408",
     "E100001012095",
     "E100000123903",
-    "E100002021414",
     "E100000131105",
     "E100000127405",
     "E100000126901",
@@ -54,9 +54,7 @@
     "E100000130754",
     "E100000130666",
     "E100000130788",
-    "E100000131188",
     "E100000130922",
-    "E100000130753",
     "E100000124068",
     "E100000000888",
     "E100002003149",
@@ -71,5 +69,33 @@
     "E100001010270",
     "E100002019324",
     "E100001012171"
-  ]
+  ],
+  "headquartersDisclosures": {
+    "E100002021989": {
+      "country": "IRN",
+      "reason": "GEM lists Arian Steel at 100% but supplies no headquarters country. Arian Steel gives its head office in Tehran. The company profile also identifies its plant on the Eshtehard–Bouin Zahra road. Both locations are in Iran.",
+      "label": "Arian Steel, head office and works addresses",
+      "url": "https://www.ariansteel.com/ContactUs"
+    }
+  },
+  "unresolvedParents": {
+    "E100002021414": {
+      "role": "local project company",
+      "reason": "GEM identifies Asia United Steel as both the local operator and its own parent. The regional authority identifies foreign financing but gives no industrial parent or equity percentages behind the local project company.",
+      "label": "Almaty regional authority, Asia United Steel investors and project scope",
+      "url": "https://www.gov.kz/memleket/entities/almobl-kasipkerlik/press/news/details/1112604?lang=ru"
+    },
+    "E100000130753": {
+      "role": "development company controlled by an investment fund",
+      "reason": "Baobab is developing the proposed Tete project and seeks an equity and operating partner. Its filed accounts identify an investment fund as its ultimate controlling shareholder. The development company's UK headquarters cannot establish the industrial owner's headquarters.",
+      "label": "Baobab Steel, filed accounts, note 12(c) on control",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05590467/filing-history/MzUzOTcyMjkzMmFkaXF6a2N4/document"
+    },
+    "E100000131188": {
+      "role": "disputed entity match",
+      "reason": "GEM maps the Pakistani plant to a Singapore company. Pakistan's project authorities describe a Chinese-backed venture and provide no matching equity chain or percentages.",
+      "label": "Pakistan CPEC Secretariat, Century Steel project meeting",
+      "url": "https://cpec.gov.pk/news/294"
+    }
+  }
 }
