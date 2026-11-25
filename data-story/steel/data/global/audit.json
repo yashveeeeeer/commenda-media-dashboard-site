@@ -1846,7 +1846,7 @@
     "api-owner-graphs.json": "50e5d77a4ebfaa590e315b4dae008c0c5a50672ebc4fb498073eb6a126eb2a2a",
     "api-construction-steel-units.json": "87284456cb1cb6e611412d6fd17b415beb721308c532c707940a93b8b5e99751",
     "issuer-overrides.json": "ea2fcc244e9a0c0c4032585b10344daaaba9f3a5b7af78a09fd95440c1c746e3",
-    "country-crosswalk.json": "75ef44a80e79ada6b996d042929520d465bb557290322aed3b5ab3138aa3090e",
+    "country-crosswalk.json": "bc6e002e1cdd0475867b1e363e1dd551211b14445396f46b95506c28114ee630",
     "industry-owner-allowlist.json": "d364c83c2a12f48b94c6371155b0b93e4f4e2a4f6f9bca6ff2eac6389cb237bb",
     "owner-role-review.json": "f92f668085b0734280330c6c90b086faf40c9baa210729206933b434ddb77e93"
   },

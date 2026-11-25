@@ -129,3 +129,11 @@ th{font-weight:600}
   .numbers{overflow-x:auto}table{font-size:.72rem}th,td{padding:.55em .3em}
 }
 @media print{.mast nav,.cover-links,.rail,.endlinks,footer,.skip{display:none}.opening,.story-grid{display:block}.scene{max-width:400px}.cover{padding:16px 0}.cover h1{font-size:38pt;max-width:none}.story-grid{padding:24px 0}.prose>p{font-size:11pt}.figure{break-inside:avoid}.mast{padding:0}.methods{padding:0}}
+/* Match the previous story's lining figures in text and its tabular figures in data displays. */
+body,.dek,.prose>p,.method-lead,.methods section>p,.methods dd,.methods li,.ledger details p{
+  font-variant-numeric:lining-nums proportional-nums
+}
+.figure,.figure *,.rail,.rail *,.methods table,.methods table *,.ledger summary,.ledger summary *,
+.sat,.sat *,.scene figcaption,.kicker{
+  font-variant-numeric:lining-nums tabular-nums
+}

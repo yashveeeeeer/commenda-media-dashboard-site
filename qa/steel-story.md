@@ -28,4 +28,12 @@ The first step reconstructs project and equity records from the release map, GEM
 | Interaction and layout | Chrome checks covered widths from 320 to 1920 pixels, both map views and measures, host-country filtering, country and plant selection, mobile inspection, relative circle areas, and conservation of total capacity. Local files and fragment targets were checked across all three pages |
 | Editorial | An independent read flagged investor-role inconsistencies and ambiguity between gross furnace capacity and net additions. The role list, ledger and article were revised and the final narrative checked against the calculated figures |
 
+The [display regression check](check-steel-display.py) measures digit advances in the actual loaded fonts, exercises both ownership views and checks host filtering, keyboard inspection, zoom and reset at seven viewport sizes. Serve the repository locally and run it with Python Playwright and Chromium.
+
+```sh
+python qa/check-steel-display.py --channel chrome http://localhost:8842/data-story/steel/
+```
+
+The [map build](../data-story/steel/dashboard/build-map.py) checks the source checksum and validates the shared country coverage. All 241 country fills, the land surface and the single border layer come from that coverage. The dashboard projects the points and polygons in the same coordinate system.
+
 The downloadable [project ledger](../data-story/steel/data/world-projects.csv), [equity ledger](../data-story/steel/data/world-equity.csv), [unit join](../data-story/steel/data/world-unit-plant-join.csv) and [calculation summary](../data-story/steel/data/world-summary.json) contain the figures underlying these checks.

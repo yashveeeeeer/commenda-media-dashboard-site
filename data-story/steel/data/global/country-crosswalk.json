@@ -1,7 +1,7 @@
 {
   "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson",
   "rule": "Natural Earth ADM0_A3 to ISO_A3_EH. Null means no ISO match.",
-  "local_dashboard_geometry_sha256": "17bdf95f55e4270500ab51978599b13c82097e3eafe5fda492e11884365413e7",
+  "local_dashboard_geometry_sha256": "aeec5fd65f929582d44483a61afb6a268fa6c06790646ed61c3312a30186e2a5",
   "names": {
     "Argentina": {
       "iso3": "ARG",

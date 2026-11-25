@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f5f2e7">
   <meta name="description" content="Explore steelmaking capacity under construction worldwide, its owners and checked net additions.">
   <title>The global steel buildout · Capacity explorer</title>
@@ -13,58 +13,81 @@
 <body>
   <a class="skip" href="#capacity">Skip to capacity breakdown</a>
   <header class="masthead">
-    <a href="../../../" aria-label="Commenda Media dashboard home"><img src="../../../wordmark.svg" alt="Commenda Media"></a>
-    <nav aria-label="Steel story"><a href="../">Read the article <span aria-hidden="true">↗</span></a><a href="../method/">Methods</a></nav>
+    <a href="../../../" aria-label="Commenda Media home"><img src="../../../wordmark.svg" alt="Commenda Media" width="169" height="12"></a>
+    <nav aria-label="Steel story"><a href="../">Article</a><a href="./" aria-current="page">Dashboard</a><a href="../method/">Method</a></nav>
   </header>
   <main>
     <div class="heading">
-      <div><p class="eyebrow">Industry / Capacity explorer</p><h1>The global steel buildout</h1></div>
+      <div class="intro">
+        <p class="eyebrow">Steelmaking <span aria-hidden="true">/</span> September 2026</p>
+        <h1>The global steel buildout</h1>
+        <p class="dek">Follow the capacity under construction from the mills to their owners.</p>
+      </div>
       <div class="filters">
-        <label for="measure">Measure <select id="measure" disabled><option value="gross">All construction</option><option value="net">Checked net additions</option></select></label>
-        <label for="host">Plant country <select id="host" disabled><option value="all">Worldwide</option></select></label>
+        <label for="host">Plant country<select id="host" disabled><option value="all">Worldwide</option></select></label>
+        <label for="measure">Capacity measure<select id="measure" disabled><option value="gross">All construction</option><option value="net">Checked net additions</option></select></label>
       </div>
     </div>
     <p id="status" class="loading" role="status">Loading project records…</p>
-    <noscript>Enable JavaScript to use the map, or <a href="../method/">read the sources and methods</a>.</noscript>
+    <noscript>Enable JavaScript to use the map, or <a href="../method/">read the project ledger</a>.</noscript>
     <div class="workspace" hidden>
       <section class="map-panel" aria-label="Capacity map">
-        <div class="switch" role="group" aria-label="Map locations">
-          <button type="button" id="plants" aria-pressed="true" disabled>Plant locations</button>
-          <button type="button" id="owners" aria-pressed="false" disabled>Owner locations</button>
+        <div class="map-tools">
+          <div class="switch" role="group" aria-label="Map locations">
+            <button type="button" id="plants" aria-pressed="true" disabled>Plant locations</button>
+            <button type="button" id="owners" aria-pressed="false" disabled>Owner locations</button>
+          </div>
+          <div class="camera-controls" role="group" aria-label="Map navigation">
+            <button id="zoom-in" type="button" aria-label="Zoom in" title="Zoom in">+</button>
+            <button id="zoom-out" type="button" aria-label="Zoom out" title="Zoom out">−</button>
+            <button id="reset-view" type="button" aria-label="Reset map view" title="Reset map view">Reset</button>
+          </div>
         </div>
-        <p class="map-message" id="map-message" hidden></p>
-        <svg id="map" role="group" aria-labelledby="map-title map-description"><title id="map-title">Plant locations</title><desc id="map-description"></desc><g id="geography" aria-hidden="true"></g><g id="marks"></g><g id="labels" aria-hidden="true"></g></svg>
+        <div class="map-stage">
+          <svg id="map" role="group" aria-labelledby="map-title map-description"><title id="map-title">Plant locations</title><desc id="map-description"></desc><g id="geography" aria-hidden="true"></g><g id="marks"></g><g id="labels" aria-hidden="true"></g></svg>
+          <p class="map-message" id="map-message" hidden></p>
+        </div>
         <div class="map-footer">
-          <div class="map-legends"><div class="map-key" id="size-key"></div><div id="color-key"></div></div>
+          <div id="color-key" aria-label="Ownership legend"></div>
           <button id="unmapped" type="button" hidden></button>
-          <a class="credit" href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/">Natural Earth boundaries</a>
+          <div class="map-key" id="size-key"></div>
+        </div>
+        <div class="selection">
+          <div class="selection-field">
+            <label for="project">Selected plant</label>
+            <select id="project"></select>
+            <p id="selection-caption"></p>
+          </div>
+          <button id="inspect" type="button" aria-haspopup="dialog">View details <span aria-hidden="true">↗</span></button>
         </div>
       </section>
       <section class="capacity" id="capacity" tabindex="-1" aria-label="Capacity breakdown">
         <div class="summary">
-          <div class="scope-line"><p id="scope" class="eyebrow"></p><span class="as-of">September 2026</span></div>
-          <div class="total"><span id="capacity-total"></span><span>Mt/yr</span></div>
+          <p id="scope" class="eyebrow"></p>
+          <div class="total"><span id="capacity-total"></span><abbr title="Million metric tonnes per year">Mt/yr</abbr></div>
           <p class="definition" id="definition"></p>
           <p id="coverage" class="coverage"></p>
         </div>
-        <div class="ranking">
-          <label class="eyebrow" for="breakdown">Breakdown</label>
+        <section class="equity-overview" aria-labelledby="equity-heading">
+          <h2 id="equity-heading">Where owners are based</h2>
+          <div id="equity-bar" class="strip" aria-hidden="true"></div>
+          <div id="equity-values"></div>
+        </section>
+        <section class="ranking" aria-label="Capacity breakdown table">
+          <label for="breakdown" class="visually-hidden">Breakdown</label>
           <select id="breakdown"></select>
+          <div class="table-head" aria-hidden="true"><span id="rank-label">Country</span><span>Mt/yr</span><span>Share</span></div>
           <div class="strip" id="strip" aria-hidden="true"></div>
           <div id="ranks"></div>
           <p class="rank-note" id="rank-note"></p>
-        </div>
-        <section class="detail" aria-label="Ownership detail">
-          <label class="eyebrow" for="project">Inspect a plant</label>
-          <select id="project"></select>
-          <div id="project-card"></div>
         </section>
       </section>
     </div>
+    <footer><span>Source <a href="../method/#release">Global Energy Monitor</a><span class="sep"> · </span><a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/">Natural Earth</a></span><a href="../data/world-projects.csv" download>Download project data <span aria-hidden="true">↓</span></a></footer>
   </main>
   <dialog id="map-detail" aria-labelledby="dialog-name">
     <div class="dialog-head"><h2 id="dialog-name"></h2><form method="dialog"><button type="submit" aria-label="Close map detail">Close</button></form></div>
-    <div id="dialog-content"></div>
+    <div id="project-card"></div>
   </dialog>
 </body>
 </html>

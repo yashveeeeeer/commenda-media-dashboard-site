@@ -4,6 +4,8 @@ import {createMap} from "./map.js";
 const $ = id => document.getElementById(id);
 const number = new Intl.NumberFormat("en",{maximumFractionDigits:3});
 const percentage = new Intl.NumberFormat("en",{style:"percent",maximumFractionDigits:2});
+const tableAmount = new Intl.NumberFormat("en",{minimumFractionDigits:3,maximumFractionDigits:3});
+const tableShare = new Intl.NumberFormat("en",{style:"percent",minimumFractionDigits:1,maximumFractionDigits:1});
 const mt = value => number.format(value)+" Mt/yr";
 function node(tag, text, className) {
   const el=document.createElement(tag);
@@ -34,6 +36,15 @@ function ownerRow(card, name, amount, info, chain) {
   if (path?.length) row.append(node("p",path.join(" → "),"owner-chain"));
   card.append(row);
 }
+function projectMeasures(row) {
+  const measures=node("dl",null,"project-measures");
+  for (const [label,value,missing] of [["Under construction",row.grossMt,"Unreported"],["Checked net addition",row.netMt,"Unresolved"]]) {
+    const cell=node("div");
+    cell.append(node("dt",label),node("dd",value==null ? missing : mt(value)));
+    measures.append(cell);
+  }
+  return measures;
+}
 function swatch(color) {
   const dot=node("i",null,"swatch");dot.style.background=color;return dot;
 }
@@ -50,27 +61,32 @@ async function start() {
   let plantId=model.projects.find(p=>p.id==="P100000120513")?.id ?? model.projects[0].id;
   let countryId=model.destinations[0].id;
   const selectedId=()=>mode==="plants"?plantId:countryId;
-  const drawMap=createMap(countries, id=>select(id,true));
+  const drawMap=createMap(geography, id=>select(id,true));
+  const dialog=$("map-detail");
+  function openDetail() {
+    const site=mode==="plants" && model.projects.find(p=>p.id===plantId);
+    $("dialog-name").textContent=site ? site.name : $("project").selectedOptions[0]?.text;
+    dialog.showModal();
+  }
   function select(id,fromMap=false) {
     if (mode==="plants") plantId=id;else countryId=id;
     $("project").value=id;
     renderDetail();
     drawMap(model,mode,id);
-    if (fromMap && matchMedia("(max-width:680px)").matches) {
-      $("dialog-name").textContent=$("project").selectedOptions[0]?.text;
-      $("dialog-content").replaceChildren(...[...$("project-card").children].map(el=>el.cloneNode(true)));
-      $("map-detail").showModal();
-    } else if (fromMap) {
-      const panel=$("capacity");
-      const offset=$("project").getBoundingClientRect().top-panel.getBoundingClientRect().top;
-      if (offset+130>panel.clientHeight || offset<0) panel.scrollTop+=offset-42;
-    }
+    if (fromMap) openDetail();
   }
   function renderDetail() {
     const card=$("project-card");card.replaceChildren();
     if (mode==="owners") {
       const group=model.destinations.find(g=>g.id===countryId);
+      if (!group?.mt) {
+        $("selection-caption").textContent="No capacity to allocate to owners in this selection.";
+        return;
+      }
       const known=group.id!==UNKNOWN;
+      $("selection-caption").textContent=known
+        ? mt(group.mt)+" of equity-weighted capacity"
+        : mt(group.mt)+" without an assigned industrial headquarters";
       card.append(node("p",mt(group.mt)+(known?" allocated to owners based in "+group.name+".":" unassigned to an owner country. This includes missing stakes or headquarters and financial owners excluded from the map."),"meta"));
       if (known && group.mt) card.append(node("p",mt(group.localMt)+" at plants in "+group.name+" · "+mt(group.mt-group.localMt)+" abroad.","meta"));
       const ordered=group.parts.slice().sort((a,b)=>b.mt-a.mt);
@@ -87,10 +103,14 @@ async function start() {
     const row=model.projects.find(p=>p.id===plantId);
     if (!row) return;
     const region=[row.state,row.hostName].filter(Boolean).join(", ");
-    const gross=row.grossMt==null?"Construction capacity unreported":mt(row.grossMt)+" under construction";
-    const net=row.netMt==null?"net addition unresolved":mt(row.netMt)+" checked net addition";
-    card.append(node("p",region+" · "+gross+" · "+net+".","meta"));
-    if (row.operator) card.append(node("p","GEM-listed site company · "+row.operator,"meta"));
+    const split=row.owners.length===2 && row.owners.every(o=>o.stake!=null && o.country)
+      ? " · "+row.owners.map(o=>percentage.format(o.stake)).join(" / ")+" equity" : "";
+    $("selection-caption").textContent=[region, row.amount==null ? "Capacity unresolved" : mt(row.mt)].filter(Boolean).join(" · ")+split;
+    card.append(node("p",region,"project-region"),projectMeasures(row));
+    if (row.operator) card.append(node("p","Site company · "+row.operator,"meta"));
+    const equityHeading=node("h3","Ownership","detail-subhead");
+    equityHeading.append(node("span",row.amount==null?"Disclosed equity":"Equity · "+(model.measure==="net"?"net additions":"gross capacity")));
+    card.append(equityHeading);
     for (const owner of row.owners) {
       const dest=model.countryByCode.get(owner.country ?? owner.reportedCountry);
       const hq=dest?.name ?? "HQ unresolved";
@@ -115,12 +135,13 @@ async function start() {
   }
   function countryRows() {
     const plants=mode==="plants", source=plants?model.hosts:model.destinations.filter(g=>g.id!==UNKNOWN);
-    const result=source.slice(0,3);
-    if (source.length>3) {
-      const members=source.slice(3);
+    const result=source.slice(0,5);
+    if (source.length>5) {
+      const members=source.slice(5);
       result.push({name:"Other countries",members,mt:members.reduce((sum,row)=>sum+row.mt,0),color:plants?"var(--coral)":"var(--blue)"});
     }
-    if (!plants) result.push(model.destinations.find(g=>g.id===UNKNOWN));
+    const unknown=model.destinations.find(g=>g.id===UNKNOWN);
+    if (!plants && unknown.mt>0) result.push(unknown);
     return result;
   }
   function renderRanking() {
@@ -128,18 +149,37 @@ async function start() {
     const rows=view==="countries"?countryRows():view==="projects"?model.groups:model.equity;
     $("strip").replaceChildren();$("ranks").replaceChildren();
     $("strip").hidden=view==="countries";
+    $("rank-label").textContent=view==="countries"?"Country":"Ownership";
+    document.querySelector(".equity-overview").hidden=view==="equity";
+    if (!model.total) {
+      $("strip").hidden=true;
+      $("ranks").append(node("p","No measured capacity to rank in this selection.","meta"));
+      $("rank-note").textContent="";
+      return;
+    }
+    const maxCountry=Math.max(0,...rows.filter(entry=>!entry.members && entry.id!==UNKNOWN).map(entry=>entry.mt));
+    function addValues(element, entry) {
+      element.append(node("span",tableAmount.format(entry.mt),"value"),
+        node("span",model.total ? tableShare.format(entry.mt/model.total) : "—","portion"));
+    }
     for (const entry of rows) {
       const ratio=model.total?entry.mt/model.total:0;
-      const item=node("div",null,"rank"+(view==="countries"?" meter":""));
-      item.style.setProperty("--share",100*ratio+"%");
+      const meter=view==="countries" && !entry.members && entry.id!==UNKNOWN;
+      const item=node("div",null,"rank"+(meter?" meter":""));
       item.style.setProperty("--color",entry.color);
-      item.append(swatch(entry.color),node("span",entry.name),node("span",number.format(entry.mt),"value"));
+      const label=node("span",entry.name,"rank-name");
+      if (meter) {
+        item.style.setProperty("--bar",100*(maxCountry ? entry.mt/maxCountry : 0)+"%");
+        label.append(node("i",null,"mark-bar"));
+      } else if (!entry.members) label.prepend(swatch(entry.color));
+      item.append(label);
+      addValues(item,entry);
       if (entry.members) {
         const details=node("details",null,"rank-more"), header=node("summary"), list=node("ol");
         header.append(item);details.append(header,list);
         for (const member of entry.members) {
-          const li=node("li");
-          li.append(node("span",member.name),node("span",number.format(member.mt),"value"));list.append(li);
+          const li=node("li",null,"rank");
+          li.append(node("span",member.name,"rank-name"));addValues(li,member);list.append(li);
         }
         $("ranks").append(details);
       } else $("ranks").append(item);
@@ -149,20 +189,38 @@ async function start() {
     }
     $("rank-note").textContent=view==="projects"?"Whole plants, in Mt/yr. An incomplete ownership record puts the whole plant in grey.":
       view==="equity"?"Mt/yr split by equity. Domestic and overseas are relative to each plant’s country.":
-      mode==="plants"?"Capacity at plant locations, in Mt/yr.":"Dots mark headquarters countries. Mt/yr split by disclosed stakes. Grey shows unallocated tonnes.";
+      mode==="plants"?"Share of measured capacity in the selected area.":"Capacity allocated to headquarters countries by equity.";
+  }
+  function renderEquity() {
+    const bar=$("equity-bar"), values=$("equity-values");
+    bar.replaceChildren();values.replaceChildren();
+    const labels=["Domestic","Overseas","Unassigned"];
+    model.equity.forEach((entry,index)=>{
+      const ratio=model.total ? entry.mt/model.total : 0;
+      if (ratio>0) {
+        const segment=node("span");
+        segment.style.background=entry.color;segment.style.width=(100*ratio)+"%";bar.append(segment);
+      }
+      const cell=node("div"),label=node("span");
+      label.append(swatch(entry.color),document.createTextNode(labels[index]));
+      cell.append(label,node("b",model.total ? tableShare.format(ratio) : "—"));values.append(cell);
+    });
   }
   function render(modeChanged=false) {
     const plants=mode==="plants",gross=model.measure==="gross";
     const selectedBreak=$("breakdown").value || "countries";
-    $("breakdown").replaceChildren(new Option(plants?"Plant countries":"Owner countries","countries"),new Option("Project ownership","projects"),new Option("Equity by owner location","equity"));
+    $("breakdown").replaceChildren(new Option(plants?"Capacity by plant country":"Capacity by owner country","countries"),new Option("Whole plants by ownership","projects"),new Option("Equity by owner location","equity"));
     $("breakdown").value=selectedBreak;
     for (const key of ["plants","owners"]) $(key).setAttribute("aria-pressed",String(key===mode));
     $("map-title").textContent=plants?"Plant locations":"Owner headquarters countries";
-    $("map-description").textContent=plants?"Circle area is proportional to capacity. Choose a plant country to separate nearby mills, or inspect a plant in the list.":
-      "The same capacity is apportioned to owners’ headquarters countries by equity. Grey includes missing stakes, missing headquarters and shares held by financial owners.";
+    const mapDescription=plants?"Circle area is proportional to furnace capacity. Use the plant list to inspect overlapping sites.":
+      "The same capacity is apportioned to owners’ headquarters countries by equity. Unassigned tonnes are listed separately.";
+    $("map-description").textContent=mapDescription+" After zooming, drag to pan or focus the map and use the arrow keys.";
     $("scope").textContent=model.host===ALL?"Worldwide":hostNames.get(model.host);
-    $("capacity-total").textContent=number.format(model.total);
-    $("definition").textContent=gross?"Crude-steel capacity under construction, including replacements":"Checked net additions to crude-steel capacity";
+    const unreported=gross && model.projects.every(row=>row.amount==null);
+    $("capacity-total").textContent=unreported?"—":number.format(model.total);
+    document.querySelector(".total abbr").hidden=unreported;
+    $("definition").textContent=gross?"Crude-steel capacity under construction":"Checked net additions to crude-steel capacity";
     const positive=model.projects.filter(row=>row.mt>0).length;
     const pending=model.projects.filter(row=>row.amount==null);
     const missing=pending.length;
@@ -173,42 +231,51 @@ async function start() {
     $("coverage").textContent=gross?grossScope+missingNote:
       counted(positive,"site")+" with verified additions. "+excluded+" with zero addition. "+missing+" awaiting a net figure.";
     const key=$("color-key");key.replaceChildren();
-    const labels=plants?["Domestic","Overseas","Mixed","Unassigned"]:["At home","Abroad","Unassigned"];
+    const labels=plants?["Domestic","Overseas","Mixed","Ownership incomplete"]:["At home","Abroad","Unassigned"];
     (plants?categories:categories.filter(c=>c.id!=="mixed")).forEach((c,i)=>{
       const label=node("span");label.append(swatch(c.color),document.createTextNode(labels[i]));key.append(label);
     });
     const select=$("project");select.replaceChildren();
-    document.querySelector('label[for="project"]').textContent=plants?"Inspect a plant":"Inspect an owner country";
+    document.querySelector('label[for="project"]').textContent=plants?"Selected plant":"Selected owner country";
     if (plants) {
       const byHost=new Map();
       for (const row of [...model.projects].sort((a,b)=>a.hostName.localeCompare(b.hostName)||a.name.localeCompare(b.name))) {
         if (!byHost.has(row.country)) {const group=node("optgroup");group.label=row.hostName;select.append(group);byHost.set(row.country,group);}
-        byHost.get(row.country).append(new Option(row.name,row.id));
+        const name=row.id==="P100000120513" ? "Hazira steelworks" : row.name;
+        byHost.get(row.country).append(new Option(name,row.id));
       }
-    } else model.destinations.forEach(g=>select.add(new Option(g.name,g.id)));
+    } else if (model.total) {
+      model.destinations.filter(g=>g.mt>0).forEach(g=>select.add(new Option(g.name,g.id)));
+    } else select.add(new Option("No owner locations",UNKNOWN));
+    select.disabled=!plants && !model.total;
+    $("inspect").disabled=select.disabled;
     select.value=selectedId();
-    renderRanking();renderDetail();drawMap(model,mode,selectedId(),modeChanged);
-    $("status").textContent=$("scope").textContent+", "+mt(model.total)+", "+$("map-title").textContent+".";
+    renderEquity();renderRanking();renderDetail();drawMap(model,mode,selectedId(),modeChanged);
+    $("status").textContent=$("scope").textContent+", "+(unreported?"capacity unreported":mt(model.total))+", "+$("map-title").textContent+".";
   }
   for (const key of ["plants","owners"]) $(key).addEventListener("click",()=>{
     if (mode===key) return;
     if (key==="owners") {
       const row=model.projects.find(p=>p.id===plantId);
       const strongest=row?.parts.slice().sort((a,b)=>b.mt-a.mt)[0];
-      countryId=model.destinations.some(g=>g.id===strongest?.id)?strongest.id:model.destinations[0].id;
+      countryId=model.destinations.some(g=>g.id===strongest?.id && g.mt>0)?strongest.id:model.destinations[0].id;
     }
     mode=key;render(true);$("capacity").scrollTop=0;
   });
   function rescope() {
     model=buildModel(data.projects,countries,$("measure").value,$("host").value);
     if (!model.projects.some(p=>p.id===plantId)) plantId=model.projects[0]?.id;
-    if (!model.destinations.some(g=>g.id===countryId)) countryId=model.destinations[0].id;
+    if (!model.destinations.some(g=>g.id===countryId && g.mt>0)) countryId=model.destinations[0].id;
     render();$("capacity").scrollTop=0;
   }
   $("host").addEventListener("change",rescope);$("measure").addEventListener("change",rescope);
   $("project").addEventListener("change",()=>select($("project").value));
   $("breakdown").addEventListener("change",renderRanking);
   $("unmapped").addEventListener("click",()=>select(UNKNOWN,true));
+  $("inspect").addEventListener("click",openDetail);
+  dialog.addEventListener("close",()=>{
+    if(document.activeElement===document.body) $("inspect").focus({preventScroll:true});
+  });
   document.querySelector(".workspace").hidden=false;
   for (const id of ["plants","owners","host","measure"]) $(id).disabled=false;
   $("status").className="visually-hidden";render();
