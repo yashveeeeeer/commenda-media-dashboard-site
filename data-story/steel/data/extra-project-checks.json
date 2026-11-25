@@ -1,0 +1,225 @@
+{
+  "P100000121053": {
+    "decision": "New melt shop",
+    "netMt": 2.6,
+    "reason": "The existing Pesquería rolling mill uses purchased or imported slabs. Ternium reports that a new 2.6 Mt/yr electric steel shop and slab caster were being built there in the September quarter. The separate 2.1 Mt/yr direct-reduced iron module is outside the steel total.",
+    "sources": [
+      {
+        "label": "Ternium, 2025 Form 20-F, upstream facilities at Pesquería",
+        "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287426000020/tx-20251231.htm"
+      },
+      {
+        "label": "Ternium, September-quarter 2026 results",
+        "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287426000050/prternium3q2026.htm"
+      }
+    ]
+  },
+  "P100000120730": {
+    "decision": "Additional furnace",
+    "netMt": 1,
+    "reason": "DEACERO puts the addition to installed capacity from its new Ramos II steelworks at 1 Mt/yr. Equipment supplier Danieli rates the full minimill at 1.5. In early November Danieli reported that the new furnace was still being commissioned, with the old furnace supplying the first billet cast on the new line. Count the operator’s incremental capacity.",
+    "sources": [
+      {
+        "label": "DEACERO, Ramos II investment and incremental capacity",
+        "url": "https://blog.deacero.com/noticias/proyecto-de-inversi%C3%B3n-ramos-ii-la-apuesta-de-grupo-deacero-por-el-crecimiento-inteligente-con-valor-sustentable"
+      },
+      {
+        "label": "Danieli, minimill equipment and capacity",
+        "url": "https://www.danieli.com/en/news-media/news/deacero-orders-1-5-mtpy-danieli-minimill-large-sections_37_856.htm"
+      },
+      {
+        "label": "Danieli, first billet and EAF commissioning",
+        "url": "https://www.danieli.com/en/First-billet-successfully-cast-at-Deacero-Ramos-Arizpe-_37_1111.htm"
+      }
+    ]
+  },
+  "P100000120931": {
+    "decision": "Capacity expansion",
+    "netMt": 0.15,
+    "reason": "Gerdau reported an expansion of 150,000 tonnes of annual crude-steel capacity at its existing Texas works. Its September-quarter results describe work in progress.",
+    "sources": [
+      {
+        "label": "Gerdau, March-quarter 2026 investment disclosure",
+        "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465926049664/tm2612822d1_ex99-1.htm"
+      },
+      {
+        "label": "Gerdau, September-quarter 2026 results",
+        "url": "https://www.sec.gov/Archives/edgar/data/1073404/000110465926118862/tm2628297d1_ex99-1.htm"
+      }
+    ]
+  },
+  "P100000120988": {
+    "decision": "Commissioning at cutoff",
+    "netMt": null,
+    "reason": "Nucor made the first heat at the new West Virginia sheet mill in September. The melt shop has two electric furnaces. The disclosure does not identify how much furnace capacity still counted as under construction at the cutoff.",
+    "sources": [
+      {
+        "label": "Nucor, first heat in September",
+        "url": "https://investors.nucor.com/news/news-details/2026/Nucor-Reports-Results-for-the-Third-Quarter-of-2026/default.aspx"
+      },
+      {
+        "label": "SMS group, two electric furnaces at Mason County",
+        "url": "https://www.sms-group.com/en-cl/press-and-media/press-releases/press-release-detail/sms-group-to-supply-new-melt-shop-to-nucor-steel-west-virginia"
+      }
+    ]
+  },
+  "P100001061378": {
+    "decision": "Already in service",
+    "netMt": 0,
+    "reason": "Commercial Metals placed its Berkeley County micromill in service during its fiscal fourth quarter ending August 31. It falls outside September construction.",
+    "sources": [
+      {
+        "label": "Commercial Metals, fiscal 2026 Form 10-K",
+        "url": "https://www.sec.gov/Archives/edgar/data/22444/000002244426000065/cmc-20260831.htm"
+      }
+    ]
+  },
+  "P100000120699": {
+    "decision": "Completed before cutoff",
+    "netMt": 0,
+    "reason": "POSCO marked completion of the 2.5 Mt/yr Gwangyang electric furnace in June 2026, before the September snapshot.",
+    "sources": [
+      {
+        "label": "POSCO, Gwangyang completion",
+        "url": "https://newsroom.posco.com/en/posco-accelerates-transition-to-decarbonized-production-system-with-completion-of-koreas-largest-electric-arc-furnace/"
+      }
+    ]
+  },
+  "P100000120754": {
+    "decision": "Ironmaking phase documented",
+    "netMt": null,
+    "reason": "HyIron identifies the first Oshivela phase as 15,000 tonnes of direct-reduced iron per year and the next phase as an ironmaking expansion. These documents do not establish construction of the 1.5 Mt/yr steel furnace carried in GEM.",
+    "sources": [
+      {
+        "label": "HyIron, Oshivela project description",
+        "url": "https://hyiron.com/oshivela/"
+      },
+      {
+        "label": "HyIron, 2026 project presentation",
+        "url": "https://iea.blob.core.windows.net/assets/87627f24-e0ba-4992-a079-9f3b634c671f/HyIron_StephanKohne.pdf"
+      }
+    ]
+  },
+  "P100000120776": {
+    "decision": "Product boundary uncertain",
+    "netMt": null,
+    "reason": "SteelAsia identifies a steelmaking line and a rolling line at Lemery. Its published rating of 500,000 tonnes is for beam and other steel products. The separate 1.1 Mt/yr crude-steel increment in GEM remains unconfirmed.",
+    "sources": [
+      {
+        "label": "SteelAsia, facilities and product ratings",
+        "url": "https://steelasia.com/facilities"
+      }
+    ]
+  },
+  "P100001054284": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "SteelAsia’s engineering contract and product target establish a project at Candelaria. The public materials describe heavy sections and do not independently date the start of physical construction of the steelmaking furnace or establish its incremental liquid-steel rating.",
+    "sources": [
+      {
+        "label": "Philippine News Agency, SteelAsia project statement and engineering contract",
+        "url": "https://www.pna.gov.ph/articles/1242370"
+      }
+    ]
+  },
+  "P100000121040": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "Baosteel’s investment filing specifies 1.667 Mt/yr of crude steel, alongside separate iron and plate capacities. In May 2026 the sponsor said it would reassess timing and risks. The available sponsor disclosures establish the equity split but leave the physical furnace stage at the cutoff open.",
+    "sources": [
+      {
+        "label": "Baosteel, project capacity disclosure (Chinese)",
+        "url": "https://static.cninfo.com.cn/finalpage/2024-07-26/1220730014.PDF"
+      },
+      {
+        "label": "Baosteel, May 2026 investor meeting (Chinese)",
+        "url": "https://dataclouds.cninfo.com.cn/shgonggao/investor/2026/20260508/d223db27595b44c7891fc73c1f4eca41.PDF"
+      }
+    ]
+  },
+  "P100000120593": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "The operator describes the three-million-tonne steel plant as a plan. Its reporting on ironmaking concerns a separate upstream plant. The steelmaking phase and amount under construction at the cutoff remain unconfirmed.",
+    "sources": [
+      {
+        "label": "Makran Steel, project description and operator updates",
+        "url": "https://www.linkedin.com/company/makransteel"
+      }
+    ]
+  },
+  "P100000121036": {
+    "decision": "Furnace stage uncertain",
+    "netMt": null,
+    "reason": "Vietnam’s government records a June 2025 groundbreaking for the multiproject Nam Định complex. A ceremony for the whole complex does not establish the physical stage of GEM’s particular steel furnace at the September cutoff.",
+    "sources": [
+      {
+        "label": "Viet Nam Government Portal, groundbreaking and project scope",
+        "url": "https://www2.en.baochinhphu.vn/pho-thu-tuong-le-thanh-long-an-nut-khoi-cong-to-hop-thep-xanh-gan-100000-ty-102250623103113641.htm"
+      }
+    ]
+  },
+  "P100000120753": {
+    "decision": "September stage unverified",
+    "netMt": null,
+    "reason": "The record for Ohangwena traces its furnace construction and 3 Mt/yr rating to older capacity reports and sponsor posts. The project history gives a 2025 target start date. We could not establish the furnace’s September 2026 stage or a site-capacity increment from a contemporary project disclosure.",
+    "sources": [
+      {
+        "label": "GEM, September plant record and dated source history",
+        "url": "https://www.gem.wiki/w/index.php?title=Abba_Steel_Ohangwena_steel_plant&oldid=1287478"
+      }
+    ]
+  },
+  "P100000120826": {
+    "decision": "New steelworks",
+    "netMt": 1.8,
+    "reason": "Ecolant describes a new works in Vyksa designed to produce 1.8 Mt/yr of liquid steel for slab and round billet. The project’s July 2026 construction update targeted opening in the fourth quarter. Upstream direct-reduced iron is excluded.",
+    "sources": [
+      {
+        "label": "Ecolant, July construction update and steel capacity (Russian)",
+        "url": "https://ecolantvyksa.ru/tpost/rirpm6nar1-v-rossii-zavershaetsya-stroitelstvo-ekol"
+      },
+      {
+        "label": "Ecolant, project and molten-steel capacity",
+        "url": "https://ecolantvyksa.ru/en"
+      }
+    ]
+  },
+  "P100000121001": {
+    "decision": "Commissioned before cutoff",
+    "netMt": 0,
+    "reason": "The Uzbek presidency records commissioning of the new casting and rolling complex in July 2026. The equipment supplier identifies its electric melt shop as part of the same minimill contract.",
+    "sources": [
+      {
+        "label": "President of Uzbekistan, commissioning at Bekabad",
+        "url": "https://www.president.uz/en/lists/view/9408"
+      },
+      {
+        "label": "Danieli, melt shop and rolling complex",
+        "url": "https://www.danieli.com/en/news-media/news/danieli-minimill-featuring-qsp-technology-produce-hot-strip-uzbekistan_37_437.htm"
+      }
+    ]
+  },
+  "P100001042855": {
+    "decision": "September stage unverified",
+    "netMt": null,
+    "reason": "The equipment supplier contracted to build a new minimill in Feni and originally scheduled startup for 2024. Its order does not establish whether the new furnace was under construction in September 2026.",
+    "sources": [
+      {
+        "label": "Danieli, Unitex project scope and original schedule",
+        "url": "https://www.danieli.com/en/news-media/news/danieli-supply-1-mtpy-green-steel-minimill-unitex-steel_37_795.htm"
+      }
+    ]
+  },
+  "P100000120876": {
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "The Australian Anti-Dumping Commission verified the existing Marmara Ereğlisi electric melt shop and approximately 1.4 million tons of annual billet production. That output figure cannot establish what rated capacity would retire when the GEM construction furnace opens.",
+    "sources": [
+      {
+        "label": "Australian Anti-Dumping Commission, Kaptan exporter verification",
+        "url": "https://www.industry.gov.au/sites/default/files/adc/public-record/2025-08/655_-_45_-_verification_report_-_exporter_-_kaptan_demir_celik_endustrisi_ve_ticaret_a.s._-_findings_of_exporter_verification_report.pdf"
+      }
+    ]
+  }
+}

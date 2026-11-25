@@ -1,0 +1,8 @@
+{
+  "url": "https://publicgemdata.nyc3.cdn.digitaloceanspaces.com/Current_maps/gist/gist_map_2026-09.geojson",
+  "retrieved_at_utc": "2026-11-25T11:37:54.508598+00:00",
+  "full_geojson_sha256": "82ea95367771e02b3df89e0cbfb4f7de791ffa2c106b5ad06a0683268161e8bc",
+  "full_plant_count": 1293,
+  "construction_steel_project_count_including_unquantified": 107,
+  "announced_steel_project_count_including_unquantified": 236
+}

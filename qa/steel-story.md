@@ -1,31 +1,31 @@
 # Steel story verification
 
-The article, dashboard and project audit use the September 2026 v1 snapshot. The research starts from the 13 Indian plants where GEM recorded quantified crude-steel capacity under construction. The dashboard shows the four additions whose integrated project phase, additional steelmaking capacity and industrial ownership could be corroborated.
+The worldwide article and dashboard share a single September 2026 v1 population of 107 GEM plants. The map and methods page preserve a North Korean site with an unquantified rating. Both the plant and owner views use the 171.388 Mt/yr recorded at the other 106 plants.
 
-## Reproduce the figures
+## Rebuild from the frozen files
 
-From the repository root, run these commands with Python 3.10 or later. Both operate on the checked-in source extracts.
+From the repository root, run the following with Python 3.10 or later.
 
 ```sh
-python data-story/steel/data/source/check.py
-python data-story/steel/data/build.py
+python data-story/steel/data/global/build.py
+python data-story/steel/data/build-world.py
+python data-story/steel/data/render-findings.py
 ```
 
-The first calculation reconciles 42 unit records to dated map totals by GEM plant ID and furnace type. The second generates the four dashboard records, the decision ledger, the downloadable CSV and the 13 expandable records on the methods page. The [source manifest](../data-story/steel/data/source/source-manifest.json) gives the original release hash and the public-feed retrieval instructions.
+The first step reconstructs project and equity records from the release map, GEM entity and unit snapshots, the industry-owner list and cited issuer disclosures. The second adds the project decisions, reconciles the totals, writes the downloadable ledgers and rebuilds the linked method cards. The third refreshes the figures and numeric passages in the article and method. Its narrative was written for the September 2026 release. A later vintage requires fresh reporting.
+
+## Release checks
 
 | Check | Result |
 | --- | --- |
-| Construction | 37.550 Mt/yr in the September release, public unit API cross-check and official country table |
-| Scope | 18.500 Mt/yr at nine withheld sites and a 2.000 Mt/yr Utkal phase adjustment reconcile 37.550 gross to 17.050 included |
-| Plant ownership | 11.050 India-backed, 6.000 overseas-backed, zero mixed or unresolved across four projects |
-| Country allocation | India 11.050, Luxembourg 3.600, Japan 2.400 Mt/yr |
-| Largest disputed site | Adding Anakapalle changes the overseas share to 56.24% |
-| Competing domestic case | Adding both Anakapalle and Neelachal puts the India-based share at 50.59% |
-| Other phases | Removing Utkal leaves 6.05 India-backed and 6.00 overseas-backed |
-| Missing stakes | The four-project result requires no imputation. In the raw extract, overfull shares stay unresolved and incomplete shares retain a grey residual |
+| Gross population | 106 measured plants in 30 host countries, plus one unquantified plant |
+| Independent unit join | 160 current API steelmaking units. Ras al-Khair accounts for the 0.2 Mt/yr difference between the November unit sum and the September release |
+| Equity on gross capacity | 88.318876 Mt/yr host-country owners, 26.545400 Mt/yr overseas, 56.523724 Mt/yr unassigned |
+| Net-capacity review | 74 project reviews cover 140.755 Mt/yr of gross capacity. Ten positive additions total 25.300 Mt/yr in five countries. Twenty-eight sites have zero eligible capacity and 69 have unresolved net capacity |
+| Replacement sensitivity | Applying only measured corrections leaves 123.775 Mt/yr. Host-country owners account for 57.579713 Mt/yr in that conditional scenario |
+| Stakes | Hazira allocates 60% to Luxembourg and 40% to Japan through AMNS Luxembourg Holding. Pesquería traces 89.25% to Ternium and leaves 10.75% grey. The Saudi sovereign fund holds 25% of BAP Al-Khair and stays outside the industrial sponsor allocation |
+| Boundary cases | Port Talbot has zero positive additional capacity. Luleå adds 0.2 Mt/yr. Announcements and estimated stakes are excluded from both map measures |
+| Interaction and layout | Chrome checks covered widths from 320 to 1920 pixels, both map views and measures, host-country filtering, country and plant selection, mobile inspection, relative circle areas, and conservation of total capacity. Local files and fragment targets were checked across all three pages |
+| Editorial | An independent read flagged investor-role inconsistencies and ambiguity between gross furnace capacity and net additions. The role list, ledger and article were revised and the final narrative checked against the calculated figures |
 
-## Editorial and browser checks
-
-A separate project reviewer checked issuer disclosures, the status conflicts, the 60/40 chain and the arithmetic. An independent reader assessment of the revised article scored sentence ease 8.5/10, orientation 8.5, mental load 7.5 and payoff 9.0. Its composite scores were 8.2 for reading comfort and 8.4 overall. These are model-reader judgments on the reviewed text. Subsequent copy edits identify the environmental clearance at Anakapalle, simplify the national overview and clarify the return to Tata in Wales. The earlier story’s deterministic writing checker passed.
-
-Chrome checks covered the article, methods and both map views at 320, 390, 768, 1024, 1440 and 1920 pixels. Checks included local links and fragment targets, all 13 audit cards, mobile project detail, keyboard access, reduced motion, the Hazira split, selection after toggling, and conservation of capacity. A separate partial-ownership input exercised the nonzero grey residual. That input was used only in testing.
+The downloadable [project ledger](../data-story/steel/data/world-projects.csv), [equity ledger](../data-story/steel/data/world-equity.csv), [unit join](../data-story/steel/data/world-unit-plant-join.csv) and [calculation summary](../data-story/steel/data/world-summary.json) contain the figures underlying these checks.

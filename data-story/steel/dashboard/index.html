@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f2e7">
-  <meta name="description" content="Explore the locations and industrial sponsors of India's audited steel-capacity additions.">
-  <title>India’s steel buildout · Capacity explorer</title>
+  <meta name="description" content="Explore steelmaking capacity under construction worldwide, its owners and checked net additions.">
+  <title>The global steel buildout · Capacity explorer</title>
   <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="dashboard.css">
   <script type="module" src="dashboard.js"></script>
@@ -18,39 +18,44 @@
   </header>
   <main>
     <div class="heading">
-      <div><p class="eyebrow">Industry / Capacity explorer</p><h1>India’s steel buildout</h1></div>
-      <div class="switch" role="group" aria-label="Map locations">
-        <button type="button" id="plants" aria-pressed="true" disabled>Plant locations</button>
-        <button type="button" id="owners" aria-pressed="false" disabled>Owner locations</button>
+      <div><p class="eyebrow">Industry / Capacity explorer</p><h1>The global steel buildout</h1></div>
+      <div class="filters">
+        <label for="measure">Measure <select id="measure" disabled><option value="gross">All construction</option><option value="net">Checked net additions</option></select></label>
+        <label for="host">Plant country <select id="host" disabled><option value="all">Worldwide</option></select></label>
       </div>
     </div>
     <p id="status" class="loading" role="status">Loading project records…</p>
     <noscript>Enable JavaScript to use the map, or <a href="../method/">read the sources and methods</a>.</noscript>
     <div class="workspace" hidden>
       <section class="map-panel" aria-label="Capacity map">
-        <div class="map-heading"><span class="map-rule"></span><div><h2 id="map-title">Plant locations</h2><p id="map-subtitle"></p></div></div>
-        <svg id="map" role="group" aria-labelledby="map-title map-description"><desc id="map-description"></desc><g id="geography" aria-hidden="true"></g><g id="map-context" aria-hidden="true"></g><g id="marks"></g><g id="labels" aria-hidden="true"></g></svg>
+        <div class="switch" role="group" aria-label="Map locations">
+          <button type="button" id="plants" aria-pressed="true" disabled>Plant locations</button>
+          <button type="button" id="owners" aria-pressed="false" disabled>Owner locations</button>
+        </div>
+        <p class="map-message" id="map-message" hidden></p>
+        <svg id="map" role="group" aria-labelledby="map-title map-description"><title id="map-title">Plant locations</title><desc id="map-description"></desc><g id="geography" aria-hidden="true"></g><g id="marks"></g><g id="labels" aria-hidden="true"></g></svg>
         <div class="map-footer">
-          <div class="map-key" id="size-key" aria-label="Dot area represents net capacity added"></div>
-          <div id="unmapped" hidden></div>
+          <div class="map-legends"><div class="map-key" id="size-key"></div><div id="color-key"></div></div>
+          <button id="unmapped" type="button" hidden></button>
           <a class="credit" href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/">Natural Earth boundaries</a>
         </div>
       </section>
       <section class="capacity" id="capacity" tabindex="-1" aria-label="Capacity breakdown">
         <div class="summary">
-          <div class="scope-line"><p id="scope" class="eyebrow"></p><span id="as-of" class="as-of"></span></div>
+          <div class="scope-line"><p id="scope" class="eyebrow"></p><span class="as-of">September 2026</span></div>
           <div class="total"><span id="capacity-total"></span><span>Mt/yr</span></div>
-          <p class="definition">Net new crude-steel capacity</p>
+          <p class="definition" id="definition"></p>
           <p id="coverage" class="coverage"></p>
         </div>
         <div class="ranking">
-          <h2 id="rank-heading">Capacity by project ownership</h2>
+          <label class="eyebrow" for="breakdown">Breakdown</label>
+          <select id="breakdown"></select>
           <div class="strip" id="strip" aria-hidden="true"></div>
           <div id="ranks"></div>
           <p class="rank-note" id="rank-note"></p>
         </div>
-        <section class="detail" aria-label="Project ownership detail">
-          <label class="eyebrow" for="project">Inspect a project</label>
+        <section class="detail" aria-label="Ownership detail">
+          <label class="eyebrow" for="project">Inspect a plant</label>
           <select id="project"></select>
           <div id="project-card"></div>
         </section>

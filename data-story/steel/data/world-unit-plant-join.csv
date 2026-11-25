@@ -1,0 +1,161 @@
+gem_unit_id,gem_plant_id,plant,host_iso3,latitude,longitude,furnace,method,november_api_status,november_api_kt_per_year,gem_asset_url
+U100000141480,P100000120010,Voestalpine Stahl Linz steel plant,AUT,48.274023,14.33434,unknown EAF (1),eaf,construction,1600.0,https://api.globalenergymonitor.org/assets/P100000120010_U100000141480
+U100000141481,P100000120011,Voestalpine Stahl Donawitz steel plant,AUT,47.380455,15.065182,unknown EAF (1),eaf,construction,850.0,https://api.globalenergymonitor.org/assets/P100000120011_U100000141481
+U100000144755,P100000120011,Voestalpine Stahl Donawitz steel plant,AUT,47.380455,15.065182,unknown EAF (2),eaf,construction,850.0,https://api.globalenergymonitor.org/assets/P100000120011_U100000144755
+U100000141489,P100000120019,Bashundhara Steel Mirsarai plant,BGD,22.719278,91.470382,unknown EAF (1),eaf,construction,1250.0,https://api.globalenergymonitor.org/assets/P100000120019_U100000141489
+U100000144948,P100000120051,Simec Pindamonhangaba steel plant,BRA,-22.921912,-45.413234,unknown EAF (2),eaf,construction,700.0,https://api.globalenergymonitor.org/assets/P100000120051_U100000144948
+U100000141521,P100000120059,Algoma steel plant,CAN,46.518984,-84.374068,EAF 2,eaf,construction,1850.0,https://api.globalenergymonitor.org/assets/P100000120059_U100000141521
+U100000142380,P100000120069,Maanshan Iron and Steel Co Ltd,CHN,31.698884,118.468194,unknown BOF (12),bof,construction,1600.0,https://api.globalenergymonitor.org/assets/P100000120069_U100000142380
+U100000142410,P100000120079,Fujian Yixin Steel Co Ltd,CHN,26.491308,119.63624,unknown BOF (3),bof,construction,1150.0,https://api.globalenergymonitor.org/assets/P100000120079_U100000142410
+U100001026976,P100000120107,Shougang Qian an Iron and Steel Co Ltd,CHN,39.976702,118.558788,EAF 1,eaf,construction,1300.0,https://api.globalenergymonitor.org/assets/P100000120107_U100001026976
+U100000141558,P100000120108,Tangshan Donghua Iron and Steel Enterprise Group Co Ltd,CHN,39.468366,118.256774,unknown EAF (1),eaf,construction,825.0,https://api.globalenergymonitor.org/assets/P100000120108_U100000141558
+U100000141559,P100000120108,Tangshan Donghua Iron and Steel Enterprise Group Co Ltd,CHN,39.468366,118.256774,unknown EAF (2),eaf,construction,825.0,https://api.globalenergymonitor.org/assets/P100000120108_U100000141559
+U100000142547,P100000120118,Tangshan Ganglu Iron and Steel Co Ltd,CHN,40.183913,118.073913,unknown BOF (7),bof,construction,1350.0,https://api.globalenergymonitor.org/assets/P100000120118_U100000142547
+U100000142582,P100000120128,Tangshan Fengnan District Jing an Iron and Steel Co Ltd,CHN,39.600956,118.358726,unknown BOF (4),bof,construction,1700.0,https://api.globalenergymonitor.org/assets/P100000120128_U100000142582
+U100000141578,P100000120164,Henan Jiyuan Iron and Steel Group Co Ltd,CHN,35.086396,112.553774,unknown EAF (1),eaf,construction,410.0,https://api.globalenergymonitor.org/assets/P100000120164_U100000141578
+U100000142686,P100000120164,Henan Jiyuan Iron and Steel Group Co Ltd,CHN,35.086396,112.553774,unknown BOF (5),bof,construction,1190.0,https://api.globalenergymonitor.org/assets/P100000120164_U100000142686
+U100001028217,P100000120167,Henan Fengbao Special Steel Co Ltd,CHN,36.131666,113.872158,unknown BOF (3),bof,construction,1150.0,https://api.globalenergymonitor.org/assets/P100000120167_U100001028217
+U100000144702,P100000120168,Henan Yaxin Iron and Steel Group Co Ltd,CHN,35.879956,114.334825,unknown BOF (3),bof,construction,1600.0,https://api.globalenergymonitor.org/assets/P100000120168_U100000144702
+U100000143847,P100000120240,Rizhao Steel Holding Group Co Ltd,CHN,35.16535,119.366672,unknown BOF (12),bof,construction,1350.0,https://api.globalenergymonitor.org/assets/P100000120240_U100000143847
+U100000142980,P100000120271,Shanxi Zhongsheng Iron and Steel Co Ltd,CHN,35.727776,111.330122,unknown BOF (3),bof,construction,1650.0,https://api.globalenergymonitor.org/assets/P100000120271_U100000142980
+U100001054386,P100000120291,Xinjiang Tianshan Iron and Steel Bazhou Co Ltd,CHN,42.333321,86.302481,unknown EAF (1),eaf,construction,750.0,https://api.globalenergymonitor.org/assets/P100000120291_U100001054386
+U100000142590,P100000120307,Hebei Mingbin Iron and Steel Co Ltd,CHN,36.631491,113.968635,unknown BOF (1),bof,construction,1350.0,https://api.globalenergymonitor.org/assets/P100000120307_U100000142590
+U100000143098,P100000120315,Hbis Laoting Steel Co Ltd,CHN,39.257823,119.033567,unknown BOF (6),bof,construction,2250.0,https://api.globalenergymonitor.org/assets/P100000120315_U100000143098
+U100000143922,P100000120317,Chongqing Zuhang Iron and Steel Co Ltd,CHN,29.440056,105.741929,unknown EAF (3),eaf,construction,1010.0,https://api.globalenergymonitor.org/assets/P100000120317_U100000143922
+U100000141703,P100000120352,Yunnan Tiangao Nickel Alloy Co Ltd,CHN,24.80128,104.063455,unknown EAF (3),eaf,construction,500.0,https://api.globalenergymonitor.org/assets/P100000120352_U100000141703
+U100000141709,P100000120359,Zunyi Fuxin Special Steel Equipment Manufacturing Co Ltd,CHN,27.591697,106.815453,unknown EAF (3),eaf,construction,750.0,https://api.globalenergymonitor.org/assets/P100000120359_U100000141709
+U100000141710,P100000120359,Zunyi Fuxin Special Steel Equipment Manufacturing Co Ltd,CHN,27.591697,106.815453,unknown EAF (4),eaf,construction,360.0,https://api.globalenergymonitor.org/assets/P100000120359_U100000141710
+U100001027857,P100000120365,Wuzhou Yongda Iron and Steel Co Ltd,CHN,23.524465,111.2402,unknown EAF (7),eaf,construction,410.0,https://api.globalenergymonitor.org/assets/P100000120365_U100001027857
+U100001027858,P100000120365,Wuzhou Yongda Iron and Steel Co Ltd,CHN,23.524465,111.2402,unknown EAF (8),eaf,construction,410.0,https://api.globalenergymonitor.org/assets/P100000120365_U100001027858
+U100001027859,P100000120365,Wuzhou Yongda Iron and Steel Co Ltd,CHN,23.524465,111.2402,unknown EAF (9),eaf,construction,825.0,https://api.globalenergymonitor.org/assets/P100000120365_U100001027859
+U100000145454,P100000120374,Guangxi Liugang Zhongjin Stainless Steel Co Ltd,CHN,21.67261,109.741866,unknown Alloy Melting EAF(1),unknown_other_steel,construction,400.0,https://api.globalenergymonitor.org/assets/P100000120374_U100000145454
+U100001051023,P100000120374,Guangxi Liugang Zhongjin Stainless Steel Co Ltd,CHN,21.67261,109.741866,unknown Alloy Melting EAF (2),unknown_other_steel,construction,400.0,https://api.globalenergymonitor.org/assets/P100000120374_U100001051023
+U100001070466,P100000120374,Guangxi Liugang Zhongjin Stainless Steel Co Ltd,CHN,21.67261,109.741866,unknown Alloy Melting EAF(3),unknown_other_steel,construction,400.0,https://api.globalenergymonitor.org/assets/P100000120374_U100001070466
+U100000143173,P100000120376,Daye Huaxin Industrial Co Ltd,CHN,30.070219,114.926251,unknown BOF (3),bof,construction,1433.0,https://api.globalenergymonitor.org/assets/P100000120376_U100000143173
+U100000143182,P100000120407,Yunnan Qujing Iron and Steel Group Yanggang Iron and Steel Co Ltd,CHN,25.308777,103.876391,unknown BOF (1),bof,construction,1400.0,https://api.globalenergymonitor.org/assets/P100000120407_U100000143182
+U100000141789,P100000120416,Fujian Fuhua New Materials Group Co Ltd,CHN,26.961516,119.654272,unknown EAF (2),eaf,construction,825.0,https://api.globalenergymonitor.org/assets/P100000120416_U100000141789
+U100000141792,P100000120420,Nová Hut Ostrava steel plant,CZE,49.792139,18.309875,unknown EAF (1),eaf,construction,1750.0,https://api.globalenergymonitor.org/assets/P100000120420_U100000141792
+U100000141793,P100000120420,Nová Hut Ostrava steel plant,CZE,49.792139,18.309875,unknown EAF (2),eaf,construction,1750.0,https://api.globalenergymonitor.org/assets/P100000120420_U100000141793
+U100000141796,P100000120423,AG der Dillinger Hüttenwerke Dillingen steel plant,DEU,49.353884,6.746603,unknown EAF (1),eaf,construction,1750.0,https://api.globalenergymonitor.org/assets/P100000120423_U100000141796
+U100000141798,P100000120424,Salzgitter Flachstahl steel plant,DEU,52.161794,10.409371,unknown EAF (1),eaf,construction,1900.0,https://api.globalenergymonitor.org/assets/P100000120424_U100000141798
+U100000141838,P100000120452,ArcelorMittal Asturias (Gijón) steel plant,ESP,43.525092,-5.731926,unknown EAF (1),eaf,construction,1100.0,https://api.globalenergymonitor.org/assets/P100000120452_U100000141838
+U100000144394,P100000120482,Tata Steel Port Talbot steel plant,GBR,51.577368,-3.783013,unknown EAF (1),eaf,construction,3200.0,https://api.globalenergymonitor.org/assets/P100000120482_U100000144394
+U100000143807,P100000120513,ArcelorMittal Nippon Steel Hazira plant,IND,21.112377,72.647304,unknown BOF (1),bof,construction,2000.0,https://api.globalenergymonitor.org/assets/P100000120513_U100000143807
+U100000143808,P100000120513,ArcelorMittal Nippon Steel Hazira plant,IND,21.112377,72.647304,unknown BOF (2),bof,construction,2000.0,https://api.globalenergymonitor.org/assets/P100000120513_U100000143808
+U100000143809,P100000120513,ArcelorMittal Nippon Steel Hazira plant,IND,21.112377,72.647304,unknown BOF (3),bof,construction,2000.0,https://api.globalenergymonitor.org/assets/P100000120513_U100000143809
+U100001028180,P100000120517,JSW Steel Dolvi steel plant,IND,18.690312,73.035902,unknown BOF (3),bof,construction,5000.0,https://api.globalenergymonitor.org/assets/P100000120517_U100001028180
+U100000144781,P100000120522,Lloyds Metals and Energy Ltd Ghugus steel plant,IND,19.929837,79.119344,unknown EAF (1),eaf,construction,525.0,https://api.globalenergymonitor.org/assets/P100000120522_U100000144781
+U100000144782,P100000120522,Lloyds Metals and Energy Ltd Ghugus steel plant,IND,19.929837,79.119344,unknown EAF (2),eaf,construction,525.0,https://api.globalenergymonitor.org/assets/P100000120522_U100000144782
+U100000141915,P100000120536,JSW Steel Raigarh steel plant,IND,21.983709,83.238133,unknown EAF (2),eaf,construction,250.0,https://api.globalenergymonitor.org/assets/P100000120536_U100000141915
+U100000143637,P100000120539,JSW Utkal Steel Rajnagar plant,IND,20.216667,86.55,unknown BOF (1),bof,construction,3500.0,https://api.globalenergymonitor.org/assets/P100000120539_U100000143637
+U100000144117,P100000120539,JSW Utkal Steel Rajnagar plant,IND,20.216667,86.55,unknown BOF (2),bof,construction,3500.0,https://api.globalenergymonitor.org/assets/P100000120539_U100000144117
+U100000145063,P100000120540,Neelachal Ispat Nigam steel plant,IND,20.998641,86.019102,unknown BOF (2),bof,construction,1038.0,https://api.globalenergymonitor.org/assets/P100000120540_U100000145063
+U100000145446,P100000120540,Neelachal Ispat Nigam steel plant,IND,20.998641,86.019102,unknown BOF (3),bof,construction,2454.0,https://api.globalenergymonitor.org/assets/P100000120540_U100000145446
+U100000144454,P100000120553,Ramsarup Industries Kharagpur steel plant,IND,22.977477,88.457443,unknown EAF (1),eaf,construction,690.0,https://api.globalenergymonitor.org/assets/P100000120553_U100000144454
+U100000144963,P100000120556,Rashmi Metaliks Jamuria steel plant,IND,23.706343,87.07774,unknown EAF (1),eaf,construction,1000.0,https://api.globalenergymonitor.org/assets/P100000120556_U100000144963
+U100000145064,P100000120556,Rashmi Metaliks Jamuria steel plant,IND,23.706343,87.07774,unknown BOF (1),bof,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120556_U100000145064
+U100000145284,P100000120569,Rungta Mines Dhenkanal steel plant,IND,20.764524,85.299318,unknown IF (3),induction,construction,103.0,https://api.globalenergymonitor.org/assets/P100000120569_U100000145284
+U100000145285,P100000120569,Rungta Mines Dhenkanal steel plant,IND,20.764524,85.299318,unknown IF (4),induction,construction,103.0,https://api.globalenergymonitor.org/assets/P100000120569_U100000145285
+U100000145286,P100000120569,Rungta Mines Dhenkanal steel plant,IND,20.764524,85.299318,unknown IF (5),induction,construction,103.0,https://api.globalenergymonitor.org/assets/P100000120569_U100000145286
+U100000145287,P100000120569,Rungta Mines Dhenkanal steel plant,IND,20.764524,85.299318,unknown IF (6),induction,construction,102.0,https://api.globalenergymonitor.org/assets/P100000120569_U100000145287
+U100000145288,P100000120569,Rungta Mines Dhenkanal steel plant,IND,20.764524,85.299318,unknown IF (7),induction,construction,102.0,https://api.globalenergymonitor.org/assets/P100000120569_U100000145288
+U100000145289,P100000120569,Rungta Mines Dhenkanal steel plant,IND,20.764524,85.299318,unknown IF (8),induction,construction,103.0,https://api.globalenergymonitor.org/assets/P100000120569_U100000145289
+U100000145290,P100000120569,Rungta Mines Dhenkanal steel plant,IND,20.764524,85.299318,unknown IF (9),induction,construction,102.0,https://api.globalenergymonitor.org/assets/P100000120569_U100000145290
+U100000145291,P100000120569,Rungta Mines Dhenkanal steel plant,IND,20.764524,85.299318,unknown IF (10),induction,construction,103.0,https://api.globalenergymonitor.org/assets/P100000120569_U100000145291
+U100000144737,P100000120576,Tata Steel Ludhiana steel plant,IND,30.946888,75.987521,unknown EAF (1),eaf,construction,750.0,https://api.globalenergymonitor.org/assets/P100000120576_U100000144737
+U100001071200,P100000120588,Zarand Iranian Steel Company Kerman plant,IRN,30.749633,56.6675096,unknown EAF (1),eaf,construction,1000.0,https://api.globalenergymonitor.org/assets/P100000120588_U100001071200
+U100000144230,P100000120589,Jahan Foolad Sirjan Steel Kerman plant,IRN,29.13806,55.375073,unknown EAF (2),eaf,construction,1300.0,https://api.globalenergymonitor.org/assets/P100000120589_U100000144230
+U100000144973,P100000120593,Makran Steel Sistan and Baluchestan Complex,IRN,25.4483977,60.6408488,unknown EAF (1),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120593_U100000144973
+U100001071983,P100000120593,Makran Steel Sistan and Baluchestan Complex,IRN,25.4483977,60.6408488,unknown EAF (2),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120593_U100001071983
+U100000144977,P100000120598,Sirjan Iranian Steel Kerman Plant,IRN,29.928062,56.736539,unknown EAF (2),eaf,construction,1000.0,https://api.globalenergymonitor.org/assets/P100000120598_U100000144977
+U100000144980,P100000120601,Miyaneh Steel East Azerbaijan steel plant,IRN,37.37881,47.736689,unknown EAF (1),eaf,construction,800.0,https://api.globalenergymonitor.org/assets/P100000120601_U100000144980
+U100000144169,P100000120602,Sabzevar Steel Complex Razavi Khorasan,IRN,36.58952,57.571719,unknown EAF (1),eaf,construction,400.0,https://api.globalenergymonitor.org/assets/P100000120602_U100000144169
+U100000144170,P100000120602,Sabzevar Steel Complex Razavi Khorasan,IRN,36.58952,57.571719,unknown EAF (2),eaf,construction,400.0,https://api.globalenergymonitor.org/assets/P100000120602_U100000144170
+U100000144982,P100000120605,Azna Steel Lorestan plant,IRN,33.464353,49.391373,unknown EAF (1),eaf,construction,1200.0,https://api.globalenergymonitor.org/assets/P100000120605_U100000144982
+U100000144990,P100000120615,Sarmad Iron and Steel Complex Abarkouh,IRN,31.222989,53.392728,unknown EAF (1),eaf,construction,600.0,https://api.globalenergymonitor.org/assets/P100000120615_U100000144990
+U100000144992,P100000120617,Bonab Steel Complex,IRN,37.417437,46.035778,unknown EAF (2),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120617_U100000144992
+U100001048400,P100000120690,Ch'ollima Steel Complex steel plant,PRK,38.926348,125.582628,unknown EAF (9),eaf,construction,,https://api.globalenergymonitor.org/assets/P100000120690_U100001048400
+U100000142043,P100000120699,POSCO Gwangyang steel plant,KOR,34.920086,127.74865,unknown EAF (1),eaf,construction,2500.0,https://api.globalenergymonitor.org/assets/P100000120699_U100000142043
+U100000145089,P100000120713,Lanwa Steel Hambantota steel plant,LKA,6.128077,81.075224,unknown BOF (1),bof,construction,600.0,https://api.globalenergymonitor.org/assets/P100000120713_U100000145089
+U100001030383,P100000120726,DEACERO Celaya steel plant,MEX,20.518556,-100.925556,EAF 3,eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120726_U100001030383
+U100000145001,P100000120730,DEACERO Ramos Arizpe steel plant,MEX,25.511162,-100.961848,unknown EAF (3),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120730_U100000145001
+U100000142101,P100000120752,Tete Steel Maputo plant,MOZ,-15.724345,33.762664,unknown EAF (1),eaf,construction,250.0,https://api.globalenergymonitor.org/assets/P100000120752_U100000142101
+U100000142102,P100000120752,Tete Steel Maputo plant,MOZ,-15.724345,33.762664,unknown EAF (2),eaf,construction,250.0,https://api.globalenergymonitor.org/assets/P100000120752_U100000142102
+U100000145003,P100000120753,Abba Steel Ohangwena steel plant,NAM,-17.397866,15.891022,unknown EAF (1),eaf,construction,3000.0,https://api.globalenergymonitor.org/assets/P100000120753_U100000145003
+U100000142103,P100000120754,HyIron Steel Namibia plant,NAM,-22.084183,17.4099154,unknown EAF (1),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120754_U100000142103
+U100000143719,P100000120756,Ajaokuta Steel plant,NGA,7.511336,6.689364,unknown BOF (1),bof,construction,650.0,https://api.globalenergymonitor.org/assets/P100000120756_U100000143719
+U100001048266,P100000120756,Ajaokuta Steel plant,NGA,7.511336,6.689364,unknown BOF (2),bof,construction,650.0,https://api.globalenergymonitor.org/assets/P100000120756_U100001048266
+U100000145463,P100000120757,African Natural Resources and Mines Kaduna steel plant,NGA,9.462715,7.368,unknown steel (unspecified) (1),unknown_other_steel,construction,1000.0,https://api.globalenergymonitor.org/assets/P100000120757_U100000145463
+U100000144020,P100000120766,Jindal Shadeed Iron & Steel Duqm plant,OMN,19.640299,57.677866,unknown EAF (1),eaf,construction,2500.0,https://api.globalenergymonitor.org/assets/P100000120766_U100000144020
+U100000144021,P100000120766,Jindal Shadeed Iron & Steel Duqm plant,OMN,19.640299,57.677866,unknown EAF (2),eaf,construction,2500.0,https://api.globalenergymonitor.org/assets/P100000120766_U100000144021
+U100000145005,P100000120770,SteelAsia Concepcion steel plant,PHL,15.325307,120.655361,unknown EAF (1),eaf,construction,1200.0,https://api.globalenergymonitor.org/assets/P100000120770_U100000145005
+U100000145008,P100000120776,SteelAsia Lemery steel plant,PHL,13.916094,120.886414,unknown EAF (1),eaf,construction,500.0,https://api.globalenergymonitor.org/assets/P100000120776_U100000145008
+U100001071259,P100000120776,SteelAsia Lemery steel plant,PHL,13.916094,120.886414,unknown EAF (3),eaf,construction,600.0,https://api.globalenergymonitor.org/assets/P100000120776_U100001071259
+U100000145438,P100000120778,Mount Zynai Zamboanga Sibugay steel plant,PHL,7.716994,122.998671,unknown steel (unspecified) (1),unknown_other_steel,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120778_U100000145438
+U100000145125,P100000120783,Ittehad Steel Faisalabad plant,PAK,31.643426,73.198542,unknown IF (3),induction,construction,500.0,https://api.globalenergymonitor.org/assets/P100000120783_U100000145125
+U100000145439,P100000120784,Century Steel Khyber plant,PAK,34.072714,72.141584,unknown steel (unspecified) (1),unknown_other_steel,construction,500.0,https://api.globalenergymonitor.org/assets/P100000120784_U100000145439
+U100000142164,P100000120817,Balakovo Steel Plant,RUS,51.936009,47.81591,unknown EAF (2),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120817_U100000142164
+U100000142163,P100000120826,Ecolant steel plant,RUS,55.286989,42.169516,unknown EAF (1),eaf,construction,1800.0,https://api.globalenergymonitor.org/assets/P100000120826_U100000142163
+U100000145014,P100000120832,Donelektrostal Shakhty steel plant,RUS,47.740352,40.18942,unknown EAF (1),eaf,construction,730.0,https://api.globalenergymonitor.org/assets/P100000120832_U100000145014
+U100000145016,P100000120839,Gulf Tubing Company Ras Al-Khair steel plant,SAU,27.502041,49.189647,unknown EAF (1),eaf,construction,630.0,https://api.globalenergymonitor.org/assets/P100000120839_U100000145016
+U100000144795,P100000120844,SSAB Oxelösund steel plant,SWE,58.670789,17.127786,unknown EAF (1),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120844_U100000144795
+U100000144330,P100000120845,SSAB Luleå steel plant,SWE,65.559719,22.219699,unknown EAF (2),eaf,construction,1250.0,https://api.globalenergymonitor.org/assets/P100000120845_U100000144330
+U100000144833,P100000120845,SSAB Luleå steel plant,SWE,65.559719,22.219699,unknown EAF (3),eaf,construction,1250.0,https://api.globalenergymonitor.org/assets/P100000120845_U100000144833
+U100000142178,P100000120850,Stegra Boden steel plant,SWE,65.805389,21.75914,unknown EAF (1),eaf,construction,2500.0,https://api.globalenergymonitor.org/assets/P100000120850_U100000142178
+U100000144814,P100000120876,Kaptan Ereglisi steel plant,TUR,41.015222,27.959978,unknown EAF (2),eaf,construction,2000.0,https://api.globalenergymonitor.org/assets/P100000120876_U100000144814
+U100001092930,P100000120931,Gerdau Midlothian Steel Mill,USA,32.457544,-97.034246,unknown EAF (3),eaf,construction,150.0,https://api.globalenergymonitor.org/assets/P100000120931_U100001092930
+U100000142300,P100000120988,Nucor Steel West Virginia steel plant,USA,38.647729,-82.175875,unknown EAF (1),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120988_U100000142300
+U100000144208,P100000120988,Nucor Steel West Virginia steel plant,USA,38.647729,-82.175875,unknown EAF (2),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000120988_U100000144208
+U100001027803,P100000121001,Uzmetkombinat steel plant,UZB,40.233432,69.290873,EAF 4,eaf,construction,1040.0,https://api.globalenergymonitor.org/assets/P100000121001_U100001027803
+U100000145093,P100000121025,Thai Nguyen Iron and Steel plant,VNM,21.557484,105.8728,unknown BOF (1),bof,construction,500.0,https://api.globalenergymonitor.org/assets/P100000121025_U100000145093
+U100000145031,P100000121036,Xuan Thien Nghia Hung steel plant,VNM,20.037805,106.127689,unknown EAF (1),eaf,construction,2000.0,https://api.globalenergymonitor.org/assets/P100000121036_U100000145031
+U100000142320,P100000121040,BAP Al-Khair steel plant,SAU,27.502597,49.180369,unknown EAF (1),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000121040_U100000142320
+U100000142329,P100000121047,Huangshi Xingang Heavy Industry Technology Co Ltd,CHN,30.097108,115.284652,unknown EAF (1),eaf,construction,750.0,https://api.globalenergymonitor.org/assets/P100000121047_U100000142329
+U100000142330,P100000121047,Huangshi Xingang Heavy Industry Technology Co Ltd,CHN,30.097108,115.284652,unknown EAF (2),eaf,construction,750.0,https://api.globalenergymonitor.org/assets/P100000121047_U100000142330
+U100000142331,P100000121047,Huangshi Xingang Heavy Industry Technology Co Ltd,CHN,30.097108,115.284652,unknown EAF (3),eaf,construction,750.0,https://api.globalenergymonitor.org/assets/P100000121047_U100000142331
+U100000142336,P100000121053,Ternium Pesquería steel plant,MEX,25.743837,-99.965278,unknown EAF (1),eaf,construction,2600.0,https://api.globalenergymonitor.org/assets/P100000121053_U100000142336
+U100001027951,P100000121082,Zhenshi Group Eastern Special Steel Co Ltd,CHN,30.720411,120.898518,unknown EAF (2),eaf,construction,825.0,https://api.globalenergymonitor.org/assets/P100000121082_U100001027951
+U100001027952,P100000121082,Zhenshi Group Eastern Special Steel Co Ltd,CHN,30.720411,120.898518,unknown EAF (3),eaf,construction,825.0,https://api.globalenergymonitor.org/assets/P100000121082_U100001027952
+U100001027953,P100000121082,Zhenshi Group Eastern Special Steel Co Ltd,CHN,30.720411,120.898518,unknown EAF (4),eaf,construction,862.0,https://api.globalenergymonitor.org/assets/P100000121082_U100001027953
+U100000145037,P100000121086,Henan Jinhui Industrial Group,CHN,34.263509,113.853979,unknown EAF (2),eaf,construction,2000.0,https://api.globalenergymonitor.org/assets/P100000121086_U100000145037
+U100000142363,P100000121135,Xingtai Iron and Steel Co Ltd Weixian,CHN,37.032089,115.366112,unknown EAF (1),eaf,construction,750.0,https://api.globalenergymonitor.org/assets/P100000121135_U100000142363
+U100000142364,P100000121135,Xingtai Iron and Steel Co Ltd Weixian,CHN,37.032089,115.366112,unknown EAF (2),eaf,construction,750.0,https://api.globalenergymonitor.org/assets/P100000121135_U100000142364
+U100000142365,P100000121135,Xingtai Iron and Steel Co Ltd Weixian,CHN,37.032089,115.366112,unknown EAF (3),eaf,construction,750.0,https://api.globalenergymonitor.org/assets/P100000121135_U100000142365
+U100001031324,P100000121142,Baotou Deshun Special Steel Co Ltd,CHN,40.9019,110.336253,unknown BOF (2),bof,construction,1250.0,https://api.globalenergymonitor.org/assets/P100000121142_U100001031324
+U100000144601,P100000121185,Rungta Mines Karakhendra steel plant,IND,22.140174,85.414616,unknown EAF (1),eaf,construction,554.0,https://api.globalenergymonitor.org/assets/P100000121185_U100000144601
+U100000145345,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (11),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145345
+U100000145346,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (12),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145346
+U100000145347,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (13),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145347
+U100000145348,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (14),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145348
+U100000145349,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (15),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145349
+U100000145350,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (16),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145350
+U100000145351,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (17),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145351
+U100000145352,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (18),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145352
+U100000145353,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (19),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145353
+U100000145354,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (20),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145354
+U100000145355,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (21),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145355
+U100000145356,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (22),induction,construction,69.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145356
+U100000145357,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (23),induction,construction,83.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145357
+U100000145358,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (24),induction,construction,83.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145358
+U100000145359,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (25),induction,construction,83.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145359
+U100000145360,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (26),induction,construction,83.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145360
+U100000145361,P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,22.364258,87.309047,unknown IF (27),induction,construction,83.0,https://api.globalenergymonitor.org/assets/P100000121188_U100000145361
+U100000145050,P100000121209,DST Nghi Son steel plant,VNM,19.367379,105.675841,unknown EAF (1),eaf,construction,1310.0,https://api.globalenergymonitor.org/assets/P100000121209_U100000145050
+U100000145052,P100000121211,Metinvest Piombino steel plant,ITA,42.93652,10.537794,unknown EAF (1),eaf,construction,3000.0,https://api.globalenergymonitor.org/assets/P100000121211_U100000145052
+U100000144813,P100000121240,AFV Donalam Targoviste steel plant,ROU,44.904569,25.458124,unknown EAF (2),eaf,construction,300.0,https://api.globalenergymonitor.org/assets/P100000121240_U100000144813
+U100000144817,P100000121243,Saeb Steel Complex,IRN,37.45507,45.944322,unknown EAF (1),eaf,construction,550.0,https://api.globalenergymonitor.org/assets/P100000121243_U100000144817
+U100000144819,P100000121244,Shams Iron and Steel Complex Tabriz,IRN,37.446675,45.956891,unknown EAF (1),eaf,construction,1500.0,https://api.globalenergymonitor.org/assets/P100000121244_U100000144819
+U100000144821,P100000121245,Sabalan Iron and Steel Complex,IRN,38.50168,47.757969,unknown EAF (1),eaf,construction,500.0,https://api.globalenergymonitor.org/assets/P100000121245_U100000144821
+U100000144827,P100000121247,Amirkabir Arak Steel plant,IRN,34.083379,49.752451,unknown EAF (1),eaf,construction,513.0,https://api.globalenergymonitor.org/assets/P100000121247_U100000144827
+U100000144836,P100000121252,Jinzhou Jinxing Special Steel Company,CHN,41.188888,121.225043,unknown EAF (1),eaf,construction,360.0,https://api.globalenergymonitor.org/assets/P100000121252_U100000144836
+U100001030474,P100001025671,ArcelorMittal Nippon Steel Anakapalle steel plant,IND,17.407103,82.723183,unknown BOF (1),bof,construction,8200.0,https://api.globalenergymonitor.org/assets/P100001025671_U100001030474
+U100001048172,P100001042845,Meghna Re-rolling and Steel Mills steel plant,BGD,23.585487,90.648875,unknown EAF (1),eaf,construction,1400.0,https://api.globalenergymonitor.org/assets/P100001042845_U100001048172
+U100001048185,P100001042855,Unitex Steel Mills Feni steel plant,BGD,22.945182,91.512387,unknown EAF (1),eaf,construction,1000.0,https://api.globalenergymonitor.org/assets/P100001042855_U100001048185
+U100001062129,P100001054284,SteelAsia Candelaria steel plant,PHL,13.9077156,121.4294936,unknown EAF (1),eaf,construction,1000.0,https://api.globalenergymonitor.org/assets/P100001054284_U100001062129
+U100001070314,P100001061378,CMC West Virginia steel plant,USA,39.5515843,-77.897771,unknown EAF (1),eaf,construction,590.0,https://api.globalenergymonitor.org/assets/P100001061378_U100001070314
+U100001070514,P100001061536,Yunnan Qujing Shuangyou Iron and Steel Co Ltd,CHN,25.54218,103.781041,unknown BOF (3),bof,construction,130.0,https://api.globalenergymonitor.org/assets/P100001061536_U100001070514
+U100001071914,P100001062603,Kurdistan Steel Qorveh steel plant,IRN,35.936932,47.762024,unknown EAF (1),eaf,construction,1000.0,https://api.globalenergymonitor.org/assets/P100001062603_U100001071914
+U100001072882,P100001063425,Arian Steel Fath Abad plant,IRN,35.744901,50.222553,unknown EAF (2),eaf,construction,550.0,https://api.globalenergymonitor.org/assets/P100001063425_U100001072882
+U100001073922,P100001064261,Qinyang Hongda Iron & Steel Co Ltd,CHN,35.184849,112.902248,unknown EAF (2),eaf,construction,1000.0,https://api.globalenergymonitor.org/assets/P100001064261_U100001073922
+U100001073924,P100001064261,Qinyang Hongda Iron & Steel Co Ltd,CHN,35.184849,112.902248,unknown EAF (3),eaf,construction,1000.0,https://api.globalenergymonitor.org/assets/P100001064261_U100001073924
+U100001090900,P100001080915,Asia United Steel plant,KAZ,43.600662,76.317112,unknown EAF (1),eaf,construction,1200.0,https://api.globalenergymonitor.org/assets/P100001080915_U100001090900

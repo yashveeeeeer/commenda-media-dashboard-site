@@ -1,0 +1,187 @@
+gem_plant_id,plant,host_iso3,gem_entity_id,owner_or_residual,hq_iso3,allocation,share,gross_mt_per_year,checked_net_mt_per_year
+P100001025671,ArcelorMittal Nippon Steel Anakapalle steel plant,IND,E100000000687,ArcelorMittal SA,LUX,Overseas,0.6,4.92,
+P100001025671,ArcelorMittal Nippon Steel Anakapalle steel plant,IND,E100000000652,Nippon Steel Corp,JPN,Overseas,0.4,3.28,
+P100000120539,JSW Utkal Steel Rajnagar plant,IND,E100001000516,JSW Steel Ltd,IND,Domestic,1.0,7.0,5.0
+P100000120513,ArcelorMittal Nippon Steel Hazira plant,IND,E100000000687,ArcelorMittal SA,LUX,Overseas,0.6,3.6,3.6
+P100000120513,ArcelorMittal Nippon Steel Hazira plant,IND,E100000000652,Nippon Steel Corp,JPN,Overseas,0.4,2.4,2.4
+P100000120517,JSW Steel Dolvi steel plant,IND,E100001000516,JSW Steel Ltd,IND,Domestic,1.0,5.0,5.0
+P100000120766,Jindal Shadeed Iron & Steel Duqm plant,OMN,,Unreported remaining equity,,Unassigned,1,5.0,
+P100000120420,Nová Hut Ostrava steel plant,CZE,E100002022007,SPV NH Ostrava sro,,Unassigned,1.0,3.5,
+P100000120540,Neelachal Ispat Nigam steel plant,IND,E100001010018,Tata Steel Ltd,IND,Domestic,1.0,3.492,
+P100000120482,Tata Steel Port Talbot steel plant,GBR,E100001010018,Tata Steel Ltd,IND,Overseas,1.0,3.2,0.0
+P100000120593,Makran Steel Sistan and Baluchestan Complex,IRN,E100000000547,Iranian Mines & Mining Industries Development & Renovation Organization ,IRN,Domestic,0.085,0.255,
+P100000120593,Makran Steel Sistan and Baluchestan Complex,IRN,,Unreported remaining equity,,Unassigned,0.915,2.745,
+P100000120753,Abba Steel Ohangwena steel plant,NAM,E100001012072,Abba Steel Ltd,NAM,Domestic,1.0,3.0,
+P100000120988,Nucor Steel West Virginia steel plant,USA,E100001010181,Nucor Corp,USA,Domestic,1.0,3.0,
+P100000121211,Metinvest Piombino steel plant,ITA,E100001000605,Metinvest B.V.,NLD,Overseas,0.75,2.25,
+P100000121211,Metinvest Piombino steel plant,ITA,E100000130706,Danieli & C Officine Meccaniche SpA,ITA,Domestic,0.25,0.75,
+P100000121053,Ternium Pesquería steel plant,MEX,E100001000384,Ternium SA,LUX,Overseas,0.8925,2.3205,2.3205
+P100000121053,Ternium Pesquería steel plant,MEX,,Unresolved minority shareholders,,Unassigned,0.1075,0.2795,0.2795
+P100000121082,Zhenshi Group Eastern Special Steel Co Ltd,CHN,E100000127998,Zhenshi Holding Group Co Ltd,,Unassigned,0.703,1.765936,
+P100000121082,Zhenshi Group Eastern Special Steel Co Ltd,CHN,E100000128497,Tongxiang Wushi Trading Co Ltd,,Unassigned,0.239,0.600368,
+P100000121082,Zhenshi Group Eastern Special Steel Co Ltd,CHN,E100000132388,unknown ,,Unassigned,0.045,0.11304,
+P100000121082,Zhenshi Group Eastern Special Steel Co Ltd,CHN,E100000130601,Huakai Investment Co Ltd,,Unassigned,0.013,0.032656,
+P100000120556,Rashmi Metaliks Jamuria steel plant,IND,E100000130890,Rashmi Metaliks Ltd,IND,Domestic,1.0,2.5,
+P100000120699,POSCO Gwangyang steel plant,KOR,E100000000953,POSCO Holdings Inc,KOR,Domestic,1.0,2.5,0.0
+P100000120845,SSAB Luleå steel plant,SWE,E100000001651,SSAB AB,SWE,Domestic,1.0,2.5,0.2
+P100000120850,Stegra Boden steel plant,SWE,,Unresolved equity behind Stegra AB,,Unassigned,1.0,2.5,2.5
+P100000120315,Hbis Laoting Steel Co Ltd,CHN,E100000123542,HBIS Co Ltd,CHN,Domestic,0.691,1.55475,0.0
+P100000120315,Hbis Laoting Steel Co Ltd,CHN,E100000124529,HBIS Group Co Ltd,CHN,Domestic,0.077,0.17325,0.0
+P100000120315,Hbis Laoting Steel Co Ltd,CHN,E100000128826,Hebei Province Jicai Lndustryl Equity Lnvestment Fund Co Ltd,,Unassigned,0.07,0.1575,0.0
+P100000120315,Hbis Laoting Steel Co Ltd,CHN,E100000128904,China Everbright Group Ltd,,Unassigned,0.065,0.14625,0.0
+P100000120315,Hbis Laoting Steel Co Ltd,CHN,E100000000189,Gansu Provincial State-owned Assets Investment Group Co Ltd,,Unassigned,0.03,0.0675,0.0
+P100000120315,Hbis Laoting Steel Co Ltd,CHN,E100000124528,Tangshan City Development Group Co Ltd,,Unassigned,0.029,0.06525,0.0
+P100000120315,Hbis Laoting Steel Co Ltd,CHN,E100000128905,Gansu Financial Holding Group Co Ltd,,Unassigned,0.02,0.045,0.0
+P100000120315,Hbis Laoting Steel Co Ltd,CHN,E100000132388,unknown ,,Unassigned,0.009,0.02025,0.0
+P100000120315,Hbis Laoting Steel Co Ltd,CHN,E100000129075,Gansu Highway Aviation Tourism Investment Group Co Ltd,,Unassigned,0.008,0.018,0.0
+P100000120315,Hbis Laoting Steel Co Ltd,CHN,,Unreported remaining equity,,Unassigned,0.001,0.00225,0.0
+P100000121047,Huangshi Xingang Heavy Industry Technology Co Ltd,CHN,E100000126029,WEALTH GROUP INVESTMENT LIMITED ,,Unassigned,1.0,2.25,0.0
+P100000121135,Xingtai Iron and Steel Co Ltd Weixian,CHN,E100000128173,Hebei Jianen Trading Co Ltd,,Unassigned,0.481,1.08225,0.0
+P100000121135,Xingtai Iron and Steel Co Ltd Weixian,CHN,E100000130666,Xing Steel Fine Wire Holdings Co Ltd,CHN,Domestic,0.26,0.585,0.0
+P100000121135,Xingtai Iron and Steel Co Ltd Weixian,CHN,E100000128174,Xingtai Jinglin Trading Co Ltd,,Unassigned,0.259,0.58275,0.0
+P100000120876,Kaptan Ereglisi steel plant,TUR,E100000001058,Kaptan Demir Celik Endustrisi Ve Ticaret AŞ,TUR,Domestic,1.0,2.0,
+P100000121036,Xuan Thien Nghia Hung steel plant,VNM,E100000134775,Xuan Thien Group JSC,,Unassigned,1.0,2.0,
+P100000121086,Henan Jinhui Industrial Group,CHN,E100000128078,Henan JINHUI Stainless Indutrial Group Co Ltd,CHN,Domestic,0.83,1.66,0.0
+P100000121086,Henan Jinhui Industrial Group,CHN,E100000128079,Changge Huida Trading Co Ltd,,Unassigned,0.17,0.34,0.0
+P100001064261,Qinyang Hongda Iron & Steel Co Ltd,CHN,E100002021050,Qinyang Hongda Iron & Steel Co Ltd,CHN,Domestic,1.0,2.0,
+P100000120424,Salzgitter Flachstahl steel plant,DEU,,Unreported remaining equity,,Unassigned,1,1.9,0
+P100000120059,Algoma steel plant,CAN,E100001015587,small shareholder(s) ,,Unassigned,0.698,1.2913,
+P100000120059,Algoma steel plant,CAN,E100001016165,Maple Rock Capital Partners Inc,,Unassigned,0.137,0.25345,
+P100000120059,Algoma steel plant,CAN,E100001016164,MMCAP International Inc SPC,,Unassigned,0.109,0.20165,
+P100000120059,Algoma steel plant,CAN,E100001011758,Donald Smith & Co Inc,,Unassigned,0.056,0.1036,
+P100000120826,Ecolant steel plant,RUS,E100002003654,Ekoinvest LLC,,Unassigned,0.456,0.8208,0.8208
+P100000120826,Ecolant steel plant,RUS,E100002003655,Lanafinans LLC,,Unassigned,0.456,0.8208,0.8208
+P100000120826,Ecolant steel plant,RUS,E100002003653,Oninvest LLC,,Unassigned,0.048,0.0864,0.0864
+P100000120826,Ecolant steel plant,RUS,E100001015587,small shareholder(s) ,,Unassigned,0.04,0.072,0.072
+P100000120423,AG der Dillinger Hüttenwerke Dillingen steel plant,DEU,E100001016169,Montan-Stiftung-Saar ,,Unassigned,0.509,0.89075,0.0
+P100000120423,AG der Dillinger Hüttenwerke Dillingen steel plant,DEU,E100000000687,ArcelorMittal SA,LUX,Overseas,0.298,0.5215,0.0
+P100000120423,AG der Dillinger Hüttenwerke Dillingen steel plant,DEU,E100000132388,unknown ,,Unassigned,0.087,0.15225,0.0
+P100000120423,AG der Dillinger Hüttenwerke Dillingen steel plant,DEU,,Unreported remaining equity,,Unassigned,0.106,0.1855,0.0
+P100000120011,Voestalpine Stahl Donawitz steel plant,AUT,E100000000031,Voestalpine AG,AUT,Domestic,1.0,1.7,
+P100000120128,Tangshan Fengnan District Jing an Iron and Steel Co Ltd,CHN,E100001010698,Tangshan Fengnan District Jing'an Iron and Steel Co Ltd,CHN,Domestic,1.0,1.7,0.0
+P100000121040,BAP Al-Khair steel plant,SAU,E100000122571,Baoshan Iron & Steel Co Ltd,CHN,Overseas,0.5,0.85,
+P100000121040,BAP Al-Khair steel plant,SAU,E100000000888,Saudi Arabian Oil Co,SAU,Domestic,0.25,0.425,
+P100000121040,BAP Al-Khair steel plant,SAU,E100000001358,Public Investment Fund (Saudi Arabia),,Unassigned,0.25,0.425,
+P100000120108,Tangshan Donghua Iron and Steel Enterprise Group Co Ltd,CHN,E100000123205,Tangshan Donghua Iron & Steel Enterprise Group Co Ltd,CHN,Domestic,1.0,1.65,0.0
+P100000120271,Shanxi Zhongsheng Iron and Steel Co Ltd,CHN,E100000127019,Shanxi Zhongsheng Iron and Steel Co Ltd,CHN,Domestic,1.0,1.65,
+P100000120365,Wuzhou Yongda Iron and Steel Co Ltd,CHN,E100000126779,Wuzhou Yongda Steel Works Co Ltd,CHN,Domestic,1.0,1.645,0.0
+P100000120010,Voestalpine Stahl Linz steel plant,AUT,E100000000031,Voestalpine AG,AUT,Domestic,1.0,1.6,
+P100000120069,Maanshan Iron and Steel Co Ltd,CHN,E100000123737,Maanshan Iron & Steel Co Ltd,CHN,Domestic,1.0,1.6,0.0
+P100000120164,Henan Jiyuan Iron and Steel Group Co Ltd,CHN,E100000124077,Henan Jiyuan Iron and Steel Investment Holding Co Ltd,,Unassigned,0.486,0.7776,0.0
+P100000120164,Henan Jiyuan Iron and Steel Group Co Ltd,CHN,E100000132388,unknown ,,Unassigned,0.35,0.56,0.0
+P100000120164,Henan Jiyuan Iron and Steel Group Co Ltd,CHN,E100000124078,Tianjin Jinyuan Guotai Enterprise Management Consulting Co Ltd,,Unassigned,0.1,0.16,0.0
+P100000120164,Henan Jiyuan Iron and Steel Group Co Ltd,CHN,E100000126009,Trade Union Committee of Henan Jiyuan Iron and Steel (Group) ,,Unassigned,0.064,0.1024,0.0
+P100000120168,Henan Yaxin Iron and Steel Group Co Ltd,CHN,E100000127122,Henan YAXIN Steel Industry Co Ltd,CHN,Domestic,1.0,1.6,0.0
+P100000120617,Bonab Steel Complex,IRN,,Unreported remaining equity,,Unassigned,1,1.5,
+P100000120726,DEACERO Celaya steel plant,MEX,E100000000715,DeAcero SAPI de CV,MEX,Domestic,1.0,1.5,
+P100000120730,DEACERO Ramos Arizpe steel plant,MEX,E100000000715,DeAcero SAPI de CV,MEX,Domestic,1.0,1.5,1.0
+P100000120754,HyIron Steel Namibia plant,NAM,,Unreported remaining equity,,Unassigned,1,1.5,
+P100000120778,Mount Zynai Zamboanga Sibugay steel plant,PHL,E100000131187,Mount Zynai 0304 Mining Corp,PHL,Domestic,1.0,1.5,
+P100000120817,Balakovo Steel Plant,RUS,,Unreported remaining equity,,Unassigned,1,1.5,
+P100000120844,SSAB Oxelösund steel plant,SWE,E100000001651,SSAB AB,SWE,Domestic,1.0,1.5,0.0
+P100000121244,Shams Iron and Steel Complex Tabriz,IRN,E100001013041,Daric Investment Holding Co,,Unassigned,1.0,1.5,
+P100000120376,Daye Huaxin Industrial Co Ltd,CHN,E100000123261,natural person(s) ,,Unassigned,0.563,0.806779,0.0
+P100000120376,Daye Huaxin Industrial Co Ltd,CHN,E100000127570,Hubei Xinxin Steel Group Co Ltd,CHN,Domestic,0.211,0.302363,0.0
+P100000120376,Daye Huaxin Industrial Co Ltd,CHN,E100000127571,Jin Jun'an Investment Group Co Ltd,,Unassigned,0.189,0.270837,0.0
+P100000120376,Daye Huaxin Industrial Co Ltd,CHN,E100000132388,unknown ,,Unassigned,0.037,0.053021,0.0
+P100000120407,Yunnan Qujing Iron and Steel Group Yanggang Iron and Steel Co Ltd,CHN,,Unresolved overlapping parent stakes,,Unassigned,1.0,1.4,
+P100001042845,Meghna Re-rolling and Steel Mills steel plant,BGD,,Unreported remaining equity,,Unassigned,1,1.4,
+P100000120118,Tangshan Ganglu Iron and Steel Co Ltd,CHN,E100000125875,Guotao Co Ltd (Hong Kong) ,,Unassigned,0.763,1.03005,0.0
+P100000120118,Tangshan Ganglu Iron and Steel Co Ltd,CHN,E100000123550,Yushan (Beijing) Metallurgical Investment Co Ltd,,Unassigned,0.237,0.31995,0.0
+P100000120240,Rizhao Steel Holding Group Co Ltd,CHN,E100000124688,Jinghua Rigang Holding Group Co Ltd,CHN,Domestic,0.988,1.3338,0.0
+P100000120240,Rizhao Steel Holding Group Co Ltd,CHN,E100000132388,unknown ,,Unassigned,0.012,0.0162,0.0
+P100000120307,Hebei Mingbin Iron and Steel Co Ltd,CHN,E100000123261,natural person(s) ,,Unassigned,0.49,0.6615,
+P100000120307,Hebei Mingbin Iron and Steel Co Ltd,CHN,E100000124068,Hebei Puyang Industrial Group Co Ltd,CHN,Domestic,0.332,0.4482,
+P100000120307,Hebei Mingbin Iron and Steel Co Ltd,CHN,E100000126000,Longxiang Group (Hong Kong) ,,Unassigned,0.178,0.2403,
+P100000121209,DST Nghi Son steel plant,VNM,E100001012401,DST Nghi Son Iron and Steel JSC,VNM,Domestic,1.0,1.31,
+P100000120107,Shougang Qian an Iron and Steel Co Ltd,CHN,E100000124355,Beijing Shougang Co Ltd,CHN,Domestic,1.0,1.3,0.0
+P100000120589,Jahan Foolad Sirjan Steel Kerman plant,IRN,E100000000544,Golgohar Mining and Industrial Co,IRN,Domestic,0.51,0.663,
+P100000120589,Jahan Foolad Sirjan Steel Kerman plant,IRN,E100001010256,Iran National Copper Industries Pension Fund ,,Unassigned,0.49,0.637,
+P100000120756,Ajaokuta Steel plant,NGA,E100000002408,Ajaokuta Steel Co Ltd,NGA,Domestic,1.0,1.3,
+P100000120019,Bashundhara Steel Mirsarai plant,BGD,,Unreported remaining equity,,Unassigned,1,1.25,
+P100000121142,Baotou Deshun Special Steel Co Ltd,CHN,E100001012095,Baotou Deshun Spec. Steel Co Ltd,CHN,Domestic,1.0,1.25,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100001015587,small shareholder(s) ,,Unassigned,0.287,0.356741,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100001012163,Cimmco Vinimay Pvt Ltd,,Unassigned,0.166,0.206338,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100001012171,Rashmi Iron Industries Pvt Ltd,IND,Domestic,0.091,0.113113,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100001012169,Newera Commotrade Pvt Ltd,,Unassigned,0.066,0.082038,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100001012170,Rashmi Infrastructure Pvt Ltd,,Unassigned,0.06,0.07458,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100001012164,Bholebaba Consultants LLP,,Unassigned,0.058,0.072094,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100001012079,Rashmi Cement Ltd,,Unassigned,0.057,0.070851,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100001012165,Daffodil Plaza Pvt Ltd,,Unassigned,0.057,0.070851,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100001012168,Optimist Commosale Pvt Ltd,,Unassigned,0.055,0.068365,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100001012166,Rashidhan Sales Pvt Ltd,,Unassigned,0.052,0.064636,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100000130890,Rashmi Metaliks Ltd,IND,Domestic,0.05,0.06215,
+P100000121188,Orissa Alloy Steel Kharagpur Plant,IND,E100000123261,natural person(s) ,,Unassigned,0.001,0.001243,
+P100000120374,Guangxi Liugang Zhongjin Stainless Steel Co Ltd,CHN,E100000123903,Guangxi Liuzhou Iron and Steel Group Co Ltd,CHN,Domestic,1.0,1.2,
+P100000120605,Azna Steel Lorestan plant,IRN,E100000131105,Azna Steel ,IRN,Domestic,1.0,1.2,
+P100000120770,SteelAsia Concepcion steel plant,PHL,E100000131011,SteelAsia Manufacturing Corp,PHL,Domestic,1.0,1.2,
+P100001080915,Asia United Steel plant,KAZ,E100002021414,Asia United Steel ,KAZ,Domestic,1.0,1.2,
+P100000120079,Fujian Yixin Steel Co Ltd,CHN,E100000123261,natural person(s) ,,Unassigned,0.384,0.4416,0.0
+P100000120079,Fujian Yixin Steel Co Ltd,CHN,E100000132388,unknown ,,Unassigned,0.232,0.2668,0.0
+P100000120079,Fujian Yixin Steel Co Ltd,CHN,E100000130639,Thailand Huihua Industrial Co Ltd,,Unassigned,0.207,0.23805,0.0
+P100000120079,Fujian Yixin Steel Co Ltd,CHN,E100000130294,"Labor Union Committee of Xiaojiao Rolling Mill of Sanming Iron and Steel Works, Fujian Province ",,Unassigned,0.177,0.20355,0.0
+P100000120167,Henan Fengbao Special Steel Co Ltd,CHN,E100000127405,Henan Fengbao SPECIAL Steel Co Ltd,CHN,Domestic,1.0,1.15,0.0
+P100000120359,Zunyi Fuxin Special Steel Equipment Manufacturing Co Ltd,CHN,E100000126901,Zunyi County Fuxin Iron & Steel Product Co Ltd,CHN,Domestic,1.0,1.11,0.0
+P100000120452,ArcelorMittal Asturias (Gijón) steel plant,ESP,E100000000687,ArcelorMittal SA,LUX,Overseas,0.998,1.0978,
+P100000120452,ArcelorMittal Asturias (Gijón) steel plant,ESP,E100001015587,small shareholder(s) ,,Unassigned,0.002,0.0022,
+P100000120776,SteelAsia Lemery steel plant,PHL,E100000131011,SteelAsia Manufacturing Corp,PHL,Domestic,1.0,1.1,
+P100000120522,Lloyds Metals and Energy Ltd Ghugus steel plant,IND,E100001012204,Lloyds Metals and Energy Ltd,IND,Domestic,1.0,1.05,1.05
+P100000121001,Uzmetkombinat steel plant,UZB,E100000130852,Uzbekskiy Metallurgicheskiy Kombinat JSC,UZB,Domestic,1.0,1.04,0.0
+P100000120317,Chongqing Zuhang Iron and Steel Co Ltd,CHN,E100000126259,Chongqing Zuhang Steel Co Ltd,CHN,Domestic,1.0,1.01,0.0
+P100000120588,Zarand Iranian Steel Company Kerman plant,IRN,E100001015587,small shareholder(s) ,,Unassigned,0.473,0.473,
+P100000120588,Zarand Iranian Steel Company Kerman plant,IRN,E100002020859,Mabna Khavar Miyaneh Co,,Unassigned,0.154,0.154,
+P100000120588,Zarand Iranian Steel Company Kerman plant,IRN,E100001015720,Pars Aryan Investment Co,,Unassigned,0.121,0.121,
+P100000120588,Zarand Iranian Steel Company Kerman plant,IRN,E100002020860,Rahbord Sarmaye Iranian Co,,Unassigned,0.1,0.1,
+P100000120588,Zarand Iranian Steel Company Kerman plant,IRN,E100001015719,Pasargad Arzesh Afarinan Co,,Unassigned,0.095,0.095,
+P100000120588,Zarand Iranian Steel Company Kerman plant,IRN,E100002020861,Tejarat Pishegan Mihan Negar Pars Co,,Unassigned,0.057,0.057,
+P100000120598,Sirjan Iranian Steel Kerman Plant,IRN,,Unreported remaining equity,,Unassigned,1,1.0,
+P100000120757,African Natural Resources and Mines Kaduna steel plant,NGA,,Unreported remaining equity,,Unassigned,1,1.0,
+P100001042855,Unitex Steel Mills Feni steel plant,BGD,E100002005773,Unitex Steel Mills Ltd,BGD,Domestic,1.0,1.0,
+P100001054284,SteelAsia Candelaria steel plant,PHL,E100000131011,SteelAsia Manufacturing Corp,PHL,Domestic,1.0,1.0,
+P100001062603,Kurdistan Steel Qorveh steel plant,IRN,E100000000547,Iranian Mines & Mining Industries Development & Renovation Organization ,IRN,Domestic,0.44,0.44,
+P100001062603,Kurdistan Steel Qorveh steel plant,IRN,E100001016087,Development and Equipment of Relief Mines Co,,Unassigned,0.2,0.2,
+P100001062603,Kurdistan Steel Qorveh steel plant,IRN,E100001016086,Sabanour Mining and Industrial Development Co,IRN,Domestic,0.2,0.2,
+P100001062603,Kurdistan Steel Qorveh steel plant,IRN,E100001016089,Sepahan Mines Kimia ,IRN,Domestic,0.16,0.16,
+P100000120416,Fujian Fuhua New Materials Group Co Ltd,CHN,E100000126680,Mindong Saiqi Economic Development Zone Fuhua Steel Rolling Co Ltd,CHN,Domestic,1.0,0.825,0.0
+P100000120569,Rungta Mines Dhenkanal steel plant,IND,E100000130898,Rungta Mines Ltd,IND,Domestic,1.0,0.821,
+P100000120601,Miyaneh Steel East Azerbaijan steel plant,IRN,,Unreported remaining equity,,Unassigned,1,0.8,
+P100000120602,Sabzevar Steel Complex Razavi Khorasan,IRN,E100000131093,Sabzevar Pars Steel Complex ,IRN,Domestic,1.0,0.8,
+P100000120291,Xinjiang Tianshan Iron and Steel Bazhou Co Ltd,CHN,E100001000472,China Baowu Steel Group Co Ltd,CHN,Domestic,0.793,0.59475,
+P100000120291,Xinjiang Tianshan Iron and Steel Bazhou Co Ltd,CHN,E100000123578,Xinjiang Investment Development (Group) Co Ltd,,Unassigned,0.052,0.039,
+P100000120291,Xinjiang Tianshan Iron and Steel Bazhou Co Ltd,CHN,E100000000220,Industrial and Commercial Bank of China Ltd,,Unassigned,0.05,0.0375,
+P100000120291,Xinjiang Tianshan Iron and Steel Bazhou Co Ltd,CHN,E100000124428,Bank of China Ltd,,Unassigned,0.038,0.0285,
+P100000120291,Xinjiang Tianshan Iron and Steel Bazhou Co Ltd,CHN,E100000000151,Agricultural Bank of China Ltd,,Unassigned,0.036,0.027,
+P100000120291,Xinjiang Tianshan Iron and Steel Bazhou Co Ltd,CHN,E100000132388,unknown ,,Unassigned,0.03,0.0225,
+P100000120291,Xinjiang Tianshan Iron and Steel Bazhou Co Ltd,CHN,,Unreported remaining equity,,Unassigned,0.001,0.00075,
+P100000120576,Tata Steel Ludhiana steel plant,IND,E100001010018,Tata Steel Ltd,IND,Domestic,1.0,0.75,0.0
+P100000120832,Donelektrostal Shakhty steel plant,RUS,E100001012123,Donelektrostal LLC,RUS,Domestic,1.0,0.73,
+P100000120051,Simec Pindamonhangaba steel plant,BRA,E100000130728,Grupo Simec SAB de CV,MEX,Overseas,1.0,0.7,
+P100000120553,Ramsarup Industries Kharagpur steel plant,IND,,Unreported remaining equity,,Unassigned,1,0.69,
+P100000120839,Gulf Tubing Company Ras Al-Khair steel plant,SAU,,Unreported remaining equity,,Unassigned,1,0.63,
+P100000120615,Sarmad Iron and Steel Complex Abarkouh,IRN,E100001016286,Chadormello Mining and Industrial Co,IRN,Domestic,0.52,0.312,
+P100000120615,Sarmad Iron and Steel Complex Abarkouh,IRN,E100001011682,Mines & Metals Development Investment Co,,Unassigned,0.285,0.171,
+P100000120615,Sarmad Iron and Steel Complex Abarkouh,IRN,,Unreported remaining equity,,Unassigned,0.195,0.117,
+P100000120713,Lanwa Steel Hambantota steel plant,LKA,E100000131034,Ceylon Steel Co Ltd,LKA,Domestic,1.0,0.6,
+P100001061378,CMC West Virginia steel plant,USA,E100000130754,Commercial Metals Co,USA,Domestic,1.0,0.59,0.0
+P100000121185,Rungta Mines Karakhendra steel plant,IND,E100000130898,Rungta Mines Ltd,IND,Domestic,1.0,0.554,
+P100000121243,Saeb Steel Complex,IRN,E100001013041,Daric Investment Holding Co,,Unassigned,1.0,0.55,
+P100001063425,Arian Steel Fath Abad plant,IRN,E100002021989,Arian Steel Co ,,Unassigned,1.0,0.55,
+P100000121247,Amirkabir Arak Steel plant,IRN,,Unreported remaining equity,,Unassigned,1,0.513,
+P100000120352,Yunnan Tiangao Nickel Alloy Co Ltd,CHN,E100000127446,Sichuan Jinguang Industry (Group) Co Ltd,CHN,Domestic,0.639,0.3195,
+P100000120352,Yunnan Tiangao Nickel Alloy Co Ltd,CHN,E100000132388,unknown ,,Unassigned,0.298,0.149,
+P100000120352,Yunnan Tiangao Nickel Alloy Co Ltd,CHN,E100000127447,Sichuan Shiting Ecology Agriculture Technology Co Ltd,,Unassigned,0.062,0.031,
+P100000120352,Yunnan Tiangao Nickel Alloy Co Ltd,CHN,,Unreported remaining equity,,Unassigned,0.001,0.0005,
+P100000120752,Tete Steel Maputo plant,MOZ,E100000130753,Baobab Steel Ltd,GBR,Overseas,1.0,0.5,
+P100000120783,Ittehad Steel Faisalabad plant,PAK,E100000130788,Ittehad Steels Pvt Ltd,PAK,Domestic,1.0,0.5,
+P100000120784,Century Steel Khyber plant,PAK,E100000131188,Century Steel Pte Ltd,SGP,Overseas,1.0,0.5,
+P100000121025,Thai Nguyen Iron and Steel plant,VNM,E100000130922,Thai Nguyen Iron And Steel JSC,VNM,Domestic,1.0,0.5,
+P100000121245,Sabalan Iron and Steel Complex,IRN,E100001013041,Daric Investment Holding Co,,Unassigned,1.0,0.5,
+P100000121252,Jinzhou Jinxing Special Steel Company,CHN,E100002003149,Jinzhou Jinxing Special Steel Co Ltd,CHN,Domestic,1.0,0.36,0.0
+P100000121240,AFV Donalam Targoviste steel plant,ROU,E100001016199,Beltrame Holding SpA,ITA,Overseas,0.861,0.2583,
+P100000121240,AFV Donalam Targoviste steel plant,ROU,E100000132388,unknown ,,Unassigned,0.076,0.0228,
+P100000121240,AFV Donalam Targoviste steel plant,ROU,,Unreported remaining equity,,Unassigned,0.063,0.0189,
+P100000120536,JSW Steel Raigarh steel plant,IND,E100000120868,JSW Ispat Special Products Ltd,IND,Domestic,1.0,0.25,
+P100000120931,Gerdau Midlothian Steel Mill,USA,E100001010270,Gerdau SA,BRA,Overseas,0.982,0.1473,0.1473
+P100000120931,Gerdau Midlothian Steel Mill,USA,,Unreported remaining equity,,Unassigned,0.018,0.0027,0.0027
+P100001061536,Yunnan Qujing Shuangyou Iron and Steel Co Ltd,CHN,E100002019324,Yunnan Qujing Shuangyou Iron and Steel Co Ltd,CHN,Domestic,1.0,0.13,
+P100000120690,Ch'ollima Steel Complex steel plant,PRK,E100001000599,Government of North Korea ,,Unassigned,1.0,,

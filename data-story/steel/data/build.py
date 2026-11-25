@@ -1,8 +1,7 @@
-"""Build the published project dataset and the 13-site decision ledger, offline."""
+"""Build the original India evidence and 13-site decision ledger, offline."""
 
 import csv
 import json
-from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -152,19 +151,3 @@ def build():
 
 if __name__ == "__main__":
     build()
-    # Publish a static, linkable ledger so the audit is readable without JavaScript.
-    audit = json.loads((ROOT / "audit.json").read_text(encoding="utf-8"))
-    cards = []
-    for r in audit:
-        included = "Withheld" if r["acceptedKt"] is None else f'{r["acceptedKt"]/1000:g} Mt/yr included'
-        links = [source("GEM plant record", r["gem"]), *r["sources"]]
-        refs = " · ".join(f'<a href="{escape(s["url"], quote=True)}">{escape(s["label"])}</a>' for s in links)
-        cards.append(f'<details id="site-{r["id"]}"><summary><strong>{escape(r["name"])}</strong>'
-                     f'<span>{r["grossKt"]/1000:g}</span><small>{escape(r["decision"])}</small></summary>'
-                     f'<div><p><b>{included}.</b> {escape(r["rationale"])}</p><p class="links">{refs}</p></div></details>')
-    method = ROOT.parent / "method/index.html"
-    start, end = "<!-- audit-start -->", "<!-- audit-end -->"
-    html = method.read_text(encoding="utf-8")
-    before, rest = html.split(start)
-    _, after = rest.split(end)
-    method.write_text(before + start + "\n" + "\n".join(cards) + "\n" + end + after, encoding="utf-8")

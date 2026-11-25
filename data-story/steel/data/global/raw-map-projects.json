@@ -1,0 +1,3439 @@
+[
+  {
+    "project-id": "P100000120513",
+    "name": "ArcelorMittal Nippon Steel Hazira plant",
+    "owner": "ArcelorMittal Nippon Steel India Ltd",
+    "owner-gem-id": "E100000002455",
+    "parent": "ArcelorMittal SA [60.0%]; Nippon Steel Corp [40.0%]",
+    "parent-gem-id": "E100000000687 [60.0%]; E100000000652 [40.0%]",
+    "subnational": "Gujarat",
+    "country-area1": "India",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/ArcelorMittal_Nippon_Steel_Hazira_plant",
+    "Latitude": 21.112377,
+    "Longitude": 72.647304,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "6000"
+      },
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "4600"
+      },
+      {
+        "status": "operating",
+        "method": "Other/unspecified steel",
+        "capacity": "5000"
+      },
+      {
+        "status": "announced",
+        "method": "Other/unspecified steel",
+        "capacity": "9000"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "8000"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "2040"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "7830"
+      },
+      {
+        "status": "operating",
+        "method": "Other/unspecified iron",
+        "capacity": "1700"
+      },
+      {
+        "status": "announced",
+        "method": "Other/unspecified iron",
+        "capacity": "9000"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120240",
+    "name": "Rizhao Steel Holding Group Co Ltd",
+    "owner": "Rizhao Steel Holding Group Co Ltd",
+    "owner-gem-id": "E100000123983",
+    "parent": "Jinghua Rigang Holding Group Co Ltd [98.8%]; unknown [1.2%]",
+    "parent-gem-id": "E100000124688 [98.8%]; E100000132388 [1.2%]",
+    "subnational": "Shandong",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Rizhao_Steel_Holding_Group_Co_Ltd",
+    "Latitude": 35.16535,
+    "Longitude": 119.366672,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "11300"
+      },
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "1700"
+      },
+      {
+        "status": "announced",
+        "method": "BOF",
+        "capacity": "9000"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1350"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "10200"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "8396"
+      },
+      {
+        "status": "announced",
+        "method": "BF",
+        "capacity": "10000"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": "500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120699",
+    "name": "POSCO Gwangyang steel plant",
+    "owner": "POSCO Holdings Inc",
+    "owner-gem-id": "E100000000953",
+    "parent": "POSCO Holdings Inc [100.0%]",
+    "parent-gem-id": "E100000000953 [100.0%]",
+    "subnational": "South Jeolla",
+    "country-area1": "South Korea",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/POSCO_Gwangyang_steel_plant",
+    "Latitude": 34.920086,
+    "Longitude": 127.74865,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "22999"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2500"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "24750"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": ">0"
+      }
+    ]
+  },
+  {
+    "project-id": "P100001025671",
+    "name": "ArcelorMittal Nippon Steel Anakapalle steel plant",
+    "owner": "ArcelorMittal Nippon Steel India Ltd",
+    "owner-gem-id": "E100000002455",
+    "parent": "ArcelorMittal SA [60.0%]; Nippon Steel Corp [40.0%]",
+    "parent-gem-id": "E100000000687 [60.0%]; E100000000652 [40.0%]",
+    "subnational": "Andhra Pradesh",
+    "country-area1": "India",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/ArcelorMittal_Nippon_Steel_Anakapalle_steel_plant",
+    "Latitude": 17.407103,
+    "Longitude": 82.723183,
+    "capacity-by-status": [
+      {
+        "status": "announced",
+        "method": "BOF",
+        "capacity": "16700"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "8200"
+      },
+      {
+        "status": "announced",
+        "method": "BF",
+        "capacity": "10500"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "8200"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120069",
+    "name": "Maanshan Iron and Steel Co Ltd",
+    "owner": "Maanshan Iron & Steel Co Ltd",
+    "owner-gem-id": "E100000123737",
+    "parent": "Maanshan Iron & Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100000123737 [100.0%]",
+    "subnational": "Anhui",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Maanshan_Iron_and_Steel_Co_Ltd",
+    "Latitude": 31.698884,
+    "Longitude": 118.468194,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "14650"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1600"
+      },
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "1860"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "1860"
+      },
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "830"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "14500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120517",
+    "name": "JSW Steel Dolvi steel plant",
+    "owner": "JSW Steel Ltd",
+    "owner-gem-id": "E100001000516",
+    "parent": "JSW Steel Ltd [100.0%]",
+    "parent-gem-id": "E100001000516 [100.0%]",
+    "subnational": "Maharashtra",
+    "country-area1": "India",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/JSW_Steel_Dolvi_steel_plant",
+    "Latitude": 18.690312,
+    "Longitude": 73.035902,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "5000"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "5000"
+      },
+      {
+        "status": "operating",
+        "method": "Other/unspecified steel",
+        "capacity": "5200"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "8100"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "4800"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "2000"
+      },
+      {
+        "status": "cancelled",
+        "method": "DRI",
+        "capacity": "2000"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120539",
+    "name": "JSW Utkal Steel Rajnagar plant",
+    "owner": "JSW Utkal Steel Ltd",
+    "owner-gem-id": "E100001000528",
+    "parent": "JSW Steel Ltd [100.0%]",
+    "parent-gem-id": "E100001000516 [100.0%]",
+    "subnational": "Odisha",
+    "country-area1": "India",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/JSW_Utkal_Steel_Rajnagar_plant",
+    "Latitude": 20.216667,
+    "Longitude": 86.55,
+    "capacity-by-status": [
+      {
+        "status": "announced",
+        "method": "BOF",
+        "capacity": "6500"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "7000"
+      },
+      {
+        "status": "announced",
+        "method": "BF",
+        "capacity": "9000"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "4500"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": "1200"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120315",
+    "name": "Hbis Laoting Steel Co Ltd",
+    "owner": "HBIS Laoting Steel Co Ltd",
+    "owner-gem-id": "E100000123169",
+    "parent": "HBIS Co Ltd [69.1%]; HBIS Group Co Ltd [7.7%]; Hebei Province Jicai Lndustryl Equity Lnvestment Fund Co Ltd [7.0%]; China Everbright Group Ltd [6.5%]; Gansu Provincial State-owned Assets Investment Group Co Ltd [3.0%]; Tangshan City Development Group Co Ltd [2.9%]; Gansu Financial Holding Group Co Ltd [2.0%]; unknown [0.9%]; Gansu Highway Aviation Tourism Investment Group Co Ltd [0.8%]",
+    "parent-gem-id": "E100000123542 [69.1%]; E100000124529 [7.7%]; E100000128826 [7.0%]; E100000128904 [6.5%]; E100000000189 [3.0%]; E100000124528 [2.9%]; E100000128905 [2.0%]; E100000132388 [0.9%]; E100000129075 [0.8%]",
+    "subnational": "Hebei",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Hbis_Laoting_Steel_Co_Ltd",
+    "Latitude": 39.257823,
+    "Longitude": 119.033567,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "7450"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "2250"
+      },
+      {
+        "status": "announced",
+        "method": "EAF",
+        "capacity": "1800"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "7320"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "2670"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120118",
+    "name": "Tangshan Ganglu Iron and Steel Co Ltd",
+    "owner": "Tangshan Ganglu Iron & Steel Co Ltd",
+    "owner-gem-id": "E100000123206",
+    "parent": "Guotao Co Ltd (Hong Kong) [76.3%]; Yushan (Beijing) Metallurgical Investment Co Ltd [23.7%]",
+    "parent-gem-id": "E100000125875 [76.3%]; E100000123550 [23.7%]",
+    "subnational": "Hebei",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Tangshan_Ganglu_Iron_and_Steel_Co_Ltd",
+    "Latitude": 40.183913,
+    "Longitude": 118.073913,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "5614"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1350"
+      },
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "2787"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "4182"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "2330"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "1758"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "1820"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120108",
+    "name": "Tangshan Donghua Iron and Steel Enterprise Group Co Ltd",
+    "owner": "Tangshan Donghua Iron & Steel Enterprise Group Co Ltd",
+    "owner-gem-id": "E100000123205",
+    "parent": "Tangshan Donghua Iron & Steel Enterprise Group Co Ltd [100.0%]",
+    "parent-gem-id": "E100000123205 [100.0%]",
+    "subnational": "Hebei",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Tangshan_Donghua_Iron_and_Steel_Enterprise_Group_Co_Ltd",
+    "Latitude": 39.468366,
+    "Longitude": 118.256774,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "4750"
+      },
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "2700"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1650"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "7458"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "1237"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "1330"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120540",
+    "name": "Neelachal Ispat Nigam steel plant",
+    "owner": "Neelachal Ispat Nigam Ltd",
+    "owner-gem-id": "E100001010157",
+    "parent": "Tata Steel Long Products Ltd [92.7%]; Tata Steel Ltd [5.2%]; small shareholder(s) [2.1%]",
+    "parent-gem-id": "E100000121408 [92.7%]; E100001010018 [5.2%]; E100001015587 [2.1%]",
+    "subnational": "Odisha",
+    "country-area1": "India",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Neelachal_Ispat_Nigam_steel_plant",
+    "Latitude": 20.998641,
+    "Longitude": 86.019102,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "1100"
+      },
+      {
+        "status": "announced",
+        "method": "BOF",
+        "capacity": "4908"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "3492"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "1100"
+      },
+      {
+        "status": "announced",
+        "method": "BF",
+        "capacity": "7830"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120107",
+    "name": "Shougang Qian an Iron and Steel Co Ltd",
+    "owner": "Beijing Shougang Co Ltd",
+    "owner-gem-id": "E100000124355",
+    "parent": "Beijing Shougang Co Ltd [100.0%]",
+    "parent-gem-id": "E100000124355 [100.0%]",
+    "subnational": "Hebei",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Shougang_Qian_an_Iron_and_Steel_Co_Ltd",
+    "Latitude": 39.976702,
+    "Longitude": 118.558788,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "6300"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "2000"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1300"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "7850"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120569",
+    "name": "Rungta Mines Dhenkanal steel plant",
+    "owner": "Rungta Mines Ltd",
+    "owner-gem-id": "E100000130898",
+    "parent": "Rungta Mines Ltd [100.0%]",
+    "parent-gem-id": "E100000130898 [100.0%]",
+    "subnational": "Odisha",
+    "country-area1": "India",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Rungta_Mines_Dhenkanal_steel_plant",
+    "Latitude": 20.764524,
+    "Longitude": 85.299318,
+    "capacity-by-status": [
+      {
+        "status": "announced",
+        "method": "BOF",
+        "capacity": "3072"
+      },
+      {
+        "status": "announced",
+        "method": "EAF",
+        "capacity": "1680"
+      },
+      {
+        "status": "construction",
+        "method": "IF",
+        "capacity": "821"
+      },
+      {
+        "status": "operating",
+        "method": "IF",
+        "capacity": "206"
+      },
+      {
+        "status": "announced",
+        "method": "IF",
+        "capacity": "1632"
+      },
+      {
+        "status": "announced",
+        "method": "BF",
+        "capacity": "4776"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "980"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "261"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": "3162"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120424",
+    "name": "Salzgitter Flachstahl steel plant",
+    "owner": "Salzgitter Flachstahl GmbH",
+    "owner-gem-id": "E100000003954",
+    "parent": "Salzgitter AG",
+    "parent-gem-id": "E100001010315",
+    "subnational": "Niedersachsen",
+    "country-area1": "Germany",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Salzgitter_Flachstahl_steel_plant",
+    "Latitude": 52.161794,
+    "Longitude": 10.409371,
+    "capacity-by-status": [
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "5200"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1900"
+      },
+      {
+        "status": "announced",
+        "method": "EAF",
+        "capacity": ">0"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "4880"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "2100"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": ">0"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120423",
+    "name": "AG der Dillinger Hüttenwerke Dillingen steel plant",
+    "owner": "AG der Dillinger Hüttenwerke AG",
+    "owner-gem-id": "E100000002380",
+    "parent": "Montan-Stiftung-Saar [50.9%]; ArcelorMittal SA [29.8%]; unknown [8.7%]",
+    "parent-gem-id": "E100001016169 [50.9%]; E100000000687 [29.8%]; E100000132388 [8.7%]",
+    "subnational": "Saarland",
+    "country-area1": "Germany",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/AG_der_Dillinger_Hüttenwerke_Dillingen_steel_plant",
+    "Latitude": 49.353884,
+    "Longitude": 6.746603,
+    "capacity-by-status": [
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "2760"
+      },
+      {
+        "status": "announced",
+        "method": "EAF",
+        "capacity": "1400"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1750"
+      },
+      {
+        "status": "mothballed",
+        "method": "BF",
+        "capacity": "730"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "4782"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "2500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120482",
+    "name": "Tata Steel Port Talbot steel plant",
+    "owner": "Tata Steel UK Ltd",
+    "owner-gem-id": "E100001010180",
+    "parent": "Tata Steel Ltd [100.0%]",
+    "parent-gem-id": "E100001010018 [100.0%]",
+    "subnational": "Wales",
+    "country-area1": "United Kingdom",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Tata_Steel_Port_Talbot_steel_plant",
+    "Latitude": 51.577368,
+    "Longitude": -3.783013,
+    "capacity-by-status": [
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "5000"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "3200"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "4770"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120010",
+    "name": "Voestalpine Stahl Linz steel plant",
+    "owner": "Voestalpine Stahl GmbH",
+    "owner-gem-id": "E100000130978",
+    "parent": "Voestalpine AG [100.0%]",
+    "parent-gem-id": "E100000000031 [100.0%]",
+    "subnational": "Upper Austria",
+    "country-area1": "Austria",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Voestalpine_Stahl_Linz_steel_plant",
+    "Latitude": 48.274023,
+    "Longitude": 14.33434,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "4000"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "2000"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1600"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "3300"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "1700"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "26"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120164",
+    "name": "Henan Jiyuan Iron and Steel Group Co Ltd",
+    "owner": "Henan Jiyuan Iron & Steel (Group) Co Ltd",
+    "owner-gem-id": "E100000123174",
+    "parent": "Henan Jiyuan Iron and Steel Investment Holding Co Ltd [48.6%]; unknown [35.0%]; Tianjin Jinyuan Guotai Enterprise Management Consulting Co Ltd [10.0%]; Trade Union Committee of Henan Jiyuan Iron and Steel (Group) [6.4%]",
+    "parent-gem-id": "E100000124077 [48.6%]; E100000132388 [35.0%]; E100000124078 [10.0%]; E100000126009 [6.4%]",
+    "subnational": "Henan",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Henan_Jiyuan_Iron_and_Steel_Group_Co_Ltd",
+    "Latitude": 35.086396,
+    "Longitude": 112.553774,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "3428"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1190"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "1610"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "410"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "3105"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "2392"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120059",
+    "name": "Algoma steel plant",
+    "owner": "Algoma Steel Group Inc",
+    "owner-gem-id": "E100000001817",
+    "parent": "small shareholder(s) [69.8%]; Maple Rock Capital Partners Inc [13.7%]; MMCAP International Inc SPC [10.9%]; Donald Smith & Co Inc [5.6%]",
+    "parent-gem-id": "E100001015587 [69.8%]; E100001016165 [13.7%]; E100001016164 [10.9%]; E100001011758 [5.6%]",
+    "subnational": "Ontario",
+    "country-area1": "Canada",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Algoma_steel_plant",
+    "Latitude": 46.518984,
+    "Longitude": -84.374068,
+    "capacity-by-status": [
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "3700"
+      },
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "1850"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1850"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "3800"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120420",
+    "name": "Nová Hut Ostrava steel plant",
+    "owner": "Nová Huť sro",
+    "owner-gem-id": "E100002021471",
+    "parent": "SPV NH Ostrava sro [100.0%]",
+    "parent-gem-id": "E100002022007 [100.0%]",
+    "subnational": "Moravia-Silesia",
+    "country-area1": "Czech Republic",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Nová_Hut_Ostrava_steel_plant",
+    "Latitude": 49.792139,
+    "Longitude": 18.309875,
+    "capacity-by-status": [
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "3600"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "3500"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "3200"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120766",
+    "name": "Jindal Shadeed Iron & Steel Duqm plant",
+    "owner": "Jindal Shadeed Iron & Steel LLC",
+    "owner-gem-id": "E100001010329",
+    "parent": "Templar Investments Ltd",
+    "parent-gem-id": "E100001010331",
+    "subnational": "Al Wusta",
+    "country-area1": "Oman",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Jindal_Shadeed_Iron_&_Steel_Duqm_plant",
+    "Latitude": 19.640299,
+    "Longitude": 57.677866,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "5000"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "4750"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120128",
+    "name": "Tangshan Fengnan District Jing an Iron and Steel Co Ltd",
+    "owner": "Tangshan Fengnan District Jing'an Iron and Steel Co Ltd",
+    "owner-gem-id": "E100001010698",
+    "parent": "Tangshan Fengnan District Jing'an Iron and Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100001010698 [100.0%]",
+    "subnational": "Hebei",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Tangshan_Fengnan_District_Jing_an_Iron_and_Steel_Co_Ltd",
+    "Latitude": 39.600956,
+    "Longitude": 118.358726,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "2000"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1700"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "2125"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "3500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120452",
+    "name": "ArcelorMittal Asturias (Gijón) steel plant",
+    "owner": "ArcelorMittal España SA",
+    "owner-gem-id": "E100001000497",
+    "parent": "ArcelorMittal SA [99.8%]; small shareholder(s) [0.2%]",
+    "parent-gem-id": "E100000000687 [99.8%]; E100001015587 [0.2%]",
+    "subnational": "Asturias",
+    "country-area1": "Spain",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/ArcelorMittal_Asturias_(Gijón)_steel_plant",
+    "Latitude": 43.525092,
+    "Longitude": -5.731926,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "1200"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1100"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "4700"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": "2300"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120850",
+    "name": "Stegra Boden steel plant",
+    "owner": "Stegra AB",
+    "owner-gem-id": "E100002005371",
+    "parent": "BNP Paribas SA; European Investment Bank; ING Groep NV; Kreditanstalt für Wiederaufbau; small shareholder(s); Société Générale SA",
+    "parent-gem-id": "E100002005443; E100000136869; E100002007552; E100000000421; E100001015587; E100002007551",
+    "subnational": "Norrbotten",
+    "country-area1": "Sweden",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Stegra_Boden_steel_plant",
+    "Latitude": 65.805389,
+    "Longitude": 21.75914,
+    "capacity-by-status": [
+      {
+        "status": "announced",
+        "method": "EAF",
+        "capacity": "2500"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2500"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": "2100"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "2100"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120845",
+    "name": "SSAB Luleå steel plant",
+    "owner": "SSAB AB",
+    "owner-gem-id": "E100000001651",
+    "parent": "SSAB AB [100.0%]",
+    "parent-gem-id": "E100000001651 [100.0%]",
+    "subnational": "Norrbotten",
+    "country-area1": "Sweden",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/SSAB_Luleå_steel_plant",
+    "Latitude": 65.559719,
+    "Longitude": 22.219699,
+    "capacity-by-status": [
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "2300"
+      },
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "13"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2500"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "2555"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "9"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120168",
+    "name": "Henan Yaxin Iron and Steel Group Co Ltd",
+    "owner": "Henan YAXIN Steel Industry Co Ltd",
+    "owner-gem-id": "E100000127122",
+    "parent": "Henan YAXIN Steel Industry Co Ltd [100.0%]",
+    "parent-gem-id": "E100000127122 [100.0%]",
+    "subnational": "Henan",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Henan_Yaxin_Iron_and_Steel_Group_Co_Ltd",
+    "Latitude": 35.879956,
+    "Longitude": 114.334825,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "1000"
+      },
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1600"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "1000"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "700"
+      },
+      {
+        "status": "announced",
+        "method": "BF",
+        "capacity": "1370"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "1400"
+      }
+    ]
+  },
+  {
+    "project-id": "P100001061536",
+    "name": "Yunnan Qujing Shuangyou Iron and Steel Co Ltd",
+    "owner": "Yunnan Qujing Shuangyou Iron and Steel Co Ltd",
+    "owner-gem-id": "E100002019324",
+    "parent": "Yunnan Qujing Shuangyou Iron and Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100002019324 [100.0%]",
+    "subnational": "Yunnan",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Yunnan_Qujing_Shuangyou_Iron_and_Steel_Co_Ltd",
+    "Latitude": 25.54218,
+    "Longitude": 103.781041,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "130"
+      },
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "1900"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "2260"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "1280"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "990"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120593",
+    "name": "Makran Steel Sistan and Baluchestan Complex",
+    "owner": "Makran Steel Co",
+    "owner-gem-id": "E100000131121",
+    "parent": "Iranian Mines & Mining Industries Development & Renovation Organization [8.5%]; unknown",
+    "parent-gem-id": "E100000000547 [8.5%]; E100000132388",
+    "subnational": "Sistan and Baluchestan",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Makran_Steel_Sistan_and_Baluchestan_Complex",
+    "Latitude": 25.4483977,
+    "Longitude": 60.6408488,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "3000"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": "1600"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "1600"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120589",
+    "name": "Jahan Foolad Sirjan Steel Kerman plant",
+    "owner": "Sirjan Jahan Steel Co",
+    "owner-gem-id": "E100001010255",
+    "parent": "Golgohar Mining and Industrial Co [51.0%]; Iran National Copper Industries Pension Fund [49.0%]",
+    "parent-gem-id": "E100000000544 [51.0%]; E100001010256 [49.0%]",
+    "subnational": "Kerman",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Jahan_Foolad_Sirjan_Steel_Kerman_plant",
+    "Latitude": 29.13806,
+    "Longitude": 55.375073,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1300"
+      },
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "1000"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "3770"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120167",
+    "name": "Henan Fengbao Special Steel Co Ltd",
+    "owner": "Henan Fengbao SPECIAL Steel Co Ltd",
+    "owner-gem-id": "E100000127405",
+    "parent": "Henan Fengbao SPECIAL Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100000127405 [100.0%]",
+    "subnational": "Henan",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Henan_Fengbao_Special_Steel_Co_Ltd",
+    "Latitude": 36.131666,
+    "Longitude": 113.872158,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1150"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "1500"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "2560"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120588",
+    "name": "Zarand Iranian Steel Company Kerman plant",
+    "owner": "Zarand Iranian Steel Co",
+    "owner-gem-id": "E100000131076",
+    "parent": "small shareholder(s) [47.3%]; Mabna Khavar Miyaneh Co [15.4%]; Pars Aryan Investment Co [12.1%]; Rahbord Sarmaye Iranian Co [10.0%]; Pasargad Arzesh Afarinan Co [9.5%]; Tejarat Pishegan Mihan Negar Pars Co [5.7%]",
+    "parent-gem-id": "E100001015587 [47.3%]; E100002020859 [15.4%]; E100001015720 [12.1%]; E100002020860 [10.0%]; E100001015719 [9.5%]; E100002020861 [5.7%]",
+    "subnational": "Kerman",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Zarand_Iranian_Steel_Company_Kerman_plant",
+    "Latitude": 30.749633,
+    "Longitude": 56.6675096,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "1500"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1000"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "1700"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "1500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120376",
+    "name": "Daye Huaxin Industrial Co Ltd",
+    "owner": "Daye Huaxin Industrial Co Ltd",
+    "owner-gem-id": "E100000126198",
+    "parent": "natural person(s) [56.3%]; Hubei Xinxin Steel Group Co Ltd [21.1%]; Jin Jun'an Investment Group Co Ltd [18.9%]; unknown [3.7%]",
+    "parent-gem-id": "E100000123261 [56.3%]; E100000127570 [21.1%]; E100000127571 [18.9%]; E100000132388 [3.7%]",
+    "subnational": "Hubei",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Daye_Huaxin_Industrial_Co_Ltd",
+    "Latitude": 30.070219,
+    "Longitude": 114.926251,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1433"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "1150"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "1180"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "1200"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120011",
+    "name": "Voestalpine Stahl Donawitz steel plant",
+    "owner": "Voestalpine Stahl Donawitz GmbH",
+    "owner-gem-id": "E100000130917",
+    "parent": "Voestalpine AG [100.0%]",
+    "parent-gem-id": "E100000000031 [100.0%]",
+    "subnational": "Styria",
+    "country-area1": "Austria",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Voestalpine_Stahl_Donawitz_steel_plant",
+    "Latitude": 47.380455,
+    "Longitude": 15.065182,
+    "capacity-by-status": [
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "850"
+      },
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "720"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1700"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "825"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "825"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "1"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120079",
+    "name": "Fujian Yixin Steel Co Ltd",
+    "owner": "Fujian Yixin Steel & Iron Co Ltd",
+    "owner-gem-id": "E100000126444",
+    "parent": "natural person(s) [38.4%]; unknown [23.2%]; Thailand Huihua Industrial Co Ltd [20.7%]; Labor Union Committee of Xiaojiao Rolling Mill of Sanming Iron and Steel Works, Fujian Province [17.7%]",
+    "parent-gem-id": "E100000123261 [38.4%]; E100000132388 [23.2%]; E100000130639 [20.7%]; E100000130294 [17.7%]",
+    "subnational": "Fujian",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Fujian_Yixin_Steel_Co_Ltd",
+    "Latitude": 26.491308,
+    "Longitude": 119.63624,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1150"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "1360"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "1130"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "1100"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120598",
+    "name": "Sirjan Iranian Steel Kerman Plant",
+    "owner": "Iranian Sirjan Steel Co",
+    "owner-gem-id": "E100001012066",
+    "parent": "Mabna Khavar Miyaneh Co; Pars Aryan Investment Co; Pasargad Arzesh Afarinan Co; Rahbord Sarmaye Iranian Co; small shareholder(s); Tejarat Pishegan Mihan Negar Pars Co",
+    "parent-gem-id": "E100002020859; E100001015720; E100001015719; E100002020860; E100001015587; E100002020861",
+    "subnational": "Kerman",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Sirjan_Iranian_Steel_Kerman_Plant",
+    "Latitude": 29.928062,
+    "Longitude": 56.736539,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1000"
+      },
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "1000"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "1700"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "1000"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121053",
+    "name": "Ternium Pesquería steel plant",
+    "owner": "Ternium México SA de CV",
+    "owner-gem-id": "E100000004192",
+    "parent": "unknown [10.8%]; Ternium Argentina SA; Ternium SA",
+    "parent-gem-id": "E100000132388 [10.8%]; E100000130688; E100001000384",
+    "subnational": "Nuevo León",
+    "country-area1": "Mexico",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Ternium_Pesquería_steel_plant",
+    "Latitude": 25.743837,
+    "Longitude": -99.965278,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2600"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "2100"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120291",
+    "name": "Xinjiang Tianshan Iron and Steel Bazhou Co Ltd",
+    "owner": "Xinxing Ductile Iron Pipes Xinjiang Co Ltd",
+    "owner-gem-id": "E100000127246",
+    "parent": "China Baowu Steel Group Co Ltd [79.3%]; Xinjiang Investment Development (Group) Co Ltd [5.2%]; Industrial and Commercial Bank of China Ltd [5.0%]; Bank of China Ltd [3.8%]; Agricultural Bank of China Ltd [3.6%]; unknown [3.0%]",
+    "parent-gem-id": "E100001000472 [79.3%]; E100000123578 [5.2%]; E100000000220 [5.0%]; E100000124428 [3.8%]; E100000000151 [3.6%]; E100000132388 [3.0%]",
+    "subnational": "Xinjiang",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Xinjiang_Tianshan_Iron_and_Steel_Bazhou_Co_Ltd",
+    "Latitude": 42.333321,
+    "Longitude": 86.302481,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "BOF",
+        "capacity": "2000"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "750"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "1200"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "680"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120776",
+    "name": "SteelAsia Lemery steel plant",
+    "owner": "SteelAsia Manufacturing Corp",
+    "owner-gem-id": "E100000131011",
+    "parent": "SteelAsia Manufacturing Corp [100.0%]",
+    "parent-gem-id": "E100000131011 [100.0%]",
+    "subnational": "Calabarzon",
+    "country-area1": "Philippines",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/SteelAsia_Lemery_steel_plant",
+    "Latitude": 13.916094,
+    "Longitude": 120.886414,
+    "capacity-by-status": [
+      {
+        "status": "announced",
+        "method": "EAF",
+        "capacity": "3500"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1100"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120844",
+    "name": "SSAB Oxelösund steel plant",
+    "owner": "SSAB AB",
+    "owner-gem-id": "E100000001651",
+    "parent": "SSAB AB [100.0%]",
+    "parent-gem-id": "E100000001651 [100.0%]",
+    "subnational": "Södermanland",
+    "country-area1": "Sweden",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/SSAB_Oxelösund_steel_plant",
+    "Latitude": 58.670789,
+    "Longitude": 17.127786,
+    "capacity-by-status": [
+      {
+        "status": "operating pre-retirement",
+        "method": "BOF",
+        "capacity": "1500"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1500"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "BF",
+        "capacity": "1550"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120365",
+    "name": "Wuzhou Yongda Iron and Steel Co Ltd",
+    "owner": "Wuzhou Yongda Steel Works Co Ltd",
+    "owner-gem-id": "E100000126779",
+    "parent": "Wuzhou Yongda Steel Works Co Ltd [100.0%]",
+    "parent-gem-id": "E100000126779 [100.0%]",
+    "subnational": "Guangxi",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Wuzhou_Yongda_Iron_and_Steel_Co_Ltd",
+    "Latitude": 23.524465,
+    "Longitude": 111.2402,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1645"
+      },
+      {
+        "status": "cancelled",
+        "method": "EAF",
+        "capacity": "1029"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "EAF",
+        "capacity": "1851"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120374",
+    "name": "Guangxi Liugang Zhongjin Stainless Steel Co Ltd",
+    "owner": "Guangxi Liugang Zhongjin Stainless Steel Co Ltd",
+    "owner-gem-id": "E100000126562",
+    "parent": "Guangxi Liuzhou Iron and Steel Group Co Ltd [100.0%]",
+    "parent-gem-id": "E100000123903 [100.0%]",
+    "subnational": "Guangxi",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Guangxi_Liugang_Zhongjin_Stainless_Steel_Co_Ltd",
+    "Latitude": 21.67261,
+    "Longitude": 109.741866,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "Other/unspecified steel",
+        "capacity": "1200"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "2110"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "Other/unspecified iron",
+        "capacity": "1200"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120271",
+    "name": "Shanxi Zhongsheng Iron and Steel Co Ltd",
+    "owner": "Shanxi Zhongsheng Iron and Steel Co Ltd",
+    "owner-gem-id": "E100000127019",
+    "parent": "Shanxi Zhongsheng Iron and Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100000127019 [100.0%]",
+    "subnational": "Shanxi",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Shanxi_Zhongsheng_Iron_and_Steel_Co_Ltd",
+    "Latitude": 35.727776,
+    "Longitude": 111.330122,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1650"
+      },
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "1700"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "1130"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121086",
+    "name": "Henan Jinhui Industrial Group",
+    "owner": "Henan Xinjinhui Stainless Steel Industry Co Ltd",
+    "owner-gem-id": "E100000126106",
+    "parent": "Henan JINHUI Stainless Indutrial Group Co Ltd [83.0%]; Changge Huida Trading Co Ltd [17.0%]",
+    "parent-gem-id": "E100000128078 [83.0%]; E100000128079 [17.0%]",
+    "subnational": "Henan",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Henan_Jinhui_Industrial_Group",
+    "Latitude": 34.263509,
+    "Longitude": 113.853979,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "1400"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2000"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "900"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120826",
+    "name": "Ecolant steel plant",
+    "owner": "Ecolant LLC",
+    "owner-gem-id": "E100000131130",
+    "parent": "Ekoinvest LLC [45.6%]; Lanafinans LLC [45.6%]; Oninvest LLC [4.8%]; small shareholder(s) [4.0%]",
+    "parent-gem-id": "E100002003654 [45.6%]; E100002003655 [45.6%]; E100002003653 [4.8%]; E100001015587 [4.0%]",
+    "subnational": "Nizhny Novgorod",
+    "country-area1": "Russia",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Ecolant_steel_plant",
+    "Latitude": 55.286989,
+    "Longitude": 42.169516,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1800"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "2500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120522",
+    "name": "Lloyds Metals and Energy Ltd Ghugus steel plant",
+    "owner": "Lloyds Metals and Energy Ltd",
+    "owner-gem-id": "E100001012204",
+    "parent": "Lloyds Metals and Energy Ltd [100.0%]",
+    "parent-gem-id": "E100001012204 [100.0%]",
+    "subnational": "Maharashtra",
+    "country-area1": "India",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Lloyds_Metals_and_Energy_Ltd_Ghugus_steel_plant",
+    "Latitude": 19.929837,
+    "Longitude": 79.119344,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1050"
+      },
+      {
+        "status": "cancelled",
+        "method": "IF",
+        "capacity": "498"
+      },
+      {
+        "status": "announced",
+        "method": "Other/unspecified steel",
+        "capacity": "1200"
+      },
+      {
+        "status": "announced",
+        "method": "BF",
+        "capacity": "840"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "684"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121188",
+    "name": "Orissa Alloy Steel Kharagpur Plant",
+    "owner": "Orissa Metaliks Pvt Ltd",
+    "owner-gem-id": "E100001012161",
+    "parent": "small shareholder(s) [28.7%]; Cimmco Vinimay Pvt Ltd [16.6%]; Rashmi Iron Industries Pvt Ltd [9.1%]; Newera Commotrade Pvt Ltd [6.6%]; Rashmi Infrastructure Pvt Ltd [6.0%]; Bholebaba Consultants LLP [5.8%]; Rashmi Cement Ltd [5.7%]; Daffodil Plaza Pvt Ltd [5.7%]; Optimist Commosale Pvt Ltd [5.5%]; Rashidhan Sales Pvt Ltd [5.2%]; Rashmi Metaliks Ltd [5.0%]; natural person(s) [0.1%]",
+    "parent-gem-id": "E100001015587 [28.7%]; E100001012163 [16.6%]; E100001012171 [9.1%]; E100001012169 [6.6%]; E100001012170 [6.0%]; E100001012164 [5.8%]; E100001012079 [5.7%]; E100001012165 [5.7%]; E100001012168 [5.5%]; E100001012166 [5.2%]; E100000130890 [5.0%]; E100000123261 [0.1%]",
+    "subnational": "West Bengal",
+    "country-area1": "India",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Orissa_Alloy_Steel_Kharagpur_Plant",
+    "Latitude": 22.364258,
+    "Longitude": 87.309047,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "IF",
+        "capacity": "550"
+      },
+      {
+        "status": "construction",
+        "method": "IF",
+        "capacity": "1243"
+      },
+      {
+        "status": "announced",
+        "method": "BF",
+        "capacity": "770"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "744"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "900"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121040",
+    "name": "BAP Al-Khair steel plant",
+    "owner": "Saudi Arabian Oil Co; Public Investment Fund (Saudi Arabia); Baoshan Iron & Steel Co Ltd",
+    "owner-gem-id": "E100000000888; E100000122571; E100000001358",
+    "parent": "Baoshan Iron & Steel Co Ltd; Public Investment Fund (Saudi Arabia); Saudi Arabian Oil Co",
+    "parent-gem-id": "E100000122571; E100000001358; E100000000888",
+    "subnational": "Eastern",
+    "country-area1": "Saudi Arabia",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/BAP_Al-Khair_steel_plant",
+    "Latitude": 27.502597,
+    "Longitude": 49.180369,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1700"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "2500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121001",
+    "name": "Uzmetkombinat steel plant",
+    "owner": "Uzbekskiy Metallurgicheskiy Kombinat JSC",
+    "owner-gem-id": "E100000130852",
+    "parent": "Uzbekskiy Metallurgicheskiy Kombinat JSC [100.0%]",
+    "parent-gem-id": "E100000130852 [100.0%]",
+    "subnational": "Toshkent Region",
+    "country-area1": "Uzbekistan",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Uzmetkombinat_steel_plant",
+    "Latitude": 40.233432,
+    "Longitude": 69.290873,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "1100"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1040"
+      },
+      {
+        "status": "cancelled",
+        "method": "EAF",
+        "capacity": "1400"
+      },
+      {
+        "status": "announced",
+        "method": "BF",
+        "capacity": "600"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120556",
+    "name": "Rashmi Metaliks Jamuria steel plant",
+    "owner": "Rashmi Metaliks Ltd",
+    "owner-gem-id": "E100000130890",
+    "parent": "Rashmi Metaliks Ltd [100.0%]",
+    "parent-gem-id": "E100000130890 [100.0%]",
+    "subnational": "West Bengal",
+    "country-area1": "India",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Rashmi_Metaliks_Jamuria_steel_plant",
+    "Latitude": 23.706343,
+    "Longitude": 87.07774,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1500"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1000"
+      },
+      {
+        "status": "construction",
+        "method": "Other/unspecified iron",
+        "capacity": "1500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120617",
+    "name": "Bonab Steel Complex",
+    "owner": "Bonab Steel Complex",
+    "owner-gem-id": "E100000131182",
+    "parent": "Tourism Financial Group",
+    "parent-gem-id": "E100001016229",
+    "subnational": "East Azerbaijan",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Bonab_Steel_Complex",
+    "Latitude": 37.417437,
+    "Longitude": 46.035778,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "320"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1500"
+      },
+      {
+        "status": "operating",
+        "method": "IF",
+        "capacity": "680"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "1500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120407",
+    "name": "Yunnan Qujing Iron and Steel Group Yanggang Iron and Steel Co Ltd",
+    "owner": "Yunnan Qujing Iron and Steel Group Yanggang Iron and Steel Co Ltd",
+    "owner-gem-id": "E100000126775",
+    "parent": "Yunan Qujing Shuangyou Steel Co Ltd [25.0%]; Yunnan Qujing Chenggang Iron and Steel (Group) Co Ltd [25.0%]; Fujian XINPENG Investment Co Ltd [16.6%]; Xuanwei Laibin Fenghuang Steel Co Ltd [16.0%]; Qujing Julida Steel Co Ltd [8.0%]; Qujing Wuyue New Energy Technology Co Ltd [5.5%]; Yunnan Tongyanbao Trading Co Ltd [1.7%]; unknown [1.0%]; Yunnan Qujing Yaochang Trade Co Ltd [0.9%]; Qujing Botong Trading Co Ltd [0.4%]",
+    "parent-gem-id": "E100000128309 [25.0%]; E100001000471 [25.0%]; E100000128963 [16.6%]; E100000128311 [16.0%]; E100000128312 [8.0%]; E100000128964 [5.5%]; E100000128965 [1.7%]; E100000132388 [1.0%]; E100000128938 [0.9%]; E100000128939 [0.4%]",
+    "subnational": "Yunnan",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Yunnan_Qujing_Iron_and_Steel_Group_Yanggang_Iron_and_Steel_Co_Ltd",
+    "Latitude": 25.308777,
+    "Longitude": 103.876391,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1400"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "2500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121135",
+    "name": "Xingtai Iron and Steel Co Ltd Weixian",
+    "owner": "Xingtai Iron and Steel Co Ltd",
+    "owner-gem-id": "E100000127007",
+    "parent": "Hebei Jianen Trading Co Ltd [48.1%]; Xing Steel Fine Wire Holdings Co Ltd [26.0%]; Xingtai Jinglin Trading Co Ltd [25.9%]",
+    "parent-gem-id": "E100000128173 [48.1%]; E100000130666 [26.0%]; E100000128174 [25.9%]",
+    "subnational": "Hebei",
+    "country-area1": "China",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Xingtai_Iron_and_Steel_Co_Ltd_Weixian",
+    "Latitude": 37.032089,
+    "Longitude": 115.366112,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2250"
+      },
+      {
+        "status": "construction",
+        "method": "Other/unspecified iron",
+        "capacity": "1650"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120726",
+    "name": "DEACERO Celaya steel plant",
+    "owner": "DeAcero SAPI de CV",
+    "owner-gem-id": "E100000000715",
+    "parent": "DeAcero SAPI de CV [100.0%]",
+    "parent-gem-id": "E100000000715 [100.0%]",
+    "subnational": "Guanajuato",
+    "country-area1": "Mexico",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/DEACERO_Celaya_steel_plant",
+    "Latitude": 20.518556,
+    "Longitude": -100.925556,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "2300"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120730",
+    "name": "DEACERO Ramos Arizpe steel plant",
+    "owner": "DeAcero SAPI de CV",
+    "owner-gem-id": "E100000000715",
+    "parent": "DeAcero SAPI de CV [100.0%]",
+    "parent-gem-id": "E100000000715 [100.0%]",
+    "subnational": "Coahuila",
+    "country-area1": "Mexico",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/DEACERO_Ramos_Arizpe_steel_plant",
+    "Latitude": 25.511162,
+    "Longitude": -100.961848,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "2200"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120352",
+    "name": "Yunnan Tiangao Nickel Alloy Co Ltd",
+    "owner": "YunNan Province Tiangao Nickel Alloy Co Ltd",
+    "owner-gem-id": "E100000126347",
+    "parent": "Sichuan Jinguang Industry (Group) Co Ltd [63.9%]; unknown [29.8%]; Sichuan Shiting Ecology Agriculture Technology Co Ltd [6.2%]",
+    "parent-gem-id": "E100000127446 [63.9%]; E100000132388 [29.8%]; E100000127447 [6.2%]",
+    "subnational": "Yunnan",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Yunnan_Tiangao_Nickel_Alloy_Co_Ltd",
+    "Latitude": 24.80128,
+    "Longitude": 104.063455,
+    "capacity-by-status": [
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "1100"
+      },
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "500"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "500"
+      },
+      {
+        "status": "cancelled",
+        "method": "EAF",
+        "capacity": "400"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "1100"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120754",
+    "name": "HyIron Steel Namibia plant",
+    "owner": "Hyron Africa",
+    "owner-gem-id": "E100000131186",
+    "parent": "Lodestone Holdings Group (Namibia) Pty Ltd",
+    "parent-gem-id": "E100001016207",
+    "subnational": "Khomas",
+    "country-area1": "Namibia",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/HyIron_Steel_Namibia_plant",
+    "Latitude": -22.084183,
+    "Longitude": 17.4099154,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1500"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "185"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "15"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": "1800"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120019",
+    "name": "Bashundhara Steel Mirsarai plant",
+    "owner": "Bashundhara Multi Steel Industries Ltd",
+    "owner-gem-id": "E100002006720",
+    "parent": "Bashundhara Group Ltd",
+    "parent-gem-id": "E100000131080",
+    "subnational": "Chittagong",
+    "country-area1": "Bangladesh",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Bashundhara_Steel_Mirsarai_plant",
+    "Latitude": 22.719278,
+    "Longitude": 91.470382,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1250"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": "2200"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120876",
+    "name": "Kaptan Ereglisi steel plant",
+    "owner": "Kaptan Demir Celik Endustrisi Ve Ticaret AŞ",
+    "owner-gem-id": "E100000001058",
+    "parent": "Kaptan Demir Celik Endustrisi Ve Ticaret AŞ [100.0%]",
+    "parent-gem-id": "E100000001058 [100.0%]",
+    "subnational": "Tekirdağ",
+    "country-area1": "Türkiye",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Kaptan_Ereglisi_steel_plant",
+    "Latitude": 41.015222,
+    "Longitude": 27.959978,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "1400"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2000"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121142",
+    "name": "Baotou Deshun Special Steel Co Ltd",
+    "owner": "Baotou Deshun Spec. Steel Co Ltd",
+    "owner-gem-id": "E100001012095",
+    "parent": "Baotou Deshun Spec. Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100001012095 [100.0%]",
+    "subnational": "Inner Mongolia",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Baotou_Deshun_Special_Steel_Co_Ltd",
+    "Latitude": 40.9019,
+    "Longitude": 110.336253,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1250"
+      },
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "500"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "1130"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121082",
+    "name": "Zhenshi Group Eastern Special Steel Co Ltd",
+    "owner": "Zhenshi Group EASTERN SPECIAL Steel Co Ltd",
+    "owner-gem-id": "E100000127059",
+    "parent": "Zhenshi Holding Group Co Ltd [70.3%]; Tongxiang Wushi Trading Co Ltd [23.9%]; unknown [4.5%]; Huakai Investment Co Ltd [1.3%]",
+    "parent-gem-id": "E100000127998 [70.3%]; E100000128497 [23.9%]; E100000132388 [4.5%]; E100000130601 [1.3%]",
+    "subnational": "Zhejiang",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Zhenshi_Group_Eastern_Special_Steel_Co_Ltd",
+    "Latitude": 30.720411,
+    "Longitude": 120.898518,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2512"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "EAF",
+        "capacity": "700"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120753",
+    "name": "Abba Steel Ohangwena steel plant",
+    "owner": "Abba Steel Ltd",
+    "owner-gem-id": "E100001012072",
+    "parent": "Abba Steel Ltd [100.0%]",
+    "parent-gem-id": "E100001012072 [100.0%]",
+    "subnational": "Ohangwena",
+    "country-area1": "Namibia",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Abba_Steel_Ohangwena_steel_plant",
+    "Latitude": -17.397866,
+    "Longitude": 15.891022,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "3000"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120778",
+    "name": "Mount Zynai Zamboanga Sibugay steel plant",
+    "owner": "Mount Zynai 0304 Mining Corp",
+    "owner-gem-id": "E100000131187",
+    "parent": "Mount Zynai 0304 Mining Corp [100.0%]",
+    "parent-gem-id": "E100000131187 [100.0%]",
+    "subnational": "Mindanao",
+    "country-area1": "Philippines",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Mount_Zynai_Zamboanga_Sibugay_steel_plant",
+    "Latitude": 7.716994,
+    "Longitude": 122.998671,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "Other/unspecified steel",
+        "capacity": "1500"
+      },
+      {
+        "status": "construction",
+        "method": "Other/unspecified iron",
+        "capacity": "1500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121244",
+    "name": "Shams Iron and Steel Complex Tabriz",
+    "owner": "Daric Investment Holding Co",
+    "owner-gem-id": "E100001013041",
+    "parent": "Daric Investment Holding Co [100.0%]",
+    "parent-gem-id": "E100001013041 [100.0%]",
+    "subnational": "East Azerbaijan",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Shams_Iron_and_Steel_Complex_Tabriz",
+    "Latitude": 37.446675,
+    "Longitude": 45.956891,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1500"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "1500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121211",
+    "name": "Metinvest Piombino steel plant",
+    "owner": "Metinvest Adria SpA",
+    "owner-gem-id": "E100002021566",
+    "parent": "Metinvest BV [75.0%]; Danieli & C Officine Meccaniche SpA [25.0%]",
+    "parent-gem-id": "E100001000605 [75.0%]; E100000130706 [25.0%]",
+    "subnational": "Province of Livorno",
+    "country-area1": "Italy",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Metinvest_Piombino_steel_plant",
+    "Latitude": 42.93652,
+    "Longitude": 10.537794,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "3000"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": ">0"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120988",
+    "name": "Nucor Steel West Virginia steel plant",
+    "owner": "Nucor Corp",
+    "owner-gem-id": "E100001010181",
+    "parent": "Nucor Corp [100.0%]",
+    "parent-gem-id": "E100001010181 [100.0%]",
+    "subnational": "West Virginia",
+    "country-area1": "United States",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Nucor_Steel_West_Virginia_steel_plant",
+    "Latitude": 38.647729,
+    "Longitude": -82.175875,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "3000"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121047",
+    "name": "Huangshi Xingang Heavy Industry Technology Co Ltd",
+    "owner": "Huangshi Xingang Heavy Industry Technology Co Ltd",
+    "owner-gem-id": "E100000126571",
+    "parent": "WEALTH GROUP INVESTMENT LIMITED [100.0%]",
+    "parent-gem-id": "E100000126029 [100.0%]",
+    "subnational": "Hubei",
+    "country-area1": "China",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Huangshi_Xingang_Heavy_Industry_Technology_Co_Ltd",
+    "Latitude": 30.097108,
+    "Longitude": 115.284652,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2250"
+      },
+      {
+        "status": "announced",
+        "method": "Other/unspecified iron",
+        "capacity": "680"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120817",
+    "name": "Balakovo Steel Plant",
+    "owner": "MZ Balakovo JSC",
+    "owner-gem-id": "E100000131126",
+    "parent": "Novostal-M LLC",
+    "parent-gem-id": "E100000131027",
+    "subnational": "Saratov",
+    "country-area1": "Russia",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Balakovo_Steel_Plant",
+    "Latitude": 51.936009,
+    "Longitude": 47.81591,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "1250"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120756",
+    "name": "Ajaokuta Steel plant",
+    "owner": "Ajaokuta Steel Co Ltd",
+    "owner-gem-id": "E100000002408",
+    "parent": "Ajaokuta Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100000002408 [100.0%]",
+    "subnational": "Kogi State",
+    "country-area1": "Nigeria",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Ajaokuta_Steel_plant",
+    "Latitude": 7.511336,
+    "Longitude": 6.689364,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1300"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "1355"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120307",
+    "name": "Hebei Mingbin Iron and Steel Co Ltd",
+    "owner": "Hebei New Wuan Steel Group Wenan IRON&STEEL Co Ltd",
+    "owner-gem-id": "E100000127093",
+    "parent": "natural person(s) [49.0%]; Hebei Puyang Industrial Group Co Ltd [33.2%]; Longxiang Group (Hong Kong) [17.8%]",
+    "parent-gem-id": "E100000123261 [49.0%]; E100000124068 [33.2%]; E100000126000 [17.8%]",
+    "subnational": "Hebei",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Hebei_Mingbin_Iron_and_Steel_Co_Ltd",
+    "Latitude": 36.631491,
+    "Longitude": 113.968635,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "1350"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "1279"
+      }
+    ]
+  },
+  {
+    "project-id": "P100001062603",
+    "name": "Kurdistan Steel Qorveh steel plant",
+    "owner": "Kurdistan Steel Co",
+    "owner-gem-id": "E100000131119",
+    "parent": "Iranian Mines & Mining Industries Development & Renovation Organization [44.0%]; Development and Equipment of Relief Mines Co [20.0%]; Sabanour Mining and Industrial Development Co [20.0%]; Sepahan Mines Kimia [16.0%]",
+    "parent-gem-id": "E100000000547 [44.0%]; E100001016087 [20.0%]; E100001016086 [20.0%]; E100001016089 [16.0%]",
+    "subnational": "Kurdistan",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Kurdistan_Steel_Qorveh_steel_plant",
+    "Latitude": 35.936932,
+    "Longitude": 47.762024,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1000"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "1600"
+      }
+    ]
+  },
+  {
+    "project-id": "P100001064261",
+    "name": "Qinyang Hongda Iron & Steel Co Ltd",
+    "owner": "Qinyang Hongda Iron & Steel Co Ltd",
+    "owner-gem-id": "E100002021050",
+    "parent": "Qinyang Hongda Iron & Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100002021050 [100.0%]",
+    "subnational": "Henan",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Qinyang_Hongda_Iron_&_Steel_Co_Ltd",
+    "Latitude": 35.184849,
+    "Longitude": 112.902248,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "500"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2000"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120536",
+    "name": "JSW Steel Raigarh steel plant",
+    "owner": "JSW Ispat Special Products Ltd",
+    "owner-gem-id": "E100000120868",
+    "parent": "JSW Ispat Special Products Ltd [100.0%]",
+    "parent-gem-id": "E100000120868 [100.0%]",
+    "subnational": "Chhattisgarh",
+    "country-area1": "India",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/JSW_Steel_Raigarh_steel_plant",
+    "Latitude": 21.983709,
+    "Longitude": 83.238133,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "950"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "250"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "700"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "582"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120602",
+    "name": "Sabzevar Steel Complex Razavi Khorasan",
+    "owner": "Sabzevar Pars Steel Complex",
+    "owner-gem-id": "E100000131093",
+    "parent": "Sabzevar Pars Steel Complex [100.0%]",
+    "parent-gem-id": "E100000131093 [100.0%]",
+    "subnational": "Razavi Khorasan",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Sabzevar_Steel_Complex_Razavi_Khorasan",
+    "Latitude": 36.58952,
+    "Longitude": 57.571719,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "800"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": "800"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "800"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120359",
+    "name": "Zunyi Fuxin Special Steel Equipment Manufacturing Co Ltd",
+    "owner": "Zunyi County Fuxin Iron & Steel Product Co Ltd",
+    "owner-gem-id": "E100000126901",
+    "parent": "Zunyi County Fuxin Iron & Steel Product Co Ltd [100.0%]",
+    "parent-gem-id": "E100000126901 [100.0%]",
+    "subnational": "Guizhou",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Zunyi_Fuxin_Special_Steel_Equipment_Manufacturing_Co_Ltd",
+    "Latitude": 27.591697,
+    "Longitude": 106.815453,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1110"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "EAF",
+        "capacity": "1150"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120317",
+    "name": "Chongqing Zuhang Iron and Steel Co Ltd",
+    "owner": "Chongqing Zuhang Steel Co Ltd",
+    "owner-gem-id": "E100000126259",
+    "parent": "Chongqing Zuhang Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100000126259 [100.0%]",
+    "subnational": "Chongqing",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Chongqing_Zuhang_Iron_and_Steel_Co_Ltd",
+    "Latitude": 29.440056,
+    "Longitude": 105.741929,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1010"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "EAF",
+        "capacity": "1010"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120757",
+    "name": "African Natural Resources and Mines Kaduna steel plant",
+    "owner": "African Natural Resources & Mines Ltd",
+    "owner-gem-id": "E100000131098",
+    "parent": "African Industries Ltd",
+    "parent-gem-id": "E100000131145",
+    "subnational": "Kaduna State",
+    "country-area1": "Nigeria",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/African_Natural_Resources_and_Mines_Kaduna_steel_plant",
+    "Latitude": 9.462715,
+    "Longitude": 7.368,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "Other/unspecified steel",
+        "capacity": "1000"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "1000"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121036",
+    "name": "Xuan Thien Nghia Hung steel plant",
+    "owner": "Xuan Thien Group JSC",
+    "owner-gem-id": "E100000134775",
+    "parent": "Xuan Thien Group JSC [100.0%]",
+    "parent-gem-id": "E100000134775 [100.0%]",
+    "subnational": "Nam Dinh",
+    "country-area1": "Vietnam",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Xuan_Thien_Nghia_Hung_steel_plant",
+    "Latitude": 20.037805,
+    "Longitude": 106.127689,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "2000"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": ">0"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120605",
+    "name": "Azna Steel Lorestan plant",
+    "owner": "Azna Steel",
+    "owner-gem-id": "E100000131105",
+    "parent": "Azna Steel [100.0%]",
+    "parent-gem-id": "E100000131105 [100.0%]",
+    "subnational": "Lorestan",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Azna_Steel_Lorestan_plant",
+    "Latitude": 33.464353,
+    "Longitude": 49.391373,
+    "capacity-by-status": [
+      {
+        "status": "announced",
+        "method": "EAF",
+        "capacity": "700"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1200"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120553",
+    "name": "Ramsarup Industries Kharagpur steel plant",
+    "owner": "Ramsarup Industries Ltd",
+    "owner-gem-id": "E100000130705",
+    "parent": "Shyam Metalics and Energy Ltd",
+    "parent-gem-id": "E100001012152",
+    "subnational": "West Bengal",
+    "country-area1": "India",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Ramsarup_Industries_Kharagpur_steel_plant",
+    "Latitude": 22.977477,
+    "Longitude": 88.457443,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "690"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "750"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "180"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "180"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120615",
+    "name": "Sarmad Iron and Steel Complex Abarkouh",
+    "owner": "Sarmad Iron and Steel Complex Abarkouh",
+    "owner-gem-id": "E100000131180",
+    "parent": "Chadormello Mining and Industrial Co [52.0%]; Mines & Metals Development Investment Co [28.5%]; unknown",
+    "parent-gem-id": "E100001016286 [52.0%]; E100001011682 [28.5%]; E100000132388",
+    "subnational": "Yazd",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Sarmad_Iron_and_Steel_Complex_Abarkouh",
+    "Latitude": 31.222989,
+    "Longitude": 53.392728,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "600"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "1200"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121025",
+    "name": "Thai Nguyen Iron and Steel plant",
+    "owner": "Thai Nguyen Iron And Steel JSC",
+    "owner-gem-id": "E100000130922",
+    "parent": "Thai Nguyen Iron And Steel JSC [100.0%]",
+    "parent-gem-id": "E100000130922 [100.0%]",
+    "subnational": "Thai Nguyen",
+    "country-area1": "Vietnam",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Thai_Nguyen_Iron_and_Steel_plant",
+    "Latitude": 21.557484,
+    "Longitude": 105.8728,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "500"
+      },
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "300"
+      },
+      {
+        "status": "operating",
+        "method": "BF",
+        "capacity": "300"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": "580"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120931",
+    "name": "Gerdau Midlothian Steel Mill",
+    "owner": "Gerdau Ameristeel Corp",
+    "owner-gem-id": "E100001010298",
+    "parent": "Gerdau SA [98.2%]",
+    "parent-gem-id": "E100001010270 [98.2%]",
+    "subnational": "Texas",
+    "country-area1": "United States",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Gerdau_Midlothian_Steel_Mill",
+    "Latitude": 32.457544,
+    "Longitude": -97.034246,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "1500"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "150"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120832",
+    "name": "Donelektrostal Shakhty steel plant",
+    "owner": "Donelektrostal LLC",
+    "owner-gem-id": "E100001012123",
+    "parent": "Donelektrostal LLC [100.0%]",
+    "parent-gem-id": "E100001012123 [100.0%]",
+    "subnational": "Rostov",
+    "country-area1": "Russia",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Donelektrostal_Shakhty_steel_plant",
+    "Latitude": 47.740352,
+    "Longitude": 40.18942,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "730"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "900"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120752",
+    "name": "Tete Steel Maputo plant",
+    "owner": "Baobab Steel Ltd",
+    "owner-gem-id": "E100000130753",
+    "parent": "Baobab Steel Ltd [100.0%]",
+    "parent-gem-id": "E100000130753 [100.0%]",
+    "subnational": "Tete",
+    "country-area1": "Mozambique",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Tete_Steel_Maputo_plant",
+    "Latitude": -15.724345,
+    "Longitude": 33.762664,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "500"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "1100"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120601",
+    "name": "Miyaneh Steel East Azerbaijan steel plant",
+    "owner": "Mianeh Steel",
+    "owner-gem-id": "E100001010202",
+    "parent": "Iranian Mines & Mining Industries Development & Renovation Organization",
+    "parent-gem-id": "E100000000547",
+    "subnational": "East Azerbaijan",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Miyaneh_Steel_East_Azerbaijan_steel_plant",
+    "Latitude": 37.37881,
+    "Longitude": 47.736689,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "800"
+      },
+      {
+        "status": "operating",
+        "method": "DRI",
+        "capacity": "800"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120784",
+    "name": "Century Steel Khyber plant",
+    "owner": "Century Steel Pte Ltd",
+    "owner-gem-id": "E100000131188",
+    "parent": "Century Steel Pte Ltd [100.0%]",
+    "parent-gem-id": "E100000131188 [100.0%]",
+    "subnational": "Khyber Pakhtunkhwa",
+    "country-area1": "Pakistan",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Century_Steel_Khyber_plant",
+    "Latitude": 34.072714,
+    "Longitude": 72.141584,
+    "capacity-by-status": [
+      {
+        "status": "announced",
+        "method": "Other/unspecified steel",
+        "capacity": "1000"
+      },
+      {
+        "status": "construction",
+        "method": "Other/unspecified steel",
+        "capacity": "500"
+      },
+      {
+        "status": "construction",
+        "method": "Other/unspecified iron",
+        "capacity": ">0"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121252",
+    "name": "Jinzhou Jinxing Special Steel Company",
+    "owner": "Jinzhou Jinxing Special Steel Co Ltd",
+    "owner-gem-id": "E100002003149",
+    "parent": "Jinzhou Jinxing Special Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100002003149 [100.0%]",
+    "subnational": "Liaoning",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Jinzhou_Jinxing_Special_Steel_Company",
+    "Latitude": 41.188888,
+    "Longitude": 121.225043,
+    "capacity-by-status": [
+      {
+        "status": "retired",
+        "method": "BOF",
+        "capacity": "380"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "360"
+      },
+      {
+        "status": "retired",
+        "method": "BF",
+        "capacity": "680"
+      }
+    ]
+  },
+  {
+    "project-id": "P100001042845",
+    "name": "Meghna Re-rolling and Steel Mills steel plant",
+    "owner": "Meghna Re-rolling and Steel Mills Ltd",
+    "owner-gem-id": "E100002005771",
+    "parent": "Meghna Group of Industries Ltd",
+    "parent-gem-id": "E100000120835",
+    "subnational": "Chittagong",
+    "country-area1": "Bangladesh",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Meghna_Re-rolling_and_Steel_Mills_steel_plant",
+    "Latitude": 23.585487,
+    "Longitude": 90.648875,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1400"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121185",
+    "name": "Rungta Mines Karakhendra steel plant",
+    "owner": "Rungta Mines Ltd",
+    "owner-gem-id": "E100000130898",
+    "parent": "Rungta Mines Ltd [100.0%]",
+    "parent-gem-id": "E100000130898 [100.0%]",
+    "subnational": "Odisha",
+    "country-area1": "India",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Rungta_Mines_Karakhendra_steel_plant",
+    "Latitude": 22.140174,
+    "Longitude": 85.414616,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "554"
+      },
+      {
+        "status": "operating",
+        "method": "IF",
+        "capacity": "126"
+      },
+      {
+        "status": "announced",
+        "method": "BF",
+        "capacity": "372"
+      },
+      {
+        "status": "announced",
+        "method": "DRI",
+        "capacity": "273"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120416",
+    "name": "Fujian Fuhua New Materials Group Co Ltd",
+    "owner": "Mindong Saiqi Economic Development Zone Fuhua Steel Rolling Co Ltd",
+    "owner-gem-id": "E100000126680",
+    "parent": "Mindong Saiqi Economic Development Zone Fuhua Steel Rolling Co Ltd [100.0%]",
+    "parent-gem-id": "E100000126680 [100.0%]",
+    "subnational": "Fujian",
+    "country-area1": "China",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Fujian_Fuhua_New_Materials_Group_Co_Ltd",
+    "Latitude": 26.961516,
+    "Longitude": 119.654272,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "825"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "EAF",
+        "capacity": "500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121209",
+    "name": "DST Nghi Son steel plant",
+    "owner": "DST Nghi Son Iron and Steel JSC",
+    "owner-gem-id": "E100001012401",
+    "parent": "DST Nghi Son Iron and Steel JSC [100.0%]",
+    "parent-gem-id": "E100001012401 [100.0%]",
+    "subnational": "Thanh Hoa",
+    "country-area1": "Vietnam",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/DST_Nghi_Son_steel_plant",
+    "Latitude": 19.367379,
+    "Longitude": 105.675841,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1310"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120051",
+    "name": "Simec Pindamonhangaba steel plant",
+    "owner": "GV do Brasil Industria e Comercio de Aço Ltda",
+    "owner-gem-id": "E100000130990",
+    "parent": "Grupo Simec SAB de CV [100.0%]",
+    "parent-gem-id": "E100000130728 [100.0%]",
+    "subnational": "São Paulo",
+    "country-area1": "Brazil",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Simec_Pindamonhangaba_steel_plant",
+    "Latitude": -22.921912,
+    "Longitude": -45.413234,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "500"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "700"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120770",
+    "name": "SteelAsia Concepcion steel plant",
+    "owner": "SteelAsia Manufacturing Corp",
+    "owner-gem-id": "E100000131011",
+    "parent": "SteelAsia Manufacturing Corp [100.0%]",
+    "parent-gem-id": "E100000131011 [100.0%]",
+    "subnational": "Luzon",
+    "country-area1": "Philippines",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/SteelAsia_Concepcion_steel_plant",
+    "Latitude": 15.325307,
+    "Longitude": 120.655361,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1200"
+      }
+    ]
+  },
+  {
+    "project-id": "P100001080915",
+    "name": "Asia United Steel plant",
+    "owner": "Asia United Steel",
+    "owner-gem-id": "E100002021414",
+    "parent": "Asia United Steel [100.0%]",
+    "parent-gem-id": "E100002021414 [100.0%]",
+    "subnational": "Almaty",
+    "country-area1": "Kazakhstan",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Asia_United_Steel_plant",
+    "Latitude": 43.600662,
+    "Longitude": 76.317112,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1200"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120783",
+    "name": "Ittehad Steel Faisalabad plant",
+    "owner": "Ittehad Steels Pvt Ltd",
+    "owner-gem-id": "E100000130788",
+    "parent": "Ittehad Steels Pvt Ltd [100.0%]",
+    "parent-gem-id": "E100000130788 [100.0%]",
+    "subnational": "Punjab",
+    "country-area1": "Pakistan",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Ittehad_Steel_Faisalabad_plant",
+    "Latitude": 31.643426,
+    "Longitude": 73.198542,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "IF",
+        "capacity": "500"
+      },
+      {
+        "status": "construction",
+        "method": "IF",
+        "capacity": "500"
+      }
+    ]
+  },
+  {
+    "project-id": "P100001042855",
+    "name": "Unitex Steel Mills Feni steel plant",
+    "owner": "Unitex Steel Mills Ltd",
+    "owner-gem-id": "E100002005773",
+    "parent": "Unitex Steel Mills Ltd [100.0%]",
+    "parent-gem-id": "E100002005773 [100.0%]",
+    "subnational": "Chittagong",
+    "country-area1": "Bangladesh",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Unitex_Steel_Mills_Feni_steel_plant",
+    "Latitude": 22.945182,
+    "Longitude": 91.512387,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1000"
+      }
+    ]
+  },
+  {
+    "project-id": "P100001054284",
+    "name": "SteelAsia Candelaria steel plant",
+    "owner": "SteelAsia Manufacturing Corp",
+    "owner-gem-id": "E100000131011",
+    "parent": "SteelAsia Manufacturing Corp [100.0%]",
+    "parent-gem-id": "E100000131011 [100.0%]",
+    "subnational": "Quezon",
+    "country-area1": "Philippines",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/SteelAsia_Candelaria_steel_plant",
+    "Latitude": 13.9077156,
+    "Longitude": 121.4294936,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "1000"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121247",
+    "name": "Amirkabir Arak Steel plant",
+    "owner": "Amir Kabir Arak Steel Co",
+    "owner-gem-id": "E100001013042",
+    "parent": "Amirkabir Khazar Steel Co",
+    "parent-gem-id": "E100001013043",
+    "subnational": "Markazi",
+    "country-area1": "Iran",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Amirkabir_Arak_Steel_plant",
+    "Latitude": 34.083379,
+    "Longitude": 49.752451,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "513"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "450"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121243",
+    "name": "Saeb Steel Complex",
+    "owner": "Daric Investment Holding Co",
+    "owner-gem-id": "E100001013041",
+    "parent": "Daric Investment Holding Co [100.0%]",
+    "parent-gem-id": "E100001013041 [100.0%]",
+    "subnational": "East Azerbaijan",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Saeb_Steel_Complex",
+    "Latitude": 37.45507,
+    "Longitude": 45.944322,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "550"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "400"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121245",
+    "name": "Sabalan Iron and Steel Complex",
+    "owner": "Daric Investment Holding Co",
+    "owner-gem-id": "E100001013041",
+    "parent": "Daric Investment Holding Co [100.0%]",
+    "parent-gem-id": "E100001013041 [100.0%]",
+    "subnational": "Ardabil",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Sabalan_Iron_and_Steel_Complex",
+    "Latitude": 38.50168,
+    "Longitude": 47.757969,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "500"
+      },
+      {
+        "status": "construction",
+        "method": "DRI",
+        "capacity": "400"
+      }
+    ]
+  },
+  {
+    "project-id": "P100001063425",
+    "name": "Arian Steel Fath Abad plant",
+    "owner": "Arian Steel Co",
+    "owner-gem-id": "E100002021989",
+    "parent": "Arian Steel Co [100.0%]",
+    "parent-gem-id": "E100002021989 [100.0%]",
+    "subnational": "Qazvin",
+    "country-area1": "Iran",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Arian_Steel_Fath_Abad_plant",
+    "Latitude": 35.744901,
+    "Longitude": 50.222553,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "120"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "550"
+      },
+      {
+        "status": "operating",
+        "method": "IF",
+        "capacity": "120"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120690",
+    "name": "Ch'ollima Steel Complex steel plant",
+    "owner": "Government of North Korea",
+    "owner-gem-id": "E100001000599",
+    "parent": "Government of North Korea [100.0%]",
+    "parent-gem-id": "E100001000599 [100.0%]",
+    "subnational": "South Pyongan",
+    "country-area1": "North Korea",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Ch'ollima_Steel_Complex_steel_plant",
+    "Latitude": 38.926348,
+    "Longitude": 125.582628,
+    "capacity-by-status": [
+      {
+        "status": "operating",
+        "method": "EAF",
+        "capacity": "752"
+      },
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": ">0"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120576",
+    "name": "Tata Steel Ludhiana steel plant",
+    "owner": "Tata Steel Ltd",
+    "owner-gem-id": "E100001010018",
+    "parent": "Tata Steel Ltd [100.0%]",
+    "parent-gem-id": "E100001010018 [100.0%]",
+    "subnational": "Punjab",
+    "country-area1": "India",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Tata_Steel_Ludhiana_steel_plant",
+    "Latitude": 30.946888,
+    "Longitude": 75.987521,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "750"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120839",
+    "name": "Gulf Tubing Company Ras Al-Khair steel plant",
+    "owner": "Gulf Tubing Co",
+    "owner-gem-id": "E100000131016",
+    "parent": "SMS Holding GmbH; Vitkovice Heavy Machinery AS",
+    "parent-gem-id": "E100000130972; E100000130837",
+    "subnational": "Eastern Province",
+    "country-area1": "Saudi Arabia",
+    "location-accuracy": "approximate",
+    "url": "https://www.gem.wiki/Gulf_Tubing_Company_Ras_Al-Khair_steel_plant",
+    "Latitude": 27.502041,
+    "Longitude": 49.189647,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "630"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000120713",
+    "name": "Lanwa Steel Hambantota steel plant",
+    "owner": "Ceylon Steel Co Ltd",
+    "owner-gem-id": "E100000131034",
+    "parent": "Ceylon Steel Co Ltd [100.0%]",
+    "parent-gem-id": "E100000131034 [100.0%]",
+    "subnational": "Hambantota",
+    "country-area1": "Sri Lanka",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/Lanwa_Steel_Hambantota_steel_plant",
+    "Latitude": 6.128077,
+    "Longitude": 81.075224,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "BOF",
+        "capacity": "600"
+      },
+      {
+        "status": "construction",
+        "method": "BF",
+        "capacity": ">0"
+      }
+    ]
+  },
+  {
+    "project-id": "P100000121240",
+    "name": "AFV Donalam Targoviste steel plant",
+    "owner": "Donalam SRL",
+    "owner-gem-id": "E100001012891",
+    "parent": "Beltrame Holding SpA [86.1%]; unknown [7.6%]",
+    "parent-gem-id": "E100001016199 [86.1%]; E100000132388 [7.6%]",
+    "subnational": "Dâmbovița",
+    "country-area1": "Romania",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/AFV_Donalam_Targoviste_steel_plant",
+    "Latitude": 44.904569,
+    "Longitude": 25.458124,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "300"
+      },
+      {
+        "status": "operating pre-retirement",
+        "method": "EAF",
+        "capacity": "300"
+      }
+    ]
+  },
+  {
+    "project-id": "P100001061378",
+    "name": "CMC West Virginia steel plant",
+    "owner": "Commercial Metals Co",
+    "owner-gem-id": "E100000130754",
+    "parent": "Commercial Metals Co [100.0%]",
+    "parent-gem-id": "E100000130754 [100.0%]",
+    "subnational": "West Virginia",
+    "country-area1": "United States",
+    "location-accuracy": "exact",
+    "url": "https://www.gem.wiki/CMC_West_Virginia_steel_plant",
+    "Latitude": 39.5515843,
+    "Longitude": -77.897771,
+    "capacity-by-status": [
+      {
+        "status": "construction",
+        "method": "EAF",
+        "capacity": "590"
+      }
+    ]
+  }
+]

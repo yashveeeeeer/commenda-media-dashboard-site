@@ -1,182 +1,180 @@
-import {UNKNOWN} from "./capacity.mjs";
+import {ALL, UNKNOWN} from "./capacity.mjs";
 
 const NS = "http://www.w3.org/2000/svg";
-const RADIANS = Math.PI / 180;
-const number = new Intl.NumberFormat("en", {maximumFractionDigits: 3});
-export function svg(tag, attributes = {}, value) {
-  const node = document.createElementNS(NS, tag);
-  for (const [key, attribute] of Object.entries(attributes)) node.setAttribute(key, attribute);
-  if (value != null) node.textContent = value;
+const number = new Intl.NumberFormat("en",{maximumFractionDigits:3});
+const radians = Math.PI/180;
+
+function svg(tag, attrs = {}, content) {
+  const node = document.createElementNS(NS,tag);
+  for (const [key,value] of Object.entries(attrs)) node.setAttribute(key,value);
+  if (content != null) node.textContent = content;
   return node;
 }
-function project(lon, lat) {
-  return [lon, -Math.asinh(Math.tan(Math.max(-84, Math.min(84, lat)) * RADIANS)) / RADIANS];
+function project(lon,lat) {
+  return [lon, -Math.asinh(Math.tan(Math.max(-84,Math.min(84,lat))*radians))/radians];
 }
-function locate(projectRow) {
-  return Number.isFinite(projectRow.lat) && Number.isFinite(projectRow.lon) ? project(projectRow.lon, projectRow.lat) : null;
+function locate(row) {
+  return Number.isFinite(row.lat) && Number.isFinite(row.lon) ? project(row.lon,row.lat) : null;
 }
-const places = [
-  ["PAKISTAN", 68, 29], ["CHINA", 94, 33], ["NEPAL", 83.7, 28.5], ["SRI LANKA", 81, 7],
-  ["INDIA", 78.4, 24.6], ["Arabian Sea", 68.8, 15], ["Bay of Bengal", 87.2, 14.5],
-];
+function fit(points, width, height, worldwide) {
+  let left = -174, right = 175, top = project(0,72)[1], bottom = project(0,-55)[1];
+  if (!worldwide && points.length) {
+    const xs = points.map(p => p[0]), ys = points.map(p => p[1]);
+    const xmin = Math.min(...xs), xmax = Math.max(...xs), ymin = Math.min(...ys), ymax = Math.max(...ys);
+    const xpad = Math.max(3,(xmax-xmin)*.15), ypad = Math.max(3,(ymax-ymin)*.15);
+    left=xmin-xpad; right=xmax+xpad; top=ymin-ypad; bottom=ymax+ypad;
+  }
+  const xpad=width < 500 ? 15 : 28, ytop=64, ybottom=width < 470 ? 102 : 88;
+  const scale=Math.min((width-2*xpad)/(right-left),(height-ytop-ybottom)/(bottom-top));
+  return {scale,x:width/2-scale*(left+right)/2,y:(height+ytop-ybottom)/2-scale*(top+bottom)/2};
+}
+function screen(point,camera) {return [camera.x+point[0]*camera.scale,camera.y+point[1]*camera.scale];}
 
-export function createMap(countries, model, selectMark) {
-  const map = document.getElementById("map");
-  const base = document.getElementById("geography");
-  const marks = document.getElementById("marks");
-  const labels = document.getElementById("labels");
-  const context = document.getElementById("map-context");
-  const paths = new Map();
-  let frame = 0;
-  let lastMode = "plants";
-  let currentSelection;
-  let width, height, camera, sizeScale;
+// An owner country can back domestic and foreign sites in the same view.
+function bubble(group, item, radius) {
+  const mixed = item.localMt > 0 && item.localMt < item.mt - 1e-7;
+  const color = item.localMt >= item.mt - 1e-7 ? "var(--coral)" : item.color;
+  group.append(svg("circle",{class:"bubble",r:radius,fill:color}));
+  if (mixed) {
+    const theta = 2*Math.PI*item.localMt/item.mt, endX = radius*Math.sin(theta), endY = -radius*Math.cos(theta);
+    const d = "M0 0 L0 " + -radius + " A" + radius + " " + radius + " 0 " + (theta>Math.PI?1:0) + " 1 " + endX + " " + endY + " Z";
+    group.append(svg("path",{d,fill:"var(--coral)","pointer-events":"none"}));
+    group.append(svg("circle",{class:"outline",r:radius,fill:"none"}));
+  }
+}
 
+export function createMap(countries, selectMark) {
+  const map=document.getElementById("map"), base=document.getElementById("geography");
+  const marks=document.getElementById("marks"), labels=document.getElementById("labels");
+  const paths=[];
+  let previous,model,mode,selected,frame=0;
   for (const country of countries) {
-    const path = svg("path", {d: country.d, class: "country", "fill-rule": "evenodd"});
-    paths.set(country.adm0,path);
-    base.append(path);
+    const path=svg("path",{d:country.d,class:"country","fill-rule":"evenodd"});
+    paths.push([country.iso3,path]);base.append(path);
   }
-  for (let lon = -180; lon <= 180; lon += 10) base.append(svg("path", {class: "grid-line", d: "M" + lon + ",-175v335"}));
-  for (let lat = -70; lat <= 80; lat += 10) base.append(svg("path", {class:"grid-line", d: "M-180," + project(0,lat)[1] + "h360"}));
-  function getCamera(mode) {
-    let northWest = project(67, 36);
-    let southEast = project(98, 7.1);
-    if (mode === "owners") {
-      const centers = model.destinations.filter(g => g.label).map(g => project(...g.label));
-      if (centers.length) {
-        const xs = centers.map(p => p[0]), ys = centers.map(p => p[1]);
-        const left = Math.min(...xs), right = Math.max(...xs), top = Math.min(...ys), bottom = Math.max(...ys);
-        const dx = Math.max(25, right-left), dy = Math.max(17, bottom-top);
-        northWest = [(left+right-dx)/2, (top+bottom-dy)/2];
-        southEast = [(left+right+dx)/2, (top+bottom+dy)/2];
-      }
-    }
-    const pad = width < 500 ? 28 : 55;
-    const top = 69, bottom = 53;
-    const scale = Math.min((width-2*pad)/(southEast[0]-northWest[0]),(height-top-bottom)/(southEast[1]-northWest[1]));
-    return {scale, x: width/2-scale*(northWest[0]+southEast[0])/2, y: (height+top-bottom)/2-scale*(northWest[1]+southEast[1])/2};
-  }
-  function screen(point, cam) {return [cam.x+point[0]*cam.scale, cam.y+point[1]*cam.scale];}
-  function moveCamera(cam) {base.setAttribute("transform", "translate(" + cam.x + " " + cam.y + ") scale(" + cam.scale + ")");}
-  function radius(mt) {return Math.sqrt(mt)*sizeScale;}
-  function drawLegend(largest) {
-    const key = document.getElementById("size-key");
-    const step = 10**Math.floor(Math.log10(largest));
-    const values = largest < step*2 ? [step*.2,step] : [step,step*2];
-    key.replaceChildren(document.createTextNode("Dot area"));
-    for (const [index,value] of values.entries()) {
-      const scale = document.createElement("span"), disk = document.createElement("i");
-      scale.className = "scale-example";
-      disk.style.width = disk.style.height = 2*radius(value)+"px";
-      disk.setAttribute("aria-hidden","true");
-      scale.append(disk,document.createTextNode(number.format(value)+(index === 1 ? " Mt/yr" : "")));
-      key.append(scale);
-    }
-  }
-  function markRecords(mode) {
-    if (mode === "plants") {
-      return model.projects.map(row => ({id: row.id, name: row.name, mt: row.netMt, color: row.group.color, point: locate(row)}));
-    }
-    return model.destinations.map(group => ({...group,point: group.label && project(...group.label)}));
-  }
-  function updateHighlights(mode) {
-    for (const [code,path] of paths) {
-      const active = mode === "plants" ? code === "IND" : model.destinations.some(group => group.id === code && group.mt > 0);
-      path.classList.toggle("active-country", active);
-    }
-  }
-  function drawSettled(mode) {
-    marks.replaceChildren(); labels.replaceChildren(); context.replaceChildren();
-    moveCamera(camera); updateHighlights(mode);
-    const items = markRecords(mode).filter(item => item.point && item.mt > 0);
-    const nodes = [];
-    for (const item of items) {
-      const [x,y] = screen(item.point,camera), r = radius(item.mt);
-      const text = item.name + ", " + number.format(item.mt) + " Mt/yr";
-      const group = svg("g", {class: "mark" + (item.id === currentSelection ? " selected" : ""), transform:"translate("+x+" "+y+")", role:"button",tabindex:"0","aria-label":"Inspect "+text, "aria-pressed":String(item.id === currentSelection), "data-id":item.id});
-      group.append(svg("title",{},text), svg("circle",{r:Math.max(r+3,14),fill:"transparent"}), svg("circle",{class:"bubble",r,fill:item.color}), svg("circle",{class:"ring",r:r+3}));
-      group.addEventListener("click",() => selectMark(item.id));
-      group.addEventListener("keydown",event => {
-        if (event.key === "Enter" || event.key === " ") {event.preventDefault(); selectMark(item.id); marks.querySelector(".selected")?.focus();}
-      });
-      marks.append(group);
-      nodes.push({...item,x,y,r});
-    }
-    const occupied = nodes.map(n => [n.x-n.r-2,n.y-n.r-2,n.x+n.r+2,n.y+n.r+2]);
-    const selectedBox = nodes.find(n => n.id === currentSelection);
-    const ordered = selectedBox ? [selectedBox,...nodes.filter(n => n !== selectedBox)] : nodes;
-    for (const n of ordered) {
-      const name = n.name;
-      const text = svg("text",{class:"map-label"},name);
-      labels.append(text);
-      const len = text.getComputedTextLength();
-      const near = n.r + 7;
-      const offsets = [[near,4],[-len-near,4],[-len/2,-near],[-len/2,near+8],[near,near+9],[-len-near,-near-2],[near,-near-2]];
-      let labelPosition;
-      for (const [dx,dy] of offsets) {
-        const x = Math.min(width-len-7,Math.max(7,n.x+dx)), y = n.y+dy;
-        const box = [x-2,y-10,x+len+2,y+4];
-        if (y < 59 || y > height-34 || occupied.some(b => box[0]<b[2] && box[2]>b[0] && box[1]<b[3] && box[3]>b[1])) continue;
-        labelPosition = [x,y]; occupied.push(box); break;
-      }
-      if (!labelPosition && n.id === currentSelection) labelPosition = [Math.min(width-len-7,Math.max(7,n.x-len/2)), Math.max(64,n.y-near-3)];
-      if (!labelPosition) {text.remove();continue;}
-      text.setAttribute("x",labelPosition[0]); text.setAttribute("y",labelPosition[1]);
-    }
-    if (mode === "plants") for (const [name,lon,lat] of places) {
-      const [x,y] = screen(project(lon,lat),camera);
-      const textWidth = name.length*7;
-      if (x < textWidth/2+10 || x > width-textWidth/2-10 || y < 65 || y > height-34) continue;
-      if (occupied.some(b => x-textWidth/2 < b[2] && x+textWidth/2 > b[0] && y-12 < b[3] && y+3 > b[1])) continue;
-      context.append(svg("text",{class:name === name.toUpperCase()?"place-label":"sea-label",x,y},name));
-    }
-    const missing = mode === "plants" ? model.projects.filter(p => !locate(p)).reduce((a,p) => a+p.netMt,0) : model.destinations.find(g=>g.id===UNKNOWN).mt;
-    const note = document.getElementById("unmapped");
-    note.hidden = missing <= 0;
-    note.textContent = missing > 0 ? number.format(missing) + " Mt/yr without a " + (mode === "plants" ? "plant coordinate" : "known country") : "";
-  }
-  function animate(to, oldCam, newCam) {
-    marks.replaceChildren(); labels.replaceChildren(); context.replaceChildren();
-    const pieces = [];
-    for (const row of model.projects) for (const part of row.parts) {
-      const destination = model.destinations.find(g=>g.id===part.id);
-      const origin = locate(row);
-      if (!destination?.label || !origin) continue;
-      const hq = project(...destination.label);
-      const circle = svg("circle",{r:radius(part.mt),fill:destination.color,stroke:"var(--water)","stroke-width":1});
-      marks.append(circle);pieces.push({circle,origin,hq});
-    }
-    const start = performance.now();
-    function step(now) {
-      const t = Math.min(1,(now-start)/530), k = t*t*(3-2*t);
-      const cam = Object.fromEntries(["x","y","scale"].map(key=>[key,oldCam[key]+(newCam[key]-oldCam[key])*k]));
-      moveCamera(cam);
-      const progress = to === "owners" ? k : 1-k;
-      for (const {circle,origin,hq} of pieces) {
-        const pos = screen(origin.map((v,i)=>v+(hq[i]-v)*progress),cam);
-        circle.setAttribute("cx",pos[0]);circle.setAttribute("cy",pos[1]);
-      }
-      if (t < 1) frame=requestAnimationFrame(step);
-      else {frame=0;drawSettled(to);}
-    }
-    updateHighlights(to);frame=requestAnimationFrame(step);
-  }
-  function render(mode, selected, motion = false) {
+  for (let lon=-180;lon<=180;lon+=30) base.append(svg("path",{class:"grid-line",d:"M"+lon+",-175v335"}));
+  for (let lat=-60;lat<=80;lat+=30) base.append(svg("path",{class:"grid-line",d:"M-180,"+project(0,lat)[1]+"h360"}));
+  function draw(modelNext,modeNext,selectedNext,motion=false) {
     cancelAnimationFrame(frame);
-    width = map.clientWidth; height = map.clientHeight;
+    model=modelNext;mode=modeNext;selected=selectedNext;
+    const width=map.clientWidth,height=map.clientHeight;
     if (!width || !height) return;
+    const plants=mode==="plants";
+    const items=(plants ? model.projects.map(p=>({id:p.id,name:p.name,mt:p.mt,point:locate(p),color:p.group.color})) :
+      model.destinations.map(g=>({...g,point:g.label && project(...g.label)}))).filter(item=>item.mt>0 && item.point);
+    const points=items.map(item=>item.point);
+    const hostCountry=model.countryByCode.get(model.host);
+    if (!points.length && hostCountry?.label) points.push(project(...hostCountry.label));
+    const camera=fit(points,width,height,model.host===ALL);
+    const largest=Math.max(.1,...model.projects.map(p=>p.mt),...model.destinations.filter(g=>g.id!==UNKNOWN).map(g=>g.mt));
+    const sizeScale=Math.min(29,Math.max(16,width*.048))/Math.sqrt(largest);
+    const radius=mt=>Math.sqrt(mt)*sizeScale;
     map.setAttribute("viewBox","0 0 "+width+" "+height);
-    const largest = Math.max(1,...model.projects.map(p=>p.netMt),...model.destinations.map(g=>g.mt));
-    sizeScale = Math.min(26,Math.max(15,width*.035))/Math.sqrt(largest);
-    drawLegend(largest);
-    currentSelection = selected;
-    const next = getCamera(mode), previous = camera;
-    camera = next;
-    if (motion && mode !== lastMode && previous && !matchMedia("(prefers-reduced-motion: reduce)").matches) animate(mode, previous, next);
-    else drawSettled(mode);
-    lastMode = mode;
+    const active=new Set((plants ? model.hosts : model.destinations).filter(g=>g.mt>0).map(g=>g.id));
+    for (const [code,path] of paths) path.classList.toggle("active-country",active.has(code));
+    const positionBase=c=>base.setAttribute("transform","translate("+c.x+" "+c.y+") scale("+c.scale+")");
+    const key=document.getElementById("size-key");
+    key.replaceChildren(document.createTextNode("Dot area"));
+    if (items.length) {
+      const step=10**Math.floor(Math.log10(largest));
+      const values=largest<2*step?[step*.2,step]:[step,step*2];
+      values.forEach((value,index)=>{
+        const span=document.createElement("span"),disc=document.createElement("i");
+        span.className="scale-example";disc.style.width=disc.style.height=(2*radius(value))+"px";
+        span.append(disc,number.format(value)+(index===1?" Mt/yr":""));key.append(span);
+      });
+    }
+    const unknown=model.destinations.find(g=>g.id===UNKNOWN).mt;
+    const unmapped=document.getElementById("unmapped");
+    unmapped.hidden=plants || !unknown;
+    unmapped.textContent="Unassigned · "+number.format(unknown)+" Mt/yr";
+    const noCoordinates=model.projects.filter(p=>p.mt>0&&!locate(p)).reduce((sum,p)=>sum+p.mt,0);
+    const note=document.getElementById("map-message");
+    note.hidden=items.length>0 && (!plants || !noCoordinates);
+    if (plants && noCoordinates) {
+      note.textContent=number.format(noCoordinates)+" Mt/yr has no plant coordinates.";
+    } else {
+      note.textContent=model.total>0?"All tonnes in this selection are unassigned to an owner country.":
+        model.measure==="net"?"No verified net additions in this selection.":"Construction capacity is unreported in this selection.";
+    }
+    marks.replaceChildren();labels.replaceChildren();
+    function settle() {
+      positionBase(camera);marks.replaceChildren();labels.replaceChildren();
+      const labelNodes=[];
+      // Draw smaller sites last so a large neighbour cannot hide them.
+      const ordered=[...items].sort((a,b)=>(a.id===selected)-(b.id===selected) || b.mt-a.mt);
+      const focusId=items.some(item=>item.id===selected)?selected:ordered[0]?.id;
+      for (const item of ordered) {
+        const [x,y]=screen(item.point,camera),r=radius(item.mt);
+        const text=item.name+", "+number.format(item.mt)+" Mt/yr";
+        const group=svg("g",{class:"mark"+(item.id===selected?" selected":""),transform:"translate("+x+" "+y+")",
+          role:"button",tabindex:item.id===focusId?"0":"-1","aria-pressed":String(item.id===selected),"aria-label":"Inspect "+text,"data-id":item.id});
+        group.append(svg("title",{},text),svg("circle",{class:"target",r:Math.max(r+3,6),fill:"transparent"}));
+        bubble(group,item,r);
+        group.append(svg("circle",{class:"ring",r:r+3}));
+        group.addEventListener("click",()=>selectMark(item.id));
+        group.addEventListener("keydown",event=>{
+          if (event.key==="Enter" || event.key===" ") {
+            event.preventDefault();const mobile=matchMedia("(max-width:680px)").matches;
+            selectMark(item.id);
+            if (!mobile) marks.querySelector(".selected")?.focus();
+          } else if (["ArrowRight","ArrowDown","ArrowLeft","ArrowUp"].includes(event.key)) {
+            event.preventDefault();
+            const forward=event.key==="ArrowRight"||event.key==="ArrowDown";
+            (forward? group.nextElementSibling ?? marks.firstElementChild : group.previousElementSibling ?? marks.lastElementChild)?.focus();
+          }
+        });
+        marks.append(group);labelNodes.push({...item,x,y,r});
+      }
+      const selectedNode=labelNodes.find(n=>n.id===selected);
+      const choices=[...labelNodes].filter(n=>n!==selectedNode).sort((a,b)=>b.mt-a.mt);
+      if (selectedNode) choices.unshift(selectedNode);
+      const boxes=[], limit=width<500?2:5;
+      for (const item of choices) {
+        if (boxes.length>=limit) break;
+        const fullName=item.name;
+        let name=plants? fullName.replace(/ steel plant$| steelworks$| plant$/i,"") : fullName;
+        if (name.length>30) name=name.slice(0,27).trimEnd()+"…";
+        if (plants && item.id==="P100000120513") name="Hazira";
+        const label=svg("text",{class:"map-label"},name);labels.append(label);
+        const len=label.getComputedTextLength(),gap=item.r+6;
+        let pos=null;
+        for (const [dx,dy] of [[gap,3],[-len-gap,3],[-len/2,-gap],[-len/2,gap+10]]) {
+          const x=item.x+dx,y=item.y+dy;
+          if (x<4||x+len>width-4||y<55||y>height-70) continue;
+          if (boxes.some(b=>x<b.x+b.w+5 && x+len>b.x-5 && Math.abs(y-b.y)<16)) continue;
+          if (labelNodes.some(n=>n.id!==item.id&&n.x+n.r>x&&n.x-n.r<x+len&&n.y+n.r>y-10&&n.y-n.r<y+3)) continue;
+          pos={x,y,w:len};break;
+        }
+        if (!pos && item===selectedNode) pos={x:Math.max(5,Math.min(width-len-5,item.x+gap)),y:item.y-gap,w:len};
+        if (!pos) {label.remove();continue;}
+        boxes.push(pos);label.setAttribute("x",pos.x);label.setAttribute("y",pos.y);
+      }
+    }
+    if (motion && previous && !matchMedia("(prefers-reduced-motion:reduce)").matches && items.length) {
+      const from=previous;
+      const bits=[];
+      for (const row of model.projects) for (const part of row.parts) {
+        const hq=model.countryByCode.get(part.id)?.label,plant=locate(row);
+        if (!hq || !plant || part.mt<=0) continue;
+        const circle=svg("circle",{r:radius(part.mt),fill:part.local?"var(--coral)":"var(--blue)",class:"transit"});
+        marks.append(circle);bits.push({circle,plant,hq:project(...hq)});
+      }
+      const start=performance.now();
+      function step(now) {
+        const t=Math.min(1,(now-start)/500),k=t*t*(3-2*t),p=plants?1-k:k;
+        const cam={x:from.x+(camera.x-from.x)*k,y:from.y+(camera.y-from.y)*k,scale:from.scale+(camera.scale-from.scale)*k};
+        positionBase(cam);
+        for (const {circle,plant,hq} of bits) {
+          const [x,y]=screen([plant[0]+(hq[0]-plant[0])*p,plant[1]+(hq[1]-plant[1])*p],cam);
+          circle.setAttribute("cx",x);circle.setAttribute("cy",y);
+        }
+        if(t<1)frame=requestAnimationFrame(step);else settle();
+      }
+      frame=requestAnimationFrame(step);
+    } else settle();
+    previous=camera;
   }
-  new ResizeObserver(()=>render(lastMode,currentSelection)).observe(map);
-  return render;
+  new ResizeObserver(()=>{if(model)draw(model,mode,selected);}).observe(map);
+  return draw;
 }

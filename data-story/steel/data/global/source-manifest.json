@@ -1,0 +1,54 @@
+{
+  "title": "Global construction crude-steel project source package",
+  "citation": "Global Iron and Steel Tracker, Global Energy Monitor, September 2026 (V1) release.",
+  "mapTrackerPage": "https://globalenergymonitor.org/projects/global-iron-steel-tracker",
+  "mapConfig": "https://globalenergymonitor.github.io/interim-maps/trackers/gist/config.js",
+  "mapGeojson": "https://publicgemdata.nyc3.cdn.digitaloceanspaces.com/Current_maps/gist/gist_map_2026-09.geojson",
+  "fullMapSha256": "82ea95367771e02b3df89e0cbfb4f7de791ffa2c106b5ad06a0683268161e8bc",
+  "mapGlobalPlantCount": 1293,
+  "mapRetrievedAtUTC": "2026-11-25T11:37:54.508598+00:00",
+  "apiDocs": "https://api.globalenergymonitor.org/redoc",
+  "entityEndpoint": "https://api.globalenergymonitor.org/entities/{entity_id}",
+  "operatorGraphEndpoint": "https://api.globalenergymonitor.org/entities/{entity_id}/graph/up",
+  "currentSteelUnitQuery": "https://api.globalenergymonitor.org/assets?operating_sub_status=construction&asset_type=iron-steel-plant&furnace_category=bof&furnace_category=eaf&furnace_category=induction&furnace_category=open_hearth&furnace_category=unknown_other_steel&limit=500",
+  "naturalEarthBoundaries": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson",
+  "naturalEarthCrosswalk": "country-crosswalk.json",
+  "license": "https://globalenergymonitor.org/creative-commons-license",
+  "measure": "Nominal crude steelmaking furnace capacity, million tonnes per year; ironmaking is excluded. Construction and announced are GEM status categories, not a time series.",
+  "construction": {
+    "quantifiedPlants": 106,
+    "unquantifiedPlants": [
+      "P100000120690"
+    ],
+    "quantifiedHostCount": 30,
+    "grossMt": 171.388
+  },
+  "announcedOnly": {
+    "quantifiedPlants": 228,
+    "grossMt": 659.823,
+    "note": "Announced steelmaking entries only, including at plants also under construction; plans are not part of the construction total."
+  },
+  "liveApiCaveat": "GEM's public API is live; it is a cross-check and may have changed since the frozen September map. The BAP Al-Khair EAF unit is 1.5 Mtpa live versus 1.7 Mtpa in the September map.",
+  "rolePolicy": "Only manually allowlisted industrial parents and explicit issuer overrides have owner.country assigned. Unquantified shares, unknown HQs, financial managers, custody, unions, opaque trading/consultancy/holding entities remain grey with country=null; reportedCountry preserves GEM HQ evidence.",
+  "industrialRoleReview": "owner-role-review.json",
+  "issuerOverrides": "issuer-overrides.json",
+  "issuerOverrideProjectCount": 10,
+  "reviewedParentEntityCount": 157,
+  "industrialRoleAllowlistCount": 70,
+  "reproduceOffline": "python data-story/steel/data/global/build.py",
+  "refreshPublicFeeds": "python data-story/steel/data/global/fetch.py --map --entities --graphs --units",
+  "localFileSha256": {
+    "raw-map-projects.json": "171e524223522b6619bef161e8de421b7b8752cc08d48776cf6ba1e4ab68cb88",
+    "raw-map-announced.json": "e1e796b4570971be4d459f3ec7f140961e54141bd24170b20cc965a7059f1c8b",
+    "map-source.json": "986e4e7465170c63414ba027e6dc01656ad1bb0ed70f1ee436b4e0ba8d1e64ec",
+    "api-parent-entities.json": "885f6e3ad017f6c9d865752c7e8f8c1f9a111c2caf98aeb79f5e40e0a0ed1823",
+    "api-owner-graphs.json": "50e5d77a4ebfaa590e315b4dae008c0c5a50672ebc4fb498073eb6a126eb2a2a",
+    "api-construction-steel-units.json": "87284456cb1cb6e611412d6fd17b415beb721308c532c707940a93b8b5e99751",
+    "country-crosswalk.json": "75ef44a80e79ada6b996d042929520d465bb557290322aed3b5ab3138aa3090e",
+    "industry-owner-allowlist.json": "d364c83c2a12f48b94c6371155b0b93e4f4e2a4f6f9bca6ff2eac6389cb237bb",
+    "owner-role-review.json": "f92f668085b0734280330c6c90b086faf40c9baa210729206933b434ddb77e93",
+    "issuer-overrides.json": "ea2fcc244e9a0c0c4032585b10344daaaba9f3a5b7af78a09fd95440c1c746e3",
+    "projects.json": "8dcc934a19a9047dc58b20736d68cd14be34d7fec3d88788fcb7bd07c147c44f",
+    "audit.json": "e8fbfd0315d0f70618450268d55757f615af61c355833cbc0f5a6413a22421e7"
+  }
+}

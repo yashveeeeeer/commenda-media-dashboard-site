@@ -1,0 +1,1572 @@
+{
+  "E100000000031": {
+    "entity_id": "E100000000031",
+    "name": "Voestalpine",
+    "full_name": "Voestalpine AG",
+    "entity_type": "legal entity",
+    "legal_entity_type": "AG",
+    "headquarters_country": "Austria",
+    "registration_country": "Austria",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000031"
+  },
+  "E100000000151": {
+    "entity_id": "E100000000151",
+    "name": "Agricultural Bank of China",
+    "full_name": "Agricultural Bank of China Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000151"
+  },
+  "E100000000189": {
+    "entity_id": "E100000000189",
+    "name": "Gansu Provincial State-owned Assets Investment Group",
+    "full_name": "Gansu Provincial State-owned Assets Investment Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000189"
+  },
+  "E100000000220": {
+    "entity_id": "E100000000220",
+    "name": "Industrial and Commercial Bank of China",
+    "full_name": "Industrial and Commercial Bank of China Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000220"
+  },
+  "E100000000421": {
+    "entity_id": "E100000000421",
+    "name": "Kreditanstalt für Wiederaufbau",
+    "full_name": "Kreditanstalt für Wiederaufbau ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "Germany",
+    "registration_country": "Germany",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000421"
+  },
+  "E100000000544": {
+    "entity_id": "E100000000544",
+    "name": "Golgohar Mining and Industrial",
+    "full_name": "Golgohar Mining and Industrial Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000544"
+  },
+  "E100000000547": {
+    "entity_id": "E100000000547",
+    "name": "Iranian Mines & Mining Industries Development & Renovation Organization",
+    "full_name": "Iranian Mines & Mining Industries Development & Renovation Organization ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000547"
+  },
+  "E100000000652": {
+    "entity_id": "E100000000652",
+    "name": "Nippon Steel",
+    "full_name": "Nippon Steel Corp",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Corp",
+    "headquarters_country": "Japan",
+    "registration_country": "Japan",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000652"
+  },
+  "E100000000687": {
+    "entity_id": "E100000000687",
+    "name": "ArcelorMittal",
+    "full_name": "ArcelorMittal SA",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SA",
+    "headquarters_country": "Luxembourg",
+    "registration_country": "Luxembourg",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000687"
+  },
+  "E100000000715": {
+    "entity_id": "E100000000715",
+    "name": "DeAcero",
+    "full_name": "DeAcero SAPI de CV",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SAPI de CV",
+    "headquarters_country": "Mexico",
+    "registration_country": "Mexico",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000715"
+  },
+  "E100000000888": {
+    "entity_id": "E100000000888",
+    "name": "Saudi Arabian Oil",
+    "full_name": "Saudi Arabian Oil Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Saudi Arabia",
+    "registration_country": "Saudi Arabia",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000888"
+  },
+  "E100000000953": {
+    "entity_id": "E100000000953",
+    "name": "POSCO Holdings",
+    "full_name": "POSCO Holdings Inc",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Inc",
+    "headquarters_country": "South Korea",
+    "registration_country": "South Korea",
+    "url": "https://api.globalenergymonitor.org/entities/E100000000953"
+  },
+  "E100000001058": {
+    "entity_id": "E100000001058",
+    "name": "Kaptan Demir Celik Endustrisi Ve Ticaret",
+    "full_name": "Kaptan Demir Celik Endustrisi Ve Ticaret AŞ",
+    "entity_type": "legal entity",
+    "legal_entity_type": "AŞ",
+    "headquarters_country": "Türkiye",
+    "registration_country": "Türkiye",
+    "url": "https://api.globalenergymonitor.org/entities/E100000001058"
+  },
+  "E100000001358": {
+    "entity_id": "E100000001358",
+    "name": "Public Investment Fund (Saudi Arabia)",
+    "full_name": "Public Investment Fund (Saudi Arabia) ",
+    "entity_type": "state body",
+    "legal_entity_type": null,
+    "headquarters_country": "Saudi Arabia",
+    "registration_country": "Saudi Arabia",
+    "url": "https://api.globalenergymonitor.org/entities/E100000001358"
+  },
+  "E100000001651": {
+    "entity_id": "E100000001651",
+    "name": "SSAB",
+    "full_name": "SSAB AB",
+    "entity_type": "legal entity",
+    "legal_entity_type": "AB",
+    "headquarters_country": "Sweden",
+    "registration_country": "Sweden",
+    "url": "https://api.globalenergymonitor.org/entities/E100000001651"
+  },
+  "E100000002408": {
+    "entity_id": "E100000002408",
+    "name": "Ajaokuta Steel",
+    "full_name": "Ajaokuta Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "Nigeria",
+    "registration_country": "Nigeria",
+    "url": "https://api.globalenergymonitor.org/entities/E100000002408"
+  },
+  "E100000120835": {
+    "entity_id": "E100000120835",
+    "name": "Meghna Group of Industries",
+    "full_name": "Meghna Group of Industries Ltd",
+    "entity_type": "arrangement",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "Bangladesh",
+    "registration_country": "Bangladesh",
+    "url": "https://api.globalenergymonitor.org/entities/E100000120835"
+  },
+  "E100000120868": {
+    "entity_id": "E100000120868",
+    "name": "JSW Ispat Special Products",
+    "full_name": "JSW Ispat Special Products Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100000120868"
+  },
+  "E100000121408": {
+    "entity_id": "E100000121408",
+    "name": "Tata Steel Long Products",
+    "full_name": "Tata Steel Long Products Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100000121408"
+  },
+  "E100000122571": {
+    "entity_id": "E100000122571",
+    "name": "Baoshan Iron & Steel",
+    "full_name": "Baoshan Iron & Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000122571"
+  },
+  "E100000123205": {
+    "entity_id": "E100000123205",
+    "name": "Tangshan Donghua Iron & Steel Enterprise Group",
+    "full_name": "Tangshan Donghua Iron & Steel Enterprise Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000123205"
+  },
+  "E100000123261": {
+    "entity_id": "E100000123261",
+    "name": "natural person(s)",
+    "full_name": "natural person(s) ",
+    "entity_type": "person",
+    "legal_entity_type": null,
+    "headquarters_country": null,
+    "registration_country": null,
+    "url": "https://api.globalenergymonitor.org/entities/E100000123261"
+  },
+  "E100000123542": {
+    "entity_id": "E100000123542",
+    "name": "HBIS",
+    "full_name": "HBIS Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000123542"
+  },
+  "E100000123550": {
+    "entity_id": "E100000123550",
+    "name": "Yushan (Beijing) Metallurgical Investment",
+    "full_name": "Yushan (Beijing) Metallurgical Investment Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000123550"
+  },
+  "E100000123578": {
+    "entity_id": "E100000123578",
+    "name": "Xinjiang Investment Development (Group)",
+    "full_name": "Xinjiang Investment Development (Group) Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000123578"
+  },
+  "E100000123737": {
+    "entity_id": "E100000123737",
+    "name": "Maanshan Iron & Steel",
+    "full_name": "Maanshan Iron & Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000123737"
+  },
+  "E100000123903": {
+    "entity_id": "E100000123903",
+    "name": "Guangxi Liuzhou Iron and Steel Group",
+    "full_name": "Guangxi Liuzhou Iron and Steel Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000123903"
+  },
+  "E100000124068": {
+    "entity_id": "E100000124068",
+    "name": "Hebei Puyang Industrial Group",
+    "full_name": "Hebei Puyang Industrial Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000124068"
+  },
+  "E100000124077": {
+    "entity_id": "E100000124077",
+    "name": "Henan Jiyuan Iron and Steel Investment Holding",
+    "full_name": "Henan Jiyuan Iron and Steel Investment Holding Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000124077"
+  },
+  "E100000124078": {
+    "entity_id": "E100000124078",
+    "name": "Tianjin Jinyuan Guotai Enterprise Management Consulting",
+    "full_name": "Tianjin Jinyuan Guotai Enterprise Management Consulting Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000124078"
+  },
+  "E100000124355": {
+    "entity_id": "E100000124355",
+    "name": "Beijing Shougang",
+    "full_name": "Beijing Shougang Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000124355"
+  },
+  "E100000124428": {
+    "entity_id": "E100000124428",
+    "name": "Bank of China",
+    "full_name": "Bank of China Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000124428"
+  },
+  "E100000124528": {
+    "entity_id": "E100000124528",
+    "name": "Tangshan City Development Group",
+    "full_name": "Tangshan City Development Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000124528"
+  },
+  "E100000124529": {
+    "entity_id": "E100000124529",
+    "name": "HBIS Group",
+    "full_name": "HBIS Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000124529"
+  },
+  "E100000124688": {
+    "entity_id": "E100000124688",
+    "name": "Jinghua Rigang Holding Group",
+    "full_name": "Jinghua Rigang Holding Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000124688"
+  },
+  "E100000125875": {
+    "entity_id": "E100000125875",
+    "name": "Guotao Co Ltd (Hong Kong)",
+    "full_name": "Guotao Co Ltd (Hong Kong) ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "Hong Kong",
+    "registration_country": "Hong Kong",
+    "url": "https://api.globalenergymonitor.org/entities/E100000125875"
+  },
+  "E100000126000": {
+    "entity_id": "E100000126000",
+    "name": "Longxiang Group (Hong Kong)",
+    "full_name": "Longxiang Group (Hong Kong) ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000126000"
+  },
+  "E100000126009": {
+    "entity_id": "E100000126009",
+    "name": "Trade Union Committee of Henan Jiyuan Iron and Steel (Group)",
+    "full_name": "Trade Union Committee of Henan Jiyuan Iron and Steel (Group) ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000126009"
+  },
+  "E100000126029": {
+    "entity_id": "E100000126029",
+    "name": "WEALTH GROUP INVESTMENT LIMITED",
+    "full_name": "WEALTH GROUP INVESTMENT LIMITED ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "Hong Kong",
+    "registration_country": "Hong Kong",
+    "url": "https://api.globalenergymonitor.org/entities/E100000126029"
+  },
+  "E100000126259": {
+    "entity_id": "E100000126259",
+    "name": "Chongqing Zuhang Steel",
+    "full_name": "Chongqing Zuhang Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000126259"
+  },
+  "E100000126680": {
+    "entity_id": "E100000126680",
+    "name": "Mindong Saiqi Economic Development Zone Fuhua Steel Rolling",
+    "full_name": "Mindong Saiqi Economic Development Zone Fuhua Steel Rolling Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000126680"
+  },
+  "E100000126779": {
+    "entity_id": "E100000126779",
+    "name": "Wuzhou Yongda Steel Works",
+    "full_name": "Wuzhou Yongda Steel Works Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000126779"
+  },
+  "E100000126901": {
+    "entity_id": "E100000126901",
+    "name": "Zunyi County Fuxin Iron & Steel Product",
+    "full_name": "Zunyi County Fuxin Iron & Steel Product Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000126901"
+  },
+  "E100000127019": {
+    "entity_id": "E100000127019",
+    "name": "Shanxi Zhongsheng Iron and Steel",
+    "full_name": "Shanxi Zhongsheng Iron and Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000127019"
+  },
+  "E100000127122": {
+    "entity_id": "E100000127122",
+    "name": "Henan YAXIN Steel Industry",
+    "full_name": "Henan YAXIN Steel Industry Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000127122"
+  },
+  "E100000127405": {
+    "entity_id": "E100000127405",
+    "name": "Henan Fengbao SPECIAL Steel",
+    "full_name": "Henan Fengbao SPECIAL Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000127405"
+  },
+  "E100000127446": {
+    "entity_id": "E100000127446",
+    "name": "Sichuan Jinguang Industry (Group)",
+    "full_name": "Sichuan Jinguang Industry (Group) Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000127446"
+  },
+  "E100000127447": {
+    "entity_id": "E100000127447",
+    "name": "Sichuan Shiting Ecology Agriculture Technology",
+    "full_name": "Sichuan Shiting Ecology Agriculture Technology Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000127447"
+  },
+  "E100000127570": {
+    "entity_id": "E100000127570",
+    "name": "Hubei Xinxin Steel Group",
+    "full_name": "Hubei Xinxin Steel Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000127570"
+  },
+  "E100000127571": {
+    "entity_id": "E100000127571",
+    "name": "Jin Jun'an Investment Group",
+    "full_name": "Jin Jun'an Investment Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000127571"
+  },
+  "E100000127998": {
+    "entity_id": "E100000127998",
+    "name": "Zhenshi Holding Group",
+    "full_name": "Zhenshi Holding Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000127998"
+  },
+  "E100000128078": {
+    "entity_id": "E100000128078",
+    "name": "Henan JINHUI Stainless Indutrial Group",
+    "full_name": "Henan JINHUI Stainless Indutrial Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128078"
+  },
+  "E100000128079": {
+    "entity_id": "E100000128079",
+    "name": "Changge Huida Trading",
+    "full_name": "Changge Huida Trading Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128079"
+  },
+  "E100000128173": {
+    "entity_id": "E100000128173",
+    "name": "Hebei Jianen Trading",
+    "full_name": "Hebei Jianen Trading Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128173"
+  },
+  "E100000128174": {
+    "entity_id": "E100000128174",
+    "name": "Xingtai Jinglin Trading",
+    "full_name": "Xingtai Jinglin Trading Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128174"
+  },
+  "E100000128309": {
+    "entity_id": "E100000128309",
+    "name": "Yunan Qujing Shuangyou Steel",
+    "full_name": "Yunan Qujing Shuangyou Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128309"
+  },
+  "E100000128311": {
+    "entity_id": "E100000128311",
+    "name": "Xuanwei Laibin Fenghuang Steel",
+    "full_name": "Xuanwei Laibin Fenghuang Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128311"
+  },
+  "E100000128312": {
+    "entity_id": "E100000128312",
+    "name": "Qujing Julida Steel",
+    "full_name": "Qujing Julida Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128312"
+  },
+  "E100000128497": {
+    "entity_id": "E100000128497",
+    "name": "Tongxiang Wushi Trading",
+    "full_name": "Tongxiang Wushi Trading Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128497"
+  },
+  "E100000128826": {
+    "entity_id": "E100000128826",
+    "name": "Hebei Province Jicai Lndustryl Equity Lnvestment Fund",
+    "full_name": "Hebei Province Jicai Lndustryl Equity Lnvestment Fund Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128826"
+  },
+  "E100000128904": {
+    "entity_id": "E100000128904",
+    "name": "China Everbright Group",
+    "full_name": "China Everbright Group Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128904"
+  },
+  "E100000128905": {
+    "entity_id": "E100000128905",
+    "name": "Gansu Financial Holding Group",
+    "full_name": "Gansu Financial Holding Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128905"
+  },
+  "E100000128938": {
+    "entity_id": "E100000128938",
+    "name": "Yunnan Qujing Yaochang Trade",
+    "full_name": "Yunnan Qujing Yaochang Trade Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128938"
+  },
+  "E100000128939": {
+    "entity_id": "E100000128939",
+    "name": "Qujing Botong Trading",
+    "full_name": "Qujing Botong Trading Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128939"
+  },
+  "E100000128963": {
+    "entity_id": "E100000128963",
+    "name": "Fujian XINPENG Investment",
+    "full_name": "Fujian XINPENG Investment Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128963"
+  },
+  "E100000128964": {
+    "entity_id": "E100000128964",
+    "name": "Qujing Wuyue New Energy Technology",
+    "full_name": "Qujing Wuyue New Energy Technology Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128964"
+  },
+  "E100000128965": {
+    "entity_id": "E100000128965",
+    "name": "Yunnan Tongyanbao Trading",
+    "full_name": "Yunnan Tongyanbao Trading Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000128965"
+  },
+  "E100000129075": {
+    "entity_id": "E100000129075",
+    "name": "Gansu Highway Aviation Tourism Investment Group",
+    "full_name": "Gansu Highway Aviation Tourism Investment Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000129075"
+  },
+  "E100000130294": {
+    "entity_id": "E100000130294",
+    "name": "Labor Union Committee of Xiaojiao Rolling Mill of Sanming Iron and Steel Works, Fujian Province",
+    "full_name": "Labor Union Committee of Xiaojiao Rolling Mill of Sanming Iron and Steel Works, Fujian Province ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130294"
+  },
+  "E100000130601": {
+    "entity_id": "E100000130601",
+    "name": "Huakai Investment",
+    "full_name": "Huakai Investment Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130601"
+  },
+  "E100000130639": {
+    "entity_id": "E100000130639",
+    "name": "Thailand Huihua Industrial",
+    "full_name": "Thailand Huihua Industrial Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": null,
+    "registration_country": null,
+    "url": "https://api.globalenergymonitor.org/entities/E100000130639"
+  },
+  "E100000130666": {
+    "entity_id": "E100000130666",
+    "name": "Xing Steel Fine Wire Holdings",
+    "full_name": "Xing Steel Fine Wire Holdings Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130666"
+  },
+  "E100000130688": {
+    "entity_id": "E100000130688",
+    "name": "Ternium Argentina",
+    "full_name": "Ternium Argentina SA",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SA",
+    "headquarters_country": "Argentina",
+    "registration_country": "Argentina",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130688"
+  },
+  "E100000130706": {
+    "entity_id": "E100000130706",
+    "name": "Danieli & C Officine Meccaniche",
+    "full_name": "Danieli & C Officine Meccaniche SpA",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SpA",
+    "headquarters_country": "Italy",
+    "registration_country": "Italy",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130706"
+  },
+  "E100000130728": {
+    "entity_id": "E100000130728",
+    "name": "Grupo Simec",
+    "full_name": "Grupo Simec SAB de CV",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SAB de CV",
+    "headquarters_country": "Mexico",
+    "registration_country": "Mexico",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130728"
+  },
+  "E100000130753": {
+    "entity_id": "E100000130753",
+    "name": "Baobab Steel",
+    "full_name": "Baobab Steel Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "United Kingdom",
+    "registration_country": "United Kingdom",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130753"
+  },
+  "E100000130754": {
+    "entity_id": "E100000130754",
+    "name": "Commercial Metals",
+    "full_name": "Commercial Metals Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "United States",
+    "registration_country": "United States",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130754"
+  },
+  "E100000130788": {
+    "entity_id": "E100000130788",
+    "name": "Ittehad Steels",
+    "full_name": "Ittehad Steels Pvt Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Pvt Ltd",
+    "headquarters_country": "Pakistan",
+    "registration_country": "Pakistan",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130788"
+  },
+  "E100000130837": {
+    "entity_id": "E100000130837",
+    "name": "Vitkovice Heavy Machinery",
+    "full_name": "Vitkovice Heavy Machinery AS",
+    "entity_type": "legal entity",
+    "legal_entity_type": "AS",
+    "headquarters_country": "Czech Republic",
+    "registration_country": "Czech Republic",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130837"
+  },
+  "E100000130852": {
+    "entity_id": "E100000130852",
+    "name": "Uzbekskiy Metallurgicheskiy Kombinat",
+    "full_name": "Uzbekskiy Metallurgicheskiy Kombinat JSC",
+    "entity_type": "legal entity",
+    "legal_entity_type": "JSC",
+    "headquarters_country": "Uzbekistan",
+    "registration_country": "Uzbekistan",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130852"
+  },
+  "E100000130890": {
+    "entity_id": "E100000130890",
+    "name": "Rashmi Metaliks",
+    "full_name": "Rashmi Metaliks Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130890"
+  },
+  "E100000130898": {
+    "entity_id": "E100000130898",
+    "name": "Rungta Mines",
+    "full_name": "Rungta Mines Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130898"
+  },
+  "E100000130922": {
+    "entity_id": "E100000130922",
+    "name": "Thai Nguyen Iron And Steel",
+    "full_name": "Thai Nguyen Iron And Steel JSC",
+    "entity_type": "legal entity",
+    "legal_entity_type": "JSC",
+    "headquarters_country": "Vietnam",
+    "registration_country": "Vietnam",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130922"
+  },
+  "E100000130972": {
+    "entity_id": "E100000130972",
+    "name": "SMS Holding",
+    "full_name": "SMS Holding GmbH",
+    "entity_type": "legal entity",
+    "legal_entity_type": "GmbH",
+    "headquarters_country": "Germany",
+    "registration_country": "Germany",
+    "url": "https://api.globalenergymonitor.org/entities/E100000130972"
+  },
+  "E100000131011": {
+    "entity_id": "E100000131011",
+    "name": "SteelAsia Manufacturing",
+    "full_name": "SteelAsia Manufacturing Corp",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Corp",
+    "headquarters_country": "Philippines",
+    "registration_country": "Philippines",
+    "url": "https://api.globalenergymonitor.org/entities/E100000131011"
+  },
+  "E100000131027": {
+    "entity_id": "E100000131027",
+    "name": "Novostal-M",
+    "full_name": "Novostal-M LLC",
+    "entity_type": "legal entity",
+    "legal_entity_type": "LLC",
+    "headquarters_country": "Russia",
+    "registration_country": "Russia",
+    "url": "https://api.globalenergymonitor.org/entities/E100000131027"
+  },
+  "E100000131034": {
+    "entity_id": "E100000131034",
+    "name": "Ceylon Steel",
+    "full_name": "Ceylon Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "Sri Lanka",
+    "registration_country": "Sri Lanka",
+    "url": "https://api.globalenergymonitor.org/entities/E100000131034"
+  },
+  "E100000131080": {
+    "entity_id": "E100000131080",
+    "name": "Bashundhara Group",
+    "full_name": "Bashundhara Group Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "Bangladesh",
+    "registration_country": "Bangladesh",
+    "url": "https://api.globalenergymonitor.org/entities/E100000131080"
+  },
+  "E100000131093": {
+    "entity_id": "E100000131093",
+    "name": "Sabzevar Pars Steel Complex",
+    "full_name": "Sabzevar Pars Steel Complex ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100000131093"
+  },
+  "E100000131105": {
+    "entity_id": "E100000131105",
+    "name": "Azna Steel",
+    "full_name": "Azna Steel ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100000131105"
+  },
+  "E100000131145": {
+    "entity_id": "E100000131145",
+    "name": "African Industries",
+    "full_name": "African Industries Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "Nigeria",
+    "registration_country": "Nigeria",
+    "url": "https://api.globalenergymonitor.org/entities/E100000131145"
+  },
+  "E100000131187": {
+    "entity_id": "E100000131187",
+    "name": "Mount Zynai 0304 Mining",
+    "full_name": "Mount Zynai 0304 Mining Corp",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Corp",
+    "headquarters_country": "Philippines",
+    "registration_country": "Philippines",
+    "url": "https://api.globalenergymonitor.org/entities/E100000131187"
+  },
+  "E100000131188": {
+    "entity_id": "E100000131188",
+    "name": "Century Steel",
+    "full_name": "Century Steel Pte Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Pte Ltd",
+    "headquarters_country": "Singapore",
+    "registration_country": "Singapore",
+    "url": "https://api.globalenergymonitor.org/entities/E100000131188"
+  },
+  "E100000132388": {
+    "entity_id": "E100000132388",
+    "name": "unknown",
+    "full_name": "unknown ",
+    "entity_type": "unknown entity",
+    "legal_entity_type": null,
+    "headquarters_country": null,
+    "registration_country": null,
+    "url": "https://api.globalenergymonitor.org/entities/E100000132388"
+  },
+  "E100000134775": {
+    "entity_id": "E100000134775",
+    "name": "Xuan Thien Group",
+    "full_name": "Xuan Thien Group JSC",
+    "entity_type": "legal entity",
+    "legal_entity_type": "JSC",
+    "headquarters_country": "Vietnam",
+    "registration_country": "Vietnam",
+    "url": "https://api.globalenergymonitor.org/entities/E100000134775"
+  },
+  "E100000136869": {
+    "entity_id": "E100000136869",
+    "name": "European Investment Bank",
+    "full_name": "European Investment Bank ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "Luxembourg",
+    "registration_country": "Luxembourg",
+    "url": "https://api.globalenergymonitor.org/entities/E100000136869"
+  },
+  "E100001000384": {
+    "entity_id": "E100001000384",
+    "name": "Ternium",
+    "full_name": "Ternium SA",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SA",
+    "headquarters_country": "Luxembourg",
+    "registration_country": "Luxembourg",
+    "url": "https://api.globalenergymonitor.org/entities/E100001000384"
+  },
+  "E100001000471": {
+    "entity_id": "E100001000471",
+    "name": "Yunnan Qujing Chenggang Iron and Steel (Group)",
+    "full_name": "Yunnan Qujing Chenggang Iron and Steel (Group) Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100001000471"
+  },
+  "E100001000472": {
+    "entity_id": "E100001000472",
+    "name": "China Baowu Steel Group",
+    "full_name": "China Baowu Steel Group Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100001000472"
+  },
+  "E100001000516": {
+    "entity_id": "E100001000516",
+    "name": "JSW Steel",
+    "full_name": "JSW Steel Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001000516"
+  },
+  "E100001000599": {
+    "entity_id": "E100001000599",
+    "name": "Government of North Korea",
+    "full_name": "Government of North Korea ",
+    "entity_type": "state",
+    "legal_entity_type": null,
+    "headquarters_country": "North Korea",
+    "registration_country": "North Korea",
+    "url": "https://api.globalenergymonitor.org/entities/E100001000599"
+  },
+  "E100001000605": {
+    "entity_id": "E100001000605",
+    "name": "Metinvest",
+    "full_name": "Metinvest BV",
+    "entity_type": "legal entity",
+    "legal_entity_type": "BV",
+    "headquarters_country": "Netherlands",
+    "registration_country": "Netherlands",
+    "url": "https://api.globalenergymonitor.org/entities/E100001000605"
+  },
+  "E100001010018": {
+    "entity_id": "E100001010018",
+    "name": "Tata Steel",
+    "full_name": "Tata Steel Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001010018"
+  },
+  "E100001010181": {
+    "entity_id": "E100001010181",
+    "name": "Nucor",
+    "full_name": "Nucor Corp",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Corp",
+    "headquarters_country": "United States",
+    "registration_country": "United States",
+    "url": "https://api.globalenergymonitor.org/entities/E100001010181"
+  },
+  "E100001010256": {
+    "entity_id": "E100001010256",
+    "name": "Iran National Copper Industries Pension Fund",
+    "full_name": "Iran National Copper Industries Pension Fund ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": null,
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100001010256"
+  },
+  "E100001010270": {
+    "entity_id": "E100001010270",
+    "name": "Gerdau",
+    "full_name": "Gerdau SA",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SA",
+    "headquarters_country": "Brazil",
+    "registration_country": "Brazil",
+    "url": "https://api.globalenergymonitor.org/entities/E100001010270"
+  },
+  "E100001010315": {
+    "entity_id": "E100001010315",
+    "name": "Salzgitter",
+    "full_name": "Salzgitter AG",
+    "entity_type": "legal entity",
+    "legal_entity_type": "AG",
+    "headquarters_country": "Germany",
+    "registration_country": "Germany",
+    "url": "https://api.globalenergymonitor.org/entities/E100001010315"
+  },
+  "E100001010331": {
+    "entity_id": "E100001010331",
+    "name": "Templar Investments",
+    "full_name": "Templar Investments Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "Mauritius",
+    "registration_country": "Mauritius",
+    "url": "https://api.globalenergymonitor.org/entities/E100001010331"
+  },
+  "E100001010698": {
+    "entity_id": "E100001010698",
+    "name": "Tangshan Fengnan District Jing'an Iron and Steel",
+    "full_name": "Tangshan Fengnan District Jing'an Iron and Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100001010698"
+  },
+  "E100001011682": {
+    "entity_id": "E100001011682",
+    "name": "Mines & Metals Development Investment",
+    "full_name": "Mines & Metals Development Investment Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": null,
+    "url": "https://api.globalenergymonitor.org/entities/E100001011682"
+  },
+  "E100001011758": {
+    "entity_id": "E100001011758",
+    "name": "Donald Smith &",
+    "full_name": "Donald Smith & Co Inc",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Inc",
+    "headquarters_country": "United States",
+    "registration_country": "United States",
+    "url": "https://api.globalenergymonitor.org/entities/E100001011758"
+  },
+  "E100001012072": {
+    "entity_id": "E100001012072",
+    "name": "Abba Steel",
+    "full_name": "Abba Steel Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "Namibia",
+    "registration_country": "Namibia",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012072"
+  },
+  "E100001012079": {
+    "entity_id": "E100001012079",
+    "name": "Rashmi Cement",
+    "full_name": "Rashmi Cement Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012079"
+  },
+  "E100001012095": {
+    "entity_id": "E100001012095",
+    "name": "Baotou Deshun Spec. Steel",
+    "full_name": "Baotou Deshun Spec. Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012095"
+  },
+  "E100001012123": {
+    "entity_id": "E100001012123",
+    "name": "Donelektrostal",
+    "full_name": "Donelektrostal LLC",
+    "entity_type": "legal entity",
+    "legal_entity_type": "LLC",
+    "headquarters_country": "Russia",
+    "registration_country": "Russia",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012123"
+  },
+  "E100001012152": {
+    "entity_id": "E100001012152",
+    "name": "Shyam Metalics and Energy",
+    "full_name": "Shyam Metalics and Energy Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012152"
+  },
+  "E100001012163": {
+    "entity_id": "E100001012163",
+    "name": "Cimmco Vinimay",
+    "full_name": "Cimmco Vinimay Pvt Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Pvt Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012163"
+  },
+  "E100001012164": {
+    "entity_id": "E100001012164",
+    "name": "Bholebaba Consultants",
+    "full_name": "Bholebaba Consultants LLP",
+    "entity_type": "legal entity",
+    "legal_entity_type": "LLP",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012164"
+  },
+  "E100001012165": {
+    "entity_id": "E100001012165",
+    "name": "Daffodil Plaza",
+    "full_name": "Daffodil Plaza Pvt Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Pvt Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012165"
+  },
+  "E100001012166": {
+    "entity_id": "E100001012166",
+    "name": "Rashidhan Sales",
+    "full_name": "Rashidhan Sales Pvt Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Pvt Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012166"
+  },
+  "E100001012168": {
+    "entity_id": "E100001012168",
+    "name": "Optimist Commosale",
+    "full_name": "Optimist Commosale Pvt Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Pvt Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012168"
+  },
+  "E100001012169": {
+    "entity_id": "E100001012169",
+    "name": "Newera Commotrade",
+    "full_name": "Newera Commotrade Pvt Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Pvt Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012169"
+  },
+  "E100001012170": {
+    "entity_id": "E100001012170",
+    "name": "Rashmi Infrastructure",
+    "full_name": "Rashmi Infrastructure Pvt Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Pvt Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012170"
+  },
+  "E100001012171": {
+    "entity_id": "E100001012171",
+    "name": "Rashmi Iron Industries",
+    "full_name": "Rashmi Iron Industries Pvt Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Pvt Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012171"
+  },
+  "E100001012204": {
+    "entity_id": "E100001012204",
+    "name": "Lloyds Metals and Energy",
+    "full_name": "Lloyds Metals and Energy Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "India",
+    "registration_country": "India",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012204"
+  },
+  "E100001012401": {
+    "entity_id": "E100001012401",
+    "name": "DST Nghi Son Iron and Steel",
+    "full_name": "DST Nghi Son Iron and Steel JSC",
+    "entity_type": "legal entity",
+    "legal_entity_type": "JSC",
+    "headquarters_country": "Vietnam",
+    "registration_country": "Vietnam",
+    "url": "https://api.globalenergymonitor.org/entities/E100001012401"
+  },
+  "E100001013041": {
+    "entity_id": "E100001013041",
+    "name": "Daric Investment Holding",
+    "full_name": "Daric Investment Holding Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100001013041"
+  },
+  "E100001013043": {
+    "entity_id": "E100001013043",
+    "name": "Amirkabir Khazar Steel",
+    "full_name": "Amirkabir Khazar Steel Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100001013043"
+  },
+  "E100001015587": {
+    "entity_id": "E100001015587",
+    "name": "small shareholder(s)",
+    "full_name": "small shareholder(s) ",
+    "entity_type": "unknown entity",
+    "legal_entity_type": null,
+    "headquarters_country": null,
+    "registration_country": null,
+    "url": "https://api.globalenergymonitor.org/entities/E100001015587"
+  },
+  "E100001015719": {
+    "entity_id": "E100001015719",
+    "name": "Pasargad Arzesh Afarinan",
+    "full_name": "Pasargad Arzesh Afarinan Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100001015719"
+  },
+  "E100001015720": {
+    "entity_id": "E100001015720",
+    "name": "Pars Aryan Investment",
+    "full_name": "Pars Aryan Investment Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100001015720"
+  },
+  "E100001016086": {
+    "entity_id": "E100001016086",
+    "name": "Sabanour Mining and Industrial Development",
+    "full_name": "Sabanour Mining and Industrial Development Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100001016086"
+  },
+  "E100001016087": {
+    "entity_id": "E100001016087",
+    "name": "Development and Equipment of Relief Mines",
+    "full_name": "Development and Equipment of Relief Mines Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": null,
+    "registration_country": null,
+    "url": "https://api.globalenergymonitor.org/entities/E100001016087"
+  },
+  "E100001016089": {
+    "entity_id": "E100001016089",
+    "name": "Sepahan Mines Kimia",
+    "full_name": "Sepahan Mines Kimia ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "Iran",
+    "registration_country": null,
+    "url": "https://api.globalenergymonitor.org/entities/E100001016089"
+  },
+  "E100001016164": {
+    "entity_id": "E100001016164",
+    "name": "MMCAP International Inc",
+    "full_name": "MMCAP International Inc SPC",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SPC",
+    "headquarters_country": "Cayman Islands",
+    "registration_country": "Cayman Islands",
+    "url": "https://api.globalenergymonitor.org/entities/E100001016164"
+  },
+  "E100001016165": {
+    "entity_id": "E100001016165",
+    "name": "Maple Rock Capital Partners",
+    "full_name": "Maple Rock Capital Partners Inc",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Inc",
+    "headquarters_country": "Canada",
+    "registration_country": "Canada",
+    "url": "https://api.globalenergymonitor.org/entities/E100001016165"
+  },
+  "E100001016169": {
+    "entity_id": "E100001016169",
+    "name": "Montan-Stiftung-Saar",
+    "full_name": "Montan-Stiftung-Saar ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "Germany",
+    "registration_country": "Germany",
+    "url": "https://api.globalenergymonitor.org/entities/E100001016169"
+  },
+  "E100001016199": {
+    "entity_id": "E100001016199",
+    "name": "Beltrame Holding",
+    "full_name": "Beltrame Holding SpA",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SpA",
+    "headquarters_country": "Italy",
+    "registration_country": "Italy",
+    "url": "https://api.globalenergymonitor.org/entities/E100001016199"
+  },
+  "E100001016207": {
+    "entity_id": "E100001016207",
+    "name": "Lodestone Holdings Group (Namibia)",
+    "full_name": "Lodestone Holdings Group (Namibia) Pty Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Pty Ltd",
+    "headquarters_country": "Namibia",
+    "registration_country": "Namibia",
+    "url": "https://api.globalenergymonitor.org/entities/E100001016207"
+  },
+  "E100001016229": {
+    "entity_id": "E100001016229",
+    "name": "Tourism Financial Group",
+    "full_name": "Tourism Financial Group ",
+    "entity_type": "arrangement",
+    "legal_entity_type": null,
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100001016229"
+  },
+  "E100001016286": {
+    "entity_id": "E100001016286",
+    "name": "Chadormello Mining and Industrial",
+    "full_name": "Chadormello Mining and Industrial Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100001016286"
+  },
+  "E100002003149": {
+    "entity_id": "E100002003149",
+    "name": "Jinzhou Jinxing Special Steel",
+    "full_name": "Jinzhou Jinxing Special Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100002003149"
+  },
+  "E100002003653": {
+    "entity_id": "E100002003653",
+    "name": "Oninvest",
+    "full_name": "Oninvest LLC",
+    "entity_type": "legal entity",
+    "legal_entity_type": "LLC",
+    "headquarters_country": "Russia",
+    "registration_country": "Russia",
+    "url": "https://api.globalenergymonitor.org/entities/E100002003653"
+  },
+  "E100002003654": {
+    "entity_id": "E100002003654",
+    "name": "Ekoinvest",
+    "full_name": "Ekoinvest LLC",
+    "entity_type": "legal entity",
+    "legal_entity_type": "LLC",
+    "headquarters_country": "Russia",
+    "registration_country": "Russia",
+    "url": "https://api.globalenergymonitor.org/entities/E100002003654"
+  },
+  "E100002003655": {
+    "entity_id": "E100002003655",
+    "name": "Lanafinans",
+    "full_name": "Lanafinans LLC",
+    "entity_type": "legal entity",
+    "legal_entity_type": "LLC",
+    "headquarters_country": "Russia",
+    "registration_country": "Russia",
+    "url": "https://api.globalenergymonitor.org/entities/E100002003655"
+  },
+  "E100002005443": {
+    "entity_id": "E100002005443",
+    "name": "BNP Paribas",
+    "full_name": "BNP Paribas SA",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SA",
+    "headquarters_country": "France",
+    "registration_country": "France",
+    "url": "https://api.globalenergymonitor.org/entities/E100002005443"
+  },
+  "E100002005773": {
+    "entity_id": "E100002005773",
+    "name": "Unitex Steel Mills",
+    "full_name": "Unitex Steel Mills Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Ltd",
+    "headquarters_country": "Bangladesh",
+    "registration_country": "Bangladesh",
+    "url": "https://api.globalenergymonitor.org/entities/E100002005773"
+  },
+  "E100002007551": {
+    "entity_id": "E100002007551",
+    "name": "Société Générale",
+    "full_name": "Société Générale SA",
+    "entity_type": "legal entity",
+    "legal_entity_type": "SA",
+    "headquarters_country": "France",
+    "registration_country": "France",
+    "url": "https://api.globalenergymonitor.org/entities/E100002007551"
+  },
+  "E100002007552": {
+    "entity_id": "E100002007552",
+    "name": "ING Groep",
+    "full_name": "ING Groep NV",
+    "entity_type": "legal entity",
+    "legal_entity_type": "NV",
+    "headquarters_country": "Netherlands",
+    "registration_country": "Netherlands",
+    "url": "https://api.globalenergymonitor.org/entities/E100002007552"
+  },
+  "E100002019324": {
+    "entity_id": "E100002019324",
+    "name": "Yunnan Qujing Shuangyou Iron and Steel",
+    "full_name": "Yunnan Qujing Shuangyou Iron and Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100002019324"
+  },
+  "E100002020859": {
+    "entity_id": "E100002020859",
+    "name": "Mabna Khavar Miyaneh",
+    "full_name": "Mabna Khavar Miyaneh Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100002020859"
+  },
+  "E100002020860": {
+    "entity_id": "E100002020860",
+    "name": "Rahbord Sarmaye Iranian",
+    "full_name": "Rahbord Sarmaye Iranian Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100002020860"
+  },
+  "E100002020861": {
+    "entity_id": "E100002020861",
+    "name": "Tejarat Pishegan Mihan Negar Pars",
+    "full_name": "Tejarat Pishegan Mihan Negar Pars Co",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co",
+    "headquarters_country": "Iran",
+    "registration_country": "Iran",
+    "url": "https://api.globalenergymonitor.org/entities/E100002020861"
+  },
+  "E100002021050": {
+    "entity_id": "E100002021050",
+    "name": "Qinyang Hongda Iron & Steel",
+    "full_name": "Qinyang Hongda Iron & Steel Co Ltd",
+    "entity_type": "legal entity",
+    "legal_entity_type": "Co Ltd",
+    "headquarters_country": "China",
+    "registration_country": "China",
+    "url": "https://api.globalenergymonitor.org/entities/E100002021050"
+  },
+  "E100002021414": {
+    "entity_id": "E100002021414",
+    "name": "Asia United Steel",
+    "full_name": "Asia United Steel ",
+    "entity_type": "legal entity",
+    "legal_entity_type": null,
+    "headquarters_country": "Kazakhstan",
+    "registration_country": "Kazakhstan",
+    "url": "https://api.globalenergymonitor.org/entities/E100002021414"
+  },
+  "E100002021989": {
+    "entity_id": "E100002021989",
+    "name": "Arian Steel Co",
+    "full_name": "Arian Steel Co ",
+    "entity_type": null,
+    "legal_entity_type": null,
+    "headquarters_country": null,
+    "registration_country": null,
+    "url": "https://api.globalenergymonitor.org/entities/E100002021989"
+  },
+  "E100002022007": {
+    "entity_id": "E100002022007",
+    "name": "SPV NH Ostrava",
+    "full_name": "SPV NH Ostrava sro",
+    "entity_type": "legal entity",
+    "legal_entity_type": "sro",
+    "headquarters_country": "Czech Republic",
+    "registration_country": "Czech Republic",
+    "url": "https://api.globalenergymonitor.org/entities/E100002022007"
+  }
+}

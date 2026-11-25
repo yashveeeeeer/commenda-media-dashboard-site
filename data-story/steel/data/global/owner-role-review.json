@@ -1,0 +1,2251 @@
+{
+  "method": "Manual allowlist of named industrial groups, default grey for every other source-listed parent. Role decisions are distinct from issuer-verified equity overrides.",
+  "reviewedEntityCount": 157,
+  "industrialAllowlistCount": 70,
+  "decisions": [
+    {
+      "entityId": "E100000000031",
+      "name": "Voestalpine AG",
+      "GEMHeadquartersCountry": "Austria",
+      "iso3": "AUT",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120010",
+        "P100000120011"
+      ],
+      "grossMapStakeMt": 3.3,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000031",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000151",
+      "name": "Agricultural Bank of China Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120291"
+      ],
+      "grossMapStakeMt": 0.027,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000151",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000189",
+      "name": "Gansu Provincial State-owned Assets Investment Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120315"
+      ],
+      "grossMapStakeMt": 0.0675,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000189",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000220",
+      "name": "Industrial and Commercial Bank of China Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120291"
+      ],
+      "grossMapStakeMt": 0.0375,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000220",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000421",
+      "name": "Kreditanstalt für Wiederaufbau ",
+      "GEMHeadquartersCountry": "Germany",
+      "iso3": "DEU",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120850"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000421",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000544",
+      "name": "Golgohar Mining and Industrial Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120589"
+      ],
+      "grossMapStakeMt": 0.663,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000544",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000547",
+      "name": "Iranian Mines & Mining Industries Development & Renovation Organization ",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120593",
+        "P100000120601",
+        "P100001062603"
+      ],
+      "grossMapStakeMt": 0.695,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000547",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000652",
+      "name": "Nippon Steel Corp",
+      "GEMHeadquartersCountry": "Japan",
+      "iso3": "JPN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120513",
+        "P100001025671"
+      ],
+      "grossMapStakeMt": 5.68,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000652",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000687",
+      "name": "ArcelorMittal SA",
+      "GEMHeadquartersCountry": "Luxembourg",
+      "iso3": "LUX",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120423",
+        "P100000120452",
+        "P100000120513",
+        "P100001025671"
+      ],
+      "grossMapStakeMt": 10.1393,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000687",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000715",
+      "name": "DeAcero SAPI de CV",
+      "GEMHeadquartersCountry": "Mexico",
+      "iso3": "MEX",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120726",
+        "P100000120730"
+      ],
+      "grossMapStakeMt": 3.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000715",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000888",
+      "name": "Saudi Arabian Oil Co",
+      "GEMHeadquartersCountry": "Saudi Arabia",
+      "iso3": "SAU",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121040"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000888",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000000953",
+      "name": "POSCO Holdings Inc",
+      "GEMHeadquartersCountry": "South Korea",
+      "iso3": "KOR",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120699"
+      ],
+      "grossMapStakeMt": 2.5,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000000953",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000001058",
+      "name": "Kaptan Demir Celik Endustrisi Ve Ticaret AŞ",
+      "GEMHeadquartersCountry": "Türkiye",
+      "iso3": "TUR",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120876"
+      ],
+      "grossMapStakeMt": 2.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000001058",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000001358",
+      "name": "Public Investment Fund (Saudi Arabia) ",
+      "GEMHeadquartersCountry": "Saudi Arabia",
+      "iso3": "SAU",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000121040"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000001358",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000001651",
+      "name": "SSAB AB",
+      "GEMHeadquartersCountry": "Sweden",
+      "iso3": "SWE",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120844",
+        "P100000120845"
+      ],
+      "grossMapStakeMt": 4.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000001651",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000002408",
+      "name": "Ajaokuta Steel Co Ltd",
+      "GEMHeadquartersCountry": "Nigeria",
+      "iso3": "NGA",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120756"
+      ],
+      "grossMapStakeMt": 1.3,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000002408",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000120835",
+      "name": "Meghna Group of Industries Ltd",
+      "GEMHeadquartersCountry": "Bangladesh",
+      "iso3": "BGD",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100001042845"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000120835",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000120868",
+      "name": "JSW Ispat Special Products Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120536"
+      ],
+      "grossMapStakeMt": 0.25,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000120868",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000121408",
+      "name": "Tata Steel Long Products Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120540"
+      ],
+      "grossMapStakeMt": 3.237084,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000121408",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000122571",
+      "name": "Baoshan Iron & Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121040"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000122571",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000123205",
+      "name": "Tangshan Donghua Iron & Steel Enterprise Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120108"
+      ],
+      "grossMapStakeMt": 1.65,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000123205",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000123261",
+      "name": "natural person(s) ",
+      "GEMHeadquartersCountry": null,
+      "iso3": null,
+      "decision": "grey",
+      "reason": "Unidentified shareholder pool or natural persons; no country assigned.",
+      "projectIds": [
+        "P100000120079",
+        "P100000120307",
+        "P100000120376",
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 1.911122,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000123261",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000123542",
+      "name": "HBIS Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120315"
+      ],
+      "grossMapStakeMt": 1.55475,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000123542",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000123550",
+      "name": "Yushan (Beijing) Metallurgical Investment Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120118"
+      ],
+      "grossMapStakeMt": 0.31995,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000123550",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000123578",
+      "name": "Xinjiang Investment Development (Group) Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120291"
+      ],
+      "grossMapStakeMt": 0.039,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000123578",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000123737",
+      "name": "Maanshan Iron & Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120069"
+      ],
+      "grossMapStakeMt": 1.6,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000123737",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000123903",
+      "name": "Guangxi Liuzhou Iron and Steel Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120374"
+      ],
+      "grossMapStakeMt": 1.2,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000123903",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000124068",
+      "name": "Hebei Puyang Industrial Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120307"
+      ],
+      "grossMapStakeMt": 0.4482,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000124068",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000124077",
+      "name": "Henan Jiyuan Iron and Steel Investment Holding Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120164"
+      ],
+      "grossMapStakeMt": 0.7776,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000124077",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000124078",
+      "name": "Tianjin Jinyuan Guotai Enterprise Management Consulting Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000120164"
+      ],
+      "grossMapStakeMt": 0.16,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000124078",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000124355",
+      "name": "Beijing Shougang Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120107"
+      ],
+      "grossMapStakeMt": 1.3,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000124355",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000124428",
+      "name": "Bank of China Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120291"
+      ],
+      "grossMapStakeMt": 0.0285,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000124428",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000124528",
+      "name": "Tangshan City Development Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120315"
+      ],
+      "grossMapStakeMt": 0.06525,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000124528",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000124529",
+      "name": "HBIS Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120315"
+      ],
+      "grossMapStakeMt": 0.17325,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000124529",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000124688",
+      "name": "Jinghua Rigang Holding Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120240"
+      ],
+      "grossMapStakeMt": 1.3338,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000124688",
+      "additionalRoleSource": "https://www.rizhaosteel.com/en/introduce/"
+    },
+    {
+      "entityId": "E100000125875",
+      "name": "Guotao Co Ltd (Hong Kong) ",
+      "GEMHeadquartersCountry": "Hong Kong",
+      "iso3": "HKG",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120118"
+      ],
+      "grossMapStakeMt": 1.03005,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000125875",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000126000",
+      "name": "Longxiang Group (Hong Kong) ",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120307"
+      ],
+      "grossMapStakeMt": 0.2403,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000126000",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000126009",
+      "name": "Trade Union Committee of Henan Jiyuan Iron and Steel (Group) ",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Worker or trade-union committee, not established steelmaking sponsor.",
+      "projectIds": [
+        "P100000120164"
+      ],
+      "grossMapStakeMt": 0.1024,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000126009",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000126029",
+      "name": "WEALTH GROUP INVESTMENT LIMITED ",
+      "GEMHeadquartersCountry": "Hong Kong",
+      "iso3": "HKG",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000121047"
+      ],
+      "grossMapStakeMt": 2.25,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000126029",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000126259",
+      "name": "Chongqing Zuhang Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120317"
+      ],
+      "grossMapStakeMt": 1.01,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000126259",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000126680",
+      "name": "Mindong Saiqi Economic Development Zone Fuhua Steel Rolling Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120416"
+      ],
+      "grossMapStakeMt": 0.825,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000126680",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000126779",
+      "name": "Wuzhou Yongda Steel Works Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120365"
+      ],
+      "grossMapStakeMt": 1.645,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000126779",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000126901",
+      "name": "Zunyi County Fuxin Iron & Steel Product Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120359"
+      ],
+      "grossMapStakeMt": 1.11,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000126901",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000127019",
+      "name": "Shanxi Zhongsheng Iron and Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120271"
+      ],
+      "grossMapStakeMt": 1.65,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000127019",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000127122",
+      "name": "Henan YAXIN Steel Industry Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120168"
+      ],
+      "grossMapStakeMt": 1.6,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000127122",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000127405",
+      "name": "Henan Fengbao SPECIAL Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120167"
+      ],
+      "grossMapStakeMt": 1.15,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000127405",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000127446",
+      "name": "Sichuan Jinguang Industry (Group) Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120352"
+      ],
+      "grossMapStakeMt": 0.3195,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000127446",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000127447",
+      "name": "Sichuan Shiting Ecology Agriculture Technology Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120352"
+      ],
+      "grossMapStakeMt": 0.031,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000127447",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000127570",
+      "name": "Hubei Xinxin Steel Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120376"
+      ],
+      "grossMapStakeMt": 0.302363,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000127570",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000127571",
+      "name": "Jin Jun'an Investment Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120376"
+      ],
+      "grossMapStakeMt": 0.270837,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000127571",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000127998",
+      "name": "Zhenshi Holding Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000121082"
+      ],
+      "grossMapStakeMt": 1.765936,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000127998",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128078",
+      "name": "Henan JINHUI Stainless Indutrial Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121086"
+      ],
+      "grossMapStakeMt": 1.66,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128078",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128079",
+      "name": "Changge Huida Trading Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000121086"
+      ],
+      "grossMapStakeMt": 0.34,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128079",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128173",
+      "name": "Hebei Jianen Trading Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000121135"
+      ],
+      "grossMapStakeMt": 1.08225,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128173",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128174",
+      "name": "Xingtai Jinglin Trading Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000121135"
+      ],
+      "grossMapStakeMt": 0.58275,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128174",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128309",
+      "name": "Yunan Qujing Shuangyou Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120407"
+      ],
+      "grossMapStakeMt": 0.35,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128309",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128311",
+      "name": "Xuanwei Laibin Fenghuang Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120407"
+      ],
+      "grossMapStakeMt": 0.224,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128311",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128312",
+      "name": "Qujing Julida Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120407"
+      ],
+      "grossMapStakeMt": 0.112,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128312",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128497",
+      "name": "Tongxiang Wushi Trading Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000121082"
+      ],
+      "grossMapStakeMt": 0.600368,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128497",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128826",
+      "name": "Hebei Province Jicai Lndustryl Equity Lnvestment Fund Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120315"
+      ],
+      "grossMapStakeMt": 0.1575,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128826",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128904",
+      "name": "China Everbright Group Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120315"
+      ],
+      "grossMapStakeMt": 0.14625,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128904",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128905",
+      "name": "Gansu Financial Holding Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120315"
+      ],
+      "grossMapStakeMt": 0.045,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128905",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128938",
+      "name": "Yunnan Qujing Yaochang Trade Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000120407"
+      ],
+      "grossMapStakeMt": 0.0126,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128938",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128939",
+      "name": "Qujing Botong Trading Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000120407"
+      ],
+      "grossMapStakeMt": 0.0056,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128939",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128963",
+      "name": "Fujian XINPENG Investment Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120407"
+      ],
+      "grossMapStakeMt": 0.2324,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128963",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128964",
+      "name": "Qujing Wuyue New Energy Technology Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120407"
+      ],
+      "grossMapStakeMt": 0.077,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128964",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000128965",
+      "name": "Yunnan Tongyanbao Trading Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000120407"
+      ],
+      "grossMapStakeMt": 0.0238,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000128965",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000129075",
+      "name": "Gansu Highway Aviation Tourism Investment Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120315"
+      ],
+      "grossMapStakeMt": 0.018,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000129075",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130294",
+      "name": "Labor Union Committee of Xiaojiao Rolling Mill of Sanming Iron and Steel Works, Fujian Province ",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Worker or trade-union committee, not established steelmaking sponsor.",
+      "projectIds": [
+        "P100000120079"
+      ],
+      "grossMapStakeMt": 0.20355,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130294",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130601",
+      "name": "Huakai Investment Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000121082"
+      ],
+      "grossMapStakeMt": 0.032656,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130601",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130639",
+      "name": "Thailand Huihua Industrial Co Ltd",
+      "GEMHeadquartersCountry": null,
+      "iso3": null,
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120079"
+      ],
+      "grossMapStakeMt": 0.23805,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130639",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130666",
+      "name": "Xing Steel Fine Wire Holdings Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121135"
+      ],
+      "grossMapStakeMt": 0.585,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130666",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130688",
+      "name": "Ternium Argentina SA",
+      "GEMHeadquartersCountry": "Argentina",
+      "iso3": "ARG",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000121053"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130688",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130706",
+      "name": "Danieli & C Officine Meccaniche SpA",
+      "GEMHeadquartersCountry": "Italy",
+      "iso3": "ITA",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000121211"
+      ],
+      "grossMapStakeMt": 0.75,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130706",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130728",
+      "name": "Grupo Simec SAB de CV",
+      "GEMHeadquartersCountry": "Mexico",
+      "iso3": "MEX",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120051"
+      ],
+      "grossMapStakeMt": 0.7,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130728",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130753",
+      "name": "Baobab Steel Ltd",
+      "GEMHeadquartersCountry": "United Kingdom",
+      "iso3": "GBR",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120752"
+      ],
+      "grossMapStakeMt": 0.5,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130753",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130754",
+      "name": "Commercial Metals Co",
+      "GEMHeadquartersCountry": "United States",
+      "iso3": "USA",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100001061378"
+      ],
+      "grossMapStakeMt": 0.59,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130754",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130788",
+      "name": "Ittehad Steels Pvt Ltd",
+      "GEMHeadquartersCountry": "Pakistan",
+      "iso3": "PAK",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120783"
+      ],
+      "grossMapStakeMt": 0.5,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130788",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130837",
+      "name": "Vitkovice Heavy Machinery AS",
+      "GEMHeadquartersCountry": "Czech Republic",
+      "iso3": "CZE",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120839"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130837",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130852",
+      "name": "Uzbekskiy Metallurgicheskiy Kombinat JSC",
+      "GEMHeadquartersCountry": "Uzbekistan",
+      "iso3": "UZB",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121001"
+      ],
+      "grossMapStakeMt": 1.04,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130852",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130890",
+      "name": "Rashmi Metaliks Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120556",
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 2.56215,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130890",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130898",
+      "name": "Rungta Mines Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120569",
+        "P100000121185"
+      ],
+      "grossMapStakeMt": 1.375,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130898",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130922",
+      "name": "Thai Nguyen Iron And Steel JSC",
+      "GEMHeadquartersCountry": "Vietnam",
+      "iso3": "VNM",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121025"
+      ],
+      "grossMapStakeMt": 0.5,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130922",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000130972",
+      "name": "SMS Holding GmbH",
+      "GEMHeadquartersCountry": "Germany",
+      "iso3": "DEU",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000120839"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000130972",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000131011",
+      "name": "SteelAsia Manufacturing Corp",
+      "GEMHeadquartersCountry": "Philippines",
+      "iso3": "PHL",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120770",
+        "P100000120776",
+        "P100001054284"
+      ],
+      "grossMapStakeMt": 3.3,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000131011",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000131027",
+      "name": "Novostal-M LLC",
+      "GEMHeadquartersCountry": "Russia",
+      "iso3": "RUS",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120817"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000131027",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000131034",
+      "name": "Ceylon Steel Co Ltd",
+      "GEMHeadquartersCountry": "Sri Lanka",
+      "iso3": "LKA",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120713"
+      ],
+      "grossMapStakeMt": 0.6,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000131034",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000131080",
+      "name": "Bashundhara Group Ltd",
+      "GEMHeadquartersCountry": "Bangladesh",
+      "iso3": "BGD",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120019"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000131080",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000131093",
+      "name": "Sabzevar Pars Steel Complex ",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120602"
+      ],
+      "grossMapStakeMt": 0.8,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000131093",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000131105",
+      "name": "Azna Steel ",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120605"
+      ],
+      "grossMapStakeMt": 1.2,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000131105",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000131145",
+      "name": "African Industries Ltd",
+      "GEMHeadquartersCountry": "Nigeria",
+      "iso3": "NGA",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120757"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000131145",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000131187",
+      "name": "Mount Zynai 0304 Mining Corp",
+      "GEMHeadquartersCountry": "Philippines",
+      "iso3": "PHL",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120778"
+      ],
+      "grossMapStakeMt": 1.5,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000131187",
+      "additionalRoleSource": "https://region9.mgb.gov.ph/images/Mineral_Statistics/2025/Directory_of_Producing_Mines_and_Quarries_2025.pdf"
+    },
+    {
+      "entityId": "E100000131188",
+      "name": "Century Steel Pte Ltd",
+      "GEMHeadquartersCountry": "Singapore",
+      "iso3": "SGP",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120784"
+      ],
+      "grossMapStakeMt": 0.5,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000131188",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000132388",
+      "name": "unknown ",
+      "GEMHeadquartersCountry": null,
+      "iso3": null,
+      "decision": "grey",
+      "reason": "Unidentified shareholder pool or natural persons; no country assigned.",
+      "projectIds": [
+        "P100000120079",
+        "P100000120164",
+        "P100000120240",
+        "P100000120291",
+        "P100000120315",
+        "P100000120352",
+        "P100000120376",
+        "P100000120407",
+        "P100000120423",
+        "P100000120593",
+        "P100000120615",
+        "P100000121053",
+        "P100000121082",
+        "P100000121240"
+      ],
+      "grossMapStakeMt": 1.670661,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000132388",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000134775",
+      "name": "Xuan Thien Group JSC",
+      "GEMHeadquartersCountry": "Vietnam",
+      "iso3": "VNM",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000121036"
+      ],
+      "grossMapStakeMt": 2.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000134775",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100000136869",
+      "name": "European Investment Bank ",
+      "GEMHeadquartersCountry": "Luxembourg",
+      "iso3": "LUX",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120850"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100000136869",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001000384",
+      "name": "Ternium SA",
+      "GEMHeadquartersCountry": "Luxembourg",
+      "iso3": "LUX",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121053"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001000384",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001000471",
+      "name": "Yunnan Qujing Chenggang Iron and Steel (Group) Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120407"
+      ],
+      "grossMapStakeMt": 0.35,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001000471",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001000472",
+      "name": "China Baowu Steel Group Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120291"
+      ],
+      "grossMapStakeMt": 0.59475,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001000472",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001000516",
+      "name": "JSW Steel Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120517",
+        "P100000120539"
+      ],
+      "grossMapStakeMt": 12.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001000516",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001000599",
+      "name": "Government of North Korea ",
+      "GEMHeadquartersCountry": "North Korea",
+      "iso3": "PRK",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120690"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001000599",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001000605",
+      "name": "Metinvest BV",
+      "GEMHeadquartersCountry": "Netherlands",
+      "iso3": "NLD",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121211"
+      ],
+      "grossMapStakeMt": 2.25,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001000605",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001010018",
+      "name": "Tata Steel Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120482",
+        "P100000120540",
+        "P100000120576"
+      ],
+      "grossMapStakeMt": 4.131584,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001010018",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001010181",
+      "name": "Nucor Corp",
+      "GEMHeadquartersCountry": "United States",
+      "iso3": "USA",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120988"
+      ],
+      "grossMapStakeMt": 3.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001010181",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001010256",
+      "name": "Iran National Copper Industries Pension Fund ",
+      "GEMHeadquartersCountry": null,
+      "iso3": null,
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120589"
+      ],
+      "grossMapStakeMt": 0.637,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001010256",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001010270",
+      "name": "Gerdau SA",
+      "GEMHeadquartersCountry": "Brazil",
+      "iso3": "BRA",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120931"
+      ],
+      "grossMapStakeMt": 0.1473,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001010270",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001010315",
+      "name": "Salzgitter AG",
+      "GEMHeadquartersCountry": "Germany",
+      "iso3": "DEU",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120424"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001010315",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001010331",
+      "name": "Templar Investments Ltd",
+      "GEMHeadquartersCountry": "Mauritius",
+      "iso3": "MUS",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120766"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001010331",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001010698",
+      "name": "Tangshan Fengnan District Jing'an Iron and Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120128"
+      ],
+      "grossMapStakeMt": 1.7,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001010698",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001011682",
+      "name": "Mines & Metals Development Investment Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120615"
+      ],
+      "grossMapStakeMt": 0.171,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001011682",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001011758",
+      "name": "Donald Smith & Co Inc",
+      "GEMHeadquartersCountry": "United States",
+      "iso3": "USA",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120059"
+      ],
+      "grossMapStakeMt": 0.1036,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001011758",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012072",
+      "name": "Abba Steel Ltd",
+      "GEMHeadquartersCountry": "Namibia",
+      "iso3": "NAM",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120753"
+      ],
+      "grossMapStakeMt": 3.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012072",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012079",
+      "name": "Rashmi Cement Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 0.070851,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012079",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012095",
+      "name": "Baotou Deshun Spec. Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121142"
+      ],
+      "grossMapStakeMt": 1.25,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012095",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012123",
+      "name": "Donelektrostal LLC",
+      "GEMHeadquartersCountry": "Russia",
+      "iso3": "RUS",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120832"
+      ],
+      "grossMapStakeMt": 0.73,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012123",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012152",
+      "name": "Shyam Metalics and Energy Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120553"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012152",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012163",
+      "name": "Cimmco Vinimay Pvt Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 0.206338,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012163",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012164",
+      "name": "Bholebaba Consultants LLP",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 0.072094,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012164",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012165",
+      "name": "Daffodil Plaza Pvt Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 0.070851,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012165",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012166",
+      "name": "Rashidhan Sales Pvt Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 0.064636,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012166",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012168",
+      "name": "Optimist Commosale Pvt Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 0.068365,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012168",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012169",
+      "name": "Newera Commotrade Pvt Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 0.082038,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012169",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012170",
+      "name": "Rashmi Infrastructure Pvt Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 0.07458,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012170",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012171",
+      "name": "Rashmi Iron Industries Pvt Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 0.113113,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012171",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012204",
+      "name": "Lloyds Metals and Energy Ltd",
+      "GEMHeadquartersCountry": "India",
+      "iso3": "IND",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120522"
+      ],
+      "grossMapStakeMt": 1.05,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012204",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001012401",
+      "name": "DST Nghi Son Iron and Steel JSC",
+      "GEMHeadquartersCountry": "Vietnam",
+      "iso3": "VNM",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121209"
+      ],
+      "grossMapStakeMt": 1.31,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001012401",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001013041",
+      "name": "Daric Investment Holding Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000121243",
+        "P100000121244",
+        "P100000121245"
+      ],
+      "grossMapStakeMt": 2.55,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001013041",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001013043",
+      "name": "Amirkabir Khazar Steel Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000121247"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001013043",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001015587",
+      "name": "small shareholder(s) ",
+      "GEMHeadquartersCountry": null,
+      "iso3": null,
+      "decision": "grey",
+      "reason": "Unidentified shareholder pool or natural persons; no country assigned.",
+      "projectIds": [
+        "P100000120059",
+        "P100000120452",
+        "P100000120540",
+        "P100000120588",
+        "P100000120598",
+        "P100000120826",
+        "P100000120850",
+        "P100000121188"
+      ],
+      "grossMapStakeMt": 2.268573,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001015587",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001015719",
+      "name": "Pasargad Arzesh Afarinan Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120588",
+        "P100000120598"
+      ],
+      "grossMapStakeMt": 0.095,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001015719",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001015720",
+      "name": "Pars Aryan Investment Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120588",
+        "P100000120598"
+      ],
+      "grossMapStakeMt": 0.121,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001015720",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001016086",
+      "name": "Sabanour Mining and Industrial Development Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100001062603"
+      ],
+      "grossMapStakeMt": 0.2,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001016086",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001016087",
+      "name": "Development and Equipment of Relief Mines Co",
+      "GEMHeadquartersCountry": null,
+      "iso3": null,
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100001062603"
+      ],
+      "grossMapStakeMt": 0.2,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001016087",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001016089",
+      "name": "Sepahan Mines Kimia ",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100001062603"
+      ],
+      "grossMapStakeMt": 0.16,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001016089",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001016164",
+      "name": "MMCAP International Inc SPC",
+      "GEMHeadquartersCountry": "Cayman Islands",
+      "iso3": "CYM",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120059"
+      ],
+      "grossMapStakeMt": 0.20165,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001016164",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001016165",
+      "name": "Maple Rock Capital Partners Inc",
+      "GEMHeadquartersCountry": "Canada",
+      "iso3": "CAN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120059"
+      ],
+      "grossMapStakeMt": 0.25345,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001016165",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001016169",
+      "name": "Montan-Stiftung-Saar ",
+      "GEMHeadquartersCountry": "Germany",
+      "iso3": "DEU",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000120423"
+      ],
+      "grossMapStakeMt": 0.89075,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001016169",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001016199",
+      "name": "Beltrame Holding SpA",
+      "GEMHeadquartersCountry": "Italy",
+      "iso3": "ITA",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121240"
+      ],
+      "grossMapStakeMt": 0.2583,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001016199",
+      "additionalRoleSource": "https://gruppobeltrame.com/"
+    },
+    {
+      "entityId": "E100001016207",
+      "name": "Lodestone Holdings Group (Namibia) Pty Ltd",
+      "GEMHeadquartersCountry": "Namibia",
+      "iso3": "NAM",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000120754"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001016207",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001016229",
+      "name": "Tourism Financial Group ",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "grey",
+      "reason": "Financial, advisory, custody or investment entity; not identified as steelmaking operator.",
+      "projectIds": [
+        "P100000120617"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001016229",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100001016286",
+      "name": "Chadormello Mining and Industrial Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000120615"
+      ],
+      "grossMapStakeMt": 0.312,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100001016286",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002003149",
+      "name": "Jinzhou Jinxing Special Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100000121252"
+      ],
+      "grossMapStakeMt": 0.36,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002003149",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002003653",
+      "name": "Oninvest LLC",
+      "GEMHeadquartersCountry": "Russia",
+      "iso3": "RUS",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120826"
+      ],
+      "grossMapStakeMt": 0.0864,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002003653",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002003654",
+      "name": "Ekoinvest LLC",
+      "GEMHeadquartersCountry": "Russia",
+      "iso3": "RUS",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120826"
+      ],
+      "grossMapStakeMt": 0.8208,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002003654",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002003655",
+      "name": "Lanafinans LLC",
+      "GEMHeadquartersCountry": "Russia",
+      "iso3": "RUS",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120826"
+      ],
+      "grossMapStakeMt": 0.8208,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002003655",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002005443",
+      "name": "BNP Paribas SA",
+      "GEMHeadquartersCountry": "France",
+      "iso3": "FRA",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120850"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002005443",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002005773",
+      "name": "Unitex Steel Mills Ltd",
+      "GEMHeadquartersCountry": "Bangladesh",
+      "iso3": "BGD",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100001042855"
+      ],
+      "grossMapStakeMt": 1.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002005773",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002007551",
+      "name": "Société Générale SA",
+      "GEMHeadquartersCountry": "France",
+      "iso3": "FRA",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120850"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002007551",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002007552",
+      "name": "ING Groep NV",
+      "GEMHeadquartersCountry": "Netherlands",
+      "iso3": "NLD",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120850"
+      ],
+      "grossMapStakeMt": 0.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002007552",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002019324",
+      "name": "Yunnan Qujing Shuangyou Iron and Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100001061536"
+      ],
+      "grossMapStakeMt": 0.13,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002019324",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002020859",
+      "name": "Mabna Khavar Miyaneh Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120588",
+        "P100000120598"
+      ],
+      "grossMapStakeMt": 0.154,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002020859",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002020860",
+      "name": "Rahbord Sarmaye Iranian Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120588",
+        "P100000120598"
+      ],
+      "grossMapStakeMt": 0.1,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002020860",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002020861",
+      "name": "Tejarat Pishegan Mihan Negar Pars Co",
+      "GEMHeadquartersCountry": "Iran",
+      "iso3": "IRN",
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100000120588",
+        "P100000120598"
+      ],
+      "grossMapStakeMt": 0.057,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002020861",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002021050",
+      "name": "Qinyang Hongda Iron & Steel Co Ltd",
+      "GEMHeadquartersCountry": "China",
+      "iso3": "CHN",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100001064261"
+      ],
+      "grossMapStakeMt": 2.0,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002021050",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002021414",
+      "name": "Asia United Steel ",
+      "GEMHeadquartersCountry": "Kazakhstan",
+      "iso3": "KAZ",
+      "decision": "reviewed industrial parent",
+      "reason": "Named steelmaker, steel manufacturing group, or industrial mineral/metal producer behind a GEM-mapped plant; issuer equity path not certified unless separately overridden.",
+      "projectIds": [
+        "P100001080915"
+      ],
+      "grossMapStakeMt": 1.2,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002021414",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002021989",
+      "name": "Arian Steel Co ",
+      "GEMHeadquartersCountry": null,
+      "iso3": null,
+      "decision": "grey",
+      "reason": "Industrial sponsor role not established by this review.",
+      "projectIds": [
+        "P100001063425"
+      ],
+      "grossMapStakeMt": 0.55,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002021989",
+      "additionalRoleSource": null
+    },
+    {
+      "entityId": "E100002022007",
+      "name": "SPV NH Ostrava sro",
+      "GEMHeadquartersCountry": "Czech Republic",
+      "iso3": "CZE",
+      "decision": "grey",
+      "reason": "Trading, consultancy, foundation or holding/pass-through role is not resolved to an industrial sponsor.",
+      "projectIds": [
+        "P100000120420"
+      ],
+      "grossMapStakeMt": 3.5,
+      "GEMEntitySource": "https://api.globalenergymonitor.org/entities/E100002022007",
+      "additionalRoleSource": null
+    }
+  ]
+}

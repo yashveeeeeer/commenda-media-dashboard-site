@@ -1,0 +1,934 @@
+{
+  "P100000120317": {
+    "name": "Chongqing Zuhang",
+    "decision": "Completed replacement",
+    "netMt": 0,
+    "reason": "The municipal authority inspected the new 1.01 Mt/yr furnace and the removal of two furnaces with the same combined capacity in June 2026. Both the replacement and its completion predate the September snapshot.",
+    "sources": [
+      {
+        "label": "Chongqing industry commission, June 2026 inspection and furnace-by-furnace ledger",
+        "url": "https://jjxxw.cq.gov.cn/zwgk_213/gsgg/202606/t20260624_15772319.html"
+      }
+    ]
+  },
+  "P100000120416": {
+    "name": "Fujian Fuhua",
+    "decision": "Project revoked",
+    "netMt": 0,
+    "reason": "Fujian revoked the 0.825 Mt/yr Ningde scheme in August 2026 after the sponsors confirmed it had not been implemented. The original project would have reused capacity from two local electric furnaces.",
+    "sources": [
+      {
+        "label": "Fujian industry department, August 2026 revocation",
+        "url": "https://gxt.fj.gov.cn/zwgk/gsgg/202608/t20260810_7198157.htm"
+      },
+      {
+        "label": "Fujian industry department, 2022 replacement ledger, reproduced by Sina",
+        "url": "https://finance.sina.com.cn/money/future/indu/2022-05-05/doc-imcwiwst5664588.shtml"
+      }
+    ]
+  },
+  "P100000120069": {
+    "name": "Maanshan Iron & Steel",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "The issuer’s exchange filing describes two 1.6 Mt/yr converters, one in each phase. Together they replace 4 Mt/yr across four Maanshan and two Baosteel Special Steel furnaces. The second phase cannot be counted as a separate increase in Chinese capacity.",
+    "sources": [
+      {
+        "label": "Maanshan Iron & Steel, November 2021 exchange filing and phase breakdown",
+        "url": "https://www.magang.com.hk/download/announcement/2055/eng/E_00323_11_A061.pdf"
+      }
+    ]
+  },
+  "P100000120359": {
+    "name": "Zunyi Fuxin",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "Two new electric furnaces total 1.11 Mt/yr. Guizhou’s approval identifies two old furnaces totaling 1.15 Mt/yr at the same site and the rights allocated from them. The province’s investment list confirms the same equipment scope.",
+    "sources": [
+      {
+        "label": "Guizhou industry department, Zunyi Fuxin replacement table",
+        "url": "https://gxt.guizhou.gov.cn/gxdt/tzgg/202110/P020211012545270747240.pdf"
+      },
+      {
+        "label": "Guizhou investment programme, project 553",
+        "url": "https://fgw.guizhou.gov.cn/ztzl/mjtzjpppzl/xmjzbtjxm/202502/P020250606430309119080.pdf"
+      }
+    ]
+  },
+  "P100000121252": {
+    "name": "Jinzhou Jinxing Special Steel",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "Liaoning approved a 0.36 Mt/yr electric furnace using 0.38 Mt/yr of retiring converter capacity. The linked permit provides no increase in crude-steel capacity.",
+    "sources": [
+      {
+        "label": "Liaoning industry department, February 2024 project approval and replacement ledger",
+        "url": "https://gxt.ln.gov.cn/gxt/zqhd/yjzj/2024022916174072850/index.shtml"
+      }
+    ]
+  },
+  "P100000120079": {
+    "name": "Fujian Yixin",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "The company’s old and new oxygen furnaces are identified in the local plan and an exchange filing. Two existing 45-tonne converters representing 1.6 Mt/yr were to be withdrawn for one 100-tonne converter. The older filing rates it at 1.2 Mt/yr and the municipal plan at 1.15. Both fall below the predecessor capacity.",
+    "sources": [
+      {
+        "label": "Fujian Sansteel, December 2018 exchange filing on Yixin’s project rights",
+        "url": "https://static.cninfo.com.cn/finalpage/2018-12-13/1205666275.PDF"
+      },
+      {
+        "label": "Fuzhou, steel-industry transformation plan, Luoyuan Bay projects",
+        "url": "https://www.fuzhou.gov.cn/zgfzzt/sjxw/zzbz/ghjh/ghdt/202008/P020250612615581354851.pdf"
+      }
+    ]
+  },
+  "P100000120118": {
+    "name": "Tangshan Ganglu",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "Hebei’s approval identifies the 1.35 Mt/yr converter as part of the Ganglu consolidation. Its required replacement ratios of 1.25 or 1.5 to one mean retiring more capacity than the project installs.",
+    "sources": [
+      {
+        "label": "Hebei industry department’s December 2021 project ledger, reproduced by CRA International",
+        "url": "https://www.crainternational.com.cn/infor/view?id=24513"
+      }
+    ]
+  },
+  "P100000120240": {
+    "name": "Rizhao Steel Holding",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "Shandong’s phase-two ledger lists the 1.35 Mt/yr converter. It applies a 1.1-to-1 reduction for internal and merged capacity and 1.25-to-1 for purchased rights. The furnace adds capacity at its destination while using a larger volume of existing domestic rights.",
+    "sources": [
+      {
+        "label": "Shandong industry department’s July 2023 final phase-two ledger, reproduced by Mysteel",
+        "url": "https://tks.mysteel.com/a/23071810/B6EC46B7BFF6DCF7.html"
+      }
+    ]
+  },
+  "P100000120167": {
+    "name": "Henan Fengbao",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "The provincial project table specifies a 1.5-to-1 replacement ratio for the 1.15 Mt/yr converter, requiring the project to surrender more existing steelmaking capacity than it builds.",
+    "sources": [
+      {
+        "label": "Henan industry department’s Fengbao project replacement schedule, reproduced by Mysteel",
+        "url": "https://news.mysteel.com/a/23110317/EAA18B528DCDDA4F.html"
+      },
+      {
+        "label": "Henan industry department’s final announcement, reproduced by China Ferroalloy Online",
+        "url": "https://m.cnfeol.com/Article/3005159.aspx"
+      }
+    ]
+  },
+  "P100001061536": {
+    "name": "Qujing Shuangyou",
+    "decision": "Unit boundary uncertain",
+    "netMt": null,
+    "reason": "The assessment describes 1.30 Mt/yr of steel across the upgraded works, ten times the 0.13 in GEM’s construction row. Qujing’s January 2026 inspection verifies one old converter retired under the group’s capacity-neutral project. The sources do not match the tracker’s smaller figure to a distinct net addition.",
+    "sources": [
+      {
+        "label": "Qujing industry bureau, January 2026 retirement inspection",
+        "url": "https://www.qj.gov.cn/html/2026/pzjgxx_0128/275704.html"
+      },
+      {
+        "label": "Shuangyou, integrated upgrade environmental assessment",
+        "url": "https://img.zjw.cn/u/cms/www/202307/24150036terp.pdf"
+      }
+    ]
+  },
+  "P100000120291": {
+    "name": "Xinjiang Tianshan, Bazhou",
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "The regional development commission describes a 100-tonne electric furnace and strip-casting line at an existing industrial site. It quotes 0.5 Mt/yr for the line. The scope differs from GEM’s 0.75 Mt/yr furnace entry, and the cited disclosure gives no before-and-after crude-steel capacity.",
+    "sources": [
+      {
+        "label": "Xinjiang development commission, 2023 Bazhou project start",
+        "url": "https://xjdrc.xinjiang.gov.cn/xjfgw/c108394/202302/f0c62a6b9f484633a32adc374b906e00.shtml"
+      }
+    ]
+  },
+  "P100000120352": {
+    "name": "Yunnan Tiangao Nickel Alloy",
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "The municipal inspection identifies preconstruction approvals for a transformation of the existing works. The existing furnace list and transformation plan do not establish that the 0.5 Mt/yr in GEM is an incremental September addition.",
+    "sources": [
+      {
+        "label": "Qujing development commission, 2024 steel transformation inspections",
+        "url": "https://www.qj.gov.cn/html/2024/hb_1204/270440.html"
+      },
+      {
+        "label": "County inspection, 2024 equipment and permits, reproduced by Mysteel",
+        "url": "https://m.mysteel.com/a/24120315/ADF40618C54FF1AB_abc.html"
+      }
+    ]
+  },
+  "P100000120307": {
+    "name": "Hebei Mingbin",
+    "decision": "Unit attribution uncertain",
+    "netMt": null,
+    "reason": "The provincial consolidation notice covers a 1.35 Mt/yr converter under Puyang and Wen’an. The national inspection identified disagreements over historical capacity credits at several Handan works. These records do not independently establish a separate September net increase under the Mingbin project ID.",
+    "sources": [
+      {
+        "label": "Hebei industry department, 2021 consolidation notices including Puyang and Wen’an, reproduced by Sina",
+        "url": "https://finance.sina.cn/futuremarket/gypzx/2021-12-23/detail-ikyamrmz0674268.d.html"
+      },
+      {
+        "label": "Ministry of Ecology and Environment, April 2022 inspection of Handan capacity transfers",
+        "url": "https://www.mee.gov.cn/ywgz/zysthjbhdc/dcjl/202204/t20220414_974700.shtml"
+      }
+    ]
+  },
+  "P100000120374": {
+    "name": "Guangxi Liugang Zhongjin",
+    "decision": "Process boundary uncertain",
+    "netMt": null,
+    "reason": "The 2025 bond rating report distinguishes existing stainless-steel melting capacity of 1.53 Mt/yr from hot rolling of 1.20 Mt/yr. It does not show a separate 1.20 Mt/yr crude-steel addition. The listed construction capacity therefore remains unresolved.",
+    "sources": [
+      {
+        "label": "China Chengxin’s 2025 credit rating report for Guangxi Liuzhou Steel, footnote 4, China Interbank Market disclosure",
+        "url": "https://www.chinamoney.org.cn/dqs/cm-s-notice-query/fileDownLoad.do?contentId=3200350&mode=save&priority=0"
+      }
+    ]
+  },
+  "P100000120108": {
+    "name": "Tangshan Donghua",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "The project moves capacity from Chunxing Special Steel to Donghua. Under the provincial plan, the two 110-tonne electric furnaces (1.65 Mt/yr combined) require 1.25 tonnes of withdrawn converter capacity for each new tonne. Separate adjustments to two converters at Donghua use their own allocations.",
+    "sources": [
+      {
+        "label": "Commissioned project safety assessment, Jiyuan Safety and Environmental Consulting",
+        "url": "https://www.hbjygs.com/index.php?a=show&c=index&catid=33&id=761&m=content"
+      },
+      {
+        "label": "Hebei industry department, April 2022 capacity replacement table, reproduced by Longwen",
+        "url": "https://cqlw.com/isu/site/newsDetails.action?id=498181c77ffdb6c50180655090180635"
+      }
+    ]
+  },
+  "P100000120128": {
+    "name": "Tangshan Fengnan Jing’an",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "The operator’s public environmental notice identifies the 160-tonne converter as a capacity-reducing replacement for two converters (120 and 60 tonnes) at the same site. Its stated annual liquid-steel output is 1.6 Mt, versus the 1.7 Mt/yr in GEM. Neither figure represents expansion.",
+    "sources": [
+      {
+        "label": "Operator’s April 2022 environmental notice, published in Tangshan’s regional newspaper",
+        "url": "https://tangshan.huanbohainews.com.cn/2022-04/12/content_50100869.html"
+      }
+    ]
+  },
+  "P100000120365": {
+    "name": "Wuzhou Yongda",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "The Guangxi replacement ledger retires 1.6477 Mt/yr of rights at Yongda’s existing works for three electric furnaces totaling 1.645 Mt/yr. The operator also describes existing company steel capacity of 1.645 Mt/yr.",
+    "sources": [
+      {
+        "label": "Guangxi industry department’s January 2024 replacement notice and tables, reproduced by Lange Steel",
+        "url": "https://info.lgmi.com/html/202401/12/6114.htm"
+      },
+      {
+        "label": "Wuzhou Yongda, company profile and production facilities",
+        "url": "https://www.yongdasteel.com/page/3/"
+      }
+    ]
+  },
+  "P100000120168": {
+    "name": "Henan Yaxin",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "The 1.6 Mt/yr converter replaces capacity from the Yaxin/Boxin combination and rights from Huixin Special Steel. The published ratios require 1.25 or 1.5 tonnes withdrawn for each new tonne.",
+    "sources": [
+      {
+        "label": "Henan Yaxin, environmental assessment of the first phase",
+        "url": "https://hnyxgt.com/sys-nd/21.html"
+      },
+      {
+        "label": "Henan industry department, October 2023 capacity schedule, reproduced by Lange Steel",
+        "url": "https://info.lgmi.com/html/202310/19/0082.htm"
+      }
+    ]
+  },
+  "P100000120164": {
+    "name": "Henan Jiyuan",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "The replacement schedule gives the combined steelmaking project 1.60 Mt/yr. It draws on 1.61 Mt/yr of converted predecessor capacity. The sponsor cannot add the full replacement converter and electric furnace to the old works’ capacity.",
+    "sources": [
+      {
+        "label": "Henan industry department’s June 2021 detailed site replacement table, reproduced by Mysteel",
+        "url": "https://news.mysteel.com/21/0608/11/635FCF81D5B1882E.html"
+      },
+      {
+        "label": "Henan industry department’s July 2021 final site replacement notice, reproduced by Mysteel",
+        "url": "https://m.mysteel.com/21/0706/11/0EBF806765D3ABDA_abc.html"
+      }
+    ]
+  },
+  "P100000120376": {
+    "name": "Daye Huaxin",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "The provincial environmental permit explicitly describes the 1.4333 Mt/yr converter as a capacity-reducing replacement. Most existing equipment is to be dismantled. Daye’s March 2026 programme identifies the upgrade as ongoing.",
+    "sources": [
+      {
+        "label": "Hubei environmental department, 2025 permit no. 288",
+        "url": "https://sthjt.hubei.gov.cn/fbjd/zc/zcwj/sthjt/ehs/202507/P020250711595582075257.pdf"
+      },
+      {
+        "label": "Daye government, 2026 industrial programme, page 23",
+        "url": "https://www.hbdaye.gov.cn/zfxxgk/dfbmptlj/szbm/dysjjhxxhjjgsz/fdzdgknr_16703/ghxx_20352/202603/P020260320533513908738.pdf"
+      }
+    ]
+  },
+  "P100000120107": {
+    "name": "Shougang Qian’an",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "The Hebei permit allocates 1.95 Mt/yr from the existing 210-tonne converter to a 1.30 Mt/yr electric furnace. In November, after the September snapshot, the province confirmed the completed replacement matched the approved plan.",
+    "sources": [
+      {
+        "label": "Hebei industry department, April 2024 Qian’an replacement plan, reproduced by Sina",
+        "url": "https://finance.sina.com.cn/money/future/indu/2024-04-01/doc-inaqhyiv7247134.shtml"
+      },
+      {
+        "label": "Hebei industry department, November 2026 implementation check, reproduced by SteelHome",
+        "url": "https://news.steelhome.com/2026/11/20/n4797683.html"
+      }
+    ]
+  },
+  "P100000120271": {
+    "name": "Shanxi Zhongsheng",
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "Shanxi’s environmental approval requires two existing 60-tonne converters to be dismantled as the new 155-tonne converter is built. The permit documents the replacement but gives no like-for-like annual capacity figures for those old units.",
+    "sources": [
+      {
+        "label": "Shanxi ecology department, approval of the 155-tonne replacement, reproduced by Sina",
+        "url": "https://finance.sina.cn/futuremarket/gypzx/2022-01-11/detail-ikyakumx9713714.d.html"
+      }
+    ]
+  },
+  "P100001064261": {
+    "name": "Qinyang Hongda",
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "The company profile identifies 0.5 Mt/yr of existing steelmaking and 1.2 Mt/yr of rolling. The sources checked do not reconcile that baseline with GEM’s separate 2 Mt/yr electric-furnace construction entry.",
+    "sources": [
+      {
+        "label": "Qinyang Hongda, employer profile at the Jiaozuo employment centre",
+        "url": "https://www.jzsrczx.com.cn/corp/pu/corpDetail/3835/1.html"
+      }
+    ]
+  },
+  "P100000120407": {
+    "name": "Qujing Yanggang",
+    "decision": "Linked allocation uncertain",
+    "netMt": null,
+    "reason": "The project assessment identifies a 1.4 Mt/yr converter as part of a wider group transformation under a replacement plan. It says the previous approval did not allocate each withdrawn unit’s capacity among individual projects. No separate net increment can be assigned to this converter.",
+    "sources": [
+      {
+        "label": "Yanggang, Phase I environmental impact assessment, project capacity ledger",
+        "url": "https://img.zjw.cn/u/cms/www/202409/24163210or1i.pdf"
+      }
+    ]
+  },
+  "P100000121142": {
+    "name": "Baotou Deshun",
+    "decision": "Status disputed",
+    "netMt": null,
+    "reason": "The planned 1.25 Mt/yr converter formed part of a merger and relocation with Baotou Jiyu. A November 2026 provincial notice proposed transferring capacity away from both named operators. That later notice prevents treating the tracked project as a confirmed September net addition.",
+    "sources": [
+      {
+        "label": "Inner Mongolia industry department, November 2026 public notice on the Jiyu/Deshun transfer, reproduced by Mysteel",
+        "url": "https://factory.mysteel.com/a/26111809/499628A850691E55.html"
+      }
+    ]
+  },
+  "P100000120845": {
+    "name": "SSAB Luleå",
+    "decision": "Partial addition",
+    "netMt": 0.2,
+    "reason": "SSAB lists 2.3 Mt/yr of crude-steel capacity at the existing Luleå works. The 2.5 Mt/yr mill under construction replaces the entire blast-furnace-based production system. The increase over the pre-conversion site is 0.2 Mt/yr.",
+    "sources": [
+      {
+        "label": "SSAB, 2025 annual report, steelmaking capacity by site",
+        "url": "https://www.ssab.com/-/media/files/company/investors/annual-reports/2025/ssab-annual-report-2025.pdf"
+      },
+      {
+        "label": "SSAB, 2025 green financing report, Oxelösund and Luleå projects",
+        "url": "https://www.ssab.com/-/media/files/company/investors/debt-investor-materials/ssab-green-financing-report-2025.pdf?m=20260522105858"
+      },
+      {
+        "label": "SSAB, September-quarter 2026 report",
+        "url": "https://www.ssab.com/-/media/files/company/investors/interim-reports/2026/ssab-q3-2026-report-eng_f.pdf?m=20261028062519"
+      }
+    ]
+  },
+  "P100000120844": {
+    "name": "SSAB Oxelösund",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "SSAB lists 1.5 Mt/yr of existing crude-steel capacity at Oxelösund. The 1.5 Mt/yr electric furnace replaces the existing integrated steelmaking route. Installation was in progress in the September quarter.",
+    "sources": [
+      {
+        "label": "SSAB, 2025 annual report, steelmaking capacity by site",
+        "url": "https://www.ssab.com/-/media/files/company/investors/annual-reports/2025/ssab-annual-report-2025.pdf"
+      },
+      {
+        "label": "SSAB, 2025 green financing report, Oxelösund and Luleå projects",
+        "url": "https://www.ssab.com/-/media/files/company/investors/debt-investor-materials/ssab-green-financing-report-2025.pdf?m=20260522105858"
+      },
+      {
+        "label": "SSAB, September-quarter 2026 report",
+        "url": "https://www.ssab.com/-/media/files/company/investors/interim-reports/2026/ssab-q3-2026-report-eng_f.pdf?m=20261028062519"
+      }
+    ]
+  },
+  "P100000120482": {
+    "name": "Tata Steel Port Talbot",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "Tata’s former integrated works had about 5 Mt/yr of capacity. Its two blast furnaces closed in 2024 as part of the conversion. The 3.2 Mt/yr electric furnace adds no capacity against that predecessor, even though the site stopped melting steel between the two routes.",
+    "sources": [
+      {
+        "label": "Tata Steel UK, Sustainability Report 2023–2025",
+        "url": "https://www.tatasteeluk.com/sites/default/files/pimcore_doc/tata-steel-uk-sustainability-report-2023-2025.pdf"
+      },
+      {
+        "label": "Tata Steel, July 2025 electric-furnace groundbreaking",
+        "url": "https://www.tatasteel.com/newsroom/press-releases/india/2025/tata-group-chairman-n-chandrasekaran-marks-groundbreaking-of-new-electric-arc-furnace-at-port-talbot/"
+      }
+    ]
+  },
+  "P100000120850": {
+    "name": "Stegra Boden",
+    "decision": "Greenfield addition",
+    "netMt": 2.5,
+    "reason": "The first phase of Stegra’s new Boden works is sized at 2.5 Mt/yr of steel. The company’s 30 September update confirms construction continued after its ownership change. Its equity financing notice names investors without a complete stake breakdown.",
+    "sources": [
+      {
+        "label": "Stegra, 30 September 2026 construction and ownership update",
+        "url": "https://stegra.com/en/news-and-stories/stegra-implements-changes-following-100-day-review-under-new-owners--hkan-buskhe-appointed-ceo"
+      },
+      {
+        "label": "Stegra, first-phase production capacity",
+        "url": "https://stegra.com/default.aspx/news-and-stories/stegra-and-uniper-enter-6-twh-electricity-agreement"
+      },
+      {
+        "label": "Stegra, June 2026 financing and new shareholders",
+        "url": "https://stegra.com/default.aspx/news-and-stories/stegra-announces-closing-of-14-billion-financing-round?search=true"
+      }
+    ]
+  },
+  "P100000120424": {
+    "name": "Salzgitter Flachstahl",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "The European Commission’s approval for SALCOS Stage I explicitly leaves crude-steel capacity unchanged. The new 1.9 Mt/yr route replaces existing production. Salzgitter reported ongoing construction in its September-quarter report.",
+    "sources": [
+      {
+        "label": "European Commission, SA.104276, recitals 33–37 and competition assessment",
+        "url": "https://ec.europa.eu/competition/state_aid/cases1/20265/SA_104276_123.pdf"
+      },
+      {
+        "label": "Salzgitter AG, first nine months of 2026",
+        "url": "https://www.salzgitter-ag.com/fileadmin/finanzberichte/2026/9m/en/downloads/szag-9m-2026-en.pdf"
+      }
+    ]
+  },
+  "P100000120423": {
+    "name": "Dillinger, Dillingen",
+    "decision": "Replacement",
+    "netMt": 0,
+    "reason": "The Power4Steel project substitutes two electric furnaces across Dillingen and Völklingen for existing production. The beneficiaries committed to keeping their combined crude-steel capacity at 6 Mt/yr. The Dillingen installation therefore contributes no net capacity across the linked works.",
+    "sources": [
+      {
+        "label": "European Commission, SA.105337, recitals 39–44",
+        "url": "https://ec.europa.eu/competition/state_aid/cases1/202442/SA_105337_152.pdf"
+      },
+      {
+        "label": "Stahl-Holding-Saar, equipment order for both sites",
+        "url": "https://www.stahl-holding-saar.de/shs/en/news/press/next-step-in-the-transformation-central-plants-ordered-for-power4steel-europe-s-largest-decarbonization-project-114148.shtml"
+      }
+    ]
+  },
+  "P100000120420": {
+    "name": "Ostrava, Nová huť",
+    "decision": "Status disputed",
+    "netMt": null,
+    "reason": "GEM lists 3.5 Mt/yr under construction. The successor operator tendered a single electric furnace of up to 1.5 Mt/yr in April 2026. That procurement describes a materially different project and does not establish construction of the listed 3.5 Mt/yr.",
+    "sources": [
+      {
+        "label": "Nová huť, April 2026 electric-furnace procurement",
+        "url": "https://www.novahut.cz/news/nova_hut_zverejnila_verejnou_zakazku_na_dodavatele_elektricke_obloukove_pece/index9ed2.html"
+      },
+      {
+        "label": "EU public procurement, Nová huť electric arc furnace",
+        "url": "https://op.europa.eu/en/web/public-procurement/procurement-details/-/procurement/ef7a461b-31f2-4b8c-92e5-e2a4f3181532"
+      }
+    ]
+  },
+  "P100000121211": {
+    "name": "Metinvest Piombino",
+    "decision": "Status disputed",
+    "netMt": null,
+    "reason": "The investor describes staged development, financing and a final investment decision, with separate electric furnaces for the two phases. Project approval and the stated target for hot-rolled coil do not establish that 3 Mt/yr of crude-steel capacity was under construction in September.",
+    "sources": [
+      {
+        "label": "Metinvest, 9M 2025 investor presentation, Piombino project milestones",
+        "url": "https://metinvestholding.com/Content/Entities/Presentation/55/en/Metinvest_Presentation_9M2025.pdf"
+      },
+      {
+        "label": "Regione Toscana, environmental assessment register, Metinvest Adria site redevelopment",
+        "url": "https://www.regione.toscana.it/documents/d/guest/procedimenti-conclusi-dal-2022"
+      },
+      {
+        "label": "FIM-CISL, November 2026 Piombino talks on project schedule and industrial plan",
+        "url": "https://www.fim-cisl.it/2026/11/23/siderurgia-piombino-necessita-garanzie-occupazionali/"
+      }
+    ]
+  },
+  "P100000120766": {
+    "name": "Jindal Steel Duqm",
+    "decision": "Process boundary uncertain",
+    "netMt": null,
+    "reason": "Jindal identifies 5 Mt/yr of direct-reduced iron and hot-briquetted iron. The equipment supplier describes two 2.5 Mt/yr ironmaking modules and provision for a future hot link to a melt shop. The zone calls the wider development a steel project. These disclosures do not establish 5 Mt/yr of crude-steel furnaces under construction.",
+    "sources": [
+      {
+        "label": "Jindal Steel Duqm, project scope",
+        "url": "https://www.jindalsteel.in/jindal-steel-duqm"
+      },
+      {
+        "label": "Energiron, second direct-reduction plant in Oman",
+        "url": "https://www.energiron.com/media/news/jindal-steel-orders-second-hydrogen-ready-dri-plant-in-oman"
+      },
+      {
+        "label": "SEZAD, Duqm Quarterly Magazine, issue 43",
+        "url": "https://duqm.gov.om/upload/publications/duqm-quarterly-magazine-issue-43.pdf"
+      }
+    ]
+  },
+  "P100000120010": {
+    "name": "voestalpine Linz",
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "The 1.6 Mt/yr electric furnace is part of a route conversion. The company describes linked blast-furnace retirements but does not give a comparable site-level crude-steel before-and-after series in the cited disclosures.",
+    "sources": [
+      {
+        "label": "voestalpine, output of the first electric furnace at each site",
+        "url": "https://www.voestalpine.com/stahldonawitz/en/quality-and-environment/greentec-steel/"
+      },
+      {
+        "label": "voestalpine, September 2026 half-year investment report",
+        "url": "https://reports.voestalpine.com/2627/qr/2/management-report/investments.html"
+      }
+    ]
+  },
+  "P100000120011": {
+    "name": "voestalpine Donawitz",
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "The first Donawitz furnace under construction is rated at 0.85 Mt/yr, versus 1.7 in GEM. An additional expansion was subject to funding in June. The linked integrated route is being retired in stages. Neither the full 1.7 nor the initial 0.85 is established as a net addition.",
+    "sources": [
+      {
+        "label": "voestalpine, output of the first electric furnace at each site",
+        "url": "https://www.voestalpine.com/stahldonawitz/en/quality-and-environment/greentec-steel/"
+      },
+      {
+        "label": "voestalpine, September 2026 half-year investment report",
+        "url": "https://reports.voestalpine.com/2627/qr/2/management-report/investments.html"
+      },
+      {
+        "label": "voestalpine, 18 June 2026, second stage and retirement plan",
+        "url": "https://www.voestalpine.com/group/en/media/press-releases/voestalpine-unveils-further-expansion-plans-for-greentec-steel-at-its-donawitz-location/"
+      }
+    ]
+  },
+  "P100000120059": {
+    "name": "Algoma Steel, Sault Ste. Marie",
+    "decision": "Baseline disputed",
+    "netMt": null,
+    "reason": "The second electric furnace produced its first heat on 9 October. The conversion replaces the coal-based route. Algoma’s investment decision compares 2.8 million tons of effective integrated capacity with 3.7 million tons after conversion, while its securities filing gives 3.6 million net tons of nameplate capacity for the former oxygen shop. Those baselines imply materially different additions.",
+    "sources": [
+      {
+        "label": "Algoma Steel, 2021 investment decision and before/after estimates",
+        "url": "https://www.algoma.com/news/algoma-steel-announces-final-investment-decision-for-electric-arc-steelmaking/"
+      },
+      {
+        "label": "Algoma, Form F-4, facilities table, page 171",
+        "url": "https://www.sec.gov/Archives/edgar/data/1860805/000119312521209025/d177997df4.htm"
+      },
+      {
+        "label": "Algoma, September-quarter 2026 results, first heat on 9 October",
+        "url": "https://ir.algoma.com/news-releases/news-release-details/algoma-steel-group-inc-reports-financial-results-three-months-1"
+      }
+    ]
+  },
+  "P100000120452": {
+    "name": "ArcelorMittal Asturias, Gijón",
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "ArcelorMittal is converting the long-products steelmaking route for its existing rail and wire-rod mills. The new furnace is sized at 1.1 Mt/yr of semis. The sponsor does not quantify a like-for-like increase across the connected Asturias works.",
+    "sources": [
+      {
+        "label": "ArcelorMittal, construction start and output boundary",
+        "url": "https://corporate.arcelormittal.com/media/news/non-regulatory-news/arcelormittal-starts-the-construction-of-an-electric-arc-furnace-at-its-gijon-plant"
+      },
+      {
+        "label": "ArcelorMittal, May 2026 shareholders’ meeting, Asturias conversion",
+        "url": "https://cdn.arcelormittal.com/media/abyew2r5/agm-2026-minutes.pdf"
+      }
+    ]
+  },
+  "P100000121047": {
+    "name": "Huangshi Xingang",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "The municipal permit names six electric furnaces at three Hubei producers with 2.30 Mt/yr to be withdrawn. The project uses 2.25 Mt/yr of those rights for its 2.25 Mt/yr at Huangshi. It adds local steelmaking while adding no permitted capacity across the linked Chinese sites.",
+    "sources": [
+      {
+        "label": "Huangshi Development and Reform Commission, project energy review and capacity ledger",
+        "url": "https://fgw.huangshi.gov.cn/xxgk/gkml/zdjsxm/xmsphzbaxx/jnsc/202503/t20250313_1204004.html"
+      },
+      {
+        "label": "Huangshi port industrial zone, project environmental impact report",
+        "url": "https://hsxg.huangshi.gov.cn/zwfw/fdzdgknr/gggs/202403/P020240328551303751507.pdf"
+      }
+    ]
+  },
+  "P100001025671": {
+    "name": "Anakapalle",
+    "decision": "Status disputed",
+    "netMt": null,
+    "reason": "The 8.2 is the environmental clearance. After the March foundation ceremony, ArcelorMittal called the project announced in both its June- and September-quarter results. Both steel sponsors are identified.",
+    "sources": [
+      {
+        "label": "ArcelorMittal, second-quarter 2026 results",
+        "url": "https://corporate.arcelormittal.com/media/news/regulatory-news/arcelormittal-reports-second-quarter-2026-results"
+      },
+      {
+        "label": "ArcelorMittal, September-quarter results",
+        "url": "https://corporate.arcelormittal.com/media/news/regulatory-news/arcelormittal-reports-third-quarter-2026-results"
+      },
+      {
+        "label": "Nippon Steel, August 2026, slide 27",
+        "url": "https://www.nipponsteel.com/en/ir/library/settlement/pdf/20260804_200.pdf"
+      },
+      {
+        "label": "AM/NS India, 23 March foundation ceremony",
+        "url": "https://www.amns.in/press-releases/arcelormittal-nippon-steel-india-lays-foundation-for-greenfield-steel-plant-in-andhra-pradesh"
+      }
+    ]
+  },
+  "P100000120539": {
+    "name": "Utkal",
+    "decision": "Phase capped",
+    "netMt": 5,
+    "reason": "JSW identifies a 5 Mt/yr greenfield first phase. GEM lists 7 in converters and JSW lists a 6 Mt/yr melt shop. The approved site addition sets the cap. The September-quarter call confirms work on phase one, with phase two approved in October.",
+    "sources": [
+      {
+        "label": "JSW Steel, FY2025–26 expansion programme",
+        "url": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/grow.html"
+      },
+      {
+        "label": "JSW, phase-one plans and site, June 2026",
+        "url": "https://jsw-steel-s3.s3.ap-south-1.amazonaws.com/jsw-steel-images/uploads/2025/12/JSWSteel_Investor-Presentation_June26_vF.pdf"
+      },
+      {
+        "label": "JSW, July site update, slide 42",
+        "url": "https://jsw-steel-s3.s3.ap-south-1.amazonaws.com/jsw-steel-images/uploads/2026/07/Q1_FY27_ppt-vf.pdf#page=42"
+      },
+      {
+        "label": "L&T, melt-shop piling contract",
+        "url": "https://www.larsentoubro.com/pressreleases/2026/2026-05-26-lt-wins-orders-significant-for-geostructure-business"
+      },
+      {
+        "label": "JSW, September-quarter earnings call",
+        "url": "https://jsw-steel-s3.s3.ap-south-1.amazonaws.com/jsw-steel-images/uploads/2026/10/JSWSL-Q2FY27-Earnings-Oct23-2026.pdf"
+      },
+      {
+        "label": "JSW, wholly owned Utkal subsidiary",
+        "url": "https://www.jswsteel.in/sites/default/files/assets/industry/steel/IR/stock-exchange-releases/Regulation_30_05_01_2024.pdf"
+      }
+    ]
+  },
+  "P100000120513": {
+    "name": "Hazira",
+    "decision": "Included",
+    "netMt": 6,
+    "reason": "The three 2 Mt/yr converters match the disclosed site expansion from about 9 to 15. The earlier equipment-substitution proposal adds no separate tonnes. The joint venture owns the Indian business through a Luxembourg holding company.",
+    "sources": [
+      {
+        "label": "Nippon Steel, August 2026, slide 27",
+        "url": "https://www.nipponsteel.com/en/ir/library/settlement/pdf/20260804_200.pdf"
+      },
+      {
+        "label": "ArcelorMittal, 2025 financial statements, joint ventures",
+        "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342926000020/R12.htm"
+      },
+      {
+        "label": "AM/NS India, equipment reconciliation",
+        "url": "https://www.amns.in/storage/statutory-documents/January2023/qnfxv43cHwc5zTCb8V1n.pdf"
+      },
+      {
+        "label": "Hazira expansion clearance",
+        "url": "https://www.amns.in/storage/statutory-documents/October2022/6GnmFvhzMscsSdpEev87.pdf"
+      }
+    ]
+  },
+  "P100000120517": {
+    "name": "Dolvi",
+    "decision": "Included",
+    "netMt": 5,
+    "reason": "Phase III takes the works from 10 to 15 Mt/yr. JSW documents converter installation. Blast-furnace iron capacity and rolling capacity are separate stages of the same works.",
+    "sources": [
+      {
+        "label": "JSW Steel, FY2025–26 expansion programme",
+        "url": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/grow.html"
+      },
+      {
+        "label": "JSW, May 2026 construction photographs",
+        "url": "https://nsearchives.nseindia.com/corporate/jessydenny_14052026164431_JSW_Steel_Q4_FY26_vF.pdf"
+      },
+      {
+        "label": "JSW Steel, Dolvi expansion clearance",
+        "url": "https://www.jswsteel.in/sites/default/files/assets/downloads/steel/IR/Environmental%20Clearances/Environment-Clearance-of-JSW-Steel-Dolvi-Works-10-to-15-MTPA.pdf"
+      }
+    ]
+  },
+  "P100000120540": {
+    "name": "Neelachal",
+    "decision": "Stage uncertain",
+    "netMt": null,
+    "reason": "Tata approved a broader 4.8 Mt/yr addition in July. Its September-quarter account describes roads, grading and equipment orders. The stage of the two GEM construction converters could not be reconciled. Tata had already bought the remaining minority stake in 2025.",
+    "sources": [
+      {
+        "label": "Tata Steel, June-quarter results, 30 July 2026",
+        "url": "https://www.tatasteel.com/newsroom/press-releases/india/2026/tata-steel-reports-consolidated-ebitda-of-rs-9-370-crores-for-the-quarter-ended-june-30-2026/"
+      },
+      {
+        "label": "Tata Steel, September-quarter earnings call",
+        "url": "https://www.tatasteel.com/media/26645/2qfy27-transcript.pdf"
+      },
+      {
+        "label": "Tata Steel, full ownership of NINL",
+        "url": "https://www.tatasteel.com/media/24356/tata-steel-limited-announcement-acquisition-neelachal-ltd.pdf"
+      }
+    ]
+  },
+  "P100000120556": {
+    "name": "Jamuria",
+    "decision": "Stage uncertain",
+    "netMt": null,
+    "reason": "GEM links the two units to an earlier planned build. The operator group has several businesses at Jamuria. The available compliance filing covers a differently named 1 Mt/yr project and cannot confirm this 2.5 Mt/yr package at the cutoff.",
+    "sources": [
+      {
+        "label": "Operator group, Jamuria compliance filing",
+        "url": "https://orissametaliks.com/data/qehs-2025/OSPPL-%28Jamuria%29-EC-Compliance-June-25-1.pdf"
+      }
+    ]
+  },
+  "P100000121188": {
+    "name": "Orissa Alloy, Kharagpur",
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "GEM flags 1.243 Mt/yr of induction capacity. The site's earlier compliance return already records billet production and operating consent for 0.7714 Mt/yr of billets. The remaining crude-steel increment cannot be matched unit by unit. Ownership also passes through several private entities.",
+    "sources": [
+      {
+        "label": "Orissa Alloy, compliance return, product table item 11",
+        "url": "https://orissametaliks.com/data/qehs-2025/EC-Compliance-DEC-2025-OASPL.pdf"
+      }
+    ]
+  },
+  "P100000120522": {
+    "name": "Ghugus",
+    "decision": "Included",
+    "netMt": 1.05,
+    "reason": "Lloyds documents construction of a new steelmaking operation at its ironmaking site. Use GEM's 1.05 Mt/yr of steelmaking furnaces. The 1.2 Mt/yr long-products project has a different equipment boundary.",
+    "sources": [
+      {
+        "label": "Lloyds, FY2025–26 annual report, pp. 70–71",
+        "url": "https://lloyds.in/wp-content/uploads/2026/05/Annual-Report-for-Financial-Year-2025-26.pdf"
+      },
+      {
+        "label": "Ghugus clearance, steel melting shop and rolling mill",
+        "url": "https://lloyds.in/wp-content/uploads/2025/03/Phase-III-Lloyds-EC-issued-Dated.20.03.2025.pdf"
+      },
+      {
+        "label": "Lloyds, September-quarter project update",
+        "url": "https://lloyds.in/wp-content/uploads/2026/11/20261103_Intimation_regarding_Earnings_Presentation.pdf"
+      }
+    ]
+  },
+  "P100000120569": {
+    "name": "Dhenkanal",
+    "decision": "Unit overlap uncertain",
+    "netMt": null,
+    "reason": "GEM separately lists 0.206 Mt/yr already operating. The state consent covering April 2025 to March 2027 lists five induction furnaces with 0.539 Mt/yr. The permits and GEM records do not identify the same outstanding set of furnaces.",
+    "sources": [
+      {
+        "label": "Odisha State Pollution Control Board, operating consent, pp. 1–2",
+        "url": "https://www.ocmms.nic.in/OCMMS_NEW/download.action?applicationId=6051916&industryFor=bothAW&industryState=Odisha&industryType=CTO"
+      }
+    ]
+  },
+  "P100000120576": {
+    "name": "Ludhiana",
+    "decision": "Already operating",
+    "netMt": 0,
+    "reason": "Tata inaugurated its electric arc furnace in March and reported ramping up production in July. Its 0.75 Mt/yr falls outside the September construction cohort.",
+    "sources": [
+      {
+        "label": "Tata Steel, June-quarter results, 30 July 2026",
+        "url": "https://www.tatasteel.com/newsroom/press-releases/india/2026/tata-steel-reports-consolidated-ebitda-of-rs-9-370-crores-for-the-quarter-ended-june-30-2026/"
+      },
+      {
+        "label": "Tata Steel, March inauguration",
+        "url": "https://www.tatasteel.com/newsroom/press-releases/india/2026/tata-steel-inaugurates-its-first-scrap-based-electric-arc-furnace-in-india/"
+      }
+    ]
+  },
+  "P100000120553": {
+    "name": "Ramsarup, Kharagpur",
+    "decision": "Stage uncertain",
+    "netMt": null,
+    "reason": "The site is being revived. Ramsarup describes a 0.70 Mt/yr billet shop under implementation. The dated May 2026 approval is for a specialty bar mill with a furnace. It does not establish how much of the older electric steelmaking project was under construction in September.",
+    "sources": [
+      {
+        "label": "Ramsarup, plant and equipment",
+        "url": "https://www.ramsarup.com/lohh.html"
+      },
+      {
+        "label": "Shyam Metalics, May 2026 capex filing",
+        "url": "https://nsearchives.nseindia.com/corporate/SHYAMMETL_11052026131548_OutcomeofBM__2_.pdf"
+      },
+      {
+        "label": "Shyam Metalics, 60/40 industrial sponsor chain",
+        "url": "https://nsearchives.nseindia.com/corporate/SHYAMMETL_14022023182949_SMELInvestorPresentationQ3FY23.pdf"
+      }
+    ]
+  },
+  "P100000121185": {
+    "name": "Karakhendra",
+    "decision": "Phase uncertain",
+    "netMt": null,
+    "reason": "An earlier application raised crude-steel capacity from 0.127 to 0.681 Mt/yr, matching the GEM increment. A later application instead describes a smaller phase reaching 0.289. The date and extent of the larger construction phase remain unresolved.",
+    "sources": [
+      {
+        "label": "Environment ministry, original project scope, item 20.13",
+        "url": "https://environmentclearance.nic.in/writereaddata/Form-1A/Minutes/06072020UJKCTN98FINALMOM.pdf"
+      },
+      {
+        "label": "Rungta, revised application",
+        "url": "https://environmentclearance.nic.in/auth/ECGeneral_Report.aspx?pid=40162"
+      }
+    ]
+  },
+  "P100000120536": {
+    "name": "Raigarh",
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "GEM lists an additional electric arc furnace. JSW reports current capacity of 0.95 Mt/yr and identifies a structural rolling mill in its expansion programme. The site's future crude-steel increment is unconfirmed.",
+    "sources": [
+      {
+        "label": "JSW Steel, FY2025–26 expansion programme",
+        "url": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/grow.html"
+      },
+      {
+        "label": "JSW Steel, Raigarh operations",
+        "url": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/mda.html"
+      }
+    ]
+  },
+  "P100000120315": {
+    "name": "HBIS Laoting",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "HBIS’s securities filing identifies a 1.25-to-1 replacement ratio. Its 11.52 Mt/yr Laoting project, including the 230-tonne converter in phase two, consumes 14.41 Mt/yr in capacity rights from other group works. The in-construction unit adds capacity at Laoting while using existing domestic capacity rights.",
+    "sources": [
+      {
+        "label": "HBIS, 26 August 2022 stock-exchange filing, project phases and capacity rights",
+        "url": "https://static.cninfo.com.cn/finalpage/2022-08-26/1214410157.PDF"
+      }
+    ]
+  },
+  "P100000121082": {
+    "name": "Zhenshi Eastern Special Steel, Jiaxing",
+    "decision": "Historical retirement baseline",
+    "netMt": null,
+    "reason": "The project environmental assessment assigns capacity rights from existing Jiaxing steelmaking and from previously retired Hangzhou steelworks. An old permit credit and a currently producing furnace give different baselines for physical capacity. The full furnace sum is not a verified net gain.",
+    "sources": [
+      {
+        "label": "Issuer-commissioned environmental impact assessment, chapter 4, project capacity replacement",
+        "url": "https://www.zjshjkj.com/uploadfile/upfiles/2024092717403566f67d9338d71.pdf"
+      }
+    ]
+  },
+  "P100000121086": {
+    "name": "Henan Jinhui, Xuchang",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "The municipal government describes the stainless-steel project as an equal-capacity replacement of 2 Mt/yr. Against its designated predecessor capacity, this project adds no permitted crude-steel capacity. The project plan does not establish the exact date each old furnace stopped.",
+    "sources": [
+      {
+        "label": "Xuchang Municipal Government Gazette, 2023 no. 6, stainless-steel industrial base",
+        "url": "https://xuchang.gov.cn/uploadfile/7ffa8373-af12-46d8-8240-7080fa8cc1fc/2023%E5%B9%B4%E8%AE%B8%E6%98%8C%E5%B8%82%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%85%AC%E6%8A%A5%E7%AC%AC6%E6%9C%9F.pdf"
+      },
+      {
+        "label": "Xuchang municipal government, air-quality action plan and steel equipment upgrades",
+        "url": "https://www.xuchang.gov.cn/ywdt/001002/20240423/a09813a9-cc99-473a-a4dd-5aca47854972.html"
+      }
+    ]
+  },
+  "P100000121135": {
+    "name": "Xingtai Steel, Weixian",
+    "decision": "Linked-site replacement",
+    "netMt": 0,
+    "reason": "The relocation plan for the new Weixian site matches three 100-tonne electric furnaces totaling 2.25 Mt/yr to 2.25 Mt/yr from the old Xingtai site. The former works closed in September 2026. The relocation adds local capacity at Weixian and no capacity across the two Chinese sites.",
+    "sources": [
+      {
+        "label": "Weixian County, inspection of the Xingtai Steel relocation site",
+        "url": "https://www.weixian.gov.cn/single/258/79678.html"
+      },
+      {
+        "label": "Julu County, construction of the first phase of the Xingtai Steel relocation",
+        "url": "https://www.julu.gov.cn/content/52864.html"
+      },
+      {
+        "label": "Hebei industry department, 2021 one-for-one replacement ledger, reproduced by Mysteel",
+        "url": "https://news.mysteel.com/21/1111/16/AC2C7DD3C5C5D496.html"
+      },
+      {
+        "label": "China Council for the Promotion of International Trade, metallurgy branch, September 2026 closure report",
+        "url": "https://www.mcchina.org.cn/newsinfo/11355836.html"
+      }
+    ]
+  },
+  "P100000121240": {
+    "name": "Donalam Târgoviște",
+    "decision": "Net amount uncertain",
+    "netMt": null,
+    "reason": "Beltrame acquired the former COS works with an 80-tonne electric furnace and two rolling lines. The issuer describes a future greenfield investment separately from the rolling restart. The September crude-steel construction stage and any increase over the predecessor melt shop cannot be reconciled from these sources.",
+    "sources": [
+      {
+        "label": "AFV Beltrame, 2025 consolidated financial report, Târgoviște facilities and investments",
+        "url": "https://gruppobeltrame.com/wp-content/uploads/2026/07/Bilancio-consolidato-2025-IT.pdf"
+      },
+      {
+        "label": "Donalam, site acquisition and new-mill plans",
+        "url": "https://gruppobeltrame.com/en/donalam-srl/"
+      },
+      {
+        "label": "EBRD, Donalam modernisation project summary",
+        "url": "https://www.ebrd.com/home/work-with-us/projects/psd/56803.html"
+      }
+    ]
+  }
+}

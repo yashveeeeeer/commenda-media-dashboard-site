@@ -1,0 +1,253 @@
+{
+  "P100000120513": {
+    "reason": "Issuer-verified AM/NS India chain through AMNS Luxembourg Holding and disclosed 60/40 industrial sponsors; same chain is used in the net-capacity India core.",
+    "operator": "ArcelorMittal Nippon Steel India Ltd",
+    "operatorStatus": "Issuer-verified Indian operating company",
+    "owners": [
+      {
+        "name": "ArcelorMittal SA",
+        "entityId": "E100000000687",
+        "country": "LUX",
+        "stake": 0.6,
+        "role": "industrial sponsor",
+        "chain": [
+          {"entityId": "E100000002455", "name": "AM/NS India", "relationship": "Indian operating company"},
+          {"entityId": null, "name": "AMNS Luxembourg Holding", "relationship": "intermediate holding company in issuer disclosures"},
+          {"entityId": "E100000000687", "name": "ArcelorMittal", "relationship": "60% steelmaking sponsor"}
+        ],
+        "chainStatus": "issuer-disclosed holding chain; GEM live graph abstracts intermediate holding"
+      },
+      {
+        "name": "Nippon Steel Corp",
+        "entityId": "E100000000652",
+        "country": "JPN",
+        "stake": 0.4,
+        "role": "industrial sponsor",
+        "chain": [
+          {"entityId": "E100000002455", "name": "AM/NS India", "relationship": "Indian operating company"},
+          {"entityId": null, "name": "AMNS Luxembourg Holding", "relationship": "intermediate holding company in issuer disclosures"},
+          {"entityId": "E100000000652", "name": "Nippon Steel", "relationship": "40% steelmaking sponsor"}
+        ],
+        "chainStatus": "issuer-disclosed holding chain; GEM live graph abstracts intermediate holding"
+      }
+    ],
+    "sources": [
+      {"label": "Nippon Steel, August 2026, slide 27", "url": "https://www.nipponsteel.com/en/ir/library/settlement/pdf/20260804_200.pdf"},
+      {"label": "ArcelorMittal joint venture financial statements", "url": "https://www.sec.gov/Archives/edgar/data/1243429/000124342926000020/R12.htm"},
+      {"label": "AM/NS India Hazira expansion equipment", "url": "https://www.amns.in/storage/statutory-documents/January2023/qnfxv43cHwc5zTCb8V1n.pdf"}
+    ]
+  },
+  "P100000120517": {
+    "reason": "JSW Steel directly owns and operates Dolvi; issuer documents confirm its phase-three steelmaking expansion.",
+    "operator": "JSW Steel Ltd",
+    "operatorStatus": "Issuer-verified direct steelworks operator",
+    "owners": [
+      {"name": "JSW Steel Ltd", "entityId": "E100001000516", "country": "IND", "stake": 1.0, "role": "industrial sponsor", "chain": [{"entityId": "E100001000516", "name": "JSW Steel Ltd", "relationship": "plant operator and sponsor"}], "chainStatus": "issuer-verified direct owner"}
+    ],
+    "sources": [
+      {"label": "JSW Steel FY2025–26 expansion programme", "url": "https://www.jswsteel.in/jsw-steel-annual-report-2025-26/grow.html"},
+      {"label": "Dolvi phase-three environmental clearance", "url": "https://www.jswsteel.in/sites/default/files/assets/downloads/steel/IR/Environmental%20Clearances/Environment-Clearance-of-JSW-Steel-Dolvi-Works-10-to-15-MTPA.pdf"}
+    ]
+  },
+  "P100000120539": {
+    "reason": "JSW Utkal Steel is a wholly owned JSW Steel subsidiary; issuer site updates corroborate its first five-million-tonne phase, while the global GEM gross record remains seven million tonnes.",
+    "operator": "JSW Utkal Steel Ltd",
+    "operatorStatus": "Issuer-verified Indian operating subsidiary",
+    "owners": [
+      {"name": "JSW Steel Ltd", "entityId": "E100001000516", "country": "IND", "stake": 1.0, "role": "industrial sponsor", "chain": [{"entityId": "E100001000528", "name": "JSW Utkal Steel Ltd", "relationship": "operating subsidiary"}, {"entityId": "E100001000516", "name": "JSW Steel Ltd", "relationship": "100% parent sponsor"}], "chainStatus": "issuer-verified subsidiary chain"}
+    ],
+    "sources": [
+      {"label": "JSW wholly owned Utkal subsidiary", "url": "https://www.jswsteel.in/sites/default/files/assets/industry/steel/IR/stock-exchange-releases/Regulation_30_05_01_2024.pdf"},
+      {"label": "JSW Utkal first-phase site update, July 2026", "url": "https://jsw-steel-s3.s3.ap-south-1.amazonaws.com/jsw-steel-images/uploads/2026/07/Q1_FY27_ppt-vf.pdf#page=42"}
+    ]
+  },
+  "P100000120522": {
+    "reason": "Lloyds Metals and Energy reports the Ghugus steel melt shop as its own project.",
+    "operator": "Lloyds Metals and Energy Ltd",
+    "operatorStatus": "Issuer-verified direct project operator",
+    "owners": [
+      {"name": "Lloyds Metals and Energy Ltd", "entityId": "E100001012204", "country": "IND", "stake": 1.0, "role": "industrial sponsor", "chain": [{"entityId": "E100001012204", "name": "Lloyds Metals and Energy Ltd", "relationship": "plant operator and sponsor"}], "chainStatus": "issuer-verified direct owner"}
+    ],
+    "sources": [
+      {"label": "Lloyds FY2025–26 annual report", "url": "https://lloyds.in/wp-content/uploads/2026/05/Annual-Report-for-Financial-Year-2025-26.pdf"},
+      {"label": "Ghugus steel melting shop clearance", "url": "https://lloyds.in/wp-content/uploads/2025/03/Phase-III-Lloyds-EC-issued-Dated.20.03.2025.pdf"}
+    ]
+  },
+  "P100000120540": {
+    "reason": "Tata Steel reported acquiring 100% of Neelachal Ispat Nigam by July 2025; the GEM September map still shows the earlier split, so current issuer ownership supersedes it without changing GEM gross capacity.",
+    "operator": "Neelachal Ispat Nigam Ltd",
+    "operatorStatus": "Tata Steel-owned operating subsidiary; furnace erection status separately contested",
+    "owners": [
+      {"name": "Tata Steel Ltd", "entityId": "E100001010018", "country": "IND", "stake": 1.0, "role": "industrial sponsor", "chain": [{"entityId": "E100001010157", "name": "Neelachal Ispat Nigam Ltd", "relationship": "steelworks company"}, {"entityId": "E100001010018", "name": "Tata Steel Ltd", "relationship": "100% parent sponsor"}], "chainStatus": "issuer-verified post-map acquisition"}
+    ],
+    "sources": [
+      {"label": "Tata Steel July 2025 100% acquisition", "url": "https://www.tatasteel.com/media/24356/tata-steel-limited-announcement-acquisition-neelachal-ltd.pdf"},
+      {"label": "GEM Neelachal unit details", "url": "https://www.gem.wiki/Neelachal_Ispat_Nigam_steel_plant"}
+    ]
+  },
+  "P100000120482": {
+    "reason": "Tata Steel UK operates Port Talbot and GEM lists Tata Steel Ltd as 100% parent; this electric-arc furnace replaces former steelmaking capacity and is not a net addition.",
+    "operator": "Tata Steel UK Ltd",
+    "operatorStatus": "Issuer-verified UK operating subsidiary",
+    "owners": [
+      {"name": "Tata Steel Ltd", "entityId": "E100001010018", "country": "IND", "stake": 1.0, "role": "industrial sponsor", "chain": [{"entityId": "E100001010180", "name": "Tata Steel UK Ltd", "relationship": "UK plant operator"}, {"entityId": "E100001010018", "name": "Tata Steel Ltd", "relationship": "GEM-reported 100% parent"}], "chainStatus": "GEM parent chain with issuer operation corroboration"}
+    ],
+    "sources": [
+      {"label": "Tata Port Talbot EAF groundbreaking", "url": "https://www.tatasteel.com/newsroom/press-releases/india/2025/tata-group-chairman-n-chandrasekaran-marks-groundbreaking-of-new-electric-arc-furnace-at-port-talbot/"},
+      {"label": "UK government replacement description", "url": "https://www.gov.uk/government/news/tata-steel-port-talbot-steelworks-qa"}
+    ]
+  },
+  "P100000121211": {
+    "reason": "Metinvest Adria's issuer release confirms the 75/25 equity joint venture and identifies Danieli as an industrial steel-equipment partner rather than a financial manager.",
+    "operator": "Metinvest Adria SpA",
+    "operatorStatus": "Issuer-verified Italian joint-venture project company",
+    "owners": [
+      {
+        "name": "Metinvest B.V.",
+        "entityId": "E100001000605",
+        "country": "NLD",
+        "stake": 0.75,
+        "role": "industrial sponsor",
+        "chain": [
+          {"entityId": "E100002021566", "name": "Metinvest Adria SpA", "relationship": "Italian steel project company"},
+          {"entityId": "E100001000605", "name": "Metinvest B.V.", "relationship": "75% equity parent and Dutch steel group holding company"}
+        ],
+        "chainStatus": "issuer-disclosed equity chain"
+      },
+      {
+        "name": "Danieli & C Officine Meccaniche SpA",
+        "entityId": "E100000130706",
+        "country": "ITA",
+        "stake": 0.25,
+        "role": "industrial sponsor",
+        "chain": [
+          {"entityId": "E100002021566", "name": "Metinvest Adria SpA", "relationship": "Italian steel project company"},
+          {"entityId": "E100002000040", "name": "Industrieelle Beteiligung SA", "relationship": "Danieli Group intermediary"},
+          {"entityId": "E100000130706", "name": "Danieli & C Officine Meccaniche SpA", "relationship": "25% equity sponsor"}
+        ],
+        "chainStatus": "issuer-disclosed equity chain"
+      }
+    ],
+    "sources": [
+      {"label": "Metinvest Adria shareholder agreement closing, September 2025", "url": "https://www.metinvestadria.it/wp-content/uploads/2026/03/PRESS-RELEASE-RDL-final-09-17-25-ENG.pdf"},
+      {"label": "Metinvest B.V. Amsterdam office and group ownership", "url": "https://www.metinvestholding.com/en/about"}
+    ]
+  },
+  "P100000121040": {
+    "reason": "GEM's September map lists three unstaked sponsors as owners and parents. PIF and Aramco filings disclose joint-venture equity; a sovereign investor is not labeled the plant operator.",
+    "operator": null,
+    "operatorStatus": "Joint-venture operating company not independently identified",
+    "owners": [
+      {
+        "name": "Baoshan Iron & Steel Co Ltd",
+        "entityId": "E100000122571",
+        "country": "CHN",
+        "stake": 0.5,
+        "role": "industrial sponsor",
+        "chain": [],
+        "chainStatus": "issuer-disclosed direct joint-venture equity"
+      },
+      {
+        "name": "Saudi Arabian Oil Co",
+        "entityId": "E100000000888",
+        "country": "SAU",
+        "stake": 0.25,
+        "role": "industrial sponsor",
+        "chain": [],
+        "chainStatus": "issuer-disclosed direct joint-venture equity"
+      },
+      {
+        "name": "Public Investment Fund (Saudi Arabia)",
+        "entityId": "E100000001358",
+        "country": null,
+        "reportedCountry": "SAU",
+        "stake": 0.25,
+        "role": "sovereign financial owner",
+        "chain": [],
+        "chainStatus": "issuer-disclosed direct joint-venture equity; not plant operator"
+      }
+    ],
+    "sources": [
+      {
+        "label": "PIF 2024 annual report, BAP equity",
+        "url": "https://www.pif.gov.sa/-/media/project/pif-corporate/pif-corporate-site/our-financials/annual-reports/pdf/20250904_pif_ar24_public_english_interactive-pdf.pdf"
+      },
+      {
+        "label": "Saudi Aramco 2025 annual report, BAP venture",
+        "url": "https://www.aramco.com/-/media/publications/corporate-reports/reports-and-presentations/2025/fy/saudi-aramco-ara-2025-english.pdf"
+      }
+    ]
+  },
+  "P100000120850": {
+    "reason": "The GEM map parent list consists mainly of debt financiers without equity percentages; treating those banks as steelmaking sponsors would be false.",
+    "operator": "Stegra AB",
+    "operatorStatus": "GEM-reported plant owner; shareholder percentages not established in this dataset",
+    "owners": [
+      {
+        "name": "Unresolved equity behind Stegra AB",
+        "entityId": null,
+        "country": null,
+        "stake": 1.0,
+        "role": "unknown",
+        "chain": [],
+        "chainStatus": "financial lenders excluded; equity sponsors not quantified"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Stegra identifies banks as debt financiers",
+        "url": "https://stegra.com/en/news-and-stories/leading-european-financial-institutions-support-h2-green-steels-35-billion-debt-financing"
+      },
+      {
+        "label": "GEM Stegra Boden plant owner and capacity",
+        "url": "https://www.gem.wiki/Stegra_Boden_steel_plant"
+      }
+    ]
+  },
+  "P100000121053": {
+    "reason": "Ternium's SEC subsidiary register gives consolidated effective ownership through direct and Argentina subsidiary paths; GEM's map has overlapping unstaked parents.",
+    "operator": "Ternium México SA de CV",
+    "operatorStatus": "GEM-reported plant owner",
+    "owners": [
+      {
+        "name": "Ternium SA",
+        "entityId": "E100001000384",
+        "country": "LUX",
+        "stake": 0.8925,
+        "role": "industrial sponsor",
+        "chain": [
+          {
+            "entityId": "E100000004192",
+            "name": "Ternium México SA de CV",
+            "relationship": "Mexican plant owner"
+          },
+          {
+            "entityId": "E100001000384",
+            "name": "Ternium SA",
+            "relationship": "consolidated direct and indirect interest via Ternium Argentina SA"
+          }
+        ],
+        "chainStatus": "issuer-disclosed consolidated effective stake; path summarized"
+      },
+      {
+        "name": "Unresolved minority shareholders",
+        "entityId": null,
+        "country": null,
+        "stake": 0.1075,
+        "role": "unknown",
+        "chain": [],
+        "chainStatus": "residual equity from issuer-disclosed consolidated stake"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Ternium SEC subsidiary register, 2025",
+        "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287426000020/exhibit81listofsubsidiarie.htm"
+      },
+      {
+        "label": "Ternium 2025 Form 20-F",
+        "url": "https://www.sec.gov/Archives/edgar/data/1342874/000134287426000020/tx-20251231.htm"
+      }
+    ]
+  }
+}

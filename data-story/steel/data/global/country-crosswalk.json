@@ -1,0 +1,167 @@
+{
+  "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_50m_admin_0_countries.geojson",
+  "rule": "Natural Earth ADM0_A3 to ISO_A3_EH. Null means no ISO match.",
+  "local_dashboard_geometry_sha256": "17bdf95f55e4270500ab51978599b13c82097e3eafe5fda492e11884365413e7",
+  "names": {
+    "Argentina": {
+      "iso3": "ARG",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Austria": {
+      "iso3": "AUT",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Bangladesh": {
+      "iso3": "BGD",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Brazil": {
+      "iso3": "BRA",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Canada": {
+      "iso3": "CAN",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Cayman Islands": {
+      "iso3": "CYM",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "China": {
+      "iso3": "CHN",
+      "basis": "explicit alias to Natural Earth ISO_A3_EH"
+    },
+    "Czech Republic": {
+      "iso3": "CZE",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "France": {
+      "iso3": "FRA",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Germany": {
+      "iso3": "DEU",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Hong Kong": {
+      "iso3": "HKG",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "India": {
+      "iso3": "IND",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Iran": {
+      "iso3": "IRN",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Italy": {
+      "iso3": "ITA",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Japan": {
+      "iso3": "JPN",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Kazakhstan": {
+      "iso3": "KAZ",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Luxembourg": {
+      "iso3": "LUX",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Mauritius": {
+      "iso3": "MUS",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Mexico": {
+      "iso3": "MEX",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Mozambique": {
+      "iso3": "MOZ",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Namibia": {
+      "iso3": "NAM",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Netherlands": {
+      "iso3": "NLD",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Nigeria": {
+      "iso3": "NGA",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "North Korea": {
+      "iso3": "PRK",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Oman": {
+      "iso3": "OMN",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Pakistan": {
+      "iso3": "PAK",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Philippines": {
+      "iso3": "PHL",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Romania": {
+      "iso3": "ROU",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Russia": {
+      "iso3": "RUS",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Saudi Arabia": {
+      "iso3": "SAU",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Singapore": {
+      "iso3": "SGP",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "South Korea": {
+      "iso3": "KOR",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Spain": {
+      "iso3": "ESP",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Sri Lanka": {
+      "iso3": "LKA",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Sweden": {
+      "iso3": "SWE",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Türkiye": {
+      "iso3": "TUR",
+      "basis": "explicit alias to Natural Earth ISO_A3_EH"
+    },
+    "United Kingdom": {
+      "iso3": "GBR",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "United States": {
+      "iso3": "USA",
+      "basis": "explicit alias to Natural Earth ISO_A3_EH"
+    },
+    "Uzbekistan": {
+      "iso3": "UZB",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    },
+    "Vietnam": {
+      "iso3": "VNM",
+      "basis": "Natural Earth name and ISO_A3_EH"
+    }
+  }
+}
